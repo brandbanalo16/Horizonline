@@ -6,6 +6,7 @@ import "@/styles/modal.css";
 import AosInitializer from "@/libs/aos";
 
 import Header from "@/components/sections/Header";
+import AdditionalDrawer from "@/components/AdditionalDrawer";
 import Footer from "@/components/sections/Footer";
 import ScrollTop from "@/components/ScrollToTop";
 
@@ -40,6 +41,9 @@ export default function RootLayout({
         
         {/* Modal and Drawer Overlay */}
         <drawer-opener id="drawer-overlay"></drawer-opener>
+
+        {/* Additional right-side drawer (global) */}
+        <AdditionalDrawer />
 
         {/* AOS Init */}
         <AosInitializer />

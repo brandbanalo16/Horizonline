@@ -3,7 +3,6 @@ import Logo from "./Logo";
 import LogoImage from "@/public/img/logo-white.png";
 import NavBar from "./menus/NavBar";
 import HeaderActions from "./HeaderActions";
-import AdditionalDrawer from "./AdditionalDrawer";
 import StickyHeader from "./StickyHeader";
 
 const Header = () => {
@@ -34,7 +33,6 @@ const Header = () => {
           <HeaderActions />
         </div>
       </StickyHeader>
-      <AdditionalDrawer />
       </>
     )
 }

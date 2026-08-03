@@ -19,7 +19,7 @@ footer {
 }
 
 footer .social-link {
-  background-color: #1c2539;
+  background-color: #28344a;
   transition: 0.3s;
 }
 
@@ -111,7 +111,7 @@ footer .social-link:hover {
 
 .footer-2 .social-link {
   background-color: #fff;
-  color: #1c2539;
+  color: #28344a;
 }
 
 .footer-2 .social-link:focus,

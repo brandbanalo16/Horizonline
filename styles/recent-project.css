@@ -123,7 +123,7 @@
 
 .project-slider .swiper-button-prev,
 .project-slider .swiper-button-next {
-  --swiper-navigation-color: #1c2539;
+  --swiper-navigation-color: #28344a;
   --swiper-navigation-background-color: #f2f2f2;
   color: var(--swiper-navigation-color);
   background-color: var(--swiper-navigation-background-color);
@@ -139,7 +139,7 @@
 
 .project-slider .swiper-nav-inner > * {
   --size: 44px;
-  --color-border: #1c253900;
+  --color-border: #28344a00;
   --style-border-width: 1px;
   width: var(--size);
   height: var(--size);

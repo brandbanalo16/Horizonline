@@ -6,7 +6,6 @@ import Logo from "./Logo";
 import LogoImage from "@/public/img/logo-white.png";
 import NavBar from "./menus/NavBar";
 import HeaderActions2 from "./HeaderActions2";
-import AdditionalDrawer from "./AdditionalDrawer";
 import StickyHeader from "./StickyHeader";
 
 const Header3 = () => {
@@ -26,7 +25,7 @@ const Header3 = () => {
               src={LogoImage.src}
               width={189}
               height={32}
-              url={pathname}
+              url="/"
               cls="header-logo"
               alt="Consulo logo"
               ariaLabel="Consulo logo"
@@ -40,9 +39,6 @@ const Header3 = () => {
             <HeaderActions2 />
           </div>
         </StickyHeader>
-
-        {/* Additional Drawer */}
-        <AdditionalDrawer />
       </>
     )
 }

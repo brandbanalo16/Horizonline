@@ -180,7 +180,7 @@ sticky-header[data-sticky-type="always"] {
   }
 
   .header-logo {
-    max-width: 160px;
+    max-width: 65%;
   }
 
   .header-actions {
@@ -269,6 +269,13 @@ sticky-header[data-sticky-type="always"] {
   }
 }
 
+/* Hide the contact drawer opener on small screens to keep header clean */
+@media (max-width: 991px) {
+  .drawer-opener.contact-large {
+    display: none !important;
+  }
+}
+
 @media (max-width: 1279px) {
   .header-grid {
     grid-template-columns: auto 1fr auto;
@@ -323,7 +330,7 @@ sticky-header[data-sticky-type="always"] {
 
 @media (max-width: 767px) {
   .header-logo {
-    max-width: 130px;
+    max-width: 220px;
   }
 
   .header-2 {
