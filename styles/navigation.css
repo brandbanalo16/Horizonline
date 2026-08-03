@@ -247,9 +247,16 @@
 
   .header-menu {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  .menu-link-main {
+    white-space: nowrap;
+    font-size: 16px;
   }
 }
 
@@ -262,6 +269,7 @@
 @media (max-width: 1365px) {
   .menu-link-main {
     padding: 28px 6px;
+    font-size: 15px;
   }
 }
 

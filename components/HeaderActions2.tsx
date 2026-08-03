@@ -1,7 +1,4 @@
-import SlimButton from "./buttons/SlimButton";
-import Hamburger from "./menus/Hamburger";
-import Icons from "./Icons";
-import DrawerOpener from "./DrawerOpener";
+﻿import SlimButton from "./buttons/SlimButton";
 
 const HeaderActions2 = () => {
     return (
@@ -12,14 +9,6 @@ const HeaderActions2 = () => {
                 ariaLabel="contact us"
                 cls="button--primary"
             />
-            <Hamburger />
-            
-            <DrawerOpener
-                cls="svg-wrapper menu-open !hidden lg:!flex" 
-                data-drawer=".drawer-additional"
-            >
-                <Icons.Hamburger />
-            </DrawerOpener>
         </div>
     )
 }
