@@ -6,11 +6,11 @@ const Menus: any[] = [
         "path": "/"
     },
     {
-        "title": "Business Setup & Corporate Services",
+        "title": "Company Formation",
         "path": "/services",
         "megamenutwocolumn": [
             {
-                "title": "BUSINESS SETUP & CORPORATE SERVICES",
+                "title": "Company Formation",
                 "path": "/services",
                 "dropdown": [
                     {
@@ -174,11 +174,11 @@ const Menus: any[] = [
         ]
     },
     {
-        "title": "Visa & Immigration Services",
+        "title": "Visa & Immigration",
         "path": "/services",
         "megamenutwocolumn": [
             {
-                "title": "VISA & IMMIGRATION SERVICES",
+                "title": "Visa & Immigration",
                 "path": "/services",
                 "dropdown": [
                     {
@@ -296,11 +296,11 @@ const Menus: any[] = [
         ]
     },
     {
-        "title": "Tax & Financial Compliance",
+        "title": "Finance & Tax",
         "path": "/services",
         "megamenutwocolumn": [
             {
-                "title": "TAX & FINANCIAL COMPLIANCE",
+                "title": "Finance & Tax",
                 "path": "/services",
                 "dropdown": [
                     {
@@ -436,11 +436,11 @@ const Menus: any[] = [
         ]
     },
     {
-        "title": "Government, Utilities & Public Services",
+        "title": "Public Services",
         "path": "/services",
         "megamenutwocolumn": [
             {
-                "title": "GOVERNMENT & PUBLIC SERVICES",
+                "title": "Public Services",
                 "path": "/services",
                 "dropdown": [
                     {

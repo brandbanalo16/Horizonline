@@ -118,6 +118,17 @@
   transform: translateX(0);
 }
 
+@media (min-width: 992px) {
+  .theme-drawer[data-position="right"] {
+    width: 360px;
+    height: 100%;
+  }
+
+  .theme-drawer {
+    width: 100%;
+  }
+}
+
 .modal-container {
   width: 100%;
   height: 100%;

@@ -117,6 +117,24 @@
   letter-spacing: 2.5px;
 }
 
+/* Reduce megamenu heading and text weight/size to be less bold */
+.header-megamenu .menu-link.heading {
+  letter-spacing: 1px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.header-megamenu .menu-link .heading {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.header-submenu .menu-link .text {
+  font-size: 14px;
+  font-weight: 400;
+  opacity: 0.85;
+}
+
 .header-submenu .nav-item.megamenu-links .menu-link {
   padding: 5px 15px 7px;
 }
@@ -249,7 +267,7 @@
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     overflow-x: auto;
     white-space: nowrap;
   }
@@ -257,6 +275,11 @@
   .menu-link-main {
     white-space: nowrap;
     font-size: 16px;
+  }
+
+  /* Reduce vertical padding so header is not so tall */
+  .menu-link-main {
+    padding: 12px 10px;
   }
 }
 

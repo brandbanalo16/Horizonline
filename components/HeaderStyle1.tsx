@@ -3,10 +3,12 @@ import Logo from "./Logo";
 import LogoImage from "@/public/img/logo-white.png";
 import NavBar from "./menus/NavBar";
 import HeaderActions from "./HeaderActions";
+import AdditionalDrawer from "./AdditionalDrawer";
 import StickyHeader from "./StickyHeader";
 
 const Header = () => {
     return (
+      <>
       <StickyHeader 
         wrapperCls="header-1 header-floating"
         container="container-fluid"
@@ -32,6 +34,8 @@ const Header = () => {
           <HeaderActions />
         </div>
       </StickyHeader>
+      <AdditionalDrawer />
+      </>
     )
 }
 
