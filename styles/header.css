@@ -199,6 +199,10 @@ sticky-header[data-sticky-type="always"] {
     height: 36px;
   }
 
+  .header-logo {
+    max-width: 220px;
+  }
+
   .header-actions .header-search svg {
     width: 18px;
     height: 18px;
