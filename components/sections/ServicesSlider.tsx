@@ -11,6 +11,7 @@ import "@/styles/our-services.css";
 import "@/styles/card-working-process.css";
 
 import { SectionProps } from "@/types/sectionProps";
+import { ServiceProps } from "@/types/service";
 import ServiceList from "@/data/services.json";
 import Heading from "../Heading";
 import Subheading from "../Subheading";
@@ -20,14 +21,18 @@ import CardService2 from "../CardService2";
 
 const ServicesSlider = ({
     data,
-    pagination 
+    pagination,
+    services,
+    maxItems = 4,
 }: {
     data: SectionProps;
     pagination: boolean;
+    services?: ServiceProps[];
+    maxItems?: number;
 }) => {
     const swiperRef = useRef<SwiperType | null>(null);
-    const serviceList = ServiceList;
-    if(serviceList.length == 0) return null;
+    const serviceList = services && services.length > 0 ? services : ServiceList;
+    if (serviceList.length == 0) return null;
 
     const {
         wrapperCls,
@@ -115,7 +120,7 @@ const ServicesSlider = ({
                                 onSwiper={(swiper) => (swiperRef.current = swiper)}
                                 className="swiper"
                             >
-                                {serviceList.map((service) => (
+                                {serviceList.slice(0, maxItems).map((service) => (
                                     <SwiperSlide key={service.id}>
                                         <CardService2 data={service} />
                                     </SwiperSlide>

@@ -223,6 +223,9 @@
 
   .header-megamenu {
     width: 100%;
+    /* Slightly increase overall megamenu width and shift left to center under header */
+    width: calc(100% + 120px);
+    left: -60px;
   }
 
   .nav-item:hover > .menu-absolute {
@@ -250,6 +253,47 @@
   .header-megamenu .menu-link {
     display: inline-block;
   }
+
+  /* Two-column services layout when there are many items */
+  .service-columns {
+    display: flex;
+    gap: 48px;
+    align-items: flex-start;
+  }
+
+  .service-columns > ul {
+    flex: 1 1 0;
+    padding: 0;
+  }
+
+  .service-columns > ul > .nav-item {
+    margin-bottom: 14px;
+  }
+
+  /* Services grid in mega menu: default 6 per row */
+  .services-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px 32px;
+    align-items: flex-start;
+  }
+
+  .services-grid .service-item {
+    flex: 0 0 calc(100% / 6 - (32px / 6));
+    max-width: calc(100% / 6 - (32px / 6));
+  }
+
+  /* If there are 1-5 items, show them in a single row evenly spaced */
+  .services-grid.single-row {
+    justify-content: flex-start;
+  }
+
+  .services-grid.single-row .service-item {
+    flex: 0 0 calc(100% / var(--count));
+    max-width: calc(100% / var(--count));
+  }
+
+  
 
   .nav-item.megamenu-links {
     width: 100%;

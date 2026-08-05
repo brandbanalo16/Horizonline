@@ -63,7 +63,7 @@ footer .social-link:hover {
 }
 
 .footer-top {
-  padding: 100px 0;
+  padding: 60px 0;
 }
 
 .footer-policies {
@@ -164,11 +164,7 @@ footer .logo-with-newsletter .social-link:hover {
   }
 
   .footer-top {
-    padding: 80px 0;
-  }
-
-  .footer-contact {
-    padding-block-start: 80px;
+    padding: 50px 0;
   }
 }
 

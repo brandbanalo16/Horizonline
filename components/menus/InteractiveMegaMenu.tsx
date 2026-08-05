@@ -25,6 +25,7 @@ export default function InteractiveMegaMenu({ data }: { data: MegaMenuData }) {
 
     const categories = data.dropdown || [];
     const activeCategory = categories[activeIndex];
+    
 
     return (
         <ul className="list-unstyled">
@@ -38,7 +39,6 @@ export default function InteractiveMegaMenu({ data }: { data: MegaMenuData }) {
                             key={`cat-${idx}`} 
                             onMouseEnter={() => setActiveIndex(idx)}
                         >
-                            {/* We can add a simple active style directly, or just rely on standard hover */}
                             <div style={{ background: activeIndex === idx ? 'var(--color-primary-background-hover)' : 'transparent', borderRadius: 'var(--submenu-radius)' }}>
                                 <LinkWithDesc title={cat.title} path={cat.path} />
                             </div>
@@ -50,13 +50,47 @@ export default function InteractiveMegaMenu({ data }: { data: MegaMenuData }) {
             {/* Column 2: Services */}
             <li className="nav-item">
                 <LinkHeading title="SERVICES" path={activeCategory?.path || "#"} />
-                <ul className="reset-submenu list-unstyled submenu-color">
-                    {activeCategory?.services?.map((service, sIdx) => (
-                        <li className="nav-item" key={`srv-${sIdx}`}>
-                            <LinkWithDesc title={service.title} path={service.path} />
-                        </li>
-                    ))}
-                </ul>
+                {
+                    (() => {
+                        const services = activeCategory?.services || [];
+
+                        if (services.length > 6) {
+                            const splitIndex = Math.ceil(services.length / 2);
+                            const left = services.slice(0, splitIndex);
+                            const right = services.slice(splitIndex);
+
+                            return (
+                                <div className="service-columns">
+                                    <ul className="reset-submenu list-unstyled submenu-color">
+                                        {left.map((service, i) => (
+                                            <li className="nav-item" key={`srv-left-${i}`}>
+                                                <LinkWithDesc title={service.title} path={service.path} />
+                                            </li>
+                                        ))}
+                                    </ul>
+                                    <ul className="reset-submenu list-unstyled submenu-color">
+                                        {right.map((service, i) => (
+                                            <li className="nav-item" key={`srv-right-${i}`}>
+                                                <LinkWithDesc title={service.title} path={service.path} />
+                                            </li>
+                                        ))}
+                                    </ul>
+                                </div>
+                            );
+                        }
+
+                        // Default: single list
+                        return (
+                            <ul className={`reset-submenu list-unstyled submenu-color`}>
+                                {services.map((service, sIdx) => (
+                                    <li className="nav-item" key={`srv-${sIdx}`}>
+                                        <LinkWithDesc title={service.title} path={service.path} />
+                                    </li>
+                                ))}
+                            </ul>
+                        );
+                    })()
+                }
             </li>
         </ul>
     );

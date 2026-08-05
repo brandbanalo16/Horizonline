@@ -22,9 +22,7 @@ const ServiceSidebar = ({
         : newServices.filter((item) => item.slug !== slug);
 
     const legacyServices = Services.filter((item) => item.slug !== slug);
-    const legacyCategories: string[] = Array.from(
-        new Set(legacyServices.flatMap((service) => service.title || []))
-    );
+    const legacySidebarServices = legacyServices.slice(0, 12);
 
     const sidebarServices = relatedServices.length > 0
         ? relatedServices.slice(0, 12)
@@ -61,18 +59,18 @@ const ServiceSidebar = ({
                             ))}
                         </ul>
                     </div>
-                ) : legacyCategories.length > 0 ? (
+                ) : legacySidebarServices.length > 0 ? (
                     <div className="sidebar-widget radius18" data-aos="fade-up">
                         <h2 className="sidebar-heading heading text-24">Services List</h2>
                         <ul className="blog-categories list-unstyled">
-                            {legacyCategories.map((item, index) => (
-                                <li key={`legacy-${index}`}>
+                            {legacySidebarServices.map((item) => (
+                                <li key={`legacy-${item.slug}`}>
                                     <Link
                                         className="blog-category subheading subheading-bg text-18 fw-400"
-                                        href={`/services/${item.toLowerCase().replace(/\s+/g, '-')}`}
-                                        aria-label={item}
+                                        href={`/services/${item.slug}`}
+                                        aria-label={item.title}
                                     >
-                                        {item}
+                                        {item.title}
                                         <Icons.ArrowLong2 />
                                     </Link>
                                 </li>

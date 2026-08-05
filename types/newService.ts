@@ -28,6 +28,7 @@ export interface ServiceContent {
     client_testimonials?: ServiceTestimonial[];
     faqs?: ServiceFaq[];
     seo_supporting_lines?: string[];
+    html_content?: string;
     final_cta?: string;
 }
 
