@@ -13,47 +13,43 @@ export const QuickLink: MenuType[] = [
         path: '/teams'
     },
     {
-        title: 'Pricing Plans',
-        path: '/pricing-plan'
+        title: 'Contact Us',
+        path: '/contact-us'
+    },
+    {
+        title: 'FAQ',
+        path: '/faq'
     },
     {
         title: 'Blogs',
         path: '/blogs'
-    },
-    {
-        title: 'Contact Us',
-        path: '/contact-us'
     }
 ];
 
 export const Services: MenuType[] = [
     {
-        title: 'UI/UX Design',
-        path: '/projects'
+        title: 'Business Setup',
+        path: '/services/business-setup'
     },
     {
-        title: 'App Development',
-        path: '/projects'
+        title: 'Free Zone',
+        path: '/services/free-zone'
     },
     {
-        title: 'Digital Marketing',
-        path: '/services'
+        title: 'Corporate Services',
+        path: '/services/corporate-services'
     },
     {
-        title: 'Web Development',
-        path: '/pricing-plan'
+        title: 'Visa Services',
+        path: '/services/visa-services'
     },
     {
-        title: 'Cyber Security',
-        path: '/projects/business-development'
+        title: 'Accounting & VAT',
+        path: '/services/accounting-and-vat'
     }
 ];
 
 export const Information: MenuType[] = [
-    {
-        title: 'Working Process',
-        path: '/services'
-    },
     {
         title: 'Privacy Policy',
         path: '/privacy-policy'
@@ -65,21 +61,25 @@ export const Information: MenuType[] = [
     {
         title: 'FAQ',
         path: '/faq'
+    },
+    {
+        title: 'Contact',
+        path: '/contact-us'
     }
 ];
 
 export const MenuContact: MenuType[] = [
     {
-        title: 'consulo@yourcompany.com',
-        path: 'mailto:consulo@yourcompany.com'
+        title: 'info@horizonlineconsultancy.ae',
+        path: 'mailto:info@horizonlineconsultancy.ae'
     },
     {
-        title: '+1 (437) 555-0198',
-        path: 'tel:+1 (437) 555-0198'
+        title: '+971 4 123 4567',
+        path: 'tel:+97141234567'
     },
     {
-        title: '123 Maple Avenue, Toronto, ON M5H 2N2, Canada',
-        path: '#'
+        title: 'Office 101, Business Bay, Dubai, UAE',
+        path: 'https://maps.google.com'
     }
 ];
 

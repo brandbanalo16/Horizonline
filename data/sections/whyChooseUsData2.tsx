@@ -10,42 +10,42 @@ export const WhyChooseUsData2: SectionProps = {
         width: 1000,
         height: 742,
         loading: "lazy",
-        alt: "image"
+        alt: "Why choose Horizon Line"
     },
     image: {
         src: Image.src,
         width: 1000,
         height: 742,
         loading: "lazy",
-        alt: "image"
+        alt: "Horizon Line business setup experts in Dubai"
     },
     subheading: "Why Choose Us",
-    heading: "Solutions tailored to your business needs",
+    heading: "Your most trusted partner for UAE business setup",
     button: {
-        label: "Discover More",
+        label: "Learn More About Us",
         href: "/about-us",
         type: "secondary"
     },
     promotions: [
         {
-            icon: <Icons.Mission />,
-            title: "Our Mission",
-            text: "Our mission is push engage boundaries, enga audiences, and driv engage.",
+            icon: <Icons.Consulting />,
+            title: "Expert Consultants",
+            text: "Our experienced team guides you through every step — from choosing the right license to obtaining approvals across UAE authorities.",
         },
         {
-            icon: <Icons.Vision />,
-            title: "Our Vision",
-            text: "We aim to shape a future where bold ideas and smart strategy drive lasting success.",
+            icon: <Icons.Plan />,
+            title: "End-to-End Support",
+            text: "We handle mainland, free zone, and offshore setups along with visas, VAT, Emirates ID, and ongoing compliance support.",
         },
         {
-            icon: <Icons.Awards />,
-            title: "Our Awards",
-            text: "Each award celebrates our commitment to impactful ideas, quality work, and outstanding performance.",
+            icon: <Icons.Finance />,
+            title: "Transparent Pricing",
+            text: "No hidden fees. We provide clear, upfront cost estimates for government fees, licenses, and our professional services.",
         },
         {
-            icon: <Icons.Ambition />,
-            title: "Our ambition",
-            text: "Our ambition is to set new standards, inspire innovation, and help brands achieve meaningful success.",
+            icon: <Icons.Risk />,
+            title: "Fast & Reliable",
+            text: "Our streamlined process and government relationships help you launch faster — reducing delays and bureaucratic hurdles.",
         }
     ],
-}
+}

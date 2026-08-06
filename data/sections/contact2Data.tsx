@@ -4,23 +4,28 @@ import Icons from "@/components/Icons";
 export const Contact2Data: SectionProps = {
     wrapperCls: "section-padding without-box-shadow",
     container: "container",
-    subheading: "Contact Us",
-    heading: "Let's Build an Awesome Project Together",
-    text: "Each demo built with Teba will look different. You can customize almost anything in the appearance of your website with only a few clicks. Each demo built with Teba will look different.",
+    subheading: "Get In Touch",
+    heading: "Start Your UAE Business Journey Today",
+    text: "Whether you're planning to launch a mainland company, set up in a free zone, or need visa and compliance support — our consultants are ready to help. Book a free consultation and get expert guidance within 24 hours.",
     promotions: [
         {
             icon: <Icons.ThumbsUp />,
-            title: "350+ Projects Done",
-            text: "From banking and insurance to wealth the management and security on there",
+            title: "500+ Companies Formed",
+            text: "We have successfully set up over 500 businesses across mainland Dubai, UAE free zones, and offshore jurisdictions.",
         },
         {
             icon: <Icons.Support />,
-            title: "500+ Happy Clients",
-            text: "From banking and insurance to wealth the management and security on there",
+            title: "10+ Years of Experience",
+            text: "Our consultants bring over a decade of hands-on experience helping entrepreneurs and investors across the UAE.",
         },
     ],
     block: {
-        heading: "Make an Appointment",
-        text: "Feel free to contact with us, we don't spam your email",
+        heading: "Book a Free Consultation",
+        text: "Fill in the form and our UAE business setup expert will contact you within 24 hours.",
+        button: {
+            label: "Send Your Enquiry",
+            href: "/contact-us",
+            type: "primary" as const,
+        },
     },
-}
+}

@@ -5,7 +5,7 @@ import BreadcrumbBannerImageMobile from '@/public/img/banner/page-banner-575.jpg
 
 import { ImageTextData } from '@/data/sections/imageTextData';
 import { ScrollingTextData } from '@/data/sections/scrollingTextData';
-import { WhyChooseUsGridBgData } from '@/data/sections/whyChooseUsGridBgData';
+import { WhyChooseUsDubaiData } from '@/data/sections/whyChooseUsDubaiData';
 import { TeamSliderData } from '@/data/sections/teamSliderData';
 import { TestimonialData } from '@/data/sections/testimonialData';
 import { Faq2Data } from '@/data/sections/faq2Data';
@@ -13,7 +13,7 @@ import { Faq2Data } from '@/data/sections/faq2Data';
 import BreadcrumbBanner from "@/components/BreadcrumbBanner";
 import ImageText from '@/components/sections/ImageText';
 import ScrollingText from '@/components/sections/ScrollingText';
-import WhyChooseUsGrid from '@/components/sections/WhyChooseUsGrid';
+import WhyChooseUs from '@/components/sections/WhyChooseUs';
 import TeamSlider from '@/components/sections/TeamSlider';
 import Testimonials from '@/components/sections/Testimonials';
 import Faq from '@/components/sections/Faq';
@@ -21,15 +21,15 @@ import Faq from '@/components/sections/Faq';
 
 const PAGE_TITLE: string = 'About Us';
 export const metadata: Metadata = {
-  title: PAGE_TITLE,
+    title: PAGE_TITLE,
 }
 
 
 const About = () => {
-    return(
+    return (
         <>
             {/* Breadcrumb Banner */}
-            <BreadcrumbBanner 
+            <BreadcrumbBanner
                 title={PAGE_TITLE}
                 image={{
                     src: BreadcrumbBannerImage.src,
@@ -50,11 +50,11 @@ const About = () => {
             <ScrollingText data={ScrollingTextData} />
 
             {/* Why Choose Us */}
-            <WhyChooseUsGrid data={WhyChooseUsGridBgData} />
+            <WhyChooseUs data={WhyChooseUsDubaiData} />
 
             {/* Our Team */}
-            <TeamSlider 
-                data={TeamSliderData} 
+            <TeamSlider
+                data={TeamSliderData}
                 pagination={true}
             />
 

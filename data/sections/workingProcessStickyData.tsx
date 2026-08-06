@@ -4,33 +4,33 @@ import Icons from "@/components/Icons";
 export const WorkingProcessStickyData: SectionProps = {
     wrapperCls: "mt-100",
     container: "container",
-    subheading: "Working Process",
-    heading: "How We Bring Your Ideas to Life",
+    subheading: "How It Works",
+    heading: "Your UAE Business Setup in 5 Simple Steps",
     promotions: [
         {
             icon: <Icons.Discover />,
-            title: "Listen & Discover",
-            text: "We begin by deeply understanding your goals, challenges, and expectations. Through open discussion and guided questions, we uncover valuable insights that help shape the perfect strategy.",
+            title: "Free Consultation",
+            text: "We start with a free discovery call to understand your business goals, preferred location, and budget. We then recommend the most suitable structure — mainland, free zone, or offshore.",
         },
         {
             icon: <Icons.Analyze />,
-            title: "Research & Analyze",
-            text: "Our team dives deep into data, industry trends, and audience behavior to uncover real opportunities. We carefully analyze every detail, ensuring a clear understanding of your market and goals.",
+            title: "Choose Your License & Structure",
+            text: "Our consultants help you select the right trade license category, business activity, and legal structure across Dubai, Sharjah, Abu Dhabi, or other UAE emirates.",
         },
         {
-            icon: <Icons.Strategy />,
-            title: "Strategize & Plan ",
-            text: "With clear insights, we develop a structured, results-focused roadmap. This strategy outlines goals, timelines, and steps, ensuring your project moves forward with direction, confidence, and measurable objectives.",
+            icon: <Icons.Plan />,
+            title: "Document Preparation",
+            text: "We prepare and review all required documents, including Memorandum of Association, shareholder agreements, tenancy contracts, and government application forms.",
         },
         {
-            icon: <Icons.Design />,
-            title: "Design & Create ",
-            text: "We craft innovative, customer-focused solutions tailored to your business needs. From creative concepts to seamless functional design, we blend strategy, creativity, and usability at every step.",
+            icon: <Icons.Launch />,
+            title: "License Approval & Registration",
+            text: "We submit your application, coordinate with relevant authorities (DED, free zone authority, MOHRE), and track progress until your trade license and company registration are approved.",
         },
         {
             icon: <Icons.Refine />,
-            title: "Test & Refine ",
-            text: "Before launch, we test everything thoroughly. We refine and optimize based on feedback and performance data, ensuring the final result is polished, effective, and aligned with your goals.",
+            title: "Post-Setup Support",
+            text: "After launch, we continue to support your business with visa processing, Emirates ID, VAT registration, bank account opening, and annual renewal services.",
         }
     ],
-}
+}

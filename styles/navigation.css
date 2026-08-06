@@ -223,9 +223,9 @@
 
   .header-megamenu {
     width: 100%;
-    /* Slightly increase overall megamenu width and shift left to center under header */
-    width: calc(100% + 120px);
-    left: -60px;
+    /* Increase megamenu width and shift left to center under header so text doesn't overflow */
+    width: calc(100% + 200px);
+    left: -100px;
   }
 
   .nav-item:hover > .menu-absolute {
@@ -252,14 +252,16 @@
 
   .header-megamenu .menu-link {
     display: inline-block;
+    white-space: normal;
   }
 
   /* Two-column services layout when there are many items */
   .service-columns {
     display: flex;
-    gap: 48px;
+    gap: 24px; /* Reduced gap to prevent overflow */
     align-items: flex-start;
   }
+
 
   .service-columns > ul {
     flex: 1 1 0;

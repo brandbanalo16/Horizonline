@@ -7,17 +7,23 @@ import { StickyBannerData } from "@/data/sections/stickyBannerData";
 import { TestimonialSliderData } from "@/data/sections/testimonialSliderData";
 import { FeaturedBlog2Data } from '@/data/sections/featuredBlog2Data';
 import { Contact2Data } from "@/data/sections/contact2Data";
+import { WhyChooseUsData2 } from "@/data/sections/whyChooseUsData2";
+import { WorkingProcessStickyData } from "@/data/sections/workingProcessStickyData";
 import { HeroSlides2Data } from "@/data/sections/heroSlider2Data";
 
 import ScrollingTextFullWidth from '@/components/sections/ScrollingTextFullWidth';
+
+
+
 import ImageText from '@/components/sections/ImageText';
 import OurServicesSix from '@/components/sections/OurServicesSix';
-import TextBanner from "@/components/sections/TextBanner";
 import StickyBanner from "@/components/sections/StickyBanner";
 import TestimonialSlider from "@/components/sections/TestimonialSlider";
 import FeaturedBlog2 from '@/components/sections/FeaturedBlog2';
 import ContactSection from '@/components/sections/Contact';
 import HeroSlider2 from "@/components/sections/HeroSlider2";
+import WhyChooseUs3 from "@/components/sections/WhyChooseUs3";
+import WorkingProcessSticky from "@/components/sections/WorkingProcessSticky";
 
 export const metadata: Metadata = {
     title: 'Horizon Line - Business Setup in Dubai, UAE and Abu Dhabi',
@@ -46,10 +52,10 @@ export const metadata: Metadata = {
 };
 
 const Home3 = () => {
-    return(
+    return (
         <>
             {/* Hero Banner */}
-            <HeroSlider2 
+            <HeroSlider2
                 wrapperCls="with-floating-header"
                 slides={HeroSlides2Data}
             />
@@ -63,15 +69,20 @@ const Home3 = () => {
             {/* Service Section */}
             <OurServicesSix data={OurServicesData} />
 
-            {/* Text Banner */}
-            <TextBanner data={TextBannerData} />
-
             {/* Sticky Banner */}
             <StickyBanner data={StickyBannerData} />
 
+            {/* Why Choose Us */}
+            <WhyChooseUs3 data={WhyChooseUsData2} />
+
+            {/* Working Process */}
+
+
+            <WorkingProcessSticky data={WorkingProcessStickyData} />
+
             {/* Testimonial Slider */}
-            <TestimonialSlider 
-                data={TestimonialSliderData}  
+            <TestimonialSlider
+                data={TestimonialSliderData}
                 pagination={true}
             />
 

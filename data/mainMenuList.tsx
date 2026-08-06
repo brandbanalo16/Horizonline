@@ -82,8 +82,8 @@ const Menus: any[] = [
                         ]
                     },
                     {
-                        "title": "Free Zons",
-                        "path": "/services/free-zons",
+                        "title": "Free Zone",
+                        "path": "/services/free-zone",
                         "services": [
                             {
                                 "title": "IFZA",

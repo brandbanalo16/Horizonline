@@ -1,4 +1,5 @@
 import "@/styles/why-choose-us.css";
+import "@/styles/our-services.css";
 import { SectionProps } from "@/types/sectionProps";
 import Heading from "../Heading";
 import Subheading from "../Subheading";

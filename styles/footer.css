@@ -3,10 +3,10 @@ footer {
 }
 
 .footer-main {
-  --color-background: rgba(28, 35, 39, 1);
-  --color-foreground: rgba(255, 255, 255, 1);
-  --color-foreground-heading: rgba(255, 255, 255, 1);
-  --color-primary-hover: rgba(255, 255, 255, 0.75);
+  --color-background: transparent;
+  --color-foreground: rgba(44, 54, 80, 1);
+  --color-foreground-heading: rgba(44, 54, 80, 1);
+  --color-primary-hover: rgba(44, 54, 80, 0.75);
   background-color: var(--color-background);
   position: relative;
   overflow: hidden;
@@ -19,17 +19,27 @@ footer {
 }
 
 footer .social-link {
-  background-color: #28344a;
+  background-color: rgba(44, 54, 80, 0.1);
   transition: 0.3s;
 }
 
 footer .social-link:focus,
 footer .social-link:hover {
-  background-color: #20325b;
+  background-color: rgba(44, 54, 80, 0.2);
 }
 
 .footer-widget-brand > .text {
   margin-block-start: 24px;
+}
+
+.footer-main p,
+.footer-main .text {
+  color: var(--color-foreground);
+  opacity: 0.85;
+}
+
+.footer-main .widget-heading {
+  color: var(--color-foreground-heading);
 }
 
 .footer-widget-brand .social-icons {
@@ -42,16 +52,27 @@ footer .social-link:hover {
   gap: 20px;
 }
 
+.footer-main p,
+.footer-main .text {
+  color: var(--color-foreground);
+  opacity: 0.75;
+}
+
+.footer-main .widget-heading {
+  color: var(--color-foreground-heading);
+}
+
 .footer-menu .link {
   text-decoration: none;
   display: inline-block;
   color: var(--color-foreground);
+  opacity: 0.85;
   transition: 0.3s;
 }
 
 .footer-menu .link:focus,
 .footer-menu .link:hover {
-  opacity: 0.75;
+  opacity: 1;
 }
 
 .widget-heading {
@@ -77,7 +98,36 @@ footer .social-link:hover {
   --color-background: rgba(44, 54, 80, 1);
   background: var(--color-background);
   padding: 20px 0;
+  color: rgba(255, 255, 255, 1);
 }
+
+.footer-bottom .footer-copyright,
+.footer-bottom p,
+.footer-bottom .text {
+  color: rgba(255, 255, 255, 0.85) !important;
+  opacity: 1 !important;
+  white-space: nowrap;
+}
+
+.footer-bottom .footer-copyright a {
+  color: rgba(255, 255, 255, 1);
+  text-decoration: underline;
+  transition: opacity 0.3s;
+}
+
+.footer-bottom .footer-copyright a:hover {
+  opacity: 0.75;
+}
+
+.footer-bottom .footer-menu .link {
+  color: rgba(255, 255, 255, 0.85) !important;
+  opacity: 1 !important;
+}
+
+.footer-bottom .footer-menu .link:hover {
+  opacity: 0.6 !important;
+}
+
 
 .footer-contact {
   position: relative;
