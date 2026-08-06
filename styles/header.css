@@ -1,6 +1,6 @@
 .header-1 {
   --header-radius: 0;
-  --color-background: rgba(28, 37, 57, 0);
+  --color-background: rgba(44, 54, 80, 0);
   --color-foreground: rgba(255, 255, 255, 1);
   --color-primary-hover: rgba(255, 255, 255, 0.6);
   --color-border: rgba(255, 255, 255, 0.2);
@@ -14,23 +14,23 @@
   --header-radius: 100px;
   --header-padding: 0 24px;
   --color-background: rgba(255, 255, 255, 1);
-  --color-foreground: rgba(28, 37, 57, 1);
-  --color-primary-hover: rgba(28, 37, 57, 0.6);
+  --color-foreground: rgba(44, 54, 80, 1);
+  --color-primary-hover: rgba(44, 54, 80, 0.6);
   --color-border: rgba(0, 0, 0, 0.06);
 }
 
 .header-3 {
   --header-radius: 0;
   --header-padding: 0;
-  --color-background: rgba(28, 37, 57, 1);
+  --color-background: rgba(44, 54, 80, 1);
   --color-primary-button-background: rgba(255, 255, 255, 1);
-  --color-primary-button-text: rgba(28, 37, 57, 1);
+  --color-primary-button-text: rgba(44, 54, 80, 1);
   --color-foreground: rgba(255, 255, 255, 1);
   --color-primary-hover: rgba(255, 255, 255, 0.6);
   --color-border: rgba(0, 0, 0, 0.06);
   --color-primary-button-icon: rgba(255, 255, 255, 1);
   --color-primary-button-icon: rgba(255, 255, 255, 1);
-  --color-primary-button-icon-background: rgba(28, 37, 57, 1);
+  --color-primary-button-icon-background: rgba(44, 54, 80, 1);
   background: var(--color-background);
 }
 
@@ -40,20 +40,20 @@
 
 .header-3 .menu-open,
 .header-1 .menu-open {
-  --color-foreground: rgba(28, 37, 57, 1);
+  --color-foreground: rgba(44, 54, 80, 1);
 }
 
 .header-1.header-floating:hover,
 .header-1.header-sticky.scrolled-past-header {
   --color-secondary-button-hover-border: rgba(255, 255, 255, 0.3);
-  --color-background: rgba(28, 37, 57, 1);
+  --color-background: rgba(44, 54, 80, 1);
   border-bottom: var(--style-border-width) solid rgba(255, 255, 255, 0);
 }
 
 .header-3.header-floating:hover,
 .header-3.header-sticky.scrolled-past-header {
   --color-secondary-button-hover-border: rgba(255, 255, 255, 0.3);
-  --color-background: rgba(28, 37, 57, 1);
+  --color-background: rgba(44, 54, 80, 1);
   --color-foreground: rgba(255, 255, 255, 1);
   border-bottom: var(--style-border-width) solid rgba(255, 255, 255, 0);
 }

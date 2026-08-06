@@ -2,11 +2,11 @@
   --submenu-radius: 8px;
   --submenu-padding: 10px;
   --color-background: rgba(255, 255, 255, 1);
-  --color-foreground: rgba(32, 40, 45, 1);
-  --color-foreground-heading: rgba(28, 37, 57, 1);
-  --color-primary: rgba(32, 40, 45, 1);
+  --color-foreground: rgba(38, 100, 100, 1);
+  --color-foreground-heading: rgba(44, 54, 80, 1);
+  --color-primary: rgba(38, 100, 100, 1);
   --color-primary-background: rgba(240, 237, 239, 0);
-  --color-primary-hover: rgba(32, 40, 45, 1);
+  --color-primary-hover: rgba(38, 100, 100, 1);
   --color-primary-background-hover: rgba(233, 233, 233, 1);
 }
 
@@ -162,8 +162,8 @@
 
 .megamenu-image-wrap .content .button {
   --color-primary-button-icon: rgba(255, 255, 255, 1);
-  --color-primary-button-icon-background: rgba(28, 37, 57, 1);
-  --color-primary-button-hover-icon: rgba(28, 37, 57, 1);
+  --color-primary-button-icon-background: rgba(44, 54, 80, 1);
+  --color-primary-button-hover-icon: rgba(44, 54, 80, 1);
   --color-primary-button-hover-icon-background: rgba(255, 255, 255, 1);
   padding: 0;
   min-height: 1px;
@@ -343,11 +343,11 @@
 @media (max-width: 991px) {
   .header-nav {
     --color-background: rgba(242, 242, 242, 1);
-    --color-foreground: rgba(32, 40, 45, 1);
-    --color-foreground-heading: rgba(28, 37, 57, 1);
-    --color-primary: rgba(32, 40, 45, 1);
+    --color-foreground: rgba(38, 100, 100, 1);
+    --color-foreground-heading: rgba(44, 54, 80, 1);
+    --color-primary: rgba(38, 100, 100, 1);
     --color-primary-background: rgba(240, 237, 239, 0);
-    --color-primary-hover: rgba(32, 40, 45, 1);
+    --color-primary-hover: rgba(38, 100, 100, 1);
     --color-primary-background-hover: rgba(233, 233, 233, 1);
     position: fixed;
     right: 0;

@@ -74,7 +74,7 @@ footer .social-link:hover {
 }
 
 .footer-bottom {
-  --color-background: rgba(28, 37, 57, 1);
+  --color-background: rgba(44, 54, 80, 1);
   background: var(--color-background);
   padding: 20px 0;
 }
@@ -125,7 +125,7 @@ footer .social-link:hover {
 
 footer .logo-with-newsletter .social-link {
   background-color: #fff;
-  color: rgba(28, 37, 57, 1);
+  color: rgba(44, 54, 80, 1);
 }
 
 footer .logo-with-newsletter .social-link:hover {

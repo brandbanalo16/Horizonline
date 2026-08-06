@@ -69,9 +69,9 @@ form textarea {
 
 .newsletter-button .svg-wrapper {
   --color-primary-button-icon: rgba(255, 255, 255, 1);
-  --color-primary-button-icon-background: rgba(28, 37, 57, 0);
-  --color-primary-button-hover-icon: rgba(32, 40, 45, 1);
-  --color-primary-button-hover-icon-background: rgba(28, 37, 57, 0);
+  --color-primary-button-icon-background: rgba(44, 54, 80, 0);
+  --color-primary-button-hover-icon: rgba(38, 100, 100, 1);
+  --color-primary-button-hover-icon-background: rgba(44, 54, 80, 0);
   min-width: 24px;
   height: 24px;
 }

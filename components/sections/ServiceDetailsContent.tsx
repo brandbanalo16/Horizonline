@@ -76,7 +76,7 @@ const ServiceListBlock = ({
 const ServiceDetailsContent = ({ service }: ServiceDetailsContentProps) => {
     const { content, seo, sub_category, main_service_group, category } = service;
 
-    const faqItems = (content.faqs || []).map((faq) => ({
+    const faqItems = (content?.faqs || []).map((faq) => ({
         title: faq.question,
         text: faq.answer,
     }));
@@ -87,19 +87,19 @@ const ServiceDetailsContent = ({ service }: ServiceDetailsContentProps) => {
                 {main_service_group} — {category}
             </p>
 
-            {content.h1_tag && (
+            {content?.h1_tag && (
                 <h2 className="heading text-50" data-aos="fade-up">
                     {content.h1_tag}
                 </h2>
             )}
 
-            {content.intro_line && (
+            {content?.intro_line && (
                 <p className="text text-18" data-aos="fade-up">
                     {content.intro_line}
                 </p>
             )}
 
-            {content.overview && (
+            {content?.overview && (
                 <p className="text text-18" data-aos="fade-up">
                     {content.overview}
                 </p>
@@ -128,24 +128,24 @@ const ServiceDetailsContent = ({ service }: ServiceDetailsContentProps) => {
             <ServiceListBlock
                 title="Our Services"
                 description={`Horizon Line provides end-to-end support for ${sub_category.toLowerCase()}.`}
-                items={content.our_services || []}
+                items={content?.our_services || []}
                 imageSide="left"
             />
 
             <ServiceListBlock
                 title="Key Benefits"
-                description={content.intro_line}
-                items={content.benefits || []}
+                description={content?.intro_line}
+                items={content?.benefits || []}
                 imageSide="right"
             />
 
-            {(content.business_structures_we_support || []).length > 0 && (
+            {(content?.business_structures_we_support || []).length > 0 && (
                 <>
                     <h2 className="heading text-36" data-aos="fade-up">
                         Business Structures We Support
                     </h2>
                     <ul className="text-lists list-unstyled">
-                        {(content.business_structures_we_support || []).map((item, index) => (
+                        {(content!.business_structures_we_support || []).map((item, index) => (
                             <li className="text-item" data-aos="fade-up" key={`structure-${index}`}>
                                 <Icons.Check />
                                 <div className="text text-18 fw-600">{item}</div>
@@ -155,13 +155,13 @@ const ServiceDetailsContent = ({ service }: ServiceDetailsContentProps) => {
                 </>
             )}
 
-            {(content.industries_we_serve || []).length > 0 && (
+            {(content?.industries_we_serve || []).length > 0 && (
                 <>
                     <h2 className="heading text-36" data-aos="fade-up">
                         Industries We Serve
                     </h2>
                     <ul className="text-lists list-unstyled">
-                        {(content.industries_we_serve || []).map((item, index) => (
+                        {(content!.industries_we_serve || []).map((item, index) => (
                             <li className="text-item" data-aos="fade-up" key={`industry-${index}`}>
                                 <Icons.CaretRight />
                                 <div className="text text-18 fw-600">{item}</div>
@@ -171,7 +171,7 @@ const ServiceDetailsContent = ({ service }: ServiceDetailsContentProps) => {
                 </>
             )}
 
-            {(content.process_how_it_works || []).length > 0 && (
+            {(content?.process_how_it_works || []).length > 0 && (
                 <>
                     <h2 className="heading text-36" data-aos="fade-up">
                         How It Works
@@ -180,7 +180,7 @@ const ServiceDetailsContent = ({ service }: ServiceDetailsContentProps) => {
                         We handle everything from initial consultation to final handover — so you can focus on your business.
                     </p>
                     <ul className="text-lists list-unstyled">
-                        {(content.process_how_it_works || []).map((step, index) => (
+                        {(content!.process_how_it_works || []).map((step, index) => (
                             <li className="text-item" data-aos="fade-up" key={`process-${index}`}>
                                 <Icons.Check />
                                 <div className="text text-18 fw-600">
@@ -192,7 +192,7 @@ const ServiceDetailsContent = ({ service }: ServiceDetailsContentProps) => {
                 </>
             )}
 
-            {(content.documents_required || []).length > 0 && (
+            {(content?.documents_required || []).length > 0 && (
                 <>
                     <h2 className="heading text-36" data-aos="fade-up">
                         Documents Required
@@ -201,7 +201,7 @@ const ServiceDetailsContent = ({ service }: ServiceDetailsContentProps) => {
                         Our team will walk you through every step. Here is the standard document checklist:
                     </p>
                     <ul className="text-lists list-unstyled">
-                        {(content.documents_required || []).map((doc, index) => (
+                        {(content!.documents_required || []).map((doc, index) => (
                             <li className="text-item" data-aos="fade-up" key={`doc-${index}`}>
                                 <Icons.Check />
                                 <div className="text text-18 fw-600">{doc}</div>
@@ -218,7 +218,7 @@ const ServiceDetailsContent = ({ service }: ServiceDetailsContentProps) => {
                 </>
             )}
 
-            {content.why_businesses_trust_horizon_line && (
+            {content?.why_businesses_trust_horizon_line && (
                 <>
                     <h2 className="heading text-36" data-aos="fade-up">
                         Why Businesses Trust Horizon Line
@@ -229,12 +229,12 @@ const ServiceDetailsContent = ({ service }: ServiceDetailsContentProps) => {
                 </>
             )}
 
-            {(content.client_testimonials || []).length > 0 && (
+            {(content?.client_testimonials || []).length > 0 && (
                 <>
                     <h2 className="heading text-36" data-aos="fade-up">
                         What Our Clients Say
                     </h2>
-                    {(content.client_testimonials || []).map((testimonial, index) => (
+                    {(content!.client_testimonials || []).map((testimonial, index) => (
                         <div key={`testimonial-${index}`} data-aos="fade-up">
                             <p className="text text-18">&ldquo;{testimonial.quote}&rdquo;</p>
                             <p className="text text-16 fw-600">— {testimonial.name}</p>
@@ -243,8 +243,8 @@ const ServiceDetailsContent = ({ service }: ServiceDetailsContentProps) => {
                 </>
             )}
 
-            {(content.seo_supporting_lines || []).length > 0 &&
-                (content.seo_supporting_lines || []).map((line, index) => (
+            {(content?.seo_supporting_lines || []).length > 0 &&
+                (content!.seo_supporting_lines || []).map((line, index) => (
                     <p className="text text-16" data-aos="fade-up" key={`seo-line-${index}`}>
                         {line}
                     </p>

@@ -5,20 +5,30 @@ import BreadcrumbBannerImageMobile from '@/public/img/banner/page-banner-575.jpg
 import { notFound } from 'next/navigation';
 import Script from 'next/script';
 
-import BreadcrumbBanner from "@/components/BreadcrumbBanner";
+import BreadcrumbBanner from '@/components/BreadcrumbBanner';
 import ServicePage from '@/components/sections/ServicePage';
-import TextBanner from '@/components/sections/TextBanner';
 
-import NewServiceList from '@/data/newServicesData.json';
+import NewServicesData from '@/data/newServicesData.json';
 import Services from '@/data/services.json';
 import { NewServiceType } from '@/types/newService';
 import { ServiceProps } from '@/types/service';
 
-const getEnhancedMetaTitle = (service: NewServiceType) => {
-    const baseTitle = service.seo.meta_title || service.content.h1_tag || service.sub_category;
-    const strongWord = ['Expert', 'Trusted', 'Reliable', 'Proven', 'Strategic'][(service.id - 1) % 5];
+// Support both flat array (old) and object with main_services/sub_services (new)
+const AllNewServices: NewServiceType[] = (() => {
+    const data = NewServicesData as any;
+    if (Array.isArray(data)) return data as NewServiceType[];
+    const main = Array.isArray(data.main_services) ? data.main_services : [];
+    const sub = Array.isArray(data.sub_services) ? data.sub_services : [];
+    return [...main, ...sub] as NewServiceType[];
+})();
 
-    return `${baseTitle} | ${service.id} ${strongWord}`;
+const getEnhancedMetaTitle = (service: NewServiceType) => {
+    const baseTitle =
+        service.seo.meta_title ||
+        service.seo.h1_tag ||
+        service.content?.h1_tag ||
+        service.sub_category;
+    return baseTitle;
 };
 
 const mapLegacyServiceToNewService = (legacy: ServiceProps): NewServiceType => {
@@ -74,37 +84,41 @@ const mapLegacyServiceToNewService = (legacy: ServiceProps): NewServiceType => {
 };
 
 const findServiceBySlug = (slug: string): NewServiceType | undefined => {
-    const service = (NewServiceList as NewServiceType[]).find((item) => item.slug === slug);
+    // First check new data (main_services + sub_services)
+    const service = AllNewServices.find((item) => item.slug === slug);
+    if (service) return service;
 
-    if (service) {
-        return service;
-    }
-
+    // Fallback to legacy services.json
     const legacyService = (Services as ServiceProps[]).find((item) => item.slug === slug);
-    if (legacyService) {
-        return mapLegacyServiceToNewService(legacyService);
-    }
+    if (legacyService) return mapLegacyServiceToNewService(legacyService);
 
     return undefined;
 };
 
-export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
+export async function generateStaticParams() {
+    return AllNewServices.map((service) => ({ slug: service.slug.split('/') }));
+}
+
+export async function generateMetadata({
+    params,
+}: {
+    params: Promise<{ slug: string[] }>;
+}): Promise<Metadata> {
     const { slug } = await params;
-    const service = findServiceBySlug(slug);
+    const joinedSlug = slug.join('/');
+    const service = findServiceBySlug(joinedSlug);
     if (!service) return { title: 'Service Not Found' };
 
     const seo = service.seo;
-    const enhancedTitle = getEnhancedMetaTitle(service);
+    const title = getEnhancedMetaTitle(service);
 
     return {
-        title: enhancedTitle,
+        title,
         description: seo.meta_description,
         keywords: seo.keywords?.join(', '),
-        alternates: {
-            canonical: seo.canonical_url,
-        },
+        alternates: { canonical: seo.canonical_url },
         openGraph: {
-            title: enhancedTitle,
+            title,
             description: seo.open_graph?.og_description,
             type: 'website',
             url: seo.canonical_url,
@@ -112,73 +126,61 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
         },
         twitter: {
             card: 'summary_large_image',
-            title: enhancedTitle,
+            title,
             description: seo.twitter_card?.description,
         },
-        robots: {
-            index: true,
-            follow: true,
-        },
+        robots: { index: true, follow: true },
     };
 }
 
-const Page = async ({ params }: { params: Promise<{ slug: string }> }) => {
+const Page = async ({ params }: { params: Promise<{ slug: string[] }> }) => {
     const { slug } = await params;
-    const service = findServiceBySlug(slug);
-
+    const joinedSlug = slug.join('/');
+    const service = findServiceBySlug(joinedSlug);
     if (!service) notFound();
 
-    const { seo, content, sub_category } = service;
+    const { seo, sub_category } = service;
+    const h1 = service.seo.h1_tag || service.content?.h1_tag || service.hero?.page_title || sub_category;
 
-    const relatedServices = ((NewServiceList as NewServiceType[])
-        .filter((item) => item.slug !== slug)
-        .filter((item) => item.category === service.category || item.main_service_group === service.main_service_group)
+    const relatedServices = AllNewServices.filter(
+        (item) =>
+            item.slug !== joinedSlug &&
+            (item.category === service.category ||
+                item.main_service_group === service.main_service_group)
+    )
         .slice(0, 4)
         .map((item) => ({
             id: item.id,
             slug: item.slug,
             title: item.sub_category,
-            description: item.content.intro_line || item.content.overview || '',
-        })) as ServiceProps[])
-        .filter((item) => item.slug);
+            description: item.content?.intro_line || item.content?.overview || '',
+        })) as ServiceProps[];
 
-    const ctaData = {
-        container: "container-fluid",
-        subheading: "Get Started Today",
-        heading: sub_category,
-        text: content.final_cta || `Ready to get started with ${sub_category}? Book a free consultation with a Horizon Line specialist today.`,
-        button: {
-            label: "Book a Free Consultation",
-            href: "/contact-us",
-            type: "secondary" as const,
-        },
-    };
+    // CTA banner removed per user request
 
     return (
         <>
             <Script
-                id={`schema-${slug}`}
+                id={`schema-${joinedSlug.replace(/\//g, '-')}`}
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(seo.schema_markup) }}
             />
 
             <BreadcrumbBanner
-                title={content.h1_tag || sub_category}
+                title={h1}
                 image={{
                     src: BreadcrumbBannerImage.src,
                     srcMobile: BreadcrumbBannerImageTablet.src,
                     srcTablet: BreadcrumbBannerImageMobile.src,
                     width: 1920,
                     height: 520,
-                    cls: "media media-bg",
-                    alt: seo.image_alt_tag || "Banner Image",
-                    loading: "eager"
+                    cls: 'media media-bg',
+                    alt: seo.image_alt_tag || 'Banner Image',
+                    loading: 'eager',
                 }}
             />
 
             <ServicePage service={service} relatedServices={relatedServices} />
-
-            <TextBanner data={ctaData} />
         </>
     );
 };

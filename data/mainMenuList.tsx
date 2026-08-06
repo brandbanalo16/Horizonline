@@ -19,35 +19,35 @@ const Menus: any[] = [
                         "services": [
                             {
                                 "title": "Mainland Company Formation",
-                                "path": "/services/mainland-company-formation"
+                                "path": "/services/business-setup/mainland-company-formation"
                             },
                             {
                                 "title": "Free Zone Company Formation",
-                                "path": "/services/free-zone-company-formation"
+                                "path": "/services/business-setup/free-zone-company-formation"
                             },
                             {
                                 "title": "Offshore Company Formation",
-                                "path": "/services/offshore-company-formation"
+                                "path": "/services/business-setup/offshore-company-formation"
                             },
                             {
                                 "title": "Branch Office Setup",
-                                "path": "/services/branch-office-setup"
+                                "path": "/services/business-setup/branch-office-setup"
                             },
                             {
                                 "title": "Professional License",
-                                "path": "/services/professional-license"
+                                "path": "/services/business-setup/professional-license"
                             },
                             {
                                 "title": "Commercial License",
-                                "path": "/services/commercial-license"
+                                "path": "/services/business-setup/commercial-license"
                             },
                             {
                                 "title": "Industrial License",
-                                "path": "/services/industrial-license"
+                                "path": "/services/business-setup/industrial-license"
                             },
                             {
                                 "title": "Trade License Renewal",
-                                "path": "/services/trade-license-renewal"
+                                "path": "/services/business-setup/trade-license-renewal"
                             }
                         ]
                     },
@@ -57,27 +57,27 @@ const Menus: any[] = [
                         "services": [
                             {
                                 "title": "Business Consultation",
-                                "path": "/services/business-consultation"
+                                "path": "/services/corporate-services/business-consultation"
                             },
                             {
                                 "title": "Business Plan",
-                                "path": "/services/business-plan"
+                                "path": "/services/corporate-services/business-plan"
                             },
                             {
                                 "title": "PRO Services",
-                                "path": "/services/pro-services"
+                                "path": "/services/corporate-services/pro-services"
                             },
                             {
                                 "title": "Document Clearing",
-                                "path": "/services/document-clearing"
+                                "path": "/services/corporate-services/document-clearing"
                             },
                             {
                                 "title": "Company Liquidation",
-                                "path": "/services/company-liquidation"
+                                "path": "/services/corporate-services/company-liquidation"
                             },
                             {
                                 "title": "Corporate Restructuring",
-                                "path": "/services/corporate-restructuring"
+                                "path": "/services/corporate-services/corporate-restructuring"
                             }
                         ]
                     },
@@ -87,43 +87,43 @@ const Menus: any[] = [
                         "services": [
                             {
                                 "title": "IFZA",
-                                "path": "/services/ifza"
+                                "path": "/services/free-zons/ifza"
                             },
                             {
                                 "title": "SPC Free Zone",
-                                "path": "/services/spc-free-zone"
+                                "path": "/services/free-zons/spc-free-zone"
                             },
                             {
                                 "title": "SHAMS",
-                                "path": "/services/shams"
+                                "path": "/services/free-zons/shams"
                             },
                             {
                                 "title": "RAKEZ",
-                                "path": "/services/rakez"
+                                "path": "/services/free-zons/rakez"
                             },
                             {
                                 "title": "SRTIP",
-                                "path": "/services/srtip"
+                                "path": "/services/free-zons/srtip"
                             },
                             {
                                 "title": "Meydan Free Zone",
-                                "path": "/services/meydan-free-zone"
+                                "path": "/services/free-zons/meydan-free-zone"
                             },
                             {
                                 "title": "DMCC",
-                                "path": "/services/dmcc"
+                                "path": "/services/free-zons/dmcc"
                             },
                             {
                                 "title": "JAFZA",
-                                "path": "/services/jafza"
+                                "path": "/services/free-zons/jafza"
                             },
                             {
                                 "title": "Dubai South",
-                                "path": "/services/dubai-south"
+                                "path": "/services/free-zons/dubai-south"
                             },
                             {
                                 "title": "Fujairah Creative City",
-                                "path": "/services/fujairah-creative-city"
+                                "path": "/services/free-zons/fujairah-creative-city"
                             }
                         ]
                     },
@@ -133,11 +133,11 @@ const Menus: any[] = [
                         "services": [
                             {
                                 "title": "Business License Amendment",
-                                "path": "/services/business-license-amendment"
+                                "path": "/services/business-support/business-license-amendment"
                             },
                             {
                                 "title": "Business License Cancellation",
-                                "path": "/services/business-license-cancellation"
+                                "path": "/services/business-support/business-license-cancellation"
                             }
                         ]
                     },
@@ -147,11 +147,11 @@ const Menus: any[] = [
                         "services": [
                             {
                                 "title": "Trademark Registration",
-                                "path": "/services/trademark-registration"
+                                "path": "/services/trademark-and-ip/trademark-registration"
                             },
                             {
                                 "title": "Copyright Registration",
-                                "path": "/services/copyright-registration"
+                                "path": "/services/trademark-and-ip/copyright-registration"
                             }
                         ]
                     },
@@ -161,11 +161,11 @@ const Menus: any[] = [
                         "services": [
                             {
                                 "title": "Legal Documentation",
-                                "path": "/services/legal-documentation"
+                                "path": "/services/legal-services/legal-documentation"
                             },
                             {
                                 "title": "MOA Amendment",
-                                "path": "/services/moa-amendment"
+                                "path": "/services/legal-services/moa-amendment"
                             }
                         ]
                     }
@@ -187,27 +187,27 @@ const Menus: any[] = [
                         "services": [
                             {
                                 "title": "Investor Visa",
-                                "path": "/services/investor-visa"
+                                "path": "/services/visa-services/investor-visa"
                             },
                             {
                                 "title": "Employment Visa",
-                                "path": "/services/employment-visa"
+                                "path": "/services/visa-services/employment-visa"
                             },
                             {
                                 "title": "Family Visa",
-                                "path": "/services/family-visa"
+                                "path": "/services/visa-services/family-visa"
                             },
                             {
                                 "title": "Golden Visa",
-                                "path": "/services/golden-visa"
+                                "path": "/services/visa-services/golden-visa"
                             },
                             {
                                 "title": "Emirates ID",
-                                "path": "/services/emirates-id"
+                                "path": "/services/visa-services/emirates-id"
                             },
                             {
                                 "title": "Medical Test",
-                                "path": "/services/medical-test"
+                                "path": "/services/visa-services/medical-test"
                             }
                         ]
                     },
@@ -217,7 +217,7 @@ const Menus: any[] = [
                         "services": [
                             {
                                 "title": "Student Services",
-                                "path": "/services/student-services"
+                                "path": "/services/ministry-of-education/student-services"
                             },
                             {
                                 "title": "Academic Services",
@@ -231,7 +231,7 @@ const Menus: any[] = [
                         "services": [
                             {
                                 "title": "Health",
-                                "path": "/services/health"
+                                "path": "/services/mohap/health"
                             }
                         ]
                     },
@@ -241,7 +241,7 @@ const Menus: any[] = [
                         "services": [
                             {
                                 "title": "Patients",
-                                "path": "/services/patients"
+                                "path": "/services/ehs/patients"
                             }
                         ]
                     },
@@ -251,43 +251,43 @@ const Menus: any[] = [
                         "services": [
                             {
                                 "title": "Police Clearance Certificate",
-                                "path": "/services/police-clearance-certificate"
+                                "path": "/services/police/police-clearance-certificate"
                             },
                             {
                                 "title": "Good Conduct Certificate",
-                                "path": "/services/good-conduct-certificate"
+                                "path": "/services/police/good-conduct-certificate"
                             },
                             {
                                 "title": "Lost Passport Report",
-                                "path": "/services/lost-passport-report"
+                                "path": "/services/police/lost-passport-report"
                             },
                             {
                                 "title": "Lost Emirates ID Report",
-                                "path": "/services/lost-emirates-id-report"
+                                "path": "/services/police/lost-emirates-id-report"
                             },
                             {
                                 "title": "Lost Mobile Report",
-                                "path": "/services/lost-mobile-report"
+                                "path": "/services/police/lost-mobile-report"
                             },
                             {
                                 "title": "Traffic Fine Payment",
-                                "path": "/services/traffic-fine-payment"
+                                "path": "/services/police/traffic-fine-payment"
                             },
                             {
                                 "title": "Traffic Accident Report",
-                                "path": "/services/traffic-accident-report"
+                                "path": "/services/police/traffic-accident-report"
                             },
                             {
                                 "title": "Vehicle Impound Release",
-                                "path": "/services/vehicle-impound-release"
+                                "path": "/services/police/vehicle-impound-release"
                             },
                             {
                                 "title": "Cybercrime Complaint",
-                                "path": "/services/cybercrime-complaint"
+                                "path": "/services/police/cybercrime-complaint"
                             },
                             {
                                 "title": "Criminal Complaint",
-                                "path": "/services/criminal-complaint"
+                                "path": "/services/police/criminal-complaint"
                             }
                         ]
                     }
@@ -309,27 +309,27 @@ const Menus: any[] = [
                         "services": [
                             {
                                 "title": "VAT Registration",
-                                "path": "/services/vat-registration"
+                                "path": "/services/tax-and-compliance/vat-registration"
                             },
                             {
                                 "title": "VAT Return Filing",
-                                "path": "/services/vat-return-filing"
+                                "path": "/services/tax-and-compliance/vat-return-filing"
                             },
                             {
                                 "title": "Corporate Tax Registration",
-                                "path": "/services/corporate-tax-registration"
+                                "path": "/services/tax-and-compliance/corporate-tax-registration"
                             },
                             {
                                 "title": "Corporate Tax Filing",
-                                "path": "/services/corporate-tax-filing"
+                                "path": "/services/tax-and-compliance/corporate-tax-filing"
                             },
                             {
                                 "title": "Accounting & Bookkeeping",
-                                "path": "/services/accounting-bookkeeping"
+                                "path": "/services/tax-and-compliance/accounting-and-bookkeeping"
                             },
                             {
                                 "title": "Audit Support",
-                                "path": "/services/audit-support"
+                                "path": "/services/tax-and-compliance/audit-support"
                             }
                         ]
                     },
@@ -339,7 +339,7 @@ const Menus: any[] = [
                         "services": [
                             {
                                 "title": "Tax",
-                                "path": "/services/tax"
+                                "path": "/services/fta/tax"
                             }
                         ]
                     },
@@ -349,7 +349,7 @@ const Menus: any[] = [
                         "services": [
                             {
                                 "title": "Corporate Bank Account",
-                                "path": "/services/corporate-bank-account"
+                                "path": "/services/banking/corporate-bank-account"
                             }
                         ]
                     },
@@ -359,7 +359,7 @@ const Menus: any[] = [
                         "services": [
                             {
                                 "title": "Utilities",
-                                "path": "/services/utilities"
+                                "path": "/services/etihad-water-and-electricity/utilities"
                             }
                         ]
                     },
@@ -369,55 +369,55 @@ const Menus: any[] = [
                         "services": [
                             {
                                 "title": "Utilities",
-                                "path": "/services/utilities"
+                                "path": "/services/etihad-water-and-electricity/utilities"
                             },
                             {
                                 "title": "Electricity Connection",
-                                "path": "/services/electricity-connection"
+                                "path": "/services/sewa/electricity-connection"
                             },
                             {
                                 "title": "Water Connection",
-                                "path": "/services/water-connection"
+                                "path": "/services/sewa/water-connection"
                             },
                             {
                                 "title": "Gas Connection",
-                                "path": "/services/gas-connection"
+                                "path": "/services/sewa/gas-connection"
                             },
                             {
                                 "title": "New Account Opening",
-                                "path": "/services/new-account-opening"
+                                "path": "/services/sewa/new-account-opening"
                             },
                             {
                                 "title": "Bill Payment",
-                                "path": "/services/bill-payment"
+                                "path": "/services/sewa/bill-payment"
                             },
                             {
                                 "title": "Final Bill",
-                                "path": "/services/final-bill"
+                                "path": "/services/sewa/final-bill"
                             },
                             {
                                 "title": "Move In",
-                                "path": "/services/move-in"
+                                "path": "/services/sewa/move-in"
                             },
                             {
                                 "title": "Move Out",
-                                "path": "/services/move-out"
+                                "path": "/services/sewa/move-out"
                             },
                             {
                                 "title": "Meter Testing",
-                                "path": "/services/meter-testing"
+                                "path": "/services/sewa/meter-testing"
                             },
                             {
                                 "title": "High Bill Investigation",
-                                "path": "/services/high-bill-investigation"
+                                "path": "/services/sewa/high-bill-investigation"
                             },
                             {
                                 "title": "Clearance Certificate",
-                                "path": "/services/clearance-certificate"
+                                "path": "/services/sewa/clearance-certificate"
                             },
                             {
                                 "title": "Complaint Registration",
-                                "path": "/services/complaint-registration"
+                                "path": "/services/sewa/complaint-registration"
                             }
                         ]
                     },
@@ -427,7 +427,7 @@ const Menus: any[] = [
                         "services": [
                             {
                                 "title": "Utilities",
-                                "path": "/services/utilities"
+                                "path": "/services/etihad-water-and-electricity/utilities"
                             }
                         ]
                     }
@@ -449,7 +449,7 @@ const Menus: any[] = [
                         "services": [
                             {
                                 "title": "Municipality",
-                                "path": "/services/municipality"
+                                "path": "/services/sharjah-municipality/municipality"
                             }
                         ]
                     },
@@ -459,7 +459,7 @@ const Menus: any[] = [
                         "services": [
                             {
                                 "title": "Municipality",
-                                "path": "/services/municipality"
+                                "path": "/services/sharjah-municipality/municipality"
                             }
                         ]
                     },
@@ -469,35 +469,35 @@ const Menus: any[] = [
                         "services": [
                             {
                                 "title": "Driving Licence Renewal",
-                                "path": "/services/driving-licence-renewal"
+                                "path": "/services/rta/driving-licence-renewal"
                             },
                             {
                                 "title": "Driving Licence Replacement",
-                                "path": "/services/driving-licence-replacement"
+                                "path": "/services/rta/driving-licence-replacement"
                             },
                             {
                                 "title": "Vehicle Registration",
-                                "path": "/services/vehicle-registration"
+                                "path": "/services/rta/vehicle-registration"
                             },
                             {
                                 "title": "Vehicle Renewal",
-                                "path": "/services/vehicle-renewal"
+                                "path": "/services/rta/vehicle-renewal"
                             },
                             {
                                 "title": "Vehicle Transfer",
-                                "path": "/services/vehicle-transfer"
+                                "path": "/services/rta/vehicle-transfer"
                             },
                             {
                                 "title": "Salik Account",
-                                "path": "/services/salik-account"
+                                "path": "/services/rta/salik-account"
                             },
                             {
                                 "title": "Parking Permit",
-                                "path": "/services/parking-permit"
+                                "path": "/services/rta/parking-permit"
                             },
                             {
                                 "title": "Vehicle Export Certificate",
-                                "path": "/services/vehicle-export-certificate"
+                                "path": "/services/rta/vehicle-export-certificate"
                             }
                         ]
                     },
@@ -507,11 +507,11 @@ const Menus: any[] = [
                         "services": [
                             {
                                 "title": "Payroll Management",
-                                "path": "/services/payroll-management"
+                                "path": "/services/hr-services/payroll-management"
                             },
                             {
                                 "title": "Recruitment Support",
-                                "path": "/services/recruitment-support"
+                                "path": "/services/hr-services/recruitment-support"
                             }
                         ]
                     },
@@ -521,15 +521,15 @@ const Menus: any[] = [
                         "services": [
                             {
                                 "title": "Flexi Desk",
-                                "path": "/services/flexi-desk"
+                                "path": "/services/office-solutions/flexi-desk"
                             },
                             {
                                 "title": "Virtual Office",
-                                "path": "/services/virtual-office"
+                                "path": "/services/office-solutions/virtual-office"
                             },
                             {
                                 "title": "Private Office",
-                                "path": "/services/private-office"
+                                "path": "/services/office-solutions/private-office"
                             }
                         ]
                     },
@@ -539,11 +539,11 @@ const Menus: any[] = [
                         "services": [
                             {
                                 "title": "Website Development",
-                                "path": "/services/website-development"
+                                "path": "/services/digital-services/website-development"
                             },
                             {
                                 "title": "Digital Marketing",
-                                "path": "/services/digital-marketing"
+                                "path": "/services/digital-services/digital-marketing"
                             }
                         ]
                     }

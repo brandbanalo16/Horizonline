@@ -52,7 +52,7 @@
 
 .multicolumn .multicolumn-card:focus,
 .multicolumn .multicolumn-card:hover {
-  --color-background: rgba(32, 40, 45, 1);
+  --color-background: rgba(38, 100, 100, 1);
   --color-foreground: rgba(255, 255, 255, 1);
   --color-foreground-heading: rgba(255, 255, 255, 1);
 }
@@ -70,7 +70,7 @@
 
 .multicolumn .multicolumn-card:focus .card-icon,
 .multicolumn .multicolumn-card:hover .card-icon {
-  --color-foreground: rgba(32, 40, 45, 1);
+  --color-foreground: rgba(38, 100, 100, 1);
   --color-background: rgba(255, 255, 255, 1);
 }
 

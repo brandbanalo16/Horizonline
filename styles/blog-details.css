@@ -21,8 +21,8 @@ blockquote {
   --icon-size: 60px;
   background: linear-gradient(
     90deg,
-    rgba(32, 40, 45, 0.1) 0%,
-    rgba(32, 40, 45, 0) 100%
+    rgba(38, 100, 100, 0.1) 0%,
+    rgba(38, 100, 100, 0) 100%
   );
   font-size: 20px;
   padding: 28px;
@@ -85,7 +85,7 @@ blockquote::before {
 }
 
 .blog-share-item .subheading-bg {
-  --color-foreground-subheading: rgba(28, 37, 57, 1);
+  --color-foreground-subheading: rgba(44, 54, 80, 1);
   --color-background-subheading: rgba(255, 255, 255, 1);
   --color-border-subheading-bg: rgba(93, 102, 111, 0.3);
   transition: 0.3s;
@@ -94,8 +94,8 @@ blockquote::before {
 .blog-share-item .subheading-bg:focus,
 .blog-share-item .subheading-bg:hover {
   --color-foreground-subheading: rgba(255, 255, 255, 1);
-  --color-background-subheading: rgba(28, 37, 57, 1);
-  --color-border-subheading-bg: rgba(28, 37, 57, 1);
+  --color-background-subheading: rgba(44, 54, 80, 1);
+  --color-border-subheading-bg: rgba(44, 54, 80, 1);
 }
 
 @media (max-width: 767px) {

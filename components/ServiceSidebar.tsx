@@ -5,7 +5,7 @@ import SidebarPhoneImage from "@/public/img/service/secvice-contact.jpg";
 import SidebarPhone from "./SidebarPhone";
 import SidebarPdfDownload from "./SidebarPdfDownload";
 import DrawerOpener from "./DrawerOpener";
-import NewServiceList from "@/data/newServicesData.json";
+import NewServicesData from "@/data/newServicesData.json";
 import Services from "@/data/services.json";
 import { NewServiceType } from "@/types/newService";
 
@@ -16,7 +16,13 @@ const ServiceSidebar = ({
     slug?: string;
     category?: string;
 }) => {
-    const newServices = NewServiceList as NewServiceType[];
+    const rawData = NewServicesData as any;
+    const newServices: NewServiceType[] = Array.isArray(rawData)
+        ? (rawData as NewServiceType[])
+        : [
+              ...((rawData.main_services || []) as NewServiceType[]),
+              ...((rawData.sub_services || []) as NewServiceType[]),
+          ];
     const relatedServices = category
         ? newServices.filter((item) => item.slug !== slug && item.category === category)
         : newServices.filter((item) => item.slug !== slug);

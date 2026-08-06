@@ -2,7 +2,7 @@
   --modal-input-height: 50px;
   --color-background: linear-gradient(
     184.15deg,
-    rgba(28, 37, 57, 40%) -187.51%,
+    rgba(44, 54, 80, 40%) -187.51%,
     #28344a 96.62%
   );
   --color-foreground: rgba(255, 255, 255, 1);
@@ -52,11 +52,11 @@
 
 .drawer-additional {
   --color-background: rgba(242, 242, 242, 1);
-  --color-foreground: rgba(32, 40, 45, 1);
-  --color-foreground-heading: rgba(28, 37, 57, 1);
-  --color-primary: rgba(32, 40, 45, 1);
+  --color-foreground: rgba(38, 100, 100, 1);
+  --color-foreground-heading: rgba(44, 54, 80, 1);
+  --color-primary: rgba(38, 100, 100, 1);
   --color-primary-background: rgba(240, 237, 239, 0);
-  --color-primary-hover: rgba(32, 40, 45, 1);
+  --color-primary-hover: rgba(38, 100, 100, 1);
   --color-primary-background-hover: rgba(233, 233, 233, 1);
   background: var(--color-background);
 }

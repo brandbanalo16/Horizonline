@@ -4,7 +4,7 @@
 }
 
 .running-content-bg {
-  --color-background: rgba(28, 37, 57, 0.1);
+  --color-background: rgba(44, 54, 80, 0.1);
 }
 
 .running-content .logos-background {
@@ -79,7 +79,7 @@
 
 .running-content.has-bg .content-lists,
 .running-content.has-bg {
-  --color-background: rgba(28, 37, 57, 1);
+  --color-background: rgba(44, 54, 80, 1);
   background: var(--color-background);
 }
 

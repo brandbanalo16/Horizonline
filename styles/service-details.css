@@ -34,7 +34,7 @@
 .sidebar-widget.service-contact {
   --color-foreground: rgba(255, 255, 255, 1);
   --color-foreground-heading: rgba(255, 255, 255, 1);
-  --color-overlay: rgba(28, 37, 57, 0.8);
+  --color-overlay: rgba(44, 54, 80, 0.8);
   --padding: 60px 36px;
   text-align: center;
 }
@@ -149,7 +149,7 @@
 
 .service-faq .accordion-block.active .accordion-opener {
   --color-background: rgba(242, 242, 242, 1);
-  --color-foreground-heading: rgba(28, 37, 57, 1);
+  --color-foreground-heading: rgba(44, 54, 80, 1);
 }
 
 .service-contact-content a {

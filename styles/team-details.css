@@ -33,7 +33,7 @@
 }
 
 .team-details .social-link:hover {
-  --color-background: rgba(28, 37, 57, 1);
+  --color-background: rgba(44, 54, 80, 1);
   --color-foreground: rgba(255, 255, 255, 1);
 }
 
@@ -58,7 +58,7 @@
 
 .text-absolute {
   --color-foreground-heading: rgba(255, 255, 255, 1);
-  --color-background: rgba(28, 37, 57, 1);
+  --color-background: rgba(44, 54, 80, 1);
   transform: translateY(-50%);
   background: var(--color-background);
   color: var(--color-foreground-heading);
@@ -106,7 +106,7 @@
 }
 
 .progress-item .progress--bar {
-  --color-background: rgba(28, 37, 57, 1);
+  --color-background: rgba(44, 54, 80, 1);
   position: absolute;
   left: 4px;
   top: 50%;

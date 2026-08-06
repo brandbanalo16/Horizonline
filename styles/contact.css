@@ -15,7 +15,7 @@
 }
 
 .section-contact-form .contact-form-wrap {
-  --color-background: rgba(32, 40, 45, 1);
+  --color-background: rgba(38, 100, 100, 1);
   --color-foreground: rgba(242, 242, 242, 1);
   --color-foreground-heading: rgba(255, 255, 255, 1);
   --color-input-text: rgba(93, 102, 111, 1);
@@ -99,7 +99,7 @@
 }
 
 .contact-2 .contact-info-list .svg-wrapper {
-  --color-background: rgba(32, 40, 45, 1);
+  --color-background: rgba(38, 100, 100, 1);
   min-width: 60px;
   width: 60px;
   height: 60px;
