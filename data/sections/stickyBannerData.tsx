@@ -1,12 +1,12 @@
 import { SectionProps } from "@/types/sectionProps";
-import Image1 from "@/public/img/project/1.jpg";
-import Image2 from "@/public/img/project/2.jpg";
-import Image3 from "@/public/img/project/3.jpg";
+import Image1 from "@/public/img/banner/first-slide-1.webp";
+import Image2 from "@/public/img/banner/first-slide-2.webp";
+import Image3 from "@/public/img/banner/first-slide-3.webp";
 
 export const StickyBannerData: SectionProps = {
     wrapperCls: "mt-100",
     container: "container",
-    heading: "A smoother path to launching your UAE company",
+    heading: "A smoother path to launching your company in UAE",
     text: "Whether you are entering Dubai, Sharjah, Abu Dhabi, or another UAE emirate, Horizon Line helps you choose the best setup route and stays with you through licensing, visas, and compliance.",
     blockList: [
         {

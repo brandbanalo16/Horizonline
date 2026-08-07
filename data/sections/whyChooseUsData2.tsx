@@ -1,6 +1,6 @@
 import { SectionProps } from "@/types/sectionProps";
-import backgroundImage from "@/public/img/why-choose-us/1.jpg";
-import Image from "@/public/img/service/secvice-contact.jpg";
+import backgroundImage from "@/public/img/why-choose-us/1.webp";
+import Image from "@/public/img/why-choose-us/1.webp";
 import Icons from "@/components/Icons";
 
 export const WhyChooseUsData2: SectionProps = {
@@ -48,4 +48,4 @@ export const WhyChooseUsData2: SectionProps = {
             text: "Our streamlined process and government relationships help you launch faster — reducing delays and bureaucratic hurdles.",
         }
     ],
-}
+}
