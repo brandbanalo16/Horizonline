@@ -18,14 +18,14 @@ import TestimonialList from "@/data/testimonials.json";
 
 const TestimonialSlider = ({
     data,
-    pagination 
+    pagination
 }: {
     data: SectionProps;
     pagination: boolean;
 }) => {
     const swiperRef = useRef<SwiperType | null>(null);
     const testimonialList = TestimonialList;
-    if(testimonialList.length == 0) return null;
+    if (testimonialList.length == 0) return null;
 
     const {
         wrapperCls,
@@ -39,7 +39,7 @@ const TestimonialSlider = ({
             <div className={container}>
                 <div className="section-headings headings-width text-center">
                     {subheading &&
-                        <Subheading 
+                        <Subheading
                             title={subheading}
                             cls="text-20"
                             aos="fade-up"
@@ -47,7 +47,7 @@ const TestimonialSlider = ({
                     }
 
                     {heading &&
-                        <Heading 
+                        <Heading
                             title={heading}
                             cls="text-50"
                             aos="fade-up"

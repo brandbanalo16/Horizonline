@@ -1,5 +1,5 @@
 import { SectionProps } from "@/types/sectionProps";
-import Image1 from '@/public/img/why-choose-us/1.jpg';
+import Image1 from '@/public/img/why-choose-us/1.webp';
 import Icons from "@/components/Icons";
 
 export const ourCompanydata: SectionProps = {
