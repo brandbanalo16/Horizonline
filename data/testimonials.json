@@ -1,34 +1,50 @@
 [
   {
     "id": 1,
-    "name": "John Carter",
-    "role": "CEO, BTech",
-    "review": "Working with several word themes templates the last years only can say this is best in every level use it for my reviews that I have already are company and the reviews that I have already are all excellent. Not only the design.",
+    "name": "Khalid Al Mansouri",
+    "role": "Founder, Al Mansouri Trading LLC",
+    "review": "Horizon Line made our mainland company formation in Dubai seamless. From trade name reservation to licence issuance, their team handled everything professionally and within the promised timeline. I highly recommend them for anyone starting a business in the UAE.",
     "rating": 5,
     "image": "/img/testimonial/t1.jpg"
   },
   {
     "id": 2,
-    "name": "Sophia Ahmed",
-    "role": "Manager, PixelPro",
-    "review": "Working with several word themes templates the last years only can say this is best in every level use it for my reviews that I have already are company and the reviews that I have already are all excellent. Not only the design.",
+    "name": "Priya Nair",
+    "role": "CEO, InnovateTech FZE",
+    "review": "We were exploring free zone options across Dubai and Sharjah and had no idea where to begin. Horizon Line's consultants guided us step by step, helped us pick the right free zone for our tech startup, and completed the setup in under two weeks. Outstanding service!",
     "rating": 5,
     "image": "/img/testimonial/t2.jpg"
   },
   {
     "id": 3,
-    "name": "Liam Johnson",
-    "role": "Designer, Innovix",
-    "review": "Working with several word themes templates the last years only can say this is best in every level use it for my reviews that I have already are company and the reviews that I have already are all excellent. Not only the design.",
+    "name": "Mohammed Al Rashidi",
+    "role": "Director, Gulf Logistics Group",
+    "review": "The visa processing and PRO services provided by Horizon Line are second to none. They handled employment visas, Emirates ID renewals, and all government liaisons on our behalf. A true one-stop solution for any growing business in the UAE.",
     "rating": 5,
     "image": "/img/testimonial/t3.jpg"
   },
   {
     "id": 4,
-    "name": "Emily Brown",
-    "role": "Developer, SoftMind",
-    "review": "Working with several word themes templates the last years only can say this is best in every level use it for my reviews that I have already are company and the reviews that I have already are all excellent. Not only the design.",
+    "name": "Sarah Thompson",
+    "role": "CFO, Thompson & Partners Consultancy",
+    "review": "Horizon Line's VAT registration and compliance support saved us from a lot of confusion during our first year of operations in the UAE. Their team is knowledgeable, responsive, and always available when we need clarification. Excellent professionals!",
     "rating": 5,
     "image": "/img/testimonial/t4.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Ranjit Singh",
+    "role": "Managing Director, RS Investments Ltd",
+    "review": "We used Horizon Line for our offshore company formation in Jebel Ali. The process was transparent, the fees were very competitive, and the turnaround was faster than expected. I'll be referring all my business partners to their team.",
+    "rating": 5,
+    "image": "/img/testimonial/t5.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Fatima Al Zahrawi",
+    "role": "Owner, Bloom Events LLC",
+    "review": "From trademark registration to ministry approvals and corporate document attestation, Horizon Line managed our entire corporate services portfolio. Their expertise and attention to detail gave us complete peace of mind throughout the process.",
+    "rating": 5,
+    "image": "/img/testimonial/t1.jpg"
   }
 ]

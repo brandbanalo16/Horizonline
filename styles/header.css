@@ -72,6 +72,32 @@ sticky-header[data-sticky-type="always"] {
   z-index: 100;
 }
 
+/* ── on-scroll-up header ── */
+sticky-header[data-sticky-type="on-scroll-up"] {
+  display: block;
+}
+
+/* When JS adds .header-sticky the header becomes fixed */
+sticky-header[data-sticky-type="on-scroll-up"] .header-floating.header-sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+/* Hide: slide up out of view */
+sticky-header[data-sticky-type="on-scroll-up"] .header-floating.header-sticky.header-hidden {
+  transform: translateY(-110%);
+}
+
+/* Show with transition when scrolling up */
+sticky-header[data-sticky-type="on-scroll-up"] .header-floating.header-sticky.header-animate {
+  transform: translateY(0);
+  transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
 .header-grid {
   display: grid;
   grid-template-columns: auto 1fr auto;

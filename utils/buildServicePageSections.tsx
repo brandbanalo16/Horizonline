@@ -3,7 +3,7 @@ import { ourCompanydata } from '@/data/sections/ourCompanyData';
 import { ImageTextData } from '@/data/sections/imageTextData';
 import { NewServiceType } from '@/types/newService';
 import { SectionProps } from '@/types/sectionProps';
-import WhyChooseUsImage from '@/public/img/why-choose-us/1.jpg';
+import WhyChooseUsImage from '@/public/img/why-choose-us/1.webp';
 import ServiceDetailImage from '@/public/img/service/sd-1.jpg';
 
 const processStepIcons = [

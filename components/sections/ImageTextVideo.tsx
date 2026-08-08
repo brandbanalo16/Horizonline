@@ -20,7 +20,7 @@ const ImageTextVideo = ({ data }: { data: SectionProps }) => {
               <ThemeModalVideo
                 cls="section-headings-sticky height-100"
                 video="/videos/video.mp4"
-                image="/img/why-choose-us/1.jpg"
+                image="/img/why-choose-us/1.webp"
               />
             </div>
             <div className="lg:col-span-7 col-span-12">

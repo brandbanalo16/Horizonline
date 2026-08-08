@@ -53,7 +53,7 @@ const ImageCounterVideo = ({ data }: { data: SectionProps }) => {
               <div>
                 <ThemeModalVideo
                   video="/videos/video.mp4"
-                  image="/img/why-choose-us/1.jpg"
+                   image="/img/why-choose-us/1.webp"
                 />
               </div>
             </div>

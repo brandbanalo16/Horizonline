@@ -481,7 +481,7 @@ const ServicePage = ({
         heading: sub_category,
         text: legacyContent?.overview || '',
         textList: (legacyContent?.benefits || []).map((b: string) => ({ text: b })),
-        image: { src: '/img/service/service-details.jpg', width: 600, height: 500, alt: sub_category },
+        image: { src: '/img/service/sd-1.jpg', width: 600, height: 500, alt: sub_category },
         button: { label: 'Get Started', href: '/contact-us', type: 'primary' as const },
     };
 

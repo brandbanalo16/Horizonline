@@ -11,7 +11,7 @@ const Header = () => {
       <StickyHeader 
         wrapperCls="header-1 header-floating"
         container="container-fluid"
-        stickyType= 'always'
+        stickyType='on-scroll-up'
       >
         <div className="header-grid">
           {/* Logo */}

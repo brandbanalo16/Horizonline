@@ -3,7 +3,7 @@ import { SectionProps } from "@/types/sectionProps";
 export const TestimonialSlider2Data: SectionProps = {
     wrapperCls: "mt-100",
     container: "container",
-    subheading: "Testimonial",
-    heading: "See what our customers have to say about us",
-    text: "Discover how we've helped businesses like yours succeed through real feedback, genuine experiences, and proven results from our valued clients."
+    subheading: "Client Success Stories",
+    heading: "Trusted by Businesses Across the UAE",
+    text: "Discover how we've helped entrepreneurs, investors, and corporations set up and scale their business in Dubai, Sharjah, Abu Dhabi, and across the UAE."
 }
