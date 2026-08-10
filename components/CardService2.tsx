@@ -35,7 +35,9 @@ const CardService2 = ({ data }: ServiceDataType) => {
 
                             {description && 
                             <div className="content">
-                                <p className="text text-16">{description}</p>
+                                <p className="text text-16" style={{ display: '-webkit-box', WebkitLineClamp: 2, WebkitBoxOrient: 'vertical', overflow: 'hidden' }}>
+                                    {description}
+                                </p>
                             </div>
                             }
                         </div>

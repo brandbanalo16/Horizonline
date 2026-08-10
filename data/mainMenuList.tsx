@@ -143,7 +143,7 @@ const Menus: any[] = [
                     },
                     {
                         "title": "Trademark & IP",
-                        "path": "/services/trademark-ip",
+                        "path": "/services/trademark-and-ip",
                         "services": [
                             {
                                 "title": "Trademark Registration",
@@ -305,7 +305,7 @@ const Menus: any[] = [
                 "dropdown": [
                     {
                         "title": "Tax & Compliance",
-                        "path": "/services/tax-compliance",
+                        "path": "/services/tax-and-compliance",
                         "services": [
                             {
                                 "title": "VAT Registration",

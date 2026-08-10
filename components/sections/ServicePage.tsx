@@ -321,12 +321,14 @@ const OurCompanyBlock = ({
     subtext,
     iconBlocks,
     ctaButton,
+    image,
 }: {
     eyebrow: string;
     heading: string;
     subtext: string;
     iconBlocks: { title: string; text: string }[];
     ctaButton?: string;
+    image?: any;
 }) => {
     const data = {
         ...ImageText2Data,
@@ -342,6 +344,9 @@ const OurCompanyBlock = ({
         button: ctaButton
             ? { ...ImageText2Data.button, label: ctaButton }
             : ImageText2Data.button,
+        imageList: image && ImageText2Data.imageList 
+            ? [image, ImageText2Data.imageList[1]] 
+            : ImageText2Data.imageList,
     };
     return <ImageText2 data={data} />;
 };
@@ -437,7 +442,7 @@ const ServicePage = ({
         slug: card.slug,
         title: card.title,
         description: card.description,
-        image: `/img/service/s${(idx % 7) + 1}.jpg`,
+        image: card.image || `/img/service/s${(idx % 7) + 1}.jpg`,
     })) || [];
 
     // ── What We Offer ──
@@ -495,6 +500,7 @@ const ServicePage = ({
                     subtext={ourCompany.subtext}
                     iconBlocks={ourCompany.icon_blocks || []}
                     ctaButton={ourCompany.cta_button}
+                    image={ourCompany.image}
                 />
             )}
 

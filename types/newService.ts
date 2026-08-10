@@ -48,6 +48,7 @@ export interface SliderCard {
     title: string;
     slug: string;
     description: string;
+    image?: string;
 }
 
 export interface ProcessStep {
@@ -68,6 +69,7 @@ export interface OurCompanySection {
     subtext: string;
     icon_blocks: IconBlock[];
     cta_button: string;
+    image?: any;
 }
 
 export interface OurServicesSlider {
