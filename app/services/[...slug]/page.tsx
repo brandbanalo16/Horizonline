@@ -7,6 +7,7 @@ import Script from 'next/script';
 
 import BreadcrumbBanner from '@/components/BreadcrumbBanner';
 import ServicePage from '@/components/sections/ServicePage';
+import ServicePageLegacy from '@/components/sections/ServicePageLegacy';
 
 import NewServicesData from '@/data/newServicesData.json';
 import Services from '@/data/services.json';
@@ -21,6 +22,13 @@ const AllNewServices: NewServiceType[] = (() => {
     const sub = Array.isArray(data.sub_services) ? data.sub_services : [];
     return [...main, ...sub] as NewServiceType[];
 })();
+
+const MainServiceSlugs = new Set(
+    (Array.isArray((NewServicesData as { main_services?: { slug: string }[] }).main_services)
+        ? (NewServicesData as { main_services: { slug: string }[] }).main_services
+        : []
+    ).map((item) => item.slug)
+);
 
 const getEnhancedMetaTitle = (service: NewServiceType) => {
     const baseTitle =
@@ -158,6 +166,8 @@ const Page = async ({ params }: { params: Promise<{ slug: string[] }> }) => {
 
     // CTA banner removed per user request
 
+    const useLegacyLayout = MainServiceSlugs.has(joinedSlug);
+
     return (
         <>
             <Script
@@ -180,7 +190,11 @@ const Page = async ({ params }: { params: Promise<{ slug: string[] }> }) => {
                 }}
             />
 
-            <ServicePage service={service} relatedServices={relatedServices} />
+            {useLegacyLayout ? (
+                <ServicePageLegacy service={service} relatedServices={relatedServices} />
+            ) : (
+                <ServicePage service={service} relatedServices={relatedServices} />
+            )}
         </>
     );
 };

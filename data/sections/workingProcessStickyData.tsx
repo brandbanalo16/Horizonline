@@ -10,12 +10,12 @@ export const WorkingProcessStickyData: SectionProps = {
         {
             icon: <Icons.Discover />,
             title: "Free Consultation",
-            text: "We start with a free discovery call to understand your business goals, preferred location, and budget. We then recommend the most suitable structure — mainland, free zone, or offshore.",
+            text: "We start with a free discovery call to understand your business goals, preferred emirate, and budget — whether that's Dubai, RAK, Fujairah, or anywhere in between — and recommend the most suitable structure.",
         },
         {
             icon: <Icons.Analyze />,
-            title: "Choose Your License & Structure",
-            text: "Our consultants help you select the right trade license category, business activity, and legal structure across Dubai, Sharjah, Abu Dhabi, or other UAE emirates.",
+            title: "Choose Your Licence & Structure",
+            text: "Our consultants help you select the right trade licence category, business activity, and legal structure across all 7 Emirates.",
         },
         {
             icon: <Icons.Plan />,
@@ -24,13 +24,13 @@ export const WorkingProcessStickyData: SectionProps = {
         },
         {
             icon: <Icons.Launch />,
-            title: "License Approval & Registration",
-            text: "We submit your application, coordinate with relevant authorities (DED, free zone authority, MOHRE), and track progress until your trade license and company registration are approved.",
+            title: "Licence Approval & Registration",
+            text: "We submit your application, coordinate with relevant authorities (DED, free zone authority, MOHRE), and track progress until your trade licence and company registration are approved.",
         },
         {
             icon: <Icons.Refine />,
             title: "Post-Setup Support",
-            text: "After launch, we continue to support your business with visa processing, Emirates ID, VAT registration, bank account opening, and annual renewal services.",
+            text: "After launch, we continue supporting your business with office setup, visa processing, Emirates ID, VAT registration, corporate bank account opening, and annual renewal services.",
         }
     ],
-}
+}

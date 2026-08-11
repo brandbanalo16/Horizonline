@@ -2,11 +2,11 @@ import { SectionProps } from "@/types/sectionProps";
 import Image1 from '@/public/img/image-text/img1.png';
 
 export const ImageTextData: SectionProps = {
-    wrapperCls: "mt-100",
+    wrapperCls: "mt-100 about-section-compact",
     container: "container",
-    subheading: "About Us",
-    heading: "Horizon Line is your trusted business setup consultancy in UAE",
-    text: "Horizon Line supports entrepreneurs, investors, and growing companies with mainland company formation, free zone company formation, offshore company formation, visa services, VAT registration, and ongoing compliance across Dubai, Sharjah, Abu Dhabi, and the wider UAE.",
+    subheading: "About Horizon Line",
+    heading: "Your Trusted Business Setup Partner — All 7 Emirates",
+    text: "Horizon Line supports entrepreneurs and investors with mainland, free zone, and offshore company formation, visa services, and compliance across Dubai, Abu Dhabi, Sharjah, Ajman, RAK, Fujairah, and Umm Al Quwain.",
     button: {
         label: "Book a Consultation",
         href: "/contact-us",
@@ -16,12 +16,12 @@ export const ImageTextData: SectionProps = {
         src: Image1.src,
         width: 992,
         height: 863,
-        alt: 'Horizon Line business setup consultancy in Dubai',
+        alt: 'Business handshake in Dubai — Horizon Line UAE business setup consultancy',
         loading: 'lazy'
     },
     textList: [
         {
-            text: "Mainland, free zone, and offshore company setup"
+            text: "Mainland, free zone, and offshore setup in all 7 Emirates"
         },
         {
             text: "Licensing, visas, Emirates ID, and compliance support"

@@ -1,0 +1,103 @@
+/* About page — balanced headings, image display, and CTA spacing */
+
+.about-page-intro .content .heading {
+  font-size: 36px;
+  line-height: 1.25;
+}
+
+.about-page-intro .media-wrap {
+  max-height: 420px;
+  overflow: hidden;
+  border-radius: 18px;
+}
+
+.about-page-intro .media-wrap img {
+  width: 100%;
+  height: 100%;
+  max-height: 420px;
+  object-fit: cover;
+}
+
+.about-mission-section .media-wrap {
+  max-height: 480px;
+  overflow: hidden;
+  border-radius: 18px;
+}
+
+.about-mission-section .media-wrap img {
+  width: 100%;
+  height: 100%;
+  max-height: 480px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.about-mission-section .content .heading {
+  font-size: 36px;
+  line-height: 1.25;
+}
+
+.about-page-section .section-headings .heading,
+.about-page-section .section-headings-sticky .heading,
+.about-page-section .headings-width .heading,
+.about-page-section .multicolumn-header .heading {
+  font-size: 36px;
+  line-height: 1.25;
+}
+
+.about-cta-banner {
+  margin-top: 100px;
+}
+
+.about-cta-banner .section-headings .heading {
+  font-size: 40px;
+  line-height: 1.25;
+  max-width: 900px;
+}
+
+.about-cta-banner .section-headings .text {
+  font-size: 18px;
+  line-height: 1.55;
+  max-width: 720px;
+  margin-block-start: 16px;
+}
+
+.about-page-section.section-contact-form .section-headings .heading {
+  font-size: 36px;
+  line-height: 1.25;
+}
+
+@media (max-width: 991px) {
+  .about-page-intro .content .heading,
+  .about-mission-section .content .heading,
+  .about-page-section .section-headings .heading,
+  .about-page-section .section-headings-sticky .heading,
+  .about-page-section .headings-width .heading,
+  .about-page-section .multicolumn-header .heading {
+    font-size: 30px;
+  }
+
+  .about-cta-banner .section-headings .heading {
+    font-size: 32px;
+  }
+
+  .about-page-intro .media-wrap,
+  .about-page-intro .media-wrap img {
+    max-height: 320px;
+  }
+
+  .about-mission-section .media-wrap,
+  .about-mission-section .media-wrap img {
+    max-height: 360px;
+  }
+}
+
+@media (max-width: 767px) {
+  .about-cta-banner {
+    margin-top: 60px;
+  }
+
+  .about-cta-banner .section-headings .heading {
+    font-size: 28px;
+  }
+}

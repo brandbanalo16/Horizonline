@@ -26,26 +26,30 @@ import WhyChooseUs3 from "@/components/sections/WhyChooseUs3";
 import WorkingProcessSticky from "@/components/sections/WorkingProcessSticky";
 
 export const metadata: Metadata = {
-    title: 'Horizon Line - Business Setup in Dubai, UAE and Abu Dhabi',
-    description: 'Horizon Line helps entrepreneurs and investors with business setup in Dubai, business setup in UAE, business setup in Sharjah, business setup in Abu Dhabi, mainland company formation, free zone company formation, visas, VAT, and compliance support.',
+    title: 'Business Setup in UAE — All 7 Emirates | Horizon Line',
+    description: 'Start your business anywhere in the UAE — Dubai, Abu Dhabi, RAK, Fujairah & more. End-to-end setup, visas, office space & bank account support. Free consultation.',
     keywords: [
         'Business Setup in Dubai',
         'Business Setup in UAE',
-        'Business Setup in Sharjah',
-        'Business Setup in Abu Dhabi',
-        'Mainland Company Formation',
-        'Free Zone Company Formation',
-        'Offshore Company Formation',
+        'Company Formation UAE',
+        'Business Setup in RAK',
+        'Business Setup in Fujairah',
+        'Free Zone Company Formation UAE',
+        'Mainland Company Setup UAE',
         'UAE Visa Services',
-        'VAT Registration UAE',
-        'PRO Services UAE'
+        'Corporate Bank Account Opening UAE',
+        'Business Setup All 7 Emirates',
+        'Ras Al Khaimah Company Formation',
+        'Office Fit-Out UAE',
+        'PRO Services UAE',
+        'Legal Status Regularization UAE'
     ],
     alternates: {
         canonical: 'https://www.horizonlineconsultancy.ae/'
     },
     openGraph: {
-        title: 'Horizon Line - Business Setup in Dubai, UAE and Abu Dhabi',
-        description: 'Trusted support for company setup, licensing, visas, VAT, and compliance in Dubai, Sharjah, Abu Dhabi, and across the UAE.',
+        title: 'Horizon Line — Business Setup Across All 7 Emirates of the UAE',
+        description: 'From mainland and free zone formation to visas, office space, and bank account opening — Horizon Line supports your business journey across Dubai, Abu Dhabi, Sharjah, RAK, Fujairah, Ajman & UAQ.',
         url: 'https://www.horizonlineconsultancy.ae/',
         type: 'website'
     }

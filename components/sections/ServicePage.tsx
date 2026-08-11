@@ -1,14 +1,17 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useRef } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination, Autoplay } from 'swiper/modules';
+import { Navigation, Pagination, Autoplay } from 'swiper/modules';
+import type { Swiper as SwiperType } from 'swiper';
 import 'swiper/css';
 import 'swiper/css/pagination';
+import 'swiper/css/navigation';
 
 import '@/styles/service-page.css';
+import '@/styles/testimonial.css';
 
 import { NewServiceType } from '@/types/newService';
 import { ServiceProps } from '@/types/service';
@@ -22,129 +25,470 @@ import PrimaryButton from '@/components/buttons/PrimaryButton';
 import SecondaryButton from '@/components/buttons/SecondaryButton';
 import CardTestimonial from '@/components/CardTestimonial';
 
-import ImageText from '@/components/sections/ImageText';
-import ImageText2 from '@/components/sections/ImageText2';
-import WhyChooseUsGrid from '@/components/sections/WhyChooseUsGrid';
-import WorkingProcess from '@/components/sections/WorkingProcess';
-import ServicesSlider from '@/components/sections/ServicesSlider';
-import TestimonialSlider from '@/components/sections/TestimonialSlider';
 import Faq from '@/components/sections/Faq';
 import ContactSection from '@/components/sections/Contact';
 
-import { ImageText2Data } from '@/data/sections/imageText2Data';
-import { ServicesSliderHeadingsData } from '@/data/sections/servicesSliderHeadings';
-import { WhyChooseUsGridData } from '@/data/sections/whyChooseUsGridData';
 import { TestimonialSliderData } from '@/data/sections/testimonialSliderData';
 import { Contact2Data } from '@/data/sections/contact2Data';
 import { FaqData } from '@/data/sections/faqData';
 
 import BackgroundImage from '@/public/img/faq/question.png';
+import {
+    getServiceTestimonials,
+    getServiceTestimonialClosingLine,
+} from '@/utils/getServiceTestimonials';
 
-// ─── Reusable Section Wrappers ───────────────────────────────────────────────
+const SERVICE_ICONS = [
+    <Icons.Consulting key="c" />,
+    <Icons.Plan key="p" />,
+    <Icons.Finance key="f" />,
+    <Icons.Investment key="i" />,
+    <Icons.Risk key="r" />,
+    <Icons.Development key="d" />,
+];
 
-const SectionWrapper = ({
-    children,
-    cls = '',
-    bg = '',
+// ─── Full-width CTA Strip (reference style) ──────────────────────────────────
+
+const CtaStrip = ({
+    heading,
+    subtext,
+    buttonLabel = 'Request a Callback',
+    buttonHref = '/contact-us',
 }: {
-    children: React.ReactNode;
-    cls?: string;
-    bg?: string;
+    heading: string;
+    subtext?: string;
+    buttonLabel?: string;
+    buttonHref?: string;
 }) => (
-    <section className={`sp-section section-padding ${cls}`} style={bg ? { background: bg } : {}}>
-        <div className="container">{children}</div>
+    <section className="sp-cta-strip" aria-label="Call to action">
+        <div className="container sp-cta-strip-inner">
+            <div className="sp-cta-strip-text">
+                <h2 className="sp-cta-strip-heading">{heading}</h2>
+                {subtext && <p>{subtext}</p>}
+            </div>
+            <SecondaryButton label={buttonLabel} href={buttonHref} ariaLabel={buttonLabel} />
+        </div>
     </section>
 );
 
-const SectionHeader = ({
+// ─── Intro Section ───────────────────────────────────────────────────────────
+
+const IntroSection = ({
+    eyebrow,
+    heading,
+    lead,
+    detail,
+    highlights,
+    ctaButton,
+    image,
+    serviceName,
+}: {
+    eyebrow: string;
+    heading: string;
+    lead: string;
+    detail?: string;
+    highlights?: string[];
+    ctaButton?: string;
+    image?: { src: string; width?: number; height?: number; alt?: string };
+    serviceName: string;
+}) => (
+    <section className="sp-intro section-padding" aria-labelledby="sp-intro-heading">
+        <div className="container">
+            <div className="sp-intro-grid">
+                <div className="sp-intro-content">
+                    <Subheading title={eyebrow} cls="text-20" aos="fade-up" />
+                    <h2 id="sp-intro-heading" className="heading text-50" data-aos="fade-up" data-aos-delay="50">
+                        {heading}
+                    </h2>
+                    <p className="sp-intro-lead text text-18" data-aos="fade-up" data-aos-delay="70">
+                        {lead}
+                    </p>
+                    {detail && (
+                        <p className="sp-intro-detail text text-18" data-aos="fade-up" data-aos-delay="85">
+                            {detail}
+                        </p>
+                    )}
+
+                    {highlights && highlights.length > 0 && (
+                        <ul className="sp-intro-highlights" data-aos="fade-up" data-aos-delay="95">
+                            {highlights.map((item, i) => (
+                                <li key={i}>
+                                    <Icons.Check />
+                                    <span>{item}</span>
+                                </li>
+                            ))}
+                        </ul>
+                    )}
+
+                    {ctaButton && (
+                        <div className="buttons sp-intro-cta" data-aos="fade-up" data-aos-delay="120">
+                            <PrimaryButton label={ctaButton} href="/contact-us" ariaLabel={ctaButton} />
+                        </div>
+                    )}
+                </div>
+
+                {image && (
+                    <div className="sp-intro-media" data-aos="fade-left">
+                        <div className="sp-intro-media-frame">
+                            <Image
+                                src={image.src}
+                                width={image.width || 968}
+                                height={image.height || 862}
+                                alt={image.alt || `${serviceName} services in UAE`}
+                                loading="lazy"
+                                className="sp-intro-img"
+                            />
+                        </div>
+                    </div>
+                )}
+            </div>
+        </div>
+    </section>
+);
+
+// ─── Services Carousel ───────────────────────────────────────────────────────
+
+const ServicesCarousel = ({
+    eyebrow,
+    heading,
+    cards,
+    ctaButton,
+}: {
+    eyebrow: string;
+    heading: string;
+    cards: { id: number; slug: string; title: string; description: string; image?: string }[];
+    ctaButton?: string;
+}) => {
+    const swiperRef = useRef<SwiperType | null>(null);
+
+    return (
+        <section className="sp-services-carousel section-padding" aria-labelledby="sp-services-heading">
+            <div className="container">
+                <div className="sp-section-top">
+                    <div>
+                        <Subheading title={eyebrow} cls="text-20" aos="fade-up" />
+                        <h2 id="sp-services-heading" className="heading text-50" data-aos="fade-up" data-aos-delay="50">
+                            {heading}
+                        </h2>
+                    </div>
+                    <div className="sp-carousel-nav">
+                        <button
+                            type="button"
+                            className="sp-carousel-btn sp-carousel-prev"
+                            aria-label="Previous services"
+                            onClick={() => swiperRef.current?.slidePrev()}
+                        >
+                            <Icons.ChevronLeft />
+                        </button>
+                        <button
+                            type="button"
+                            className="sp-carousel-btn sp-carousel-next"
+                            aria-label="Next services"
+                            onClick={() => swiperRef.current?.slideNext()}
+                        >
+                            <Icons.ChevronRight />
+                        </button>
+                    </div>
+                </div>
+
+                <div className="sp-carousel-wrap" data-aos="fade-up">
+                    <Swiper
+                        modules={[Navigation, Pagination]}
+                        pagination={{ clickable: true }}
+                        spaceBetween={20}
+                        breakpoints={{
+                            0: { slidesPerView: 1, spaceBetween: 16 },
+                            576: { slidesPerView: 1, spaceBetween: 16 },
+                            768: { slidesPerView: 2, spaceBetween: 20 },
+                            992: { slidesPerView: 2, spaceBetween: 20 },
+                            1200: { slidesPerView: 3, spaceBetween: 24 },
+                        }}
+                        onSwiper={(swiper) => (swiperRef.current = swiper)}
+                        className="sp-service-swiper"
+                    >
+                        {cards.map((card, idx) => (
+                            <SwiperSlide key={card.id}>
+                                <article className="sp-service-card">
+                                    <span className="sp-service-card-icon">
+                                        {SERVICE_ICONS[idx % SERVICE_ICONS.length]}
+                                    </span>
+                                    <h3 className="sp-service-card-title">{card.title}</h3>
+                                    <p className="sp-service-card-desc">{card.description}</p>
+                                    <Link href={`/services/${card.slug}`} className="sp-learn-more">
+                                        Learn more <Icons.ArrowLong />
+                                    </Link>
+                                </article>
+                            </SwiperSlide>
+                        ))}
+                    </Swiper>
+                </div>
+
+                {ctaButton && (
+                    <div className="sp-section-footer-cta" data-aos="fade-up">
+                        <PrimaryButton label={ctaButton} href="/services" ariaLabel={ctaButton} />
+                    </div>
+                )}
+            </div>
+        </section>
+    );
+};
+
+// ─── What We Offer — 3×2 card grid ───────────────────────────────────────────
+
+const OfferCardsSection = ({
     eyebrow,
     heading,
     subtext,
-    align = 'left',
-    aosDelay = '0',
+    checklist,
+    ctaButton,
+    serviceName,
 }: {
-    eyebrow?: string;
-    heading?: string;
-    subtext?: string;
-    align?: 'left' | 'center';
-    aosDelay?: string;
-}) => (
-    <div className={`section-headings sp-section-header${align === 'center' ? ' text-center' : ''}`}>
-        {eyebrow && <Subheading title={eyebrow} cls="text-20" aos="fade-up" />}
-        {heading && <Heading title={heading} cls="text-50" aos="fade-up" aosDelay="50" />}
-        {subtext && (
-            <Text text={subtext} cls="text-18" aos="fade-up" aosDelay={aosDelay || '80'} />
-        )}
-    </div>
-);
+    eyebrow: string;
+    heading: string;
+    subtext: string;
+    checklist: string[];
+    ctaButton?: string;
+    serviceName: string;
+}) => {
+    const topRow = checklist.slice(0, 3);
+    const bottomRow = checklist.slice(3, 6);
 
-// ─── Checklist Component ─────────────────────────────────────────────────────
+    const renderCard = (item: string, i: number) => (
+        <article key={i} className="sp-offer-card" data-aos="fade-up" data-aos-delay={`${i * 40}`}>
+            <span className="sp-offer-card-icon">{SERVICE_ICONS[i % SERVICE_ICONS.length]}</span>
+            <p className="sp-offer-card-text">{item}</p>
+        </article>
+    );
 
-const Checklist = ({ items }: { items: string[] }) => (
-    <ul className="sp-checklist">
-        {items.map((item, i) => (
-            <li key={i} className="sp-checklist-item" data-aos="fade-up" data-aos-delay={`${i * 40}`}>
-                <span className="sp-checklist-icon">
-                    <Icons.Check />
-                </span>
-                <span className="sp-checklist-text">{item}</span>
-            </li>
-        ))}
-    </ul>
-);
+    return (
+        <section className="sp-offer section-padding" aria-labelledby="sp-offer-heading">
+            <div className="container">
+                <div className="sp-offer-head">
+                    <Subheading title={eyebrow} cls="text-20" aos="fade-up" />
+                    <h2 id="sp-offer-heading" className="heading text-50" data-aos="fade-up" data-aos-delay="50">
+                        {heading}
+                    </h2>
+                    <Text text={subtext} cls="text-18 sp-offer-intro" aos="fade-up" aosDelay="80" />
+                </div>
 
-// ─── Cards Grid ──────────────────────────────────────────────────────────────
+                <div className="sp-offer-cards">
+                    <div className="sp-offer-cards-row sp-offer-cards-row--top">
+                        {topRow.map((item, i) => renderCard(item, i))}
+                    </div>
+                    {bottomRow.length > 0 && (
+                        <div
+                            className={`sp-offer-cards-row sp-offer-cards-row--bottom sp-offer-cards-row--count-${bottomRow.length}`}
+                        >
+                            {bottomRow.map((item, i) => renderCard(item, i + 3))}
+                        </div>
+                    )}
+                </div>
 
-const CardsGrid = ({
-    cards,
-    icon,
-}: {
-    cards: { title: string }[];
-    icon?: React.ReactNode;
-}) => (
-    <div className="sp-cards-grid">
-        {cards.map((card, i) => (
-            <div
-                key={i}
-                className="sp-card"
-                data-aos="fade-up"
-                data-aos-delay={`${i * 40}`}
-            >
-                <span className="sp-card-icon">
-                    {icon || <Icons.Check />}
-                </span>
-                <p className="sp-card-title">{card.title}</p>
+                {ctaButton && (
+                    <div className="buttons sp-offer-cta" data-aos="fade-up">
+                        <PrimaryButton
+                            label={ctaButton}
+                            href="/contact-us"
+                            ariaLabel={`${ctaButton} for ${serviceName}`}
+                        />
+                    </div>
+                )}
             </div>
-        ))}
+        </section>
+    );
+};
+
+// ─── Two-column Category List ────────────────────────────────────────────────
+
+const CategoryListSection = ({
+    eyebrow,
+    heading,
+    items,
+    variant,
+}: {
+    eyebrow: string;
+    heading: string;
+    items: { title: string }[];
+    variant: 'structures' | 'industries';
+}) => (
+    <div className={`sp-category-block sp-category-block--${variant}`}>
+        <Subheading title={eyebrow} cls="text-20" aos="fade-up" />
+        <h2 className="heading text-36 sp-category-heading" data-aos="fade-up" data-aos-delay="50">
+            {heading}
+        </h2>
+        <ul className="sp-category-list">
+            {items.map((item, i) => (
+                <li key={i} data-aos="fade-up" data-aos-delay={`${i * 20}`}>
+                    <Icons.CaretRight />
+                    <span>{item.title}</span>
+                </li>
+            ))}
+        </ul>
     </div>
 );
 
-// ─── How It Works Steps ──────────────────────────────────────────────────────
+// ─── Process Steps (reference 01/02/03 cards) ────────────────────────────────
 
-const HowItWorksSteps = ({
+const ProcessStepsSection = ({
+    eyebrow,
+    heading,
+    subtext,
     steps,
+    compactTop = false,
+    sectionId = 'sp-process-heading',
 }: {
+    eyebrow: string;
+    heading: string;
+    subtext?: string;
     steps: { step: string; title: string; description: string }[];
+    compactTop?: boolean;
+    sectionId?: string;
 }) => (
-    <div className="sp-steps">
-        {steps.map((s, i) => (
-            <div
-                key={i}
-                className="sp-step"
-                data-aos="fade-up"
-                data-aos-delay={`${i * 60}`}
-            >
-                <div className="sp-step-number">{String(i + 1).padStart(2, '0')}</div>
-                <div className="sp-step-content">
-                    <p className="sp-step-label">{s.step}</p>
-                    <h3 className="sp-step-title">{s.description}</h3>
+    <section
+        className={`sp-process section-padding${compactTop ? ' sp-process--compact-top' : ''}${steps.length > 3 ? ' sp-process--multi' : ''}`}
+        aria-labelledby={sectionId}
+    >
+        <div className="container">
+            <div className="sp-process-head">
+                <Subheading title={eyebrow} cls="text-20" aos="fade-up" />
+                <h2 id={sectionId} className="heading text-50" data-aos="fade-up" data-aos-delay="50">
+                    {heading}
+                </h2>
+                {subtext && <Text text={subtext} cls="text-18 sp-process-intro" aos="fade-up" aosDelay="80" />}
+            </div>
+
+            <ol className="sp-process-grid">
+                {steps.map((s, i) => (
+                    <li key={i} className="sp-process-card" data-aos="fade-up" data-aos-delay={`${i * 60}`}>
+                        <span className="sp-process-num" aria-hidden="true">
+                            {String(i + 1).padStart(2, '0')}
+                        </span>
+                        <p className="sp-process-label">{s.step}</p>
+                        <h3 className="sp-process-title">{s.description}</h3>
+                    </li>
+                ))}
+            </ol>
+        </div>
+    </section>
+);
+
+// ─── Documents Section ───────────────────────────────────────────────────────
+
+const DocumentsSection = ({
+    eyebrow,
+    heading,
+    subtext,
+    checklist,
+    ctaButton,
+}: {
+    eyebrow: string;
+    heading: string;
+    subtext?: string;
+    checklist: string[];
+    ctaButton?: string;
+}) => (
+    <section className="sp-documents section-padding" aria-labelledby="sp-docs-heading">
+        <div className="container">
+            <div className="sp-documents-wrap">
+                <div className="sp-documents-head">
+                    <Subheading title={eyebrow} cls="text-20" aos="fade-up" />
+                    <h2 id="sp-docs-heading" className="heading text-50" data-aos="fade-up" data-aos-delay="50">
+                        {heading}
+                    </h2>
+                    {subtext && <Text text={subtext} cls="text-18" aos="fade-up" aosDelay="80" />}
+                </div>
+                <ul className="sp-documents-grid">
+                    {checklist.map((item, i) => (
+                        <li key={i} data-aos="fade-up" data-aos-delay={`${i * 30}`}>
+                            <Icons.Check />
+                            <span>{item}</span>
+                        </li>
+                    ))}
+                </ul>
+                {ctaButton && (
+                    <div className="buttons sp-documents-cta" data-aos="fade-up">
+                        <PrimaryButton label={ctaButton} href="/contact-us" ariaLabel={ctaButton} />
+                    </div>
+                )}
+            </div>
+        </div>
+    </section>
+);
+
+// ─── Why Trust Us ────────────────────────────────────────────────────────────
+
+const TrustSection = ({
+    eyebrow,
+    heading,
+    badge,
+    content,
+    checklist,
+    ctaButton,
+    serviceName,
+}: {
+    eyebrow: string;
+    heading: string;
+    badge?: string;
+    content: string;
+    checklist: string[];
+    ctaButton?: string;
+    serviceName: string;
+}) => (
+    <section className="sp-trust section-padding" aria-labelledby="sp-trust-heading">
+        <div className="container">
+            <div className="sp-trust-panel">
+                <div className="sp-trust-sidebar">
+                    <Subheading title={eyebrow} cls="text-20" aos="fade-up" />
+                    <h2 id="sp-trust-heading" className="heading text-30" data-aos="fade-up" data-aos-delay="50">
+                        {heading}
+                    </h2>
+                    {badge && (
+                        <div className="sp-trust-badge" data-aos="fade-up" data-aos-delay="70">
+                            <Icons.Awards />
+                            <span>{badge}</span>
+                        </div>
+                    )}
+                    <div className="sp-trust-stats" data-aos="fade-up" data-aos-delay="85">
+                        <div className="sp-trust-stat">
+                            <strong>500+</strong>
+                            <span>Clients served</span>
+                        </div>
+                        <div className="sp-trust-stat">
+                            <strong>98%</strong>
+                            <span>Satisfaction rate</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="sp-trust-main" data-aos="fade-up" data-aos-delay="90">
+                    <p className="sp-trust-lead">{content}</p>
+                    {checklist.length > 0 && (
+                        <div className="sp-trust-checks">
+                            <h3 className="sp-trust-checks-title">
+                                Why choose Horizon Line for {serviceName}
+                            </h3>
+                            <ul className="sp-trust-list">
+                                {checklist.map((item, i) => (
+                                    <li key={i}>
+                                        <span className="sp-trust-check-icon"><Icons.Check /></span>
+                                        <span>{item}</span>
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+                    )}
+                    {ctaButton && (
+                        <div className="buttons sp-trust-cta">
+                            <PrimaryButton label={ctaButton} href="/contact-us" ariaLabel={ctaButton} />
+                        </div>
+                    )}
                 </div>
             </div>
-        ))}
-    </div>
+        </div>
+    </section>
 );
 
-// ─── Testimonials Override ───────────────────────────────────────────────────
+// ─── Testimonials (unchanged) ────────────────────────────────────────────────
 
 const TestimonialsBlock = ({
     eyebrow,
@@ -168,7 +512,7 @@ const TestimonialsBlock = ({
     }));
 
     return (
-        <testi-slider className={TestimonialSliderData.wrapperCls}>
+        <testi-slider className="sp-testi-section section-padding">
             <div className={TestimonialSliderData.container}>
                 <div className="section-headings headings-width text-center">
                     {eyebrow && <Subheading title={eyebrow} cls="text-20" aos="fade-up" />}
@@ -196,11 +540,7 @@ const TestimonialsBlock = ({
                     </Swiper>
                 </div>
                 {closingLine && (
-                    <p
-                        className="sp-closing-line text text-18"
-                        data-aos="fade-up"
-                        data-aos-delay="100"
-                    >
+                    <p className="sp-closing-line text text-18" data-aos="fade-up" data-aos-delay="100">
                         {closingLine}
                     </p>
                 )}
@@ -209,7 +549,7 @@ const TestimonialsBlock = ({
     );
 };
 
-// ─── FAQ Override ────────────────────────────────────────────────────────────
+// ─── FAQ (unchanged) ─────────────────────────────────────────────────────────
 
 const FaqBlock = ({
     eyebrow,
@@ -230,27 +570,17 @@ const FaqBlock = ({
     }));
 
     return (
-        <div className={`faq ${FaqData.wrapperCls || ''}`}>
+        <div className="faq sp-faq-section section-padding">
             <div className={FaqData.container}>
                 <div className="grid grid-cols-2 lg:gap-1 faq-row">
                     <div className="lg:col-span-1 col-span-2">
                         <div className="section-headings">
-                            {eyebrow && (
-                                <Subheading title={eyebrow} cls="text-20" aos="fade-up" />
-                            )}
-                            {heading && (
-                                <Heading title={heading} cls="text-50" aos="fade-up" aosDelay="50" />
-                            )}
-                            {subtext && (
-                                <Text text={subtext} cls="text-18" aos="fade-up" aosDelay="80" />
-                            )}
+                            {eyebrow && <Subheading title={eyebrow} cls="text-20" aos="fade-up" />}
+                            {heading && <Heading title={heading} cls="text-50" aos="fade-up" aosDelay="50" />}
+                            {subtext && <Text text={subtext} cls="text-18" aos="fade-up" aosDelay="80" />}
                             {ctaButton && (
                                 <div className="buttons" data-aos="fade-up" data-aos-delay="100">
-                                    <PrimaryButton
-                                        label={ctaButton}
-                                        href="/contact-us"
-                                        ariaLabel={ctaButton}
-                                    />
+                                    <PrimaryButton label={ctaButton} href="/contact-us" ariaLabel={ctaButton} />
                                 </div>
                             )}
                             <div className="image-absolute" data-aos="zoom-in">
@@ -273,392 +603,228 @@ const FaqBlock = ({
     );
 };
 
-// ─── Why Trust Us Block ──────────────────────────────────────────────────────
-
-const WhyTrustUsBlock = ({
-    eyebrow,
-    heading,
-    badge,
-    content,
-    checklist,
-    ctaButton,
-}: {
-    eyebrow: string;
-    heading: string;
-    badge?: string;
-    content: string;
-    checklist: string[];
-    ctaButton?: string;
-}) => (
-    <SectionWrapper cls="sp-why-trust" bg="rgba(44, 54, 80,0.03)">
-        <div className="sp-why-trust-inner">
-            <SectionHeader eyebrow={eyebrow} heading={heading} />
-            {badge && (
-                <div className="sp-trust-badge" data-aos="fade-up" data-aos-delay="60">
-                    <span className="sp-badge-icon">
-                        <Icons.Awards />
-                    </span>
-                    <span>{badge}</span>
-                </div>
-            )}
-            <p className="sp-trust-content text text-18" data-aos="fade-up" data-aos-delay="80">
-                {content}
-            </p>
-            {checklist.length > 0 && <Checklist items={checklist} />}
-            {ctaButton && (
-                <div className="buttons sp-trust-cta" data-aos="fade-up" data-aos-delay="120">
-                    <PrimaryButton label={ctaButton} href="/contact-us" ariaLabel={ctaButton} />
-                </div>
-            )}
-        </div>
-    </SectionWrapper>
-);
-
-// ─── Our Company Section ─────────────────────────────────────────────────────
-
-const OurCompanyBlock = ({
-    eyebrow,
-    heading,
-    subtext,
-    iconBlocks,
-    ctaButton,
-    image,
-}: {
-    eyebrow: string;
-    heading: string;
-    subtext: string;
-    iconBlocks: { title: string; text: string }[];
-    ctaButton?: string;
-    image?: any;
-}) => {
-    let formattedImage = image;
-    if (typeof image === 'string') {
-        formattedImage = {
-            src: image,
-            width: 992,
-            height: 863,
-            alt: heading || 'Our Company Image',
-            loading: 'lazy'
-        };
-    }
-
-    const data = {
-        ...ImageText2Data,
-        wrapperCls: 'section-padding mt-100',
-        subheading: eyebrow,
-        heading,
-        text: subtext,
-        textList: iconBlocks.map((block, idx) => ({
-            icon: idx === 0 ? <Icons.Ambition /> : <Icons.Purpose />,
-            title: block.title,
-            text: block.text,
-        })),
-        button: ctaButton
-            ? { ...ImageText2Data.button, label: ctaButton }
-            : ImageText2Data.button,
-        imageList: formattedImage
-            ? [formattedImage]
-            : (ImageText2Data.imageList ? [ImageText2Data.imageList[0]] : undefined),
-    };
-    return <ImageText2 data={data} />;
-};
-
-// ─── What We Offer Section ───────────────────────────────────────────────────
-
-const WhatWeOfferBlock = ({
-    eyebrow,
-    heading,
-    subtext,
-    checklist,
-    ctaButton,
-    servicesData,
-}: {
-    eyebrow: string;
-    heading: string;
-    subtext: string;
-    checklist: string[];
-    ctaButton?: string;
-    servicesData: any;
-}) => {
-    const data = {
-        ...servicesData,
-        subheading: eyebrow,
-        heading,
-        text: subtext,
-        textList: checklist.map((item) => ({ text: item })),
-        button: ctaButton
-            ? { ...(servicesData.button || {}), label: ctaButton, href: '/contact-us', type: 'primary' as const }
-            : servicesData.button,
-    };
-    return <ImageText data={data} />;
-};
-
-// ─── Why Choose Us Section ───────────────────────────────────────────────────
-
-const WhyChooseUsBlock = ({
-    eyebrow,
-    heading,
-    subtext,
-    badge,
-    missionVisionAwards,
-    ctaButton,
-}: {
-    eyebrow: string;
-    heading: string;
-    subtext: string;
-    badge?: string;
-    missionVisionAwards: { title: string; text: string }[];
-    ctaButton?: string;
-}) => {
-    const data = {
-        ...WhyChooseUsGridData,
-        subheading: eyebrow,
-        heading,
-        text: subtext,
-        rotatingLogo: badge
-            ? { ...WhyChooseUsGridData.rotatingLogo, text: badge.split(' ')[0] }
-            : WhyChooseUsGridData.rotatingLogo,
-        promotions: missionVisionAwards.map((mva, idx) => ({
-            icon: idx === 0 ? <Icons.Mission /> : idx === 1 ? <Icons.Vision /> : <Icons.Awards />,
-            title: mva.title,
-            text: mva.text,
-        })),
-        button: ctaButton
-            ? { ...(WhyChooseUsGridData.button || {}), label: ctaButton }
-            : WhyChooseUsGridData.button,
-    };
-    return <WhyChooseUsGrid data={data} />;
-};
-
-// ─── Main ServicePage Component ──────────────────────────────────────────────
+// ─── Main Component ──────────────────────────────────────────────────────────
 
 const ServicePage = ({
     service,
-    relatedServices,
 }: {
     service: NewServiceType;
-    relatedServices: ServiceProps[];
+    relatedServices?: ServiceProps[];
 }) => {
-    const { sub_category } = service;
-
-    // Determine if this is a main-category page or sub-service page
+    const { sub_category, category } = service;
+    const serviceLabel = sub_category || category || 'Services';
+    const serviceLabelLower = serviceLabel.toLowerCase();
     const isMainCategory = !!service.our_services_slider;
 
-    // ── Our Company ──
     const ourCompany = service.our_company_section;
-
-    // ── Services Slider (main category) ──
     const slider = service.our_services_slider;
-    const sliderCards = slider?.cards?.map((card, idx) => ({
-        id: idx + 1,
-        slug: card.slug,
-        title: card.title,
-        description: card.description,
-        image: card.image || `/img/service/s${(idx % 7) + 1}.jpg`,
-    })) || [];
-
-    // ── What We Offer ──
     const whatWeOffer = service.what_we_offer_section;
-
-    // ── Why Choose Us ──
-    const whyChooseUs = service.why_choose_us_section;
-
-    // ── Business Structures ──
     const bizStructures = service.business_structures_section;
-
-    // ── Industries ──
     const industries = service.industries_section;
-
-    // ── How It Works ──
     const howItWorks = service.how_it_works_section;
-
-    // ── Documents Required ──
     const documents = service.documents_required_section;
-
-    // ── Why Trust Us ──
     const whyTrust = service.why_trust_us_section;
-
-    // ── Testimonials ──
     const testimonials = service.testimonials_section;
-
-    // ── FAQ ──
     const faq = service.faq_section;
-
-    // ── Contact ──
     const contact = service.contact_section;
-
-    // ── Legacy content fallback ──
     const legacyContent = service.content;
 
-    // Build ImageText data for What We Offer
-    const servicesData = {
-        wrapperCls: 'section-padding mt-100',
-        container: 'container',
-        subheading: 'What We Offer',
-        heading: sub_category,
-        text: legacyContent?.overview || '',
-        textList: (legacyContent?.benefits || []).map((b: string) => ({ text: b })),
-        image: { src: '/img/service/sd-1.jpg', width: 800, height: 770, alt: sub_category },
-        button: { label: 'Get Started', href: '/contact-us', type: 'primary' as const },
-    };
+    const sliderCards =
+        slider?.cards?.map((card, idx) => ({
+            id: idx + 1,
+            slug: card.slug,
+            title: card.title,
+            description: card.description,
+            image: card.image || `/img/service/s${(idx % 7) + 1}.jpg`,
+        })) || [];
+
+    const introImage = ourCompany?.image || (service as { image?: { src: string } }).image;
+    const formattedImage =
+        typeof introImage === 'string'
+            ? { src: introImage, alt: `${serviceLabel} services in UAE` }
+            : introImage
+              ? { ...introImage, alt: introImage.alt || `${serviceLabel} services in UAE` }
+              : undefined;
+
+    const ctaHeading =
+        whatWeOffer?.cta_button ||
+        documents?.cta_button ||
+        `Get expert ${serviceLabel} support in the UAE`;
+
+    const testimonialItems = getServiceTestimonials(service);
+    const testimonialClosingLine = getServiceTestimonialClosingLine(service);
+
+    const introHeading =
+        legacyContent?.h1_tag ||
+        ourCompany?.heading ||
+        `Professional ${serviceLabel} Services in the UAE`;
+    const introLead =
+        legacyContent?.intro_line ||
+        ourCompany?.subtext ||
+        `Expert ${serviceLabel} support tailored for entrepreneurs, investors, and businesses across the UAE.`;
+    const introDetail =
+        legacyContent?.overview ||
+        `Horizon Line Management Consultancy LLC provides end-to-end ${serviceLabelLower} with transparent pricing, hands-on government liaison, and dedicated consultant support from consultation through approval and ongoing compliance.`;
+    const introHighlights = [
+        `Specialist ${serviceLabelLower} consultants in Dubai, Abu Dhabi & Sharjah`,
+        'Full documentation and government processing support',
+        'Dedicated relationship manager for every engagement',
+    ];
+    const offerHeading = `${serviceLabel} Services We Offer`;
+    const offerSubtext =
+        whatWeOffer?.subtext ||
+        legacyContent?.overview ||
+        `Horizon Line provides end-to-end support for ${serviceLabelLower}, from initial consultation through approval and ongoing compliance.`;
 
     return (
-        <>
-            {/* ── Our Company ── */}
+        <div className="service-page-content">
+            {/* ── Intro ── */}
             {ourCompany && (
-                <OurCompanyBlock
-                    eyebrow={ourCompany.eyebrow}
-                    heading={ourCompany.heading}
-                    subtext={ourCompany.subtext}
-                    iconBlocks={ourCompany.icon_blocks || []}
+                <IntroSection
+                    eyebrow={ourCompany.eyebrow || category}
+                    heading={introHeading}
+                    lead={introLead}
+                    detail={introDetail}
+                    highlights={introHighlights}
                     ctaButton={ourCompany.cta_button}
-                    image={ourCompany.image || (service as any).image}
+                    image={formattedImage}
+                    serviceName={serviceLabel}
                 />
             )}
 
-            {/* ── Our Services Slider (main category pages) ── */}
+            {/* ── Getting Started preview (first 3 steps when more exist) ── */}
+            {howItWorks && (howItWorks.steps?.length ?? 0) > 3 && (
+                <ProcessStepsSection
+                    eyebrow="Getting Started"
+                    heading={`How to begin your ${serviceLabel} journey`}
+                    subtext={howItWorks.subtext}
+                    steps={howItWorks.steps!.slice(0, 3)}
+                    sectionId="sp-getting-started-heading"
+                />
+            )}
+
+            {/* ── CTA Strip ── */}
+            <CtaStrip
+                heading={`Need help with ${serviceLabel} in the UAE?`}
+                subtext="Speak to a Horizon Line consultant — free initial consultation, transparent pricing, and full documentation support."
+                buttonLabel={whatWeOffer?.cta_button || 'Request a Callback'}
+            />
+
+            {/* ── Services Carousel (main category) ── */}
             {isMainCategory && sliderCards.length > 0 && (
-                <ServicesSlider
-                    data={{
-                        ...ServicesSliderHeadingsData,
-                        subheading: slider?.eyebrow || ServicesSliderHeadingsData.subheading,
-                        heading: slider?.heading || ServicesSliderHeadingsData.heading,
-                        button: slider?.top_cta_button
-                            ? { label: slider.top_cta_button, href: '/services', type: 'secondary' as const }
-                            : ServicesSliderHeadingsData.button,
-                    }}
-                    pagination={true}
-                    services={sliderCards}
-                    maxItems={sliderCards.length}
+                <ServicesCarousel
+                    eyebrow={slider?.eyebrow || 'Our Services'}
+                    heading={slider?.heading || `Explore ${category} Services`}
+                    cards={sliderCards}
+                    ctaButton={slider?.top_cta_button}
                 />
             )}
 
             {/* ── What We Offer ── */}
             {whatWeOffer ? (
-                <WhatWeOfferBlock
+                <OfferCardsSection
                     eyebrow={whatWeOffer.eyebrow}
-                    heading={whatWeOffer.heading}
-                    subtext={whatWeOffer.subtext}
+                    heading={offerHeading}
+                    subtext={offerSubtext}
                     checklist={whatWeOffer.checklist || []}
                     ctaButton={whatWeOffer.cta_button}
-                    servicesData={servicesData}
+                    serviceName={serviceLabel}
                 />
             ) : legacyContent?.benefits?.length ? (
-                <WhatWeOfferBlock
-                    eyebrow="+ What We Offer +"
-                    heading="Our Services"
-                    subtext={legacyContent.overview || ''}
+                <OfferCardsSection
+                    eyebrow="What We Offer"
+                    heading={offerHeading}
+                    subtext={offerSubtext}
                     checklist={legacyContent.benefits}
-                    servicesData={servicesData}
+                    serviceName={serviceLabel}
                 />
             ) : null}
 
-            {/* ── Why Choose Us ── */}
-            {whyChooseUs && (
-                <WhyChooseUsBlock
-                    eyebrow={whyChooseUs.eyebrow}
-                    heading={whyChooseUs.heading}
-                    subtext={whyChooseUs.subtext}
-                    badge={whyChooseUs.badge}
-                    missionVisionAwards={whyChooseUs.mission_vision_awards || []}
-                    ctaButton={whyChooseUs.cta_button}
+            {/* ── Business Structures & Industries (two-column lists) ── */}
+            {((bizStructures?.cards?.length ?? 0) > 0 || (industries?.cards?.length ?? 0) > 0) && (
+                <section className="sp-categories section-padding" aria-label="Business structures and industries">
+                    <div className="container">
+                        <div className="sp-categories-grid">
+                            {bizStructures && (bizStructures.cards?.length ?? 0) > 0 && (
+                                <CategoryListSection
+                                    eyebrow={bizStructures.eyebrow}
+                                    heading={bizStructures.heading}
+                                    items={bizStructures.cards}
+                                    variant="structures"
+                                />
+                            )}
+                            {industries && (industries.cards?.length ?? 0) > 0 && (
+                                <CategoryListSection
+                                    eyebrow={industries.eyebrow}
+                                    heading={industries.heading}
+                                    items={industries.cards}
+                                    variant="industries"
+                                />
+                            )}
+                        </div>
+                    </div>
+                </section>
+            )}
+
+            {/* ── CTA Strip ── */}
+            {(bizStructures || industries) && (
+                <CtaStrip
+                    heading={ctaHeading}
+                    subtext={`Horizon Line handles ${serviceLabelLower} across mainland Dubai, free zones, and offshore jurisdictions.`}
+                    buttonLabel="Book a Free Consultation"
                 />
             )}
 
-            {/* ── Business Structures ── */}
-            {bizStructures && (bizStructures.cards || []).length > 0 && (
-                <SectionWrapper cls="sp-structures" bg="rgba(242,242,242,0.35)">
-                    <SectionHeader
-                        eyebrow={bizStructures.eyebrow}
-                        heading={bizStructures.heading}
-                        align="center"
-                    />
-                    <CardsGrid cards={bizStructures.cards} />
-                </SectionWrapper>
+            {/* ── Full Process ── */}
+            {howItWorks && (howItWorks.steps?.length ?? 0) > 0 && (
+                <ProcessStepsSection
+                    eyebrow={howItWorks.eyebrow}
+                    heading={howItWorks.heading}
+                    subtext={(howItWorks.steps?.length ?? 0) > 3 ? undefined : howItWorks.subtext}
+                    steps={howItWorks.steps!}
+                    compactTop={(howItWorks.steps?.length ?? 0) > 3}
+                    sectionId="sp-full-process-heading"
+                />
             )}
 
-            {/* ── Industries We Serve ── */}
-            {industries && (industries.cards || []).length > 0 && (
-                <SectionWrapper cls="sp-industries">
-                    <SectionHeader
-                        eyebrow={industries.eyebrow}
-                        heading={industries.heading}
-                        align="center"
-                    />
-                    <CardsGrid cards={industries.cards} icon={<Icons.CaretRight />} />
-                </SectionWrapper>
-            )}
-
-            {/* ── How It Works ── */}
-            {howItWorks && (howItWorks.steps || []).length > 0 && (
-                <SectionWrapper cls="sp-how-it-works" bg="rgba(44, 54, 80,0.03)">
-                    <SectionHeader
-                        eyebrow={howItWorks.eyebrow}
-                        heading={howItWorks.heading}
-                        subtext={howItWorks.subtext}
-                        align="center"
-                    />
-                    <HowItWorksSteps steps={howItWorks.steps} />
-                </SectionWrapper>
-            )}
-
-            {/* ── Documents Required ── */}
-            {documents && (documents.checklist || []).length > 0 && (
-                <SectionWrapper cls="sp-documents">
-                    <div className="sp-documents-inner">
-                        <SectionHeader
-                            eyebrow={documents.eyebrow}
-                            heading={documents.heading}
-                            subtext={documents.subtext}
-                        />
-                        <Checklist items={documents.checklist} />
-                        {documents.cta_button && (
-                            <div className="buttons sp-docs-cta" data-aos="fade-up">
-                                <PrimaryButton
-                                    label={documents.cta_button}
-                                    href="/contact-us"
-                                    ariaLabel={documents.cta_button}
-                                />
-                            </div>
-                        )}
-                    </div>
-                </SectionWrapper>
+            {/* ── Documents ── */}
+            {documents && (documents.checklist?.length ?? 0) > 0 && (
+                <DocumentsSection
+                    eyebrow={documents.eyebrow}
+                    heading={documents.heading}
+                    subtext={documents.subtext}
+                    checklist={documents.checklist}
+                    ctaButton={documents.cta_button}
+                />
             )}
 
             {/* ── Why Trust Us ── */}
             {whyTrust && (
-                <WhyTrustUsBlock
+                <TrustSection
                     eyebrow={whyTrust.eyebrow}
                     heading={whyTrust.heading}
                     badge={whyTrust.badge}
                     content={whyTrust.content}
                     checklist={whyTrust.checklist || []}
                     ctaButton={whyTrust.cta_button}
+                    serviceName={serviceLabel}
                 />
             )}
 
-            {/* ── Testimonials ── */}
-            {testimonials && testimonials.items?.length > 0 ? (
-                <TestimonialsBlock
-                    eyebrow={testimonials.eyebrow}
-                    heading={testimonials.heading}
-                    items={testimonials.items}
-                    closingLine={testimonials.closing_line}
-                />
-            ) : (
-                <TestimonialSlider data={TestimonialSliderData} pagination={true} />
-            )}
+            {/* ── Testimonials (5–6 on every service page) ── */}
+            <TestimonialsBlock
+                eyebrow={testimonials?.eyebrow || '+ Testimonials +'}
+                heading={testimonials?.heading || 'See What Our Customers Have to Say About Us'}
+                items={testimonialItems}
+                closingLine={testimonialClosingLine}
+            />
 
-            {/* ── Legacy SEO Supporting Lines ── */}
-            {(legacyContent?.seo_supporting_lines || []).length > 0 && (
+            {/* ── SEO Supporting Lines ── */}
+            {(legacyContent?.seo_supporting_lines?.length ?? 0) > 0 && (
                 <section className="service-page-supporting-lines">
                     <div className="container">
-                        {(legacyContent!.seo_supporting_lines || []).map((line, i) => (
-                            <p
-                                key={i}
-                                className="supporting-line text text-18"
-                                data-aos="fade-up"
-                            >
+                        {legacyContent!.seo_supporting_lines!.map((line, i) => (
+                            <p key={i} className="supporting-line text text-18" data-aos="fade-up">
                                 {line}
                             </p>
                         ))}
@@ -666,8 +832,8 @@ const ServicePage = ({
                 </section>
             )}
 
-            {/* ── FAQ ── */}
-            {faq && faq.items?.length > 0 ? (
+            {/* ── FAQ (original) ── */}
+            {faq && (faq.items?.length ?? 0) > 0 ? (
                 <FaqBlock
                     eyebrow={faq.eyebrow}
                     heading={faq.heading}
@@ -676,10 +842,15 @@ const ServicePage = ({
                     items={faq.items}
                 />
             ) : (
-                <Faq data={FaqData} />
+                <Faq
+                    data={{
+                        ...FaqData,
+                        wrapperCls: 'sp-faq-section section-padding',
+                    }}
+                />
             )}
 
-            {/* ── Contact ── */}
+            {/* ── Contact Form (original) ── */}
             {contact ? (
                 <ContactSection
                     data={{
@@ -687,28 +858,29 @@ const ServicePage = ({
                         subheading: contact.eyebrow,
                         heading: contact.heading,
                         text: contact.subtext,
-                        promotions: contact.stats?.map((stat, idx) => ({
-                            icon: idx === 0 ? <Icons.ThumbsUp /> : <Icons.Support />,
-                            title: `${stat.number} ${stat.label}`,
-                            text: stat.text,
-                        })) || Contact2Data.promotions,
+                        promotions:
+                            contact.stats?.map((stat, idx) => ({
+                                icon: idx === 0 ? <Icons.ThumbsUp /> : <Icons.Support />,
+                                title: `${stat.number} ${stat.label}`,
+                                text: stat.text,
+                            })) || Contact2Data.promotions,
                         block: contact.form
                             ? {
-                                heading: contact.form.heading,
-                                text: contact.form.subtext,
-                                button: {
-                                    label: contact.form.cta_button,
-                                    href: '/contact-us',
-                                    type: 'primary' as const,
-                                },
-                            }
+                                  heading: contact.form.heading,
+                                  text: contact.form.subtext,
+                                  button: {
+                                      label: contact.form.cta_button,
+                                      href: '/contact-us',
+                                      type: 'primary' as const,
+                                  },
+                              }
                             : Contact2Data.block,
                     }}
                 />
             ) : (
                 <ContactSection data={Contact2Data} />
             )}
-        </>
+        </div>
     );
 };
 

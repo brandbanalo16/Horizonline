@@ -10,15 +10,16 @@ import CardService from "../CardService";
 import { SectionProps } from "@/types/sectionProps";
 
 const OurServicesSix = ({ data }: { data: SectionProps }) => {
-    const serviceList = ServiceList;
-    if(serviceList.length == 0) return null;
-
     const {
         container,
         subheading,
         heading,
-        button
+        button,
+        services,
     } = data || {};
+
+    const serviceList = services?.length ? services : ServiceList.slice(0, 6);
+    if(serviceList.length == 0) return null;
 
     return (
         <div className={`multicolumn multicolumn-page section-padding`}>
@@ -43,7 +44,7 @@ const OurServicesSix = ({ data }: { data: SectionProps }) => {
 
                 <div className="multicolumn-inner section-content">
                     <div className="grid grid-cols-12 product-grid md:gap-1">
-                        {serviceList.slice(0, 6).map((service) => (
+                        {serviceList.map((service) => (
                             <div 
                                 className="xl:col-span-4 md:col-span-6 col-span-12" 
                                 data-aos="fade-up" 

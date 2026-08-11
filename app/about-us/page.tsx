@@ -3,34 +3,58 @@ import BreadcrumbBannerImage from '@/public/img/banner/page-banner.jpg';
 import BreadcrumbBannerImageTablet from '@/public/img/banner/page-banner-991.jpg';
 import BreadcrumbBannerImageMobile from '@/public/img/banner/page-banner-575.jpg';
 
-import { ImageTextData } from '@/data/sections/imageTextData';
-import { ScrollingTextData } from '@/data/sections/scrollingTextData';
-import { WhyChooseUsDubaiData } from '@/data/sections/whyChooseUsDubaiData';
-import { TeamSliderData } from '@/data/sections/teamSliderData';
-import { TestimonialData } from '@/data/sections/testimonialData';
-import { Faq2Data } from '@/data/sections/faq2Data';
+import { AboutImageTextData } from '@/data/sections/aboutImageTextData';
+import { AboutMissionData } from '@/data/sections/aboutMissionData';
+import { AboutWhyChooseUsData } from '@/data/sections/aboutWhyChooseUsData';
+import { AboutWorkingProcessData } from '@/data/sections/aboutWorkingProcessData';
+import { AboutTextBannerData } from '@/data/sections/aboutTextBannerData';
+import { AboutTeamSliderData } from '@/data/sections/aboutTeamSliderData';
+import { AboutTestimonialData } from '@/data/sections/aboutTestimonialData';
+import { AboutFaqData } from '@/data/sections/aboutFaqData';
+import { AboutContactData } from '@/data/sections/aboutContactData';
 
 import BreadcrumbBanner from "@/components/BreadcrumbBanner";
 import ImageText from '@/components/sections/ImageText';
-import ScrollingText from '@/components/sections/ScrollingText';
-import WhyChooseUs from '@/components/sections/WhyChooseUs';
+import WhyChooseUs3 from '@/components/sections/WhyChooseUs3';
+import WorkingProcessSticky from '@/components/sections/WorkingProcessSticky';
+import TextBanner from '@/components/sections/TextBanner';
 import TeamSlider from '@/components/sections/TeamSlider';
 import Testimonials from '@/components/sections/Testimonials';
 import Faq from '@/components/sections/Faq';
+import ContactSection from '@/components/sections/Contact';
 
+import '@/styles/about-page.css';
 
-const PAGE_TITLE: string = 'About Us';
+const PAGE_TITLE = 'About Us — Business Setup Across All 7 Emirates | Horizon Line';
+
 export const metadata: Metadata = {
     title: PAGE_TITLE,
-}
-
+    description: 'Learn about Horizon Line — your trusted UAE business setup consultancy covering Dubai, Abu Dhabi, Sharjah, RAK, Fujairah, Ajman & UAQ. Company formation, visas, office setup & banking support.',
+    keywords: [
+        'Horizon Line UAE',
+        'Business Setup Consultancy UAE',
+        'Company Formation UAE',
+        'Business Setup All 7 Emirates',
+        'UAE Business Setup Experts',
+        'RAK Business Setup',
+        'Fujairah Company Formation',
+    ],
+    alternates: {
+        canonical: 'https://www.horizonlineconsultancy.ae/about-us'
+    },
+    openGraph: {
+        title: 'About Horizon Line — UAE Business Setup Across All 7 Emirates',
+        description: 'Horizon Line helps entrepreneurs and investors set up businesses across every emirate — with honest guidance, transparent pricing, and end-to-end support.',
+        url: 'https://www.horizonlineconsultancy.ae/about-us',
+        type: 'website'
+    }
+};
 
 const About = () => {
     return (
         <>
-            {/* Breadcrumb Banner */}
             <BreadcrumbBanner
-                title={PAGE_TITLE}
+                title="About Us"
                 image={{
                     src: BreadcrumbBannerImage.src,
                     srcMobile: BreadcrumbBannerImageTablet.src,
@@ -38,31 +62,31 @@ const About = () => {
                     width: 1920,
                     height: 520,
                     cls: "media media-bg",
-                    alt: "Banner Image",
+                    alt: "About Horizon Line — UAE business setup consultancy",
                     loading: "eager"
                 }}
             />
 
-            {/* Image Text */}
-            <ImageText data={ImageTextData} />
+            <ImageText data={AboutImageTextData} />
 
-            {/* Scrolling Text */}
-            <ScrollingText data={ScrollingTextData} />
+            <ImageText data={AboutMissionData} />
 
-            {/* Why Choose Us */}
-            <WhyChooseUs data={WhyChooseUsDubaiData} />
+            <WhyChooseUs3 data={AboutWhyChooseUsData} />
 
-            {/* Our Team */}
+            <WorkingProcessSticky data={AboutWorkingProcessData} />
+
+            <TextBanner data={AboutTextBannerData} />
+
             <TeamSlider
-                data={TeamSliderData}
+                data={AboutTeamSliderData}
                 pagination={true}
             />
 
-            {/* Testimonials */}
-            <Testimonials data={TestimonialData} />
+            <Testimonials data={AboutTestimonialData} />
 
-            {/* FAQ */}
-            <Faq data={Faq2Data} />
+            <Faq data={AboutFaqData} />
+
+            <ContactSection data={AboutContactData} />
         </>
     )
 }

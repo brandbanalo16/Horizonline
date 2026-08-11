@@ -16,6 +16,7 @@ const ImageText = ({ data }: { data: SectionProps }) => {
         subheading,
         heading,
         text,
+        text2,
         textList,
         button
     } = data || {};
@@ -59,6 +60,14 @@ const ImageText = ({ data }: { data: SectionProps }) => {
                             {text && 
                                 <Text 
                                     text={text}
+                                    cls="text-18"
+                                    aos="fade-up"
+                                />
+                            }
+
+                            {text2 && 
+                                <Text 
+                                    text={text2}
                                     cls="text-18"
                                     aos="fade-up"
                                 />

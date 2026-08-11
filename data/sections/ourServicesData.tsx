@@ -8,13 +8,13 @@ export const OurServicesData: SectionProps = {
         src: BackgroundImage.src,
         width: 1920,
         height: 883,
-        alt: "Horizon Line business setup consultancy services",
+        alt: "Horizon Line business setup consultancy services across the UAE",
         loading: "lazy"
     },
     subheading: "Our Services",
-    heading: "Wide range of service to support your business setup in UAE",
+    heading: "Wide Range of Services to Support Your Business Setup Across the UAE",
     button: {
-        label: "Explore Services",
+        label: "Explore All Services",
         href: "/services",
         type: "primary"
     },

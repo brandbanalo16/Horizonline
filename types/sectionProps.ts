@@ -2,6 +2,7 @@ import { ButtonProps } from "./button";
 import { ImageProps } from "./image";
 import { TextProps } from "./text";
 import { BlockListProps } from "./blocks";
+import { ServiceProps } from "./service";
 
 import { PromotionProps } from "@/types/promotionProps";
 import { CounterItemProps } from "./counterItemProps";
@@ -41,4 +42,10 @@ export interface SectionProps {
         logo?: any;
         text?: string;
     },
+    services?: ServiceProps[];
+    faqList?: {
+        title: string;
+        text: string;
+    }[];
+    headingCls?: string;
 }

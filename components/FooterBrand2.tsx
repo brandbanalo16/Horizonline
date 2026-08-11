@@ -20,7 +20,7 @@ const FooterBrand2 = () => {
                 loading="lazy"
             />
             <p className="text text-16">
-                Your trusted partner for business setup, company formation, visa services, and corporate compliance across Dubai and the UAE.
+                Your trusted partner for business setup, company formation, office solutions, visa services, and corporate compliance across all 7 Emirates of the UAE.
             </p>
             <Social 
                 wrapperCls="social-icons"

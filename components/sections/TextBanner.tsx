@@ -15,6 +15,7 @@ const TextBanner = ({ data }: { data: SectionProps }) => {
         heading,
         text,
         button,
+        headingCls,
     } = data || {};
 
     return (
@@ -33,7 +34,7 @@ const TextBanner = ({ data }: { data: SectionProps }) => {
                         {heading &&
                             <Heading 
                                 title={heading}
-                                cls="text-80"
+                                cls={headingCls || "text-80"}
                                 aos="fade-up"
                             />
                         }

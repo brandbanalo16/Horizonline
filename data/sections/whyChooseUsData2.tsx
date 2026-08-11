@@ -10,17 +10,17 @@ export const WhyChooseUsData2: SectionProps = {
         width: 1000,
         height: 742,
         loading: "lazy",
-        alt: "Why choose Horizon Line"
+        alt: "Why choose Horizon Line for UAE business setup"
     },
     image: {
         src: Image.src,
         width: 1000,
         height: 742,
         loading: "lazy",
-        alt: "Horizon Line business setup experts in Dubai"
+        alt: "Horizon Line business setup experts across all 7 Emirates"
     },
     subheading: "Why Choose Us",
-    heading: "Your most trusted partner for UAE business setup",
+    heading: "Your Most Trusted Partner for Business Setup Across the UAE",
     button: {
         label: "Learn More About Us",
         href: "/about-us",
@@ -30,22 +30,22 @@ export const WhyChooseUsData2: SectionProps = {
         {
             icon: <Icons.Consulting />,
             title: "Expert Consultants",
-            text: "Our experienced team guides you through every step — from choosing the right license to obtaining approvals across UAE authorities.",
+            text: "Our experienced team guides you through every step, from choosing the right licence to obtaining approvals across DED, free zone authorities, and MOHRE — in any of the 7 Emirates.",
         },
         {
             icon: <Icons.Plan />,
             title: "End-to-End Support",
-            text: "We handle mainland, free zone, and offshore setups along with visas, VAT, Emirates ID, and ongoing compliance support.",
+            text: "Mainland, free zone, and offshore setups, plus location selection, office fit-out, visas, Emirates ID, and corporate bank account opening.",
         },
         {
             icon: <Icons.Finance />,
             title: "Transparent Pricing",
-            text: "No hidden fees. We provide clear, upfront cost estimates for government fees, licenses, and our professional services.",
+            text: "No hidden fees. Clear, upfront cost estimates for government fees, licences, and our professional services.",
         },
         {
             icon: <Icons.Risk />,
-            title: "Fast & Reliable",
-            text: "Our streamlined process and government relationships help you launch faster — reducing delays and bureaucratic hurdles.",
+            title: "All 7 Emirates Covered",
+            text: "Whether it's Dubai's global reach or RAK and Fujairah's fast-growing opportunities, we help you choose — and set up — where it makes the most sense for your business.",
         }
     ],
 }

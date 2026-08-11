@@ -17,9 +17,10 @@ const Faq = ({ data }: { data: SectionProps }) => {
         heading,
         text,
         button,
+        faqList,
     } = data || {};
 
-    const accordionData = FaqAccordion.slice(0, 5);
+    const accordionData = faqList?.length ? faqList : FaqAccordion.slice(0, 5);
 
     return (
         <div className={`faq ${wrapperCls}`}>
