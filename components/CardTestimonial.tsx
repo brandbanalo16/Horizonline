@@ -3,7 +3,7 @@ import parser from "html-react-parser";
 import Icons from "./Icons";
 import Image from "next/image";
 
-const CardTestimonial = ({ data }: {data: TestimonialProps}) => {
+const CardTestimonial = ({ data }: { data: TestimonialProps }) => {
     const {
         name,
         role,
@@ -20,7 +20,7 @@ const CardTestimonial = ({ data }: {data: TestimonialProps}) => {
         >
             {rating &&
                 <ul className="rating-list list-unstyled">
-                    {Array.from({ length: rating }).map((_, index) => (                
+                    {Array.from({ length: rating }).map((_, index) => (
                         <li className="rating-icon" key={`rating-icon-${index}`}>
                             <Icons.Rating />
                         </li>
@@ -28,11 +28,11 @@ const CardTestimonial = ({ data }: {data: TestimonialProps}) => {
                 </ul>
             }
 
-            {review && <p className="text text-24">{parser(review)}</p>}
+            {review && <p className="text text-16">{parser(review)}</p>}
 
             <div className="user-info-wrap">
                 <div className="user-info">
-                    {image && 
+                    {image &&
                         <div className="user-img">
                             <Image
                                 src={image}
@@ -45,8 +45,8 @@ const CardTestimonial = ({ data }: {data: TestimonialProps}) => {
                     }
 
                     <div className="user-name-desig">
-                        {name && <h2 className="user-name heading text-24">{name}</h2>}
-                        {role && <div className="user-desig text text-18">{role}</div>}
+                        {name && <h2 className="user-name heading text-18">{name}</h2>}
+                        {role && <div className="user-desig text text-14">{role}</div>}
                     </div>
                 </div>
 

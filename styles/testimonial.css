@@ -9,7 +9,7 @@
   padding: 40px;
 }
 
-.testimonial-card-inner > div + div {
+.testimonial-card-inner>div+div {
   margin-block-start: 30px;
 }
 
@@ -24,7 +24,7 @@
   color: var(--color-background);
 }
 
-.card-testimonial .rating-list + .text {
+.card-testimonial .rating-list+.text {
   margin-block-start: 16px;
 }
 
@@ -43,7 +43,7 @@
 }
 
 .card-testimonial .user-img {
-  --size: 80px;
+  --size: 40px;
   min-width: var(--size);
   width: var(--size);
   height: var(--size);
@@ -164,7 +164,7 @@
   }
 }
 
- /* Testimonial style 2 */
+/* Testimonial style 2 */
 .testimonial-2 {
   position: relative;
 }
@@ -177,7 +177,7 @@
   margin-top: 75px;
 }
 
-.thumb-card > .icon + .text {
+.thumb-card>.icon+.text {
   margin-block-start: 16px;
 }
 
@@ -246,8 +246,7 @@
   --style-pagination-border-width: 2px;
   --pagination-item-active-border: rgba(38, 100, 100, 1);
   background: transparent;
-  outline: var(--style-pagination-border-width) solid
-    var(--pagination-item-active-border);
+  outline: var(--style-pagination-border-width) solid var(--pagination-item-active-border);
   outline-offset: 10px;
   transition: all 0.1s;
 }
@@ -257,9 +256,7 @@
   outline-offset: 7px;
 }
 
-.testimonial-2
-  .testicolumn-slider
-  .swiper-pagination-bullets.swiper-pagination-horizontal {
+.testimonial-2 .testicolumn-slider .swiper-pagination-bullets.swiper-pagination-horizontal {
   bottom: 24px;
   top: auto;
   left: 0;
@@ -311,9 +308,7 @@
     gap: 30px;
   }
 
-  .testimonial-2
-    .testicolumn-slider
-    .swiper-pagination-bullets.swiper-pagination-horizontal {
+  .testimonial-2 .testicolumn-slider .swiper-pagination-bullets.swiper-pagination-horizontal {
     bottom: -48px;
   }
 
@@ -361,9 +356,7 @@
     outline-offset: 5px;
   }
 
-  .testimonial-2
-    .testicolumn-slider
-    .swiper-pagination-bullets.swiper-pagination-horizontal {
+  .testimonial-2 .testicolumn-slider .swiper-pagination-bullets.swiper-pagination-horizontal {
     bottom: -36px;
   }
 
@@ -392,7 +385,7 @@
   }
 }
 
- /* How we work */
+/* How we work */
 .testimonial.how-we-work {
   --color-background: transparent;
 }

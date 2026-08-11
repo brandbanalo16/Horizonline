@@ -3,7 +3,7 @@
 import { useRef } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import type { Swiper as SwiperType } from "swiper";
-import { Pagination } from 'swiper/modules';
+import { Pagination, Autoplay } from 'swiper/modules';
 import "swiper/css";
 import 'swiper/css/pagination';
 
@@ -61,8 +61,9 @@ const TestimonialSlider3 = ({
               <div className="lg:col-span-6 col-span-12">
                  <testicolumn-slider className="team-slider testicolumn-slider" data-aos="fade-left">
                     <Swiper
-                        modules={pagination ? [Pagination] : []}
+                        modules={pagination ? [Pagination, Autoplay] : [Autoplay]}
                         pagination={pagination ? { clickable: true } : undefined}
+                        autoplay={{ delay: 3000, disableOnInteraction: false }}
                         spaceBetween={20}
                         slidesPerView={1}
                         onSwiper={(swiper) => (swiperRef.current = swiper)}

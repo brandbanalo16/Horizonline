@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination } from 'swiper/modules';
+import { Pagination, Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
 
@@ -164,7 +164,7 @@ const TestimonialsBlock = ({
         role: item.role,
         review: item.quote,
         rating: item.rating,
-        image: `/img/testimonial/t${(idx % 4) + 1}.jpg`,
+        image: `/img/testimonial/google-user.png`,
     }));
 
     return (
@@ -176,13 +176,14 @@ const TestimonialsBlock = ({
                 </div>
                 <div className="section-content" data-aos="fade-up">
                     <Swiper
-                        modules={[Pagination]}
+                        modules={[Pagination, Autoplay]}
                         pagination={{ clickable: true }}
+                        autoplay={{ delay: 3000, disableOnInteraction: false }}
                         spaceBetween={20}
                         breakpoints={{
                             0: { slidesPerView: 1, spaceBetween: 20 },
                             840: { slidesPerView: 2, spaceBetween: 20 },
-                            1280: { slidesPerView: 2, spaceBetween: 30 },
+                            1280: { slidesPerView: 3, spaceBetween: 30 },
                         }}
                         onSwiper={(swiper) => (swiperRef.current = swiper)}
                         className="swiper"
@@ -330,6 +331,17 @@ const OurCompanyBlock = ({
     ctaButton?: string;
     image?: any;
 }) => {
+    let formattedImage = image;
+    if (typeof image === 'string') {
+        formattedImage = {
+            src: image,
+            width: 992,
+            height: 863,
+            alt: heading || 'Our Company Image',
+            loading: 'lazy'
+        };
+    }
+
     const data = {
         ...ImageText2Data,
         wrapperCls: 'section-padding mt-100',
@@ -344,9 +356,9 @@ const OurCompanyBlock = ({
         button: ctaButton
             ? { ...ImageText2Data.button, label: ctaButton }
             : ImageText2Data.button,
-        imageList: image && ImageText2Data.imageList 
-            ? [image, ImageText2Data.imageList[1]] 
-            : ImageText2Data.imageList,
+        imageList: formattedImage
+            ? [formattedImage]
+            : (ImageText2Data.imageList ? [ImageText2Data.imageList[0]] : undefined),
     };
     return <ImageText2 data={data} />;
 };
@@ -486,7 +498,7 @@ const ServicePage = ({
         heading: sub_category,
         text: legacyContent?.overview || '',
         textList: (legacyContent?.benefits || []).map((b: string) => ({ text: b })),
-        image: { src: '/img/service/sd-1.jpg', width: 600, height: 500, alt: sub_category },
+        image: { src: '/img/service/sd-1.jpg', width: 800, height: 770, alt: sub_category },
         button: { label: 'Get Started', href: '/contact-us', type: 'primary' as const },
     };
 
@@ -500,7 +512,7 @@ const ServicePage = ({
                     subtext={ourCompany.subtext}
                     iconBlocks={ourCompany.icon_blocks || []}
                     ctaButton={ourCompany.cta_button}
-                    image={ourCompany.image}
+                    image={ourCompany.image || (service as any).image}
                 />
             )}
 

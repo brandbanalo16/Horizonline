@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { ScrollingTextData } from '@/data/sections/scrollingTextData';
+// import { ScrollingTextData } from '@/data/sections/scrollingTextData';
 import { ImageTextData } from '@/data/sections/imageTextData';
 import { OurServicesData } from '@/data/sections/ourServicesData';
 import { TextBannerData } from "@/data/sections/textBannerData";
@@ -61,7 +61,7 @@ const Home3 = () => {
             />
 
             {/* Scrolling Text */}
-            <ScrollingTextFullWidth data={ScrollingTextData} />
+            {/* <ScrollingTextFullWidth data={ScrollingTextData} /> */}
 
             {/* Image Text */}
             <ImageText data={ImageTextData} />

@@ -3,7 +3,7 @@
 import React, { useRef } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import type { Swiper as SwiperType } from "swiper";
-import { Pagination } from 'swiper/modules';
+import { Pagination, Autoplay } from 'swiper/modules';
 import "swiper/css";
 import 'swiper/css/pagination';
 
@@ -57,13 +57,14 @@ const TestimonialSlider = ({
 
                 <div className="section-content" data-aos="fade-up">
                     <Swiper
-                        modules={pagination ? [Pagination] : []}
+                        modules={pagination ? [Pagination, Autoplay] : [Autoplay]}
                         pagination={pagination ? { clickable: true } : undefined}
+                        autoplay={{ delay: 3000, disableOnInteraction: false }}
                         spaceBetween={20}
                         breakpoints={{
                             0: { slidesPerView: 1, spaceBetween: 20 },
                             840: { slidesPerView: 2, spaceBetween: 20 },
-                            1280: { slidesPerView: 2, spaceBetween: 30 },
+                            1280: { slidesPerView: 3, spaceBetween: 30 },
                         }}
                         onSwiper={(swiper) => (swiperRef.current = swiper)}
                         className="swiper"

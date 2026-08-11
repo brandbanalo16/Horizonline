@@ -111,37 +111,37 @@
             "title": "Mainland Company Formation",
             "slug": "business-setup/mainland-company-formation",
             "description": "Horizon Line Management Consultancy LLC provides professional mainland company formation services across the UAE with complete documentation, government processing, compliance support, and end-to-end customer assistance.",
-            "image": "/img/service/Picflow Images Aug 8/mainland-company-formation.webp"
+            "image": "/img/service/main-services/mainland-company-formation.webp"
           },
           {
             "title": "Free Zone Company Formation",
             "slug": "business-setup/free-zone-company-formation",
             "description": "Horizon Line Management Consultancy LLC provides professional free zone company formation services across the UAE with complete documentation, government processing, compliance support, and end-to-end customer assistance.",
-            "image": "/img/service/Picflow Images Aug 8/free-zone-company-formation.webp"
+            "image": "/img/service/main-services/free-zone-company-formation.webp"
           },
           {
             "title": "Offshore Company Formation",
             "slug": "business-setup/offshore-company-formation",
             "description": "Horizon Line Management Consultancy LLC provides professional offshore company formation services across the UAE with complete documentation, government processing, compliance support, and end-to-end customer assistance.",
-            "image": "/img/service/Picflow Images Aug 8/offshore-company-formation.webp"
+            "image": "/img/service/main-services/offshore-company-formation.webp"
           },
           {
             "title": "Branch Office Setup",
             "slug": "business-setup/branch-office-setup",
             "description": "Horizon Line Management Consultancy LLC provides professional branch office setup services across the UAE with complete documentation, government processing, compliance support, and end-to-end customer assistance.",
-            "image": "/img/service/Picflow Images Aug 8/branch-office-setup.webp"
+            "image": "/img/service/main-services/branch-office-setup.webp"
           },
           {
             "title": "Professional License",
             "slug": "business-setup/professional-license",
             "description": "Horizon Line Management Consultancy LLC provides professional professional license services across the UAE with complete documentation, government processing, compliance support, and end-to-end customer assistance.",
-            "image": "/img/service/Picflow Images Aug 8/professional-license.webp"
+            "image": "/img/service/main-services/professional-license.webp"
           },
           {
             "title": "Commercial License",
             "slug": "business-setup/commercial-license",
             "description": "Horizon Line Management Consultancy LLC provides professional commercial license services across the UAE with complete documentation, government processing, compliance support, and end-to-end customer assistance.",
-            "image": "/img/service/Picflow Images Aug 8/commercial-license.webp"
+            "image": "/img/service/main-services/commercial-license.webp"
           },
           {
             "title": "Industrial License",
@@ -152,7 +152,7 @@
             "title": "Trade License Renewal",
             "slug": "business-setup/trade-license-renewal",
             "description": "Horizon Line Management Consultancy LLC provides professional trade license renewal services across the UAE with complete documentation, government processing, compliance support, and end-to-end customer assistance.",
-            "image": "/img/service/Picflow Images Aug 8/trade-license-renewal.webp"
+            "image": "/img/service/main-services/trade-license-renewal.webp"
           }
         ]
       },
@@ -315,7 +315,8 @@
         "heading": "Business Setup",
         "subtext": "Ready to get started with Business Setup? Book a free consultation with a Horizon Line specialist today.",
         "cta_button": "Book a Free Consultation"
-      }
+      },
+      "image": "/img/service/main-services/business-setup.webp"
     },
     {
       "id": 2,
@@ -428,13 +429,13 @@
             "title": "Business Consultation",
             "slug": "corporate-services/business-consultation",
             "description": "Horizon Line Management Consultancy LLC provides professional business consultation services across the UAE with complete documentation, government processing, compliance support, and end-to-end customer assistance.",
-            "image": "/img/service/Picflow Images Aug 8/business-consultation.webp"
+            "image": "/img/service/main-services/business-consultation.webp"
           },
           {
             "title": "Business Plan",
             "slug": "corporate-services/business-plan",
             "description": "Horizon Line Management Consultancy LLC provides professional business plan services across the UAE with complete documentation, government processing, compliance support, and end-to-end customer assistance.",
-            "image": "/img/service/Picflow Images Aug 8/business-plan.webp"
+            "image": "/img/service/main-services/business-plan.webp"
           },
           {
             "title": "PRO Services",
@@ -617,11 +618,12 @@
         "heading": "Corporate Services",
         "subtext": "Ready to get started with Corporate Services? Book a free consultation with a Horizon Line specialist today.",
         "cta_button": "Book a Free Consultation"
-      }
+      },
+      "image": "/img/service/main-services/corporate-services.webp"
     },
     {
       "id": 3,
-      "slug": "free-zons",
+      "slug": "free-zone",
       "category": "Free Zone ",
       "seo": {
         "meta_title": "Free Zone  Services in UAE | Horizon Line",
@@ -730,61 +732,61 @@
             "title": "IFZA",
             "slug": "free-zons/ifza",
             "description": "Horizon Line Management Consultancy LLC provides services for IFZA with complete documentation, government processing, compliance support, and end-to-end customer assistance.",
-            "image": "/img/service/Picflow Images Aug 8/ifza.webp"
+            "image": "/img/service/main-services/ifza.webp"
           },
           {
             "title": "SPC Free Zone",
             "slug": "free-zons/spc-free-zone",
             "description": "Horizon Line Management Consultancy LLC provides professional business license formation services for SPC Free Zone with complete documentation, government processing, compliance support, and end-to-end customer assistance.",
-            "image": "/img/service/Picflow Images Aug 8/spc-free-zone.webp"
+            "image": "/img/service/main-services/spc-free-zone.webp"
           },
           {
             "title": "SHAMS",
             "slug": "free-zons/shams",
             "description": "Horizon Line Management Consultancy LLC provides professional business license formation services for SHAMS with complete documentation, government processing, compliance support, and end-to-end customer assistance.",
-            "image": "/img/service/Picflow Images Aug 8/shams.webp"
+            "image": "/img/service/main-services/shams.webp"
           },
           {
             "title": "RAKEZ",
             "slug": "free-zons/rakez",
             "description": "Horizon Line Management Consultancy LLC provides professional business license formation services for RAKEZ with complete documentation, government processing, compliance support, and end-to-end customer assistance.",
-            "image": "/img/service/Picflow Images Aug 8/rakez.webp"
+            "image": "/img/service/main-services/rakez.webp"
           },
           {
             "title": "SRTIP",
             "slug": "free-zons/srtip",
             "description": "Horizon Line Management Consultancy LLC provides professional business license formation services for SRTIP with complete documentation, government processing, compliance support, and end-to-end customer assistance.",
-            "image": "/img/service/Picflow Images Aug 8/srtip.webp"
+            "image": "/img/service/main-services/srtip.webp"
           },
           {
             "title": "Meydan Free Zone",
             "slug": "free-zons/meydan-free-zone",
             "description": "Horizon Line Management Consultancy LLC provides professional business license formation services for Meydan Free Zone with complete documentation, government processing, compliance support, and end-to-end customer assistance.",
-            "image": "/img/service/Picflow Images Aug 8/meydan-free-zone.webp"
+            "image": "/img/service/main-services/meydan-free-zone.webp"
           },
           {
             "title": "DMCC",
             "slug": "free-zons/dmcc",
             "description": "Horizon Line Management Consultancy LLC provides professional business license formation services for DMCC with complete documentation, government processing, compliance support, and end-to-end customer assistance.",
-            "image": "/img/service/Picflow Images Aug 8/dmcc.webp"
+            "image": "/img/service/main-services/dmcc.webp"
           },
           {
             "title": "JAFZA",
             "slug": "free-zons/jafza",
             "description": "Horizon Line Management Consultancy LLC provides professional business license formation services for JAFZA with complete documentation, government processing, compliance support, and end-to-end customer assistance.",
-            "image": "/img/service/Picflow Images Aug 8/jafza.webp"
+            "image": "/img/service/main-services/jafza.webp"
           },
           {
             "title": "Dubai South",
             "slug": "free-zons/dubai-south",
             "description": "Horizon Line Management Consultancy LLC provides professional business license formation services for Dubai South with complete documentation, government processing, compliance support, and end-to-end customer assistance.",
-            "image": "/img/service/Picflow Images Aug 8/dubai-south.webp"
+            "image": "/img/service/main-services/dubai-south.webp"
           },
           {
             "title": "Fujairah Creative City",
             "slug": "free-zons/fujairah-creative-city",
             "description": "Horizon Line Management Consultancy LLC provides professional business license formation services for Fujairah Creative City with complete documentation, government processing, compliance support, and end-to-end customer assistance.",
-            "image": "/img/service/Picflow Images Aug 8/fujairah-creative-city.webp"
+            "image": "/img/service/main-services/fujairah-creative-city.webp"
           }
         ]
       },
@@ -947,7 +949,8 @@
         "heading": "Free Zone ",
         "subtext": "Ready to get started with Free Zone ? Book a free consultation with a Horizon Line specialist today.",
         "cta_button": "Book a Free Consultation"
-      }
+      },
+      "image": "/img/service/main-services/free-zons.webp"
     },
     {
       "id": 4,
@@ -1060,13 +1063,13 @@
             "title": "Trademark Registration",
             "slug": "trademark-and-ip/trademark-registration",
             "description": "Horizon Line Management Consultancy LLC provides professional trademark registration services across the UAE with complete documentation, government processing, compliance support, and end-to-end customer assistance.",
-            "image": "/img/service/Picflow Images Aug 8/trademark-registration.webp"
+            "image": "/img/service/main-services/trademark-registration.webp"
           },
           {
             "title": "Copyright Registration",
             "slug": "trademark-and-ip/copyright-registration",
             "description": "Horizon Line Management Consultancy LLC provides professional copyright registration services across the UAE with complete documentation, government processing, compliance support, and end-to-end customer assistance.",
-            "image": "/img/service/Picflow Images Aug 8/copyright-registration.webp"
+            "image": "/img/service/main-services/copyright-registration.webp"
           }
         ]
       },
@@ -1229,7 +1232,8 @@
         "heading": "Trademark & IP",
         "subtext": "Ready to get started with Trademark & IP? Book a free consultation with a Horizon Line specialist today.",
         "cta_button": "Book a Free Consultation"
-      }
+      },
+      "image": "/img/service/main-services/trademark-and-ip.webp"
     },
     {
       "id": 5,
@@ -1342,13 +1346,13 @@
             "title": "Legal Documentation",
             "slug": "legal-services/legal-documentation",
             "description": "Horizon Line Management Consultancy LLC provides professional legal documentation services across the UAE with complete documentation, government processing, compliance support, and end-to-end customer assistance.",
-            "image": "/img/service/Picflow Images Aug 8/legal-documentation.webp"
+            "image": "/img/service/main-services/legal-documentation.webp"
           },
           {
             "title": "MOA Amendment",
             "slug": "legal-services/moa-amendment",
             "description": "Horizon Line Management Consultancy LLC provides professional moa amendment services across the UAE with complete documentation, government processing, compliance support, and end-to-end customer assistance.",
-            "image": "/img/service/Picflow Images Aug 8/moa-amendment.webp"
+            "image": "/img/service/main-services/moa-amendment.webp"
           }
         ]
       },
@@ -1511,7 +1515,8 @@
         "heading": "Legal Services",
         "subtext": "Ready to get started with Legal Services? Book a free consultation with a Horizon Line specialist today.",
         "cta_button": "Book a Free Consultation"
-      }
+      },
+      "image": "/img/service/main-services/legal-services.webp"
     },
     {
       "id": 6,
@@ -1624,13 +1629,13 @@
             "title": "Business License Amendment",
             "slug": "business-support/business-license-amendment",
             "description": "Horizon Line Management Consultancy LLC provides professional business license amendment services across the UAE with complete documentation, government processing, compliance support, and end-to-end customer assistance.",
-            "image": "/img/service/Picflow Images Aug 8/business-license-amendment.webp"
+            "image": "/img/service/main-services/business-license-amendment.webp"
           },
           {
             "title": "Business License Cancellation",
             "slug": "business-support/business-license-cancellation",
             "description": "Horizon Line Management Consultancy LLC provides professional business license cancellation services across the UAE with complete documentation, government processing, compliance support, and end-to-end customer assistance.",
-            "image": "/img/service/Picflow Images Aug 8/business-license-cancellation.webp"
+            "image": "/img/service/main-services/business-license-cancellation.webp"
           }
         ]
       },
@@ -1793,7 +1798,8 @@
         "heading": "Business Support",
         "subtext": "Ready to get started with Business Support? Book a free consultation with a Horizon Line specialist today.",
         "cta_button": "Book a Free Consultation"
-      }
+      },
+      "image": "/img/service/main-services/business-support.webp"
     },
     {
       "id": 7,
@@ -1906,13 +1912,13 @@
             "title": "Investor Visa",
             "slug": "visa-services/investor-visa",
             "description": "Horizon Line Management Consultancy LLC provides professional investor visa services across the UAE with complete documentation, government processing, compliance support, and end-to-end customer assistance.",
-            "image": "/img/service/Picflow Images Aug 8/investor-visa.webp"
+            "image": "/img/service/main-services/investor-visa.webp"
           },
           {
             "title": "Employment Visa",
             "slug": "visa-services/employment-visa",
             "description": "Horizon Line Management Consultancy LLC provides professional employment visa services across the UAE with complete documentation, government processing, compliance support, and end-to-end customer assistance.",
-            "image": "/img/service/Picflow Images Aug 8/employment-visa.webp"
+            "image": "/img/service/main-services/employment-visa.webp"
           },
           {
             "title": "Family Visa",
@@ -1923,13 +1929,13 @@
             "title": "Golden Visa",
             "slug": "visa-services/golden-visa",
             "description": "Horizon Line Management Consultancy LLC provides professional golden visa services across the UAE with complete documentation, government processing, compliance support, and end-to-end customer assistance.",
-            "image": "/img/service/Picflow Images Aug 8/golden-visa.webp"
+            "image": "/img/service/main-services/golden-visa.webp"
           },
           {
             "title": "Emirates ID",
             "slug": "visa-services/emirates-id",
             "description": "Horizon Line Management Consultancy LLC provides professional emirates id services across the UAE with complete documentation, government processing, compliance support, and end-to-end customer assistance.",
-            "image": "/img/service/Picflow Images Aug 8/emirates-id.webp"
+            "image": "/img/service/main-services/emirates-id.webp"
           },
           {
             "title": "Medical Test",
@@ -2097,7 +2103,8 @@
         "heading": "Visa Services",
         "subtext": "Ready to get started with Visa Services? Book a free consultation with a Horizon Line specialist today.",
         "cta_button": "Book a Free Consultation"
-      }
+      },
+      "image": "/img/service/main-services/visa-services.webp"
     },
     {
       "id": 8,
@@ -2210,13 +2217,13 @@
             "title": "Student Services",
             "slug": "ministry-of-education/student-services",
             "description": "Horizon Line Management Consultancy LLC provides professional Academic  Equivalency Certificate services across the UAE with complete documentation, government processing, compliance support, and end-to-end customer assistance.",
-            "image": "/img/service/Picflow Images Aug 8/student-services.webp"
+            "image": "/img/service/main-services/student-services.webp"
           },
           {
             "title": "Academic  Services",
             "slug": "ministry-of-education/academic-services",
             "description": "Horizon Line Management Consultancy LLC provides professional Academic  Equivalency Certificate services across the UAE with complete documentation, government processing, compliance support, and end-to-end customer assistance.",
-            "image": "/img/service/Picflow Images Aug 8/academic-services.webp"
+            "image": "/img/service/main-services/academic-services.webp"
           }
         ]
       },
@@ -2379,7 +2386,8 @@
         "heading": "Ministry of Education",
         "subtext": "Ready to get started with Ministry of Education? Book a free consultation with a Horizon Line specialist today.",
         "cta_button": "Book a Free Consultation"
-      }
+      },
+      "image": "/img/service/main-services/ministry-of-education.webp"
     },
     {
       "id": 9,
@@ -2492,7 +2500,7 @@
             "title": "Health",
             "slug": "mohap/health",
             "description": "Horizon Line Management Consultancy LLC provides professional Helath Fitness services across the UAE with complete documentation, government processing, compliance support, and end-to-end customer assistance.",
-            "image": "/img/service/Picflow Images Aug 8/health.webp"
+            "image": "/img/service/main-services/health.webp"
           }
         ]
       },
@@ -2655,7 +2663,8 @@
         "heading": "MOHAP",
         "subtext": "Ready to get started with MOHAP? Book a free consultation with a Horizon Line specialist today.",
         "cta_button": "Book a Free Consultation"
-      }
+      },
+      "image": "/img/service/main-services/mohap.webp"
     },
     {
       "id": 10,
@@ -2768,7 +2777,7 @@
             "title": "Patients",
             "slug": "ehs/patients",
             "description": "Horizon Line Management Consultancy LLC provides professional medical records  services across the UAE with complete documentation, government processing, compliance support, and end-to-end customer assistance.",
-            "image": "/img/service/Picflow Images Aug 8/patients.webp"
+            "image": "/img/service/main-services/patients.webp"
           }
         ]
       },
@@ -2931,7 +2940,8 @@
         "heading": "EHS",
         "subtext": "Ready to get started with EHS? Book a free consultation with a Horizon Line specialist today.",
         "cta_button": "Book a Free Consultation"
-      }
+      },
+      "image": "/img/service/main-services/ehs.webp"
     },
     {
       "id": 11,
@@ -3044,25 +3054,25 @@
             "title": "Police Clearance Certificate",
             "slug": "police/police-clearance-certificate",
             "description": "Horizon Line Management Consultancy LLC  services for Police Clearance Certificate documentation, government processing, compliance support, and end-to-end customer assistance.",
-            "image": "/img/service/Picflow Images Aug 8/police-clearance-certificate.webp"
+            "image": "/img/service/main-services/police-clearance-certificate.webp"
           },
           {
             "title": "Good Conduct Certificate",
             "slug": "police/good-conduct-certificate",
             "description": "Horizon Line Management Consultancy LLC services for Good Conduct Certificate,government processing, compliance support, and end-to-end customer assistance.",
-            "image": "/img/service/Picflow Images Aug 8/good-conduct-certificate.webp"
+            "image": "/img/service/main-services/good-conduct-certificate.webp"
           },
           {
             "title": "Lost Passport Report",
             "slug": "police/lost-passport-report",
             "description": "Horizon Line Management Consultancy LLC services for Lost Passport Report, government processing, compliance support, and end-to-end customer assistance.",
-            "image": "/img/service/Picflow Images Aug 8/lost-passport-report.webp"
+            "image": "/img/service/main-services/lost-passport-report.webp"
           },
           {
             "title": "Lost Emirates ID Report",
             "slug": "police/lost-emirates-id-report",
             "description": "Horizon Line Management Consultancy LLC services for Lost Emirates ID Report, government processing, compliance support, and end-to-end customer assistance.",
-            "image": "/img/service/Picflow Images Aug 8/lost-emirates-id-report.webp"
+            "image": "/img/service/main-services/lost-emirates-id-report.webp"
           },
           {
             "title": "Lost Mobile Report",
@@ -3078,19 +3088,19 @@
             "title": "Traffic Accident Report",
             "slug": "police/traffic-accident-report",
             "description": "Horizon Line Management Consultancy LLC services for Traffic Accident Report, government processing, compliance support, and end-to-end customer assistance.",
-            "image": "/img/service/Picflow Images Aug 8/traffic-accident-report.webp"
+            "image": "/img/service/main-services/traffic-accident-report.webp"
           },
           {
             "title": "Vehicle Impound Release",
             "slug": "police/vehicle-impound-release",
             "description": "Horizon Line Management Consultancy LLC  services for Vehicle Impound Release, government processing, compliance support, and end-to-end customer assistance.",
-            "image": "/img/service/Picflow Images Aug 8/vehicle-impound-release.webp"
+            "image": "/img/service/main-services/vehicle-impound-release.webp"
           },
           {
             "title": "Cybercrime Complaint",
             "slug": "police/cybercrime-complaint",
             "description": "Horizon Line Management Consultancy LLC services for Cybercrime Complaint, government processing, compliance support, and end-to-end customer assistance.",
-            "image": "/img/service/Picflow Images Aug 8/cybercrime-complaint.webp"
+            "image": "/img/service/main-services/cybercrime-complaint.webp"
           },
           {
             "title": "Criminal Complaint",
@@ -3258,7 +3268,8 @@
         "heading": "Police",
         "subtext": "Ready to get started with Police? Book a free consultation with a Horizon Line specialist today.",
         "cta_button": "Book a Free Consultation"
-      }
+      },
+      "image": "/img/service/main-services/police.webp"
     },
     {
       "id": 12,
@@ -3371,36 +3382,37 @@
             "title": "VAT Registration",
             "slug": "tax-and-compliance/vat-registration",
             "description": "Horizon Line Management Consultancy LLC provides professional vat registration services across the UAE with complete documentation, government processing, compliance support, and end-to-end customer assistance.",
-            "image": "/img/service/Picflow Images Aug 8/vat-registration.webp"
+            "image": "/img/service/main-services/vat-registration.webp"
           },
           {
             "title": "VAT Return Filing",
             "slug": "tax-and-compliance/vat-return-filing",
             "description": "Horizon Line Management Consultancy LLC provides professional vat return filing services across the UAE with complete documentation, government processing, compliance support, and end-to-end customer assistance.",
-            "image": "/img/service/Picflow Images Aug 8/vat-return-filing.webp"
+            "image": "/img/service/main-services/vat-return-filing.webp"
           },
           {
             "title": "Corporate Tax Registration",
             "slug": "tax-and-compliance/corporate-tax-registration",
             "description": "Horizon Line Management Consultancy LLC provides professional corporate tax registration services across the UAE with complete documentation, government processing, compliance support, and end-to-end customer assistance.",
-            "image": "/img/service/Picflow Images Aug 8/corporate-tax-registration.webp"
+            "image": "/img/service/main-services/corporate-tax-registration.webp"
           },
           {
             "title": "Corporate Tax Filing",
             "slug": "tax-and-compliance/corporate-tax-filing",
             "description": "Horizon Line Management Consultancy LLC provides professional corporate tax filing services across the UAE with complete documentation, government processing, compliance support, and end-to-end customer assistance.",
-            "image": "/img/service/Picflow Images Aug 8/corporate-tax-filing.webp"
+            "image": "/img/service/main-services/corporate-tax-filing.webp"
           },
           {
             "title": "Accounting & Bookkeeping",
             "slug": "tax-and-compliance/accounting-and-bookkeeping",
-            "description": "Horizon Line Management Consultancy LLC provides professional accounting & bookkeeping services across the UAE with complete documentation, government processing, compliance support, and end-to-end customer assistance."
+            "description": "Horizon Line Management Consultancy LLC provides professional accounting & bookkeeping services across the UAE with complete documentation, government processing, compliance support, and end-to-end customer assistance.",
+            "image": "/img/service/main-services/accounting-and-bookkeeping.webp"
           },
           {
             "title": "Audit Support",
             "slug": "tax-and-compliance/audit-support",
             "description": "Horizon Line Management Consultancy LLC provides professional audit support services across the UAE with complete documentation, government processing, compliance support, and end-to-end customer assistance.",
-            "image": "/img/service/Picflow Images Aug 8/audit-support.webp"
+            "image": "/img/service/main-services/audit-support.webp"
           }
         ]
       },
@@ -3563,7 +3575,8 @@
         "heading": "Tax & Compliance",
         "subtext": "Ready to get started with Tax & Compliance? Book a free consultation with a Horizon Line specialist today.",
         "cta_button": "Book a Free Consultation"
-      }
+      },
+      "image": "/img/service/main-services/tax-and-compliance.webp"
     },
     {
       "id": 13,
@@ -3838,7 +3851,8 @@
         "heading": "FTA",
         "subtext": "Ready to get started with FTA? Book a free consultation with a Horizon Line specialist today.",
         "cta_button": "Book a Free Consultation"
-      }
+      },
+      "image": "/img/service/main-services/fta.webp"
     },
     {
       "id": 14,
@@ -3951,7 +3965,7 @@
             "title": "Corporate Bank Account",
             "slug": "banking/corporate-bank-account",
             "description": "Horizon Line Management Consultancy LLC provides professional corporate bank account services across the UAE with complete documentation, government processing, compliance support, and end-to-end customer assistance.",
-            "image": "/img/service/Picflow Images Aug 8/corporate-bank-account.webp"
+            "image": "/img/service/main-services/corporate-bank-account.webp"
           }
         ]
       },
@@ -4114,7 +4128,8 @@
         "heading": "Banking",
         "subtext": "Ready to get started with Banking? Book a free consultation with a Horizon Line specialist today.",
         "cta_button": "Book a Free Consultation"
-      }
+      },
+      "image": "/img/service/main-services/banking.webp"
     },
     {
       "id": 15,
@@ -4389,7 +4404,8 @@
         "heading": "DEWA",
         "subtext": "Ready to get started with DEWA? Book a free consultation with a Horizon Line specialist today.",
         "cta_button": "Book a Free Consultation"
-      }
+      },
+      "image": "/img/service/main-services/dewa.webp"
     },
     {
       "id": 16,
@@ -4507,67 +4523,67 @@
             "title": "Electricity Connection",
             "slug": "sewa/electricity-connection",
             "description": "Horizon Line Management Consultancy LLC provides Sharjah  Water and Electricity Authority with complete documentation, government processing, compliance support, and end-to-end customer assistance.",
-            "image": "/img/service/Picflow Images Aug 8/electricity-connection.webp"
+            "image": "/img/service/main-services/electricity-connection.webp"
           },
           {
             "title": "Water Connection",
             "slug": "sewa/water-connection",
             "description": "Horizon Line Management Consultancy LLC provides Sharjah  Water and Electricity Authority with complete documentation, government processing, compliance support, and end-to-end customer assistance.",
-            "image": "/img/service/Picflow Images Aug 8/water-connection.webp"
+            "image": "/img/service/main-services/water-connection.webp"
           },
           {
             "title": "Gas Connection",
             "slug": "sewa/gas-connection",
             "description": "Horizon Line Management Consultancy LLC provides Sharjah  Water and Electricity Authority with complete documentation, government processing, compliance support, and end-to-end customer assistance.",
-            "image": "/img/service/Picflow Images Aug 8/gas-connection.webp"
+            "image": "/img/service/main-services/gas-connection.webp"
           },
           {
             "title": "New Account Opening",
             "slug": "sewa/new-account-opening",
             "description": "Horizon Line Management Consultancy LLC provides Sharjah  Water and Electricity Authority with complete documentation, government processing, compliance support, and end-to-end customer assistance.",
-            "image": "/img/service/Picflow Images Aug 8/new-account-opening.webp"
+            "image": "/img/service/main-services/new-account-opening.webp"
           },
           {
             "title": "Bill Payment",
             "slug": "sewa/bill-payment",
             "description": "Horizon Line Management Consultancy LLC provides Sharjah  Water and Electricity Authority with complete documentation, government processing, compliance support, and end-to-end customer assistance.",
-            "image": "/img/service/Picflow Images Aug 8/bill-payment.webp"
+            "image": "/img/service/main-services/bill-payment.webp"
           },
           {
             "title": "Final Bill",
             "slug": "sewa/final-bill",
             "description": "Horizon Line Management Consultancy LLC provides Sharjah  Water and Electricity Authority with complete documentation, government processing, compliance support, and end-to-end customer assistance.",
-            "image": "/img/service/Picflow Images Aug 8/final-bill.webp"
+            "image": "/img/service/main-services/final-bill.webp"
           },
           {
             "title": "Move In",
             "slug": "sewa/move-in",
             "description": "Horizon Line Management Consultancy LLC provides Sharjah  Water and Electricity Authority with complete documentation, government processing, compliance support, and end-to-end customer assistance.",
-            "image": "/img/service/Picflow Images Aug 8/move-in.webp"
+            "image": "/img/service/main-services/move-in.webp"
           },
           {
             "title": "Move Out",
             "slug": "sewa/move-out",
             "description": "Horizon Line Management Consultancy LLC provides Sharjah  Water and Electricity Authority with complete documentation, government processing, compliance support, and end-to-end customer assistance.",
-            "image": "/img/service/Picflow Images Aug 8/Move-out.webp"
+            "image": "/img/service/main-services/move-out.webp"
           },
           {
             "title": "Meter Testing",
             "slug": "sewa/meter-testing",
             "description": "Horizon Line Management Consultancy LLC provides Sharjah  Water and Electricity Authority with complete documentation, government processing, compliance support, and end-to-end customer assistance.",
-            "image": "/img/service/Picflow Images Aug 8/meter-testing.webp"
+            "image": "/img/service/main-services/meter-testing.webp"
           },
           {
             "title": "High Bill Investigation",
             "slug": "sewa/high-bill-investigation",
             "description": "Horizon Line Management Consultancy LLC provides Sharjah  Water and Electricity Authority with complete documentation, government processing, compliance support, and end-to-end customer assistance.",
-            "image": "/img/service/Picflow Images Aug 8/high-bill-investigation.webp"
+            "image": "/img/service/main-services/high-bill-investigation.webp"
           },
           {
             "title": "Clearance Certificate",
             "slug": "sewa/clearance-certificate",
             "description": "Horizon Line Management Consultancy LLC provides Sharjah  Water and Electricity Authority with complete documentation, government processing, compliance support, and end-to-end customer assistance.",
-            "image": "/img/service/Picflow Images Aug 8/clearance-certificate.webp"
+            "image": "/img/service/main-services/clearance-certificate.webp"
           },
           {
             "title": "Complaint Registration",
@@ -4735,7 +4751,8 @@
         "heading": "SEWA",
         "subtext": "Ready to get started with SEWA? Book a free consultation with a Horizon Line specialist today.",
         "cta_button": "Book a Free Consultation"
-      }
+      },
+      "image": "/img/service/main-services/sewa.webp"
     },
     {
       "id": 17,
@@ -5010,7 +5027,8 @@
         "heading": "Etihad Water and Electricity",
         "subtext": "Ready to get started with Etihad Water and Electricity? Book a free consultation with a Horizon Line specialist today.",
         "cta_button": "Book a Free Consultation"
-      }
+      },
+      "image": "/img/service/main-services/etihad-water-and-electricity.webp"
     },
     {
       "id": 18,
@@ -5285,7 +5303,8 @@
         "heading": "Dubai Municipality",
         "subtext": "Ready to get started with Dubai Municipality? Book a free consultation with a Horizon Line specialist today.",
         "cta_button": "Book a Free Consultation"
-      }
+      },
+      "image": "/img/service/main-services/dubai-municipality.webp"
     },
     {
       "id": 19,
@@ -5560,7 +5579,8 @@
         "heading": "Sharjah Municipality",
         "subtext": "Ready to get started with Sharjah Municipality? Book a free consultation with a Horizon Line specialist today.",
         "cta_button": "Book a Free Consultation"
-      }
+      },
+      "image": "/img/service/main-services/sharjah-municipality.webp"
     },
     {
       "id": 20,
@@ -5708,7 +5728,7 @@
             "title": "Vehicle Export Certificate",
             "slug": "rta/vehicle-export-certificate",
             "description": "Horizon Line Management Consultancy LLC services for Vehicle Export Certificate documentation, government processing, compliance support, and end-to-end customer assistance.",
-            "image": "/img/service/Picflow Images Aug 8/vehicle-export-certificate.webp"
+            "image": "/img/service/main-services/vehicle-export-certificate.webp"
           }
         ]
       },
@@ -5871,7 +5891,8 @@
         "heading": "RTA",
         "subtext": "Ready to get started with RTA? Book a free consultation with a Horizon Line specialist today.",
         "cta_button": "Book a Free Consultation"
-      }
+      },
+      "image": "/img/service/main-services/rta.webp"
     },
     {
       "id": 21,
@@ -6151,7 +6172,8 @@
         "heading": "HR Services",
         "subtext": "Ready to get started with HR Services? Book a free consultation with a Horizon Line specialist today.",
         "cta_button": "Book a Free Consultation"
-      }
+      },
+      "image": "/img/service/main-services/hr-services.webp"
     },
     {
       "id": 22,
@@ -6436,7 +6458,8 @@
         "heading": "Office Solutions",
         "subtext": "Ready to get started with Office Solutions? Book a free consultation with a Horizon Line specialist today.",
         "cta_button": "Book a Free Consultation"
-      }
+      },
+      "image": "/img/service/main-services/office-solutions.webp"
     },
     {
       "id": 23,
@@ -6716,7 +6739,8 @@
         "heading": "Digital Services",
         "subtext": "Ready to get started with Digital Services? Book a free consultation with a Horizon Line specialist today.",
         "cta_button": "Book a Free Consultation"
-      }
+      },
+      "image": "/img/service/main-services/digital-services.webp"
     }
   ],
   "sub_services": [

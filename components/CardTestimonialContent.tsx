@@ -12,9 +12,9 @@ const CardTestimonialContent = ({ data }: {data: TestimonialProps}) => {
     return (
         <div className="thumb-card">
             <span className="icon icon-80 flex"><Icons.Quote2 /></span>        
-            {review && <p className="text text-24">{parser(review)}</p>}
-            {name && <h2 className="user-name heading text-24">{name}</h2>}
-            {role && <div className="user-desig text text-19">{role}</div>}
+            {review && <p className="text text-16">{parser(review)}</p>}
+            {name && <h2 className="user-name heading text-18">{name}</h2>}
+            {role && <div className="user-desig text text-14">{role}</div>}
         </div>
     )
 }

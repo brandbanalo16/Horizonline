@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Thumbs, Pagination } from "swiper/modules";
+import { Thumbs, Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/thumbs";
@@ -30,8 +30,9 @@ const TestimonialSliderWithThumb2 = ({ data }: { data: SectionProps }) => {
             <div className="lg:col-span-6 col-span-12">
               <div className="main-img" data-aos="fade-right">
                 <Swiper
-                  modules={[Pagination, Thumbs]}
+                  modules={[Pagination, Thumbs, Autoplay]}
                   thumbs={{ swiper: thumbSwiper }}
+                  autoplay={{ delay: 3000, disableOnInteraction: false }}
                   pagination={{
                     el: ".custom-pagination-thumb-img",
                     clickable: true,
