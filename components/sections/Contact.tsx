@@ -68,7 +68,7 @@ const ContactSection = ({ data }: { data: SectionProps }) => {
             setStatus("error");
             setMessage(error.message);
             clearMessage(4000);
-        }        
+        }
     };
 
     return (
@@ -79,7 +79,7 @@ const ContactSection = ({ data }: { data: SectionProps }) => {
                         <div className="max-lg:col-span-2 max-xxl:col-span-1 col-contact-content">
                             <div className="section-headings">
                                 {subheading &&
-                                    <Subheading 
+                                    <Subheading
                                         title={subheading}
                                         cls="text-20"
                                         aos="fade-up"
@@ -87,7 +87,7 @@ const ContactSection = ({ data }: { data: SectionProps }) => {
                                 }
 
                                 {heading &&
-                                    <Heading 
+                                    <Heading
                                         title={heading}
                                         cls="text-50"
                                         aos="fade-up"
@@ -95,7 +95,7 @@ const ContactSection = ({ data }: { data: SectionProps }) => {
                                 }
 
                                 {text &&
-                                    <Text 
+                                    <Text
                                         text={text}
                                         cls="text-18"
                                         aos="fade-up"
@@ -103,8 +103,8 @@ const ContactSection = ({ data }: { data: SectionProps }) => {
                                 }
 
                                 {promotions?.map((item, index) => (
-                                    <div 
-                                        className="card-icon-text card-icon-text-horizontal" 
+                                    <div
+                                        className="card-icon-text card-icon-text-horizontal"
                                         key={`promo-${index}`}
                                     >
                                         {item.icon &&
@@ -127,7 +127,7 @@ const ContactSection = ({ data }: { data: SectionProps }) => {
                                             }
                                         </div>
                                     </div>
-                                ))}                                
+                                ))}
                             </div>
                         </div>
 
@@ -149,11 +149,11 @@ const ContactSection = ({ data }: { data: SectionProps }) => {
                                     </div>
                                 }
 
-                                <Form 
-                                    cls="form contact-form main-contact-form" 
+                                <Form
+                                    cls="form contact-form main-contact-form"
                                     onSubmitHandler={handleSubmit}
                                 >
-                                    <TextField 
+                                    <TextField
                                         cls="text-16"
                                         id="ContactForm-name"
                                         label="Your Name"
@@ -163,7 +163,7 @@ const ContactSection = ({ data }: { data: SectionProps }) => {
                                         required={true}
                                     />
 
-                                    <TextField 
+                                    <TextField
                                         cls="text-16"
                                         id="ContactForm-email"
                                         label="Your Email"
@@ -173,7 +173,7 @@ const ContactSection = ({ data }: { data: SectionProps }) => {
                                         required={false}
                                     />
 
-                                    <TextField 
+                                    <TextField
                                         cls="text-16"
                                         id="ContactForm-service"
                                         label="Service Type"
@@ -183,7 +183,7 @@ const ContactSection = ({ data }: { data: SectionProps }) => {
                                         required={false}
                                     />
 
-                                    <TextArea 
+                                    <TextArea
                                         cls="text-16"
                                         id="ContactForm-body"
                                         label="Your Comment"
@@ -193,17 +193,17 @@ const ContactSection = ({ data }: { data: SectionProps }) => {
                                     />
 
                                     <div
-                                        className="form-button" 
+                                        className="form-button"
                                         data-aos="fade-up"
                                     >
                                         {loading ? (
-                                            <SecondaryButton 
+                                            <SecondaryButton
                                                 cls="loading"
                                                 label="Sending..."
                                                 ariaLabel="Sending message"
                                             />
                                         ) : (
-                                            <SecondaryButton 
+                                            <SecondaryButton
                                                 label="Send Message"
                                                 ariaLabel="Send Message"
                                             />

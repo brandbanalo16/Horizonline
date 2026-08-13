@@ -146,7 +146,8 @@
           {
             "title": "Industrial License",
             "slug": "business-setup/industrial-license",
-            "description": "Horizon Line Management Consultancy LLC provides professional industrial license services across the UAE with complete documentation, government processing, compliance support, and end-to-end customer assistance."
+            "description": "Horizon Line Management Consultancy LLC provides professional industrial license services across the UAE with complete documentation, government processing, compliance support, and end-to-end customer assistance.",
+            "image": "/img/service/main-services/industrial-license.webp"
           },
           {
             "title": "Trade License Renewal",
@@ -440,22 +441,26 @@
           {
             "title": "PRO Services",
             "slug": "corporate-services/pro-services",
-            "description": "Horizon Line Management Consultancy LLC provides professional pro services services across the UAE with complete documentation, government processing, compliance support, and end-to-end customer assistance."
+            "description": "Horizon Line Management Consultancy LLC provides professional pro services services across the UAE with complete documentation, government processing, compliance support, and end-to-end customer assistance.",
+            "image": "/img/service/main-services/pro-services.webp"
           },
           {
             "title": "Document Clearing",
             "slug": "corporate-services/document-clearing",
-            "description": "Horizon Line Management Consultancy LLC provides professional document clearing services across the UAE with complete documentation, government processing, compliance support, and end-to-end customer assistance."
+            "description": "Horizon Line Management Consultancy LLC provides professional document clearing services across the UAE with complete documentation, government processing, compliance support, and end-to-end customer assistance.",
+            "image": "/img/service/main-services/document-clearing.webp"
           },
           {
             "title": "Company Liquidation",
             "slug": "corporate-services/company-liquidation",
-            "description": "Horizon Line Management Consultancy LLC provides professional company liquidation services across the UAE with complete documentation, government processing, compliance support, and end-to-end customer assistance."
+            "description": "Horizon Line Management Consultancy LLC provides professional company liquidation services across the UAE with complete documentation, government processing, compliance support, and end-to-end customer assistance.",
+            "image": "/img/service/main-services/company-liquidation.webp"
           },
           {
             "title": "Corporate Restructuring",
             "slug": "corporate-services/corporate-restructuring",
-            "description": "Horizon Line Management Consultancy LLC provides professional corporate restructuring services across the UAE with complete documentation, government processing, compliance support, and end-to-end customer assistance."
+            "description": "Horizon Line Management Consultancy LLC provides professional corporate restructuring services across the UAE with complete documentation, government processing, compliance support, and end-to-end customer assistance.",
+            "image": "/img/service/main-services/corporate-restructuring.webp"
           }
         ]
       },
@@ -1923,7 +1928,8 @@
           {
             "title": "Family Visa",
             "slug": "visa-services/family-visa",
-            "description": "Horizon Line Management Consultancy LLC provides professional family visa services across the UAE with complete documentation, government processing, compliance support, and end-to-end customer assistance."
+            "description": "Horizon Line Management Consultancy LLC provides professional family visa services across the UAE with complete documentation, government processing, compliance support, and end-to-end customer assistance.",
+            "image": "/img/service/main-services/family-visa.webp"
           },
           {
             "title": "Golden Visa",
@@ -1940,7 +1946,8 @@
           {
             "title": "Medical Test",
             "slug": "visa-services/medical-test",
-            "description": "Horizon Line Management Consultancy LLC provides professional medical test services across the UAE with complete documentation, government processing, compliance support, and end-to-end customer assistance."
+            "description": "Horizon Line Management Consultancy LLC provides professional medical test services across the UAE with complete documentation, government processing, compliance support, and end-to-end customer assistance.",
+            "image": "/img/service/main-services/medical-test.webp"
           }
         ]
       },
@@ -3077,12 +3084,14 @@
           {
             "title": "Lost Mobile Report",
             "slug": "police/lost-mobile-report",
-            "description": "Horizon Line Management Consultancy LLC services for Lost Mobile Report, government processing, compliance support, and end-to-end customer assistance."
+            "description": "Horizon Line Management Consultancy LLC services for Lost Mobile Report, government processing, compliance support, and end-to-end customer assistance.",
+            "image": "/img/service/main-services/lost-mobile-report.webp"
           },
           {
             "title": "Traffic Fine Payment",
             "slug": "police/traffic-fine-payment",
-            "description": "Horizon Line Management Consultancy LLC services for Traffic Fine Payment, government processing, compliance support, and end-to-end customer assistance."
+            "description": "Horizon Line Management Consultancy LLC services for Traffic Fine Payment, government processing, compliance support, and end-to-end customer assistance.",
+            "image": "/img/service/main-services/traffic-fine-payment.webp"
           },
           {
             "title": "Traffic Accident Report",
@@ -3105,7 +3114,8 @@
           {
             "title": "Criminal Complaint",
             "slug": "police/criminal-complaint",
-            "description": "Horizon Line Management Consultancy LLC provides Criminal Complaint, government processing, compliance support, and end-to-end customer assistance."
+            "description": "Horizon Line Management Consultancy LLC provides Criminal Complaint, government processing, compliance support, and end-to-end customer assistance.",
+            "image": "/img/service/main-services/criminal-complaint.webp"
           }
         ]
       },
@@ -3688,7 +3698,8 @@
           {
             "title": "Tax",
             "slug": "fta/tax",
-            "description": "Horizon Line Management Consultancy LLC provides professional business VAT Registration with complete documentation, government processing, compliance support, and end-to-end customer assistance."
+            "description": "Horizon Line Management Consultancy LLC provides professional business VAT Registration with complete documentation, government processing, compliance support, and end-to-end customer assistance.",
+            "image": "/img/service/main-services/tax.webp"
           }
         ]
       },
@@ -4241,7 +4252,8 @@
           {
             "title": "Utilities",
             "slug": "dewa/utilities",
-            "description": "Horizon Line Management Consultancy LLC provides Dubai  Water and Electricity Authority with complete documentation, government processing, compliance support, and end-to-end customer assistance."
+            "description": "Horizon Line Management Consultancy LLC provides Dubai  Water and Electricity Authority with complete documentation, government processing, compliance support, and end-to-end customer assistance.",
+            "image": "/img/service/main-services/dewa-utilities.webp"
           }
         ]
       },
@@ -4517,7 +4529,8 @@
           {
             "title": "Utilities",
             "slug": "sewa/utilities",
-            "description": "Horizon Line Management Consultancy LLC provides Sharjah  Water and Electricity Authority with complete documentation, government processing, compliance support, and end-to-end customer assistance."
+            "description": "Horizon Line Management Consultancy LLC provides Sharjah  Water and Electricity Authority with complete documentation, government processing, compliance support, and end-to-end customer assistance.",
+            "image": "/img/service/main-services/sewa-utilities.webp"
           },
           {
             "title": "Electricity Connection",
@@ -4588,7 +4601,8 @@
           {
             "title": "Complaint Registration",
             "slug": "sewa/complaint-registration",
-            "description": "Horizon Line Management Consultancy LLC provides Sharjah  Water and Electricity Authority with complete documentation, government processing, compliance support, and end-to-end customer assistance."
+            "description": "Horizon Line Management Consultancy LLC provides Sharjah  Water and Electricity Authority with complete documentation, government processing, compliance support, and end-to-end customer assistance.",
+            "image": "/img/service/main-services/complaint-registration.webp"
           }
         ]
       },
@@ -4864,7 +4878,8 @@
           {
             "title": "Utilities",
             "slug": "etihad-water-and-electricity/utilities",
-            "description": "Horizon Line Management Consultancy LLC provides Etihad Water and Electricity Authority with complete documentation, government processing, compliance support, and end-to-end customer assistance."
+            "description": "Horizon Line Management Consultancy LLC provides Etihad Water and Electricity Authority with complete documentation, government processing, compliance support, and end-to-end customer assistance.",
+            "image": "/img/service/main-services/ewes-utilities.webp"
           }
         ]
       },
@@ -5140,7 +5155,8 @@
           {
             "title": "Municipality",
             "slug": "dubai-municipality/municipality",
-            "description": " Horizon Line Management Consultancy LLC provides Building Permitwith complete documentation, government processing, compliance support, and end-to-end customer assistance."
+            "description": " Horizon Line Management Consultancy LLC provides Building Permitwith complete documentation, government processing, compliance support, and end-to-end customer assistance.",
+            "image": "/img/service/main-services/dubai-municipality-2.webp"
           }
         ]
       },
@@ -5416,7 +5432,8 @@
           {
             "title": "Municipality",
             "slug": "sharjah-municipality/municipality",
-            "description": "Horizon Line Management Consultancy LLC provides Tenancy Attestation  cancellation with complete documentation, government processing, compliance support, and end-to-end customer assistance."
+            "description": "Horizon Line Management Consultancy LLC provides Tenancy Attestation  cancellation with complete documentation, government processing, compliance support, and end-to-end customer assistance.",
+            "image": "/img/service/main-services/sharjah-municipality-2.webp"
           }
         ]
       },
@@ -5692,37 +5709,44 @@
           {
             "title": "Driving Licence Renewal",
             "slug": "rta/driving-licence-renewal",
-            "description": "Horizon Line Management Consultancy LLC provides professional business license formation services for Driving Licence Renewal documentation, government processing, compliance support, and end-to-end customer assistance."
+            "description": "Horizon Line Management Consultancy LLC provides professional business license formation services for Driving Licence Renewal documentation, government processing, compliance support, and end-to-end customer assistance.",
+            "image": "/img/service/main-services/driving-licence-renewal.webp"
           },
           {
             "title": "Driving Licence Replacement",
             "slug": "rta/driving-licence-replacement",
-            "description": "Horizon Line Management Consultancy LLC provides professional business license formation services for Replacement Driving Licence Renewal documentation, government processing, compliance support, and end-to-end customer assistance."
+            "description": "Horizon Line Management Consultancy LLC provides professional business license formation services for Replacement Driving Licence Renewal documentation, government processing, compliance support, and end-to-end customer assistance.",
+            "image": "/img/service/main-services/driving-licence-replacement.webp"
           },
           {
             "title": "Vehicle Registration",
             "slug": "rta/vehicle-registration",
-            "description": "Horizon Line Management Consultancy LLC provides services for vichle registration Renewal documentation, government processing, compliance support, and end-to-end customer assistance."
+            "description": "Horizon Line Management Consultancy LLC provides services for vichle registration Renewal documentation, government processing, compliance support, and end-to-end customer assistance.",
+            "image": "/img/service/main-services/vehicle-registration.webp"
           },
           {
             "title": "Vehicle Renewal",
             "slug": "rta/vehicle-renewal",
-            "description": "Horizon Line Management Consultancy LLC provides  services for vichle registration Renewal documentation, government processing, compliance support, and end-to-end customer assistance."
+            "description": "Horizon Line Management Consultancy LLC provides  services for vichle registration Renewal documentation, government processing, compliance support, and end-to-end customer assistance.",
+            "image": "/img/service/main-services/vehicle-renewal.webp"
           },
           {
             "title": "Vehicle Transfer",
             "slug": "rta/vehicle-transfer",
-            "description": "Horizon Line Management Consultancy LLC provides services for Vehicle Transfer  documentation, government processing, compliance support, and end-to-end customer assistance."
+            "description": "Horizon Line Management Consultancy LLC provides services for Vehicle Transfer  documentation, government processing, compliance support, and end-to-end customer assistance.",
+            "image": "/img/service/main-services/vehicle-transfer.webp"
           },
           {
             "title": "Salik Account",
             "slug": "rta/salik-account",
-            "description": "Horizon Line Management Consultancy LLC provides services for vichle registration Renewal documentation, government processing, compliance support, and end-to-end customer assistance."
+            "description": "Horizon Line Management Consultancy LLC provides services for vichle registration Renewal documentation, government processing, compliance support, and end-to-end customer assistance.",
+            "image": "/img/service/main-services/salik-account.webp"
           },
           {
             "title": "Parking Permit",
             "slug": "rta/parking-permit",
-            "description": "Horizon Line Management Consultancy LLC provides Parking Permit documentation, government processing, compliance support, and end-to-end customer assistance."
+            "description": "Horizon Line Management Consultancy LLC provides Parking Permit documentation, government processing, compliance support, and end-to-end customer assistance.",
+            "image": "/img/service/main-services/parking-permit.webp"
           },
           {
             "title": "Vehicle Export Certificate",
@@ -6004,12 +6028,14 @@
           {
             "title": "Payroll Management",
             "slug": "hr-services/payroll-management",
-            "description": "Horizon Line Management Consultancy LLC provides professional payroll management services across the UAE with complete documentation, government processing, compliance support, and end-to-end customer assistance."
+            "description": "Horizon Line Management Consultancy LLC provides professional payroll management services across the UAE with complete documentation, government processing, compliance support, and end-to-end customer assistance.",
+            "image": "/img/service/main-services/payroll-management.webp"
           },
           {
             "title": "Recruitment Support",
             "slug": "hr-services/recruitment-support",
-            "description": "Horizon Line Management Consultancy LLC provides professional recruitment support services across the UAE with complete documentation, government processing, compliance support, and end-to-end customer assistance."
+            "description": "Horizon Line Management Consultancy LLC provides professional recruitment support services across the UAE with complete documentation, government processing, compliance support, and end-to-end customer assistance.",
+            "image": "/img/service/main-services/recruitment-support.webp"
           }
         ]
       },
@@ -6285,17 +6311,20 @@
           {
             "title": "Flexi Desk",
             "slug": "office-solutions/flexi-desk",
-            "description": "Horizon Line Management Consultancy LLC provides professional flexi desk services across the UAE with complete documentation, government processing, compliance support, and end-to-end customer assistance."
+            "description": "Horizon Line Management Consultancy LLC provides professional flexi desk services across the UAE with complete documentation, government processing, compliance support, and end-to-end customer assistance.",
+            "image": "/img/service/main-services/flexi-desk.webp"
           },
           {
             "title": "Virtual Office",
             "slug": "office-solutions/virtual-office",
-            "description": "Horizon Line Management Consultancy LLC provides professional virtual office services across the UAE with complete documentation, government processing, compliance support, and end-to-end customer assistance."
+            "description": "Horizon Line Management Consultancy LLC provides professional virtual office services across the UAE with complete documentation, government processing, compliance support, and end-to-end customer assistance.",
+            "image": "/img/service/main-services/virtual-office.webp"
           },
           {
             "title": "Private Office",
             "slug": "office-solutions/private-office",
-            "description": "Horizon Line Management Consultancy LLC provides professional private office services across the UAE with complete documentation, government processing, compliance support, and end-to-end customer assistance."
+            "description": "Horizon Line Management Consultancy LLC provides professional private office services across the UAE with complete documentation, government processing, compliance support, and end-to-end customer assistance.",
+            "image": "/img/service/main-services/private-office.webp"
           }
         ]
       },
@@ -6571,12 +6600,14 @@
           {
             "title": "Website Development",
             "slug": "digital-services/website-development",
-            "description": "Horizon Line Management Consultancy LLC provides professional website development services across the UAE with complete documentation, government processing, compliance support, and end-to-end customer assistance."
+            "description": "Horizon Line Management Consultancy LLC provides professional website development services across the UAE with complete documentation, government processing, compliance support, and end-to-end customer assistance.",
+            "image": "/img/service/main-services/website-development.webp"
           },
           {
             "title": "Digital Marketing",
             "slug": "digital-services/digital-marketing",
-            "description": "Horizon Line Management Consultancy LLC provides professional digital marketing services across the UAE with complete documentation, government processing, compliance support, and end-to-end customer assistance."
+            "description": "Horizon Line Management Consultancy LLC provides professional digital marketing services across the UAE with complete documentation, government processing, compliance support, and end-to-end customer assistance.",
+            "image": "/img/service/main-services/digital-marketing.webp"
           }
         ]
       },
@@ -6848,7 +6879,7 @@
         ],
         "cta_button": "More About Us",
         "image": {
-          "src": "/img/service/Picflow Images Aug 8/mainland-company-formation.webp",
+          "src": "/img/service/main-services/mainland-company-formation.webp",
           "width": 968,
           "height": 862,
           "alt": "Mainland Company Formation",
@@ -7179,7 +7210,7 @@
         ],
         "cta_button": "More About Us",
         "image": {
-          "src": "/img/service/Picflow Images Aug 8/free-zone-company-formation.webp",
+          "src": "/img/service/main-services/free-zone-company-formation.webp",
           "width": 968,
           "height": 862,
           "alt": "Free Zone Company Formation",
@@ -7510,7 +7541,7 @@
         ],
         "cta_button": "More About Us",
         "image": {
-          "src": "/img/service/Picflow Images Aug 8/offshore-company-formation.webp",
+          "src": "/img/service/main-services/offshore-company-formation.webp",
           "width": 968,
           "height": 862,
           "alt": "Offshore Company Formation",
@@ -7841,7 +7872,7 @@
         ],
         "cta_button": "More About Us",
         "image": {
-          "src": "/img/service/Picflow Images Aug 8/branch-office-setup.webp",
+          "src": "/img/service/main-services/branch-office-setup.webp",
           "width": 968,
           "height": 862,
           "alt": "Branch Office Setup",
@@ -8172,7 +8203,7 @@
         ],
         "cta_button": "More About Us",
         "image": {
-          "src": "/img/service/Picflow Images Aug 8/professional-license.webp",
+          "src": "/img/service/main-services/professional-license.webp",
           "width": 968,
           "height": 862,
           "alt": "Professional License",
@@ -8503,7 +8534,7 @@
         ],
         "cta_button": "More About Us",
         "image": {
-          "src": "/img/service/Picflow Images Aug 8/commercial-license.webp",
+          "src": "/img/service/main-services/commercial-license.webp",
           "width": 968,
           "height": 862,
           "alt": "Commercial License",
@@ -8832,7 +8863,14 @@
             "text": "Businesses of all sizes trust our expertise."
           }
         ],
-        "cta_button": "More About Us"
+        "cta_button": "More About Us",
+        "image": {
+          "src": "/img/service/main-services/industrial-license.webp",
+          "width": 968,
+          "height": 862,
+          "alt": "Industrial License",
+          "loading": "lazy"
+        }
       },
       "what_we_offer_section": {
         "eyebrow": "+ What We Offer +",
@@ -9158,7 +9196,7 @@
         ],
         "cta_button": "More About Us",
         "image": {
-          "src": "/img/service/Picflow Images Aug 8/trade-license-renewal.webp",
+          "src": "/img/service/main-services/trade-license-renewal.webp",
           "width": 968,
           "height": 862,
           "alt": "Trade License Renewal",
@@ -9489,7 +9527,7 @@
         ],
         "cta_button": "More About Us",
         "image": {
-          "src": "/img/service/Picflow Images Aug 8/business-consultation.webp",
+          "src": "/img/service/main-services/business-consultation.webp",
           "width": 968,
           "height": 862,
           "alt": "Business Consultation",
@@ -9820,7 +9858,7 @@
         ],
         "cta_button": "More About Us",
         "image": {
-          "src": "/img/service/Picflow Images Aug 8/business-plan.webp",
+          "src": "/img/service/main-services/business-plan.webp",
           "width": 968,
           "height": 862,
           "alt": "Business Plan",
@@ -10149,7 +10187,14 @@
             "text": "Businesses of all sizes trust our expertise."
           }
         ],
-        "cta_button": "More About Us"
+        "cta_button": "More About Us",
+        "image": {
+          "src": "/img/service/main-services/pro-services.webp",
+          "width": 968,
+          "height": 862,
+          "alt": "PRO Services",
+          "loading": "lazy"
+        }
       },
       "what_we_offer_section": {
         "eyebrow": "+ What We Offer +",
@@ -10473,7 +10518,14 @@
             "text": "Businesses of all sizes trust our expertise."
           }
         ],
-        "cta_button": "More About Us"
+        "cta_button": "More About Us",
+        "image": {
+          "src": "/img/service/main-services/document-clearing.webp",
+          "width": 968,
+          "height": 862,
+          "alt": "Document Clearing",
+          "loading": "lazy"
+        }
       },
       "what_we_offer_section": {
         "eyebrow": "+ What We Offer +",
@@ -10797,7 +10849,14 @@
             "text": "Businesses of all sizes trust our expertise."
           }
         ],
-        "cta_button": "More About Us"
+        "cta_button": "More About Us",
+        "image": {
+          "src": "/img/service/main-services/company-liquidation.webp",
+          "width": 968,
+          "height": 862,
+          "alt": "Company Liquidation",
+          "loading": "lazy"
+        }
       },
       "what_we_offer_section": {
         "eyebrow": "+ What We Offer +",
@@ -11121,7 +11180,14 @@
             "text": "Businesses of all sizes trust our expertise."
           }
         ],
-        "cta_button": "More About Us"
+        "cta_button": "More About Us",
+        "image": {
+          "src": "/img/service/main-services/corporate-restructuring.webp",
+          "width": 968,
+          "height": 862,
+          "alt": "Corporate Restructuring",
+          "loading": "lazy"
+        }
       },
       "what_we_offer_section": {
         "eyebrow": "+ What We Offer +",
@@ -11447,7 +11513,7 @@
         ],
         "cta_button": "More About Us",
         "image": {
-          "src": "/img/service/Picflow Images Aug 8/investor-visa.webp",
+          "src": "/img/service/main-services/investor-visa.webp",
           "width": 968,
           "height": 862,
           "alt": "Investor Visa",
@@ -11778,7 +11844,7 @@
         ],
         "cta_button": "More About Us",
         "image": {
-          "src": "/img/service/Picflow Images Aug 8/employment-visa.webp",
+          "src": "/img/service/main-services/employment-visa.webp",
           "width": 968,
           "height": 862,
           "alt": "Employment Visa",
@@ -12107,7 +12173,14 @@
             "text": "Businesses of all sizes trust our expertise."
           }
         ],
-        "cta_button": "More About Us"
+        "cta_button": "More About Us",
+        "image": {
+          "src": "/img/service/main-services/family-visa.webp",
+          "width": 968,
+          "height": 862,
+          "alt": "Family Visa",
+          "loading": "lazy"
+        }
       },
       "what_we_offer_section": {
         "eyebrow": "+ What We Offer +",
@@ -12433,7 +12506,7 @@
         ],
         "cta_button": "More About Us",
         "image": {
-          "src": "/img/service/Picflow Images Aug 8/golden-visa.webp",
+          "src": "/img/service/main-services/golden-visa.webp",
           "width": 968,
           "height": 862,
           "alt": "Golden Visa",
@@ -12764,7 +12837,7 @@
         ],
         "cta_button": "More About Us",
         "image": {
-          "src": "/img/service/Picflow Images Aug 8/emirates-id.webp",
+          "src": "/img/service/main-services/emirates-id.webp",
           "width": 968,
           "height": 862,
           "alt": "Emirates ID",
@@ -13093,7 +13166,14 @@
             "text": "Businesses of all sizes trust our expertise."
           }
         ],
-        "cta_button": "More About Us"
+        "cta_button": "More About Us",
+        "image": {
+          "src": "/img/service/main-services/medical-test.webp",
+          "width": 968,
+          "height": 862,
+          "alt": "Medical Test",
+          "loading": "lazy"
+        }
       },
       "what_we_offer_section": {
         "eyebrow": "+ What We Offer +",
@@ -13419,7 +13499,7 @@
         ],
         "cta_button": "More About Us",
         "image": {
-          "src": "/img/service/Picflow Images Aug 8/vat-registration.webp",
+          "src": "/img/service/main-services/vat-registration.webp",
           "width": 968,
           "height": 862,
           "alt": "VAT Registration",
@@ -13750,7 +13830,7 @@
         ],
         "cta_button": "More About Us",
         "image": {
-          "src": "/img/service/Picflow Images Aug 8/vat-return-filing.webp",
+          "src": "/img/service/main-services/vat-return-filing.webp",
           "width": 968,
           "height": 862,
           "alt": "VAT Return Filing",
@@ -14081,7 +14161,7 @@
         ],
         "cta_button": "More About Us",
         "image": {
-          "src": "/img/service/Picflow Images Aug 8/corporate-tax-registration.webp",
+          "src": "/img/service/main-services/corporate-tax-registration.webp",
           "width": 968,
           "height": 862,
           "alt": "Corporate Tax Registration",
@@ -14412,7 +14492,7 @@
         ],
         "cta_button": "More About Us",
         "image": {
-          "src": "/img/service/Picflow Images Aug 8/corporate-tax-filing.webp",
+          "src": "/img/service/main-services/corporate-tax-filing.webp",
           "width": 968,
           "height": 862,
           "alt": "Corporate Tax Filing",
@@ -14741,7 +14821,14 @@
             "text": "Businesses of all sizes trust our expertise."
           }
         ],
-        "cta_button": "More About Us"
+        "cta_button": "More About Us",
+        "image": {
+          "src": "/img/service/main-services/accounting-and-bookkeeping.webp",
+          "width": 968,
+          "height": 862,
+          "alt": "Accounting & Bookkeeping",
+          "loading": "lazy"
+        }
       },
       "what_we_offer_section": {
         "eyebrow": "+ What We Offer +",
@@ -15067,7 +15154,7 @@
         ],
         "cta_button": "More About Us",
         "image": {
-          "src": "/img/service/Picflow Images Aug 8/audit-support.webp",
+          "src": "/img/service/main-services/audit-support.webp",
           "width": 968,
           "height": 862,
           "alt": "Audit Support",
@@ -15398,7 +15485,7 @@
         ],
         "cta_button": "More About Us",
         "image": {
-          "src": "/img/service/Picflow Images Aug 8/corporate-bank-account.webp",
+          "src": "/img/service/main-services/corporate-bank-account.webp",
           "width": 968,
           "height": 862,
           "alt": "Corporate Bank Account",
@@ -15727,7 +15814,14 @@
             "text": "Businesses of all sizes trust our expertise."
           }
         ],
-        "cta_button": "More About Us"
+        "cta_button": "More About Us",
+        "image": {
+          "src": "/img/service/main-services/flexi-desk.webp",
+          "width": 968,
+          "height": 862,
+          "alt": "Flexi Desk",
+          "loading": "lazy"
+        }
       },
       "what_we_offer_section": {
         "eyebrow": "+ What We Offer +",
@@ -16051,7 +16145,14 @@
             "text": "Businesses of all sizes trust our expertise."
           }
         ],
-        "cta_button": "More About Us"
+        "cta_button": "More About Us",
+        "image": {
+          "src": "/img/service/main-services/virtual-office.webp",
+          "width": 968,
+          "height": 862,
+          "alt": "Virtual Office",
+          "loading": "lazy"
+        }
       },
       "what_we_offer_section": {
         "eyebrow": "+ What We Offer +",
@@ -16375,7 +16476,14 @@
             "text": "Businesses of all sizes trust our expertise."
           }
         ],
-        "cta_button": "More About Us"
+        "cta_button": "More About Us",
+        "image": {
+          "src": "/img/service/main-services/private-office.webp",
+          "width": 968,
+          "height": 862,
+          "alt": "Private Office",
+          "loading": "lazy"
+        }
       },
       "what_we_offer_section": {
         "eyebrow": "+ What We Offer +",
@@ -16701,7 +16809,7 @@
         ],
         "cta_button": "More About Us",
         "image": {
-          "src": "/img/service/Picflow Images Aug 8/trademark-registration.webp",
+          "src": "/img/service/main-services/trademark-registration.webp",
           "width": 968,
           "height": 862,
           "alt": "Trademark Registration",
@@ -17032,7 +17140,7 @@
         ],
         "cta_button": "More About Us",
         "image": {
-          "src": "/img/service/Picflow Images Aug 8/copyright-registration.webp",
+          "src": "/img/service/main-services/copyright-registration.webp",
           "width": 968,
           "height": 862,
           "alt": "Copyright Registration",
@@ -17363,7 +17471,7 @@
         ],
         "cta_button": "More About Us",
         "image": {
-          "src": "/img/service/Picflow Images Aug 8/legal-documentation.webp",
+          "src": "/img/service/main-services/legal-documentation.webp",
           "width": 968,
           "height": 862,
           "alt": "Legal Documentation",
@@ -17694,7 +17802,7 @@
         ],
         "cta_button": "More About Us",
         "image": {
-          "src": "/img/service/Picflow Images Aug 8/moa-amendment.webp",
+          "src": "/img/service/main-services/moa-amendment.webp",
           "width": 968,
           "height": 862,
           "alt": "MOA Amendment",
@@ -18023,7 +18131,14 @@
             "text": "Businesses of all sizes trust our expertise."
           }
         ],
-        "cta_button": "More About Us"
+        "cta_button": "More About Us",
+        "image": {
+          "src": "/img/service/main-services/payroll-management.webp",
+          "width": 968,
+          "height": 862,
+          "alt": "Payroll Management",
+          "loading": "lazy"
+        }
       },
       "what_we_offer_section": {
         "eyebrow": "+ What We Offer +",
@@ -18347,7 +18462,14 @@
             "text": "Businesses of all sizes trust our expertise."
           }
         ],
-        "cta_button": "More About Us"
+        "cta_button": "More About Us",
+        "image": {
+          "src": "/img/service/main-services/recruitment-support.webp",
+          "width": 968,
+          "height": 862,
+          "alt": "Recruitment Support",
+          "loading": "lazy"
+        }
       },
       "what_we_offer_section": {
         "eyebrow": "+ What We Offer +",
@@ -18671,7 +18793,14 @@
             "text": "Businesses of all sizes trust our expertise."
           }
         ],
-        "cta_button": "More About Us"
+        "cta_button": "More About Us",
+        "image": {
+          "src": "/img/service/main-services/website-development.webp",
+          "width": 968,
+          "height": 862,
+          "alt": "Website Development",
+          "loading": "lazy"
+        }
       },
       "what_we_offer_section": {
         "eyebrow": "+ What We Offer +",
@@ -18995,7 +19124,14 @@
             "text": "Businesses of all sizes trust our expertise."
           }
         ],
-        "cta_button": "More About Us"
+        "cta_button": "More About Us",
+        "image": {
+          "src": "/img/service/main-services/digital-marketing.webp",
+          "width": 968,
+          "height": 862,
+          "alt": "Digital Marketing",
+          "loading": "lazy"
+        }
       },
       "what_we_offer_section": {
         "eyebrow": "+ What We Offer +",
@@ -19321,7 +19457,7 @@
         ],
         "cta_button": "More About Us",
         "image": {
-          "src": "/img/service/Picflow Images Aug 8/business-license-amendment.webp",
+          "src": "/img/service/main-services/business-license-amendment.webp",
           "width": 968,
           "height": 862,
           "alt": "Business License Amendment",
@@ -19652,7 +19788,7 @@
         ],
         "cta_button": "More About Us",
         "image": {
-          "src": "/img/service/Picflow Images Aug 8/business-license-cancellation.webp",
+          "src": "/img/service/main-services/business-license-cancellation.webp",
           "width": 968,
           "height": 862,
           "alt": "Business License Cancellation",
@@ -19983,7 +20119,7 @@
         ],
         "cta_button": "More About Us",
         "image": {
-          "src": "/img/service/Picflow Images Aug 8/student-services.webp",
+          "src": "/img/service/main-services/student-services.webp",
           "width": 968,
           "height": 862,
           "alt": "Student Services",
@@ -20314,7 +20450,7 @@
         ],
         "cta_button": "More About Us",
         "image": {
-          "src": "/img/service/Picflow Images Aug 8/academic-services.webp",
+          "src": "/img/service/main-services/academic-services.webp",
           "width": 968,
           "height": 862,
           "alt": "Academic  Services",
@@ -20645,7 +20781,7 @@
         ],
         "cta_button": "More About Us",
         "image": {
-          "src": "/img/service/Picflow Images Aug 8/health.webp",
+          "src": "/img/service/main-services/health.webp",
           "width": 968,
           "height": 862,
           "alt": "Health",
@@ -20976,7 +21112,7 @@
         ],
         "cta_button": "More About Us",
         "image": {
-          "src": "/img/service/Picflow Images Aug 8/patients.webp",
+          "src": "/img/service/main-services/patients.webp",
           "width": 968,
           "height": 862,
           "alt": "Patients",
@@ -21305,7 +21441,14 @@
             "text": "Businesses of all sizes trust our expertise."
           }
         ],
-        "cta_button": "More About Us"
+        "cta_button": "More About Us",
+        "image": {
+          "src": "/img/service/main-services/dubai-municipality-2.webp",
+          "width": 968,
+          "height": 862,
+          "alt": "Municipality",
+          "loading": "lazy"
+        }
       },
       "what_we_offer_section": {
         "eyebrow": "+ What We Offer +",
@@ -21629,7 +21772,14 @@
             "text": "Businesses of all sizes trust our expertise."
           }
         ],
-        "cta_button": "More About Us"
+        "cta_button": "More About Us",
+        "image": {
+          "src": "/img/service/main-services/sharjah-municipality-2.webp",
+          "width": 968,
+          "height": 862,
+          "alt": "Municipality",
+          "loading": "lazy"
+        }
       },
       "what_we_offer_section": {
         "eyebrow": "+ What We Offer +",
@@ -21955,7 +22105,7 @@
         ],
         "cta_button": "More About Us",
         "image": {
-          "src": "/img/service/Picflow Images Aug 8/dewa-utilities.webp",
+          "src": "/img/service/main-services/dewa-utilities.webp",
           "width": 968,
           "height": 862,
           "alt": "Utilities",
@@ -22286,7 +22436,7 @@
         ],
         "cta_button": "More About Us",
         "image": {
-          "src": "/img/service/Picflow Images Aug 8/sewa-utilities.webp",
+          "src": "/img/service/main-services/sewa-utilities.webp",
           "width": 968,
           "height": 862,
           "alt": "Utilities",
@@ -22617,7 +22767,7 @@
         ],
         "cta_button": "More About Us",
         "image": {
-          "src": "/img/service/Picflow Images Aug 8/electricity-connection.webp",
+          "src": "/img/service/main-services/electricity-connection.webp",
           "width": 968,
           "height": 862,
           "alt": "Electricity Connection",
@@ -22948,7 +23098,7 @@
         ],
         "cta_button": "More About Us",
         "image": {
-          "src": "/img/service/Picflow Images Aug 8/water-connection.webp",
+          "src": "/img/service/main-services/water-connection.webp",
           "width": 968,
           "height": 862,
           "alt": "Water Connection",
@@ -23279,7 +23429,7 @@
         ],
         "cta_button": "More About Us",
         "image": {
-          "src": "/img/service/Picflow Images Aug 8/gas-connection.webp",
+          "src": "/img/service/main-services/gas-connection.webp",
           "width": 968,
           "height": 862,
           "alt": "Gas Connection",
@@ -23610,7 +23760,7 @@
         ],
         "cta_button": "More About Us",
         "image": {
-          "src": "/img/service/Picflow Images Aug 8/new-account-opening.webp",
+          "src": "/img/service/main-services/new-account-opening.webp",
           "width": 968,
           "height": 862,
           "alt": "New Account Opening",
@@ -23941,7 +24091,7 @@
         ],
         "cta_button": "More About Us",
         "image": {
-          "src": "/img/service/Picflow Images Aug 8/bill-payment.webp",
+          "src": "/img/service/main-services/bill-payment.webp",
           "width": 968,
           "height": 862,
           "alt": "Bill Payment",
@@ -24272,7 +24422,7 @@
         ],
         "cta_button": "More About Us",
         "image": {
-          "src": "/img/service/Picflow Images Aug 8/final-bill.webp",
+          "src": "/img/service/main-services/final-bill.webp",
           "width": 968,
           "height": 862,
           "alt": "Final Bill",
@@ -24603,7 +24753,7 @@
         ],
         "cta_button": "More About Us",
         "image": {
-          "src": "/img/service/Picflow Images Aug 8/move-in.webp",
+          "src": "/img/service/main-services/move-in.webp",
           "width": 968,
           "height": 862,
           "alt": "Move In",
@@ -24934,7 +25084,7 @@
         ],
         "cta_button": "More About Us",
         "image": {
-          "src": "/img/service/Picflow Images Aug 8/Move-out.webp",
+          "src": "/img/service/main-services/move-out.webp",
           "width": 968,
           "height": 862,
           "alt": "Move Out",
@@ -25265,7 +25415,7 @@
         ],
         "cta_button": "More About Us",
         "image": {
-          "src": "/img/service/Picflow Images Aug 8/meter-testing.webp",
+          "src": "/img/service/main-services/meter-testing.webp",
           "width": 968,
           "height": 862,
           "alt": "Meter Testing",
@@ -25596,7 +25746,7 @@
         ],
         "cta_button": "More About Us",
         "image": {
-          "src": "/img/service/Picflow Images Aug 8/high-bill-investigation.webp",
+          "src": "/img/service/main-services/high-bill-investigation.webp",
           "width": 968,
           "height": 862,
           "alt": "High Bill Investigation",
@@ -25927,7 +26077,7 @@
         ],
         "cta_button": "More About Us",
         "image": {
-          "src": "/img/service/Picflow Images Aug 8/clearance-certificate.webp",
+          "src": "/img/service/main-services/clearance-certificate.webp",
           "width": 968,
           "height": 862,
           "alt": "Clearance Certificate",
@@ -26256,7 +26406,14 @@
             "text": "Businesses of all sizes trust our expertise."
           }
         ],
-        "cta_button": "More About Us"
+        "cta_button": "More About Us",
+        "image": {
+          "src": "/img/service/main-services/complaint-registration.webp",
+          "width": 968,
+          "height": 862,
+          "alt": "Complaint Registration",
+          "loading": "lazy"
+        }
       },
       "what_we_offer_section": {
         "eyebrow": "+ What We Offer +",
@@ -26580,7 +26737,14 @@
             "text": "Businesses of all sizes trust our expertise."
           }
         ],
-        "cta_button": "More About Us"
+        "cta_button": "More About Us",
+        "image": {
+          "src": "/img/service/main-services/ewes-utilities.webp",
+          "width": 968,
+          "height": 862,
+          "alt": "Utilities",
+          "loading": "lazy"
+        }
       },
       "what_we_offer_section": {
         "eyebrow": "+ What We Offer +",
@@ -26904,7 +27068,14 @@
             "text": "Businesses of all sizes trust our expertise."
           }
         ],
-        "cta_button": "More About Us"
+        "cta_button": "More About Us",
+        "image": {
+          "src": "/img/service/main-services/tax.webp",
+          "width": 968,
+          "height": 862,
+          "alt": "Tax",
+          "loading": "lazy"
+        }
       },
       "what_we_offer_section": {
         "eyebrow": "+ What We Offer +",
@@ -27230,7 +27401,7 @@
         ],
         "cta_button": "More About Us",
         "image": {
-          "src": "/img/service/Picflow Images Aug 8/ifza.webp",
+          "src": "/img/service/main-services/ifza.webp",
           "width": 968,
           "height": 862,
           "alt": "IFZA",
@@ -27561,7 +27732,7 @@
         ],
         "cta_button": "More About Us",
         "image": {
-          "src": "/img/service/Picflow Images Aug 8/spc-free-zone.webp",
+          "src": "/img/service/main-services/spc-free-zone.webp",
           "width": 968,
           "height": 862,
           "alt": "SPC Free Zone",
@@ -27892,7 +28063,7 @@
         ],
         "cta_button": "More About Us",
         "image": {
-          "src": "/img/service/Picflow Images Aug 8/shams.webp",
+          "src": "/img/service/main-services/shams.webp",
           "width": 968,
           "height": 862,
           "alt": "SHAMS",
@@ -28223,7 +28394,7 @@
         ],
         "cta_button": "More About Us",
         "image": {
-          "src": "/img/service/Picflow Images Aug 8/rakez.webp",
+          "src": "/img/service/main-services/rakez.webp",
           "width": 968,
           "height": 862,
           "alt": "RAKEZ",
@@ -28554,7 +28725,7 @@
         ],
         "cta_button": "More About Us",
         "image": {
-          "src": "/img/service/Picflow Images Aug 8/srtip.webp",
+          "src": "/img/service/main-services/srtip.webp",
           "width": 968,
           "height": 862,
           "alt": "SRTIP",
@@ -28885,7 +29056,7 @@
         ],
         "cta_button": "More About Us",
         "image": {
-          "src": "/img/service/Picflow Images Aug 8/meydan-free-zone.webp",
+          "src": "/img/service/main-services/meydan-free-zone.webp",
           "width": 968,
           "height": 862,
           "alt": "Meydan Free Zone",
@@ -29216,7 +29387,7 @@
         ],
         "cta_button": "More About Us",
         "image": {
-          "src": "/img/service/Picflow Images Aug 8/dmcc.webp",
+          "src": "/img/service/main-services/dmcc.webp",
           "width": 968,
           "height": 862,
           "alt": "DMCC",
@@ -29547,7 +29718,7 @@
         ],
         "cta_button": "More About Us",
         "image": {
-          "src": "/img/service/Picflow Images Aug 8/jafza.webp",
+          "src": "/img/service/main-services/jafza.webp",
           "width": 968,
           "height": 862,
           "alt": "JAFZA",
@@ -29878,7 +30049,7 @@
         ],
         "cta_button": "More About Us",
         "image": {
-          "src": "/img/service/Picflow Images Aug 8/dubai-south.webp",
+          "src": "/img/service/main-services/dubai-south.webp",
           "width": 968,
           "height": 862,
           "alt": "Dubai South",
@@ -30209,7 +30380,7 @@
         ],
         "cta_button": "More About Us",
         "image": {
-          "src": "/img/service/Picflow Images Aug 8/fujairah-creative-city.webp",
+          "src": "/img/service/main-services/fujairah-creative-city.webp",
           "width": 968,
           "height": 862,
           "alt": "Fujairah Creative City",
@@ -30538,7 +30709,14 @@
             "text": "Businesses of all sizes trust our expertise."
           }
         ],
-        "cta_button": "More About Us"
+        "cta_button": "More About Us",
+        "image": {
+          "src": "/img/service/main-services/driving-licence-renewal.webp",
+          "width": 968,
+          "height": 862,
+          "alt": "Driving Licence Renewal",
+          "loading": "lazy"
+        }
       },
       "what_we_offer_section": {
         "eyebrow": "+ What We Offer +",
@@ -30862,7 +31040,14 @@
             "text": "Businesses of all sizes trust our expertise."
           }
         ],
-        "cta_button": "More About Us"
+        "cta_button": "More About Us",
+        "image": {
+          "src": "/img/service/main-services/driving-licence-replacement.webp",
+          "width": 968,
+          "height": 862,
+          "alt": "Driving Licence Replacement",
+          "loading": "lazy"
+        }
       },
       "what_we_offer_section": {
         "eyebrow": "+ What We Offer +",
@@ -31186,7 +31371,14 @@
             "text": "Businesses of all sizes trust our expertise."
           }
         ],
-        "cta_button": "More About Us"
+        "cta_button": "More About Us",
+        "image": {
+          "src": "/img/service/main-services/vehicle-registration.webp",
+          "width": 968,
+          "height": 862,
+          "alt": "Vehicle Registration",
+          "loading": "lazy"
+        }
       },
       "what_we_offer_section": {
         "eyebrow": "+ What We Offer +",
@@ -31510,7 +31702,14 @@
             "text": "Businesses of all sizes trust our expertise."
           }
         ],
-        "cta_button": "More About Us"
+        "cta_button": "More About Us",
+        "image": {
+          "src": "/img/service/main-services/vehicle-renewal.webp",
+          "width": 968,
+          "height": 862,
+          "alt": "Vehicle Renewal",
+          "loading": "lazy"
+        }
       },
       "what_we_offer_section": {
         "eyebrow": "+ What We Offer +",
@@ -31834,7 +32033,14 @@
             "text": "Businesses of all sizes trust our expertise."
           }
         ],
-        "cta_button": "More About Us"
+        "cta_button": "More About Us",
+        "image": {
+          "src": "/img/service/main-services/vehicle-transfer.webp",
+          "width": 968,
+          "height": 862,
+          "alt": "Vehicle Transfer",
+          "loading": "lazy"
+        }
       },
       "what_we_offer_section": {
         "eyebrow": "+ What We Offer +",
@@ -32158,7 +32364,14 @@
             "text": "Businesses of all sizes trust our expertise."
           }
         ],
-        "cta_button": "More About Us"
+        "cta_button": "More About Us",
+        "image": {
+          "src": "/img/service/main-services/salik-account.webp",
+          "width": 968,
+          "height": 862,
+          "alt": "Salik Account",
+          "loading": "lazy"
+        }
       },
       "what_we_offer_section": {
         "eyebrow": "+ What We Offer +",
@@ -32482,7 +32695,14 @@
             "text": "Businesses of all sizes trust our expertise."
           }
         ],
-        "cta_button": "More About Us"
+        "cta_button": "More About Us",
+        "image": {
+          "src": "/img/service/main-services/parking-permit.webp",
+          "width": 968,
+          "height": 862,
+          "alt": "Parking Permit",
+          "loading": "lazy"
+        }
       },
       "what_we_offer_section": {
         "eyebrow": "+ What We Offer +",
@@ -32808,7 +33028,7 @@
         ],
         "cta_button": "More About Us",
         "image": {
-          "src": "/img/service/Picflow Images Aug 8/vehicle-export-certificate.webp",
+          "src": "/img/service/main-services/vehicle-export-certificate.webp",
           "width": 968,
           "height": 862,
           "alt": "Vehicle Export Certificate",
@@ -33139,7 +33359,7 @@
         ],
         "cta_button": "More About Us",
         "image": {
-          "src": "/img/service/Picflow Images Aug 8/police-clearance-certificate.webp",
+          "src": "/img/service/main-services/police-clearance-certificate.webp",
           "width": 968,
           "height": 862,
           "alt": "Police Clearance Certificate",
@@ -33470,7 +33690,7 @@
         ],
         "cta_button": "More About Us",
         "image": {
-          "src": "/img/service/Picflow Images Aug 8/good-conduct-certificate.webp",
+          "src": "/img/service/main-services/good-conduct-certificate.webp",
           "width": 968,
           "height": 862,
           "alt": "Good Conduct Certificate",
@@ -33801,7 +34021,7 @@
         ],
         "cta_button": "More About Us",
         "image": {
-          "src": "/img/service/Picflow Images Aug 8/lost-passport-report.webp",
+          "src": "/img/service/main-services/lost-passport-report.webp",
           "width": 968,
           "height": 862,
           "alt": "Lost Passport Report",
@@ -34132,7 +34352,7 @@
         ],
         "cta_button": "More About Us",
         "image": {
-          "src": "/img/service/Picflow Images Aug 8/lost-emirates-id-report.webp",
+          "src": "/img/service/main-services/lost-emirates-id-report.webp",
           "width": 968,
           "height": 862,
           "alt": "Lost Emirates ID Report",
@@ -34461,7 +34681,14 @@
             "text": "Businesses of all sizes trust our expertise."
           }
         ],
-        "cta_button": "More About Us"
+        "cta_button": "More About Us",
+        "image": {
+          "src": "/img/service/main-services/lost-mobile-report.webp",
+          "width": 968,
+          "height": 862,
+          "alt": "Lost Mobile Report",
+          "loading": "lazy"
+        }
       },
       "what_we_offer_section": {
         "eyebrow": "+ What We Offer +",
@@ -34785,7 +35012,14 @@
             "text": "Businesses of all sizes trust our expertise."
           }
         ],
-        "cta_button": "More About Us"
+        "cta_button": "More About Us",
+        "image": {
+          "src": "/img/service/main-services/traffic-fine-payment.webp",
+          "width": 968,
+          "height": 862,
+          "alt": "Traffic Fine Payment",
+          "loading": "lazy"
+        }
       },
       "what_we_offer_section": {
         "eyebrow": "+ What We Offer +",
@@ -35111,7 +35345,7 @@
         ],
         "cta_button": "More About Us",
         "image": {
-          "src": "/img/service/Picflow Images Aug 8/traffic-accident-report.webp",
+          "src": "/img/service/main-services/traffic-accident-report.webp",
           "width": 968,
           "height": 862,
           "alt": "Traffic Accident Report",
@@ -35442,7 +35676,7 @@
         ],
         "cta_button": "More About Us",
         "image": {
-          "src": "/img/service/Picflow Images Aug 8/vehicle-impound-release.webp",
+          "src": "/img/service/main-services/vehicle-impound-release.webp",
           "width": 968,
           "height": 862,
           "alt": "Vehicle Impound Release",
@@ -35773,7 +36007,7 @@
         ],
         "cta_button": "More About Us",
         "image": {
-          "src": "/img/service/Picflow Images Aug 8/cybercrime-complaint.webp",
+          "src": "/img/service/main-services/cybercrime-complaint.webp",
           "width": 968,
           "height": 862,
           "alt": "Cybercrime Complaint",
@@ -36102,7 +36336,14 @@
             "text": "Businesses of all sizes trust our expertise."
           }
         ],
-        "cta_button": "More About Us"
+        "cta_button": "More About Us",
+        "image": {
+          "src": "/img/service/main-services/criminal-complaint.webp",
+          "width": 968,
+          "height": 862,
+          "alt": "Criminal Complaint",
+          "loading": "lazy"
+        }
       },
       "what_we_offer_section": {
         "eyebrow": "+ What We Offer +",
