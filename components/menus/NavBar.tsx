@@ -1,3 +1,6 @@
+'use client';
+import { useEffect, useRef } from "react";
+import { usePathname } from "next/navigation";
 import Logo from "../Logo";
 import LogoImage from "@/public/img/logo.png";
 import "@/styles/navigation.css";
@@ -17,6 +20,20 @@ import {
 } from "./MenuLinks";
 
 const NavBar = () => {
+  const pathname = usePathname();
+  const navRef = useRef<HTMLUListElement>(null);
+
+  useEffect(() => {
+    if (navRef.current) {
+      // Temporarily disable pointer events to clear any CSS :hover states
+      navRef.current.style.pointerEvents = 'none';
+      const timer = setTimeout(() => {
+        if (navRef.current) navRef.current.style.pointerEvents = '';
+      }, 100);
+      return () => clearTimeout(timer);
+    }
+  }, [pathname]);
+
   return (
     <DrawerMenu>
       <nav className="header-nav drawer-menu">
@@ -38,7 +55,7 @@ const NavBar = () => {
             <Icons.CloseCircle />
           </DrawerOpener>
         </div>
-        <ul className="header-menu list-unstyled">
+        <ul ref={navRef} className="header-menu list-unstyled">
           {
             Menus?.map((link, index) => (
               <li className={`nav-item${link.megamenu || link.megamenutwocolumn ? ' nav-item-static': ''}`} key={`link-${index}`}>
