@@ -91,7 +91,7 @@ const Home3 = () => {
             />
 
             {/* Featured Blog */}
-            <FeaturedBlog2 data={FeaturedBlog2Data} />
+            {/* <FeaturedBlog2 data={FeaturedBlog2Data} /> */}
 
             {/* Contact Form */}
             <ContactSection data={Contact2Data} />

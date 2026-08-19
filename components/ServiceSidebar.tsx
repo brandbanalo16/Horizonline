@@ -17,12 +17,11 @@ const ServiceSidebar = ({
     category?: string;
 }) => {
     const rawData = NewServicesData as any;
+    const main = (rawData.main_services || []) as NewServiceType[];
+    const sub = (rawData.sub_services || main.flatMap((m: any) => m.sub_services || [])) as NewServiceType[];
     const newServices: NewServiceType[] = Array.isArray(rawData)
         ? (rawData as NewServiceType[])
-        : [
-              ...((rawData.main_services || []) as NewServiceType[]),
-              ...((rawData.sub_services || []) as NewServiceType[]),
-          ];
+        : [...main, ...sub];
     const relatedServices = category
         ? newServices.filter((item) => item.slug !== slug && item.category === category)
         : newServices.filter((item) => item.slug !== slug);

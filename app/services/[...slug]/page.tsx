@@ -19,7 +19,7 @@ const AllNewServices: NewServiceType[] = (() => {
     const data = NewServicesData as any;
     if (Array.isArray(data)) return data as NewServiceType[];
     const main = Array.isArray(data.main_services) ? data.main_services : [];
-    const sub = Array.isArray(data.sub_services) ? data.sub_services : [];
+    const sub = Array.isArray(data.sub_services) ? data.sub_services : main.flatMap((m: any) => m.sub_services || []);
     return [...main, ...sub] as NewServiceType[];
 })();
 

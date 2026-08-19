@@ -5,11 +5,17 @@ import NavBar from "./menus/NavBar";
 import HeaderActions2 from "./HeaderActions2";
 import StickyHeader from "./StickyHeader";
 
-const Header2 = () => {
+interface Header2Props {
+  isInnerPage?: boolean;
+}
+
+const Header2 = ({ isInnerPage = false }: Header2Props) => {
+    const wrapperClasses = `header-2 ${isInnerPage ? 'header-inner' : 'header-floating'}`;
+
     return (
       <>
         <StickyHeader 
-          wrapperCls="header-2 header-floating"
+          wrapperCls={wrapperClasses}
           container="container-fluid"
           stickyType='on-scroll-up'
         >

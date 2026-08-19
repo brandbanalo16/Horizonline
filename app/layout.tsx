@@ -9,6 +9,7 @@ import Header from "@/components/sections/Header";
 import AdditionalDrawer from "@/components/AdditionalDrawer";
 import Footer from "@/components/sections/Footer";
 import ScrollTop from "@/components/ScrollToTop";
+import DrawerOverlay from "@/components/DrawerOverlay";
 
 export const metadata: Metadata = {
   title: {
@@ -40,7 +41,7 @@ export default function RootLayout({
         <Footer />
         
         {/* Modal and Drawer Overlay */}
-        <drawer-opener id="drawer-overlay"></drawer-opener>
+        <DrawerOverlay />
 
         {/* Additional right-side drawer (global) */}
         <AdditionalDrawer />

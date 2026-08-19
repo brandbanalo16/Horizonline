@@ -201,8 +201,9 @@ html {
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: 9;
-  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 999;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: opacity 0.35s ease;
 }
 
 #drawer-overlay:not(.show) {
@@ -211,9 +212,10 @@ html {
 
 @media (max-width: 991px) {
   #drawer-overlay {
-    display: none;
+    display: none !important;
   }
 }
+
 
 img,
 picture,
