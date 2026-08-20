@@ -8,9 +8,14 @@ import Script from 'next/script';
 import BreadcrumbBanner from '@/components/BreadcrumbBanner';
 import ServicePage from '@/components/sections/ServicePage';
 import ServicePageLegacy from '@/components/sections/ServicePageLegacy';
+import ServiceThreeColumnLayout from '@/components/layout/ServiceThreeColumnLayout';
+import { ServiceSidebarLeft } from '@/components/sections/sub-services/ServiceSidebarLeft';
+import { ServiceContentMain } from '@/components/sections/sub-services/ServiceContentMain';
+import { ServiceSidebarRight } from '@/components/sections/sub-services/ServiceSidebarRight';
 
 import NewServicesData from '@/data/newServicesData.json';
 import Services from '@/data/services.json';
+import SubServiceData from '@/data/subservice.json';
 import { NewServiceType } from '@/types/newService';
 import { ServiceProps } from '@/types/service';
 
@@ -32,11 +37,59 @@ const MainServiceSlugs = new Set(
 
 const getEnhancedMetaTitle = (service: NewServiceType) => {
     const baseTitle =
-        service.seo.meta_title ||
-        service.seo.h1_tag ||
+        service.seo?.meta_title ||
+        service.seo?.h1_tag ||
         service.content?.h1_tag ||
         service.sub_category;
     return baseTitle;
+};
+
+const mapSubServiceToNewService = (sub: any): NewServiceType => {
+    const title = sub.name || 'Service';
+    const slug = (sub.url_slug || '').replace('/services/', '');
+    const description = sub.meta_description || '';
+    const canonicalUrl = `https://www.horizonlineconsultancy.ae/services/${slug}`;
+
+    return {
+        id: title, // use title as id for mapping
+        main_service_group: sub.target_location || 'UAE',
+        category: sub.focus_keyword || title,
+        sub_category: title,
+        slug,
+        seo: {
+            meta_title: sub.meta_title || `${title} | Horizon Line`,
+            meta_description: description,
+            canonical_url: canonicalUrl,
+            image_alt_tag: title,
+            keywords: [sub.focus_keyword, title],
+            h1_tag: title,
+        },
+        content: {
+            h1_tag: title,
+            intro_line: sub.seo_intro,
+            overview: sub.introduction,
+        },
+        what_we_offer_section: {
+            eyebrow: "Key Benefits",
+            heading: "What you gain",
+            subtext: "",
+            checklist: (sub.key_benefits || []).map((b: any) => `${b.point}:::${b.explanation}`),
+            cta_button: ""
+        },
+        documents_required_section: {
+            checklist: (sub.documents_required || []).map((d: any) => `${d.point}:::${d.explanation}`)
+        },
+        how_it_works_section: {
+            steps: (sub.process || []).map((p: any) => ({ step: p.point, description: p.explanation, title: p.point }))
+        },
+        faq_section: {
+            items: [] // You can add FAQs later if needed
+        },
+        // We will pass the new fields along as a custom property to not break the type,
+        // or just add them as raw properties since TypeScript in JS runtime doesn't complain.
+        // We will cast it to any.
+        ...(sub as any)
+    };
 };
 
 const mapLegacyServiceToNewService = (legacy: ServiceProps): NewServiceType => {
@@ -92,11 +145,18 @@ const mapLegacyServiceToNewService = (legacy: ServiceProps): NewServiceType => {
 };
 
 const findServiceBySlug = (slug: string): NewServiceType | undefined => {
-    // First check new data (main_services + sub_services)
+    // 1. Check the new subservice.json (High Priority)
+    const newSubService = SubServiceData.services.find((item: any) => {
+        const itemSlug = (item.url_slug || '').replace('/services/', '');
+        return itemSlug === slug;
+    });
+    if (newSubService) return mapSubServiceToNewService(newSubService);
+
+    // 2. Check new data (main_services + sub_services)
     const service = AllNewServices.find((item) => item.slug === slug);
     if (service) return service;
 
-    // Fallback to legacy services.json
+    // 3. Fallback to legacy services.json
     const legacyService = (Services as ServiceProps[]).find((item) => item.slug === slug);
     if (legacyService) return mapLegacyServiceToNewService(legacyService);
 
@@ -104,7 +164,18 @@ const findServiceBySlug = (slug: string): NewServiceType | undefined => {
 };
 
 export async function generateStaticParams() {
-    return AllNewServices.map((service) => ({ slug: service.slug.split('/') }));
+    const subServiceParams = SubServiceData.services.map((item: any) => {
+        const slug = (item.url_slug || '').replace('/services/', '');
+        return { slug: slug.split('/') };
+    });
+
+    const allNewParams = AllNewServices.map((service) => ({ slug: service.slug.split('/') }));
+
+    // Combine and deduplicate
+    const combined = [...subServiceParams, ...allNewParams];
+    const unique = Array.from(new Set(combined.map(p => p.slug.join('/')))).map(slug => ({ slug: slug.split('/') }));
+
+    return unique;
 }
 
 export async function generateMetadata({
@@ -117,8 +188,8 @@ export async function generateMetadata({
     const service = findServiceBySlug(joinedSlug);
     if (!service) return { title: 'Service Not Found' };
 
-    const seo = service.seo;
-    const title = getEnhancedMetaTitle(service);
+    const seo = service.seo || {};
+    const title = getEnhancedMetaTitle(service) || 'Service';
 
     return {
         title,
@@ -147,8 +218,9 @@ const Page = async ({ params }: { params: Promise<{ slug: string[] }> }) => {
     const service = findServiceBySlug(joinedSlug);
     if (!service) notFound();
 
-    const { seo, sub_category } = service;
-    const h1 = service.seo.h1_tag || service.content?.h1_tag || service.hero?.page_title || sub_category;
+    const seo = service.seo || {};
+    const sub_category = service.sub_category;
+    const h1 = seo.h1_tag || service.content?.h1_tag || service.hero?.page_title || sub_category;
 
     const relatedServices = AllNewServices.filter(
         (item) =>
@@ -164,20 +236,20 @@ const Page = async ({ params }: { params: Promise<{ slug: string[] }> }) => {
             description: item.content?.intro_line || item.content?.overview || '',
         })) as ServiceProps[];
 
-    // CTA banner removed per user request
-
     const useLegacyLayout = MainServiceSlugs.has(joinedSlug);
 
     return (
         <>
-            <Script
-                id={`schema-${joinedSlug.replace(/\//g, '-')}`}
-                type="application/ld+json"
-                dangerouslySetInnerHTML={{ __html: JSON.stringify(seo.schema_markup) }}
-            />
+            {seo.schema_markup && (
+                <Script
+                    id={`schema-${joinedSlug.replace(/\//g, '-')}`}
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{ __html: JSON.stringify(seo.schema_markup) }}
+                />
+            )}
 
             <BreadcrumbBanner
-                title={h1}
+                title={h1 || 'Service'}
                 image={{
                     src: BreadcrumbBannerImage.src,
                     srcMobile: BreadcrumbBannerImageTablet.src,
@@ -193,7 +265,24 @@ const Page = async ({ params }: { params: Promise<{ slug: string[] }> }) => {
             {useLegacyLayout ? (
                 <ServicePageLegacy service={service} relatedServices={relatedServices} />
             ) : (
-                <ServicePage service={service} relatedServices={relatedServices} />
+                <ServiceThreeColumnLayout>
+
+                    {/* Left Column (20%) */}
+                    <div style={{ minWidth: 0, width: '100%' }}>
+                        <ServiceSidebarLeft />
+                    </div>
+
+                    {/* Center Column (60%) */}
+                    <div style={{ minWidth: 0, width: '100%' }}>
+                        <ServiceContentMain service={service} />
+                    </div>
+
+                    {/* Right Column (20%) */}
+                    <div style={{ minWidth: 0, width: '100%' }}>
+                        <ServiceSidebarRight serviceName={sub_category} />
+                    </div>
+
+                </ServiceThreeColumnLayout>
             )}
         </>
     );

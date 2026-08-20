@@ -1,0 +1,459 @@
+/* ═══════════════════════════════════════════════════════════════════════════
+   MEGA MENU — Premium corporate style for Consulo / Horizonline
+   Standalone file — does NOT modify navigation.css or header.css
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+/* ── Design tokens ─────────────────────────────────────────────────────── */
+.mega-menu-root {
+  --mm-teal: rgba(38, 100, 100, 1);
+  --mm-teal-light: rgba(38, 100, 100, 0.08);
+  --mm-teal-mid: rgba(38, 100, 100, 0.15);
+  --mm-slate: rgba(44, 54, 80, 1);
+  --mm-slate-soft: rgba(44, 54, 80, 0.6);
+  --mm-gray-bg: rgba(246, 247, 249, 1);
+  --mm-border: rgba(0, 0, 0, 0.07);
+  --mm-shadow: 0 20px 60px rgba(0, 0, 0, 0.12), 0 4px 16px rgba(0, 0, 0, 0.06);
+  --mm-radius: 12px;
+  --mm-transition: 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ── Services trigger button ────────────────────────────────────────────── */
+.mm-trigger {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 12px 10px;
+  font-size: 16px;
+  font-weight: 500;
+  color: inherit;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  transition: color var(--mm-transition);
+  white-space: nowrap;
+  line-height: 1;
+  font-family: inherit;
+}
+
+.mm-trigger:hover,
+.mm-trigger[aria-expanded="true"] {
+  color: var(--mm-teal);
+}
+
+.mm-trigger-chevron {
+  display: inline-flex;
+  align-items: center;
+  transition: transform var(--mm-transition);
+  flex-shrink: 0;
+}
+
+.mm-trigger[aria-expanded="true"] .mm-trigger-chevron {
+  transform: rotate(180deg);
+}
+
+/* ── Backdrop overlay (desktop) ─────────────────────────────────────────── */
+.mm-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(44, 54, 80, 0.25);
+  backdrop-filter: blur(2px);
+  z-index: 190;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity var(--mm-transition);
+}
+
+.mm-backdrop.mm-backdrop--visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* ── Mega menu panel ───────────────────────────────────────────── */
+.mm-panel {
+  position: fixed;
+  top: 0;
+  /* JS sets this to header bottom */
+  left: 50%;
+  transform: translateX(-50%) translateY(-8px);
+  width: calc(100% - 48px);
+  max-width: 1300px;
+  z-index: 200;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 24px 64px rgba(0, 0, 0, 0.13), 0 4px 16px rgba(0, 0, 0, 0.07);
+  border: 1px solid var(--mm-border);
+
+  /* Animation */
+  opacity: 0;
+  pointer-events: none;
+  transition:
+    opacity var(--mm-transition),
+    transform var(--mm-transition);
+  max-height: calc(100vh - 80px);
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.mm-panel.mm-panel--open {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+  pointer-events: auto;
+}
+
+/* ── Panel inner wrapper ────────────────────────────────────────── */
+.mm-panel-inner {
+  padding: 28px 28px 32px;
+}
+
+/* ── All services link at top ───────────────────────────────────────────── */
+.mm-all-services {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--mm-teal);
+  text-decoration: none;
+  margin-bottom: 24px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid var(--mm-border);
+  transition: opacity var(--mm-transition);
+}
+
+.mm-all-services:hover {
+  opacity: 0.75;
+}
+
+.mm-all-services svg {
+  flex-shrink: 0;
+}
+
+/* ── Categories grid ────────────────────────────────────────────────────── */
+.mm-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 6px 16px;
+  align-items: start;
+}
+
+@media (max-width: 1279px) {
+  .mm-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 1023px) {
+  .mm-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* ── Category card ──────────────────────────────────────────────────────── */
+.mm-category {
+  border-radius: var(--mm-radius);
+  overflow: hidden;
+}
+
+/* ── Category heading button ────────────────────────────────────────────── */
+.mm-cat-btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 10px 12px;
+  background: transparent;
+  border: none;
+  border-radius: var(--mm-radius);
+  cursor: pointer;
+  text-align: left;
+  font-family: inherit;
+  transition: background var(--mm-transition);
+  color: var(--mm-slate);
+  text-decoration: none;
+}
+
+.mm-cat-btn:hover {
+  background: var(--mm-teal-light);
+}
+
+.mm-cat-btn[aria-expanded="true"] {
+  background: var(--mm-teal-light);
+  border-radius: var(--mm-radius) var(--mm-radius) 0 0;
+}
+
+.mm-cat-btn-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex: 1;
+  min-width: 0;
+}
+
+.mm-cat-icon {
+  flex-shrink: 0;
+  width: 28px;
+  height: 28px;
+  border-radius: 6px;
+  background: var(--mm-teal-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background var(--mm-transition);
+}
+
+.mm-cat-btn:hover .mm-cat-icon,
+.mm-cat-btn[aria-expanded="true"] .mm-cat-icon {
+  background: var(--mm-teal-mid);
+}
+
+.mm-cat-icon svg {
+  width: 14px;
+  height: 14px;
+  color: var(--mm-teal);
+  flex-shrink: 0;
+}
+
+.mm-cat-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--mm-slate);
+  line-height: 1.3;
+  letter-spacing: 0.01em;
+  white-space: normal;
+  word-break: break-word;
+}
+
+.mm-cat-chevron {
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+  color: var(--mm-slate-soft);
+  transition: transform var(--mm-transition), color var(--mm-transition);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mm-cat-btn[aria-expanded="true"] .mm-cat-chevron {
+  transform: rotate(90deg);
+  color: var(--mm-teal);
+}
+
+/* ── Sub-services accordion ─────────────────────────────────────────────── */
+.mm-services-panel {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.32s cubic-bezier(0.4, 0, 0.2, 1);
+  background: var(--mm-gray-bg);
+  border-radius: 0 0 var(--mm-radius) var(--mm-radius);
+}
+
+.mm-services-panel.mm-services-panel--open {
+  /* max-height is set via JS from scrollHeight */
+}
+
+.mm-services-list {
+  list-style: none;
+  margin: 0;
+  padding: 6px 0 8px;
+}
+
+.mm-service-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 14px 7px 40px;
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--mm-slate);
+  text-decoration: none;
+  line-height: 1.4;
+  transition: color var(--mm-transition), background var(--mm-transition);
+  border-radius: 0;
+  word-break: break-word;
+}
+
+.mm-service-link::before {
+  content: "";
+  flex-shrink: 0;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: currentColor;
+  opacity: 0.35;
+  transition: opacity var(--mm-transition);
+  margin-left: -12px;
+}
+
+.mm-service-link:hover {
+  color: var(--mm-teal);
+  background: var(--mm-teal-light);
+}
+
+.mm-service-link:hover::before {
+  opacity: 1;
+}
+
+/* ── ═══════════════════════════════════════════════════════════════════════
+   MOBILE — full-width accordion inside existing drawer nav (≤ 991px)
+   ═══════════════════════════════════════════════════════════════════════ */
+@media (max-width: 991px) {
+
+  /* Hide desktop mega panel on mobile */
+  .mm-panel,
+  .mm-backdrop {
+    display: none !important;
+  }
+
+  /* ── Mobile Services trigger ─────────────────────────────────────────── */
+  .mm-mobile-trigger {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 15px;
+    font-size: 16px;
+    font-weight: 500;
+    color: rgba(38, 100, 100, 1);
+    background: none;
+    border: none;
+    border-top: 1px solid rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    font-family: inherit;
+    text-align: left;
+  }
+
+  .mm-mobile-trigger-chevron {
+    display: inline-flex;
+    align-items: center;
+    transition: transform 0.28s ease;
+    flex-shrink: 0;
+  }
+
+  .mm-mobile-trigger[aria-expanded="true"] .mm-mobile-trigger-chevron {
+    transform: rotate(180deg);
+  }
+
+  /* ── Mobile Services panel ───────────────────────────────────────────── */
+  .mm-mobile-panel {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    background: rgba(255, 255, 255, 0.5);
+  }
+
+  .mm-mobile-panel.mm-mobile-panel--open {
+    /* max-height set via JS */
+  }
+
+  /* ── Mobile category ─────────────────────────────────────────────────── */
+  .mm-mobile-cat-btn {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    padding: 11px 15px 11px 24px;
+    font-size: 14px;
+    font-weight: 600;
+    color: rgba(44, 54, 80, 1);
+    background: none;
+    border: none;
+    border-top: 1px solid rgba(0, 0, 0, 0.07);
+    cursor: pointer;
+    font-family: inherit;
+    text-align: left;
+    min-height: 44px;
+  }
+
+  .mm-mobile-cat-btn[aria-expanded="true"] {
+    color: rgba(38, 100, 100, 1);
+  }
+
+  .mm-mobile-cat-chevron {
+    display: inline-flex;
+    align-items: center;
+    flex-shrink: 0;
+    transition: transform 0.28s ease;
+    color: rgba(44, 54, 80, 0.4);
+  }
+
+  .mm-mobile-cat-btn[aria-expanded="true"] .mm-mobile-cat-chevron {
+    transform: rotate(90deg);
+    color: rgba(38, 100, 100, 1);
+  }
+
+  /* ── Mobile sub-services panel ───────────────────────────────────────── */
+  .mm-mobile-services-panel {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    background: rgba(246, 247, 249, 0.8);
+  }
+
+  .mm-mobile-services-list {
+    list-style: none;
+    margin: 0;
+    padding: 4px 0;
+  }
+
+  .mm-mobile-service-link {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px 10px 36px;
+    font-size: 13.5px;
+    font-weight: 400;
+    color: rgba(44, 54, 80, 0.8);
+    text-decoration: none;
+    min-height: 44px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    transition: color 0.2s, background 0.2s;
+    word-break: break-word;
+  }
+
+  .mm-mobile-service-link:last-child {
+    border-bottom: none;
+  }
+
+  .mm-mobile-service-link:hover,
+  .mm-mobile-service-link:active {
+    color: rgba(38, 100, 100, 1);
+    background: rgba(38, 100, 100, 0.06);
+  }
+}
+
+/* ── Desktop-only trigger visibility ────────────────────────────────────── */
+@media (min-width: 992px) {
+  .mm-mobile-wrapper {
+    display: none !important;
+  }
+}
+
+/* ── Scrollbar styling for panel ────────────────────────────────────────── */
+.mm-panel::-webkit-scrollbar {
+  width: 4px;
+}
+
+.mm-panel::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.mm-panel::-webkit-scrollbar-thumb {
+  background: rgba(38, 100, 100, 0.25);
+  border-radius: 4px;
+}
+
+/* ── Focus visible outline for keyboard users ───────────────────────────── */
+.mm-trigger:focus-visible,
+.mm-cat-btn:focus-visible,
+.mm-service-link:focus-visible,
+.mm-mobile-trigger:focus-visible,
+.mm-mobile-cat-btn:focus-visible,
+.mm-mobile-service-link:focus-visible {
+  outline: 2px solid rgba(38, 100, 100, 0.7);
+  outline-offset: 2px;
+}
