@@ -10,7 +10,7 @@ export const WorkingProcessStickyData: SectionProps = {
         {
             icon: <Icons.Discover />,
             title: "Free Consultation",
-            text: "We start with a free discovery call to understand your business goals, preferred emirate, and budget — whether that's Dubai, RAK, Fujairah, or anywhere in between — and recommend the most suitable structure.",
+            text: "We start with a free discovery call to understand your business goals, preferred Emirates, and budget — whether that's Dubai, RAK, Fujairah, or anywhere in between — and recommend the most suitable structure.",
         },
         {
             icon: <Icons.Analyze />,

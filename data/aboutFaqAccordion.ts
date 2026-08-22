@@ -1,11 +1,11 @@
 export const AboutFaqAccordion = [
     {
-        title: "Which emirates does Horizon Line cover for business setup?",
+        title: "Which Emirates does Horizon Line cover for business setup?",
         text: "We support company formation and licensing across all 7 Emirates of the UAE — Dubai, Abu Dhabi, Sharjah, Ajman, Ras Al Khaimah, Fujairah, and Umm Al Quwain — including mainland, free zone, and offshore structures."
     },
     {
         title: "How is Horizon Line different from Dubai-only consultancies?",
-        text: "We do not push every client toward Dubai. Our consultants compare emirates based on your activity, budget, and growth plans — including lower-cost, high-growth options like RAK and Fujairah when they are the better fit."
+        text: "We do not push every client toward Dubai. Our consultants compare options across the UAE based on your activity, budget, and growth plans — including lower-cost, high-growth options like RAK and Fujairah when they are the better fit."
     },
     {
         title: "Do you help with office space and bank account opening?",
@@ -17,6 +17,6 @@ export const AboutFaqAccordion = [
     },
     {
         title: "How do I get started with Horizon Line?",
-        text: "Book a free consultation through our contact form or phone line. A dedicated consultant will assess your requirements, recommend the right emirate and structure, and provide a clear cost breakdown before any work begins."
+        text: "Book a free consultation through our contact form or phone line. A dedicated consultant will assess your requirements, recommend the right Emirates and structure, and provide a clear cost breakdown before any work begins."
     }
 ];

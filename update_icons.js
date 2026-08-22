@@ -12,7 +12,7 @@ const iconMap = {
   "Trademark & IP": "trademarks&i.png",
   "Legal Services": "legal-service.png",
   "Business Support": "business-support.png",
-  "Visa Services": "visa-service.png",
+  "Visa Assistance": "visa-service.png",
   "Ministry of Education": "ministry-of-education.png",
   "MOHAP": "MOHAP.png",
   "EHS": "EHS.png",
@@ -41,7 +41,7 @@ services.forEach(service => {
   if (filename) {
     service.icon = "<img src=\"/img/icons/services/" + filename + "\" alt=\"" + service.title + "\" width=\"40\" height=\"40\" />";
   }
-  
+
   if (service.content) {
     service.content = service.content.replace(/Free Zons/g, "Free Zone");
   }

@@ -36,7 +36,7 @@ export const metadata: Metadata = {
         'Business Setup in Fujairah',
         'Free Zone Company Formation UAE',
         'Mainland Company Setup UAE',
-        'UAE Visa Services',
+        'UAE Visa Assistance',
         'Corporate Bank Account Opening UAE',
         'Business Setup All 7 Emirates',
         'Ras Al Khaimah Company Formation',
@@ -80,8 +80,6 @@ const Home3 = () => {
             <WhyChooseUs3 data={WhyChooseUsData2} />
 
             {/* Working Process */}
-
-
             <WorkingProcessSticky data={WorkingProcessStickyData} />
 
             {/* Testimonial Slider */}

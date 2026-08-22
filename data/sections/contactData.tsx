@@ -5,18 +5,18 @@ export const ContactData: SectionProps = {
     wrapperCls: "section-padding",
     container: "container",
     subheading: "Contact Us",
-    heading: "Let's Build an Awesome Project Together",
-    text: "Each demo built with Teba will look different. You can customize almost anything in the appearance of your website with only a few clicks. Each demo built with Teba will look different.",
+    heading: "Start Your Business Journey in the UAE",
+    text: "Whether you're looking to set up a mainland company, free zone, or offshore entity — our expert consultants are here to guide you every step of the way. Reach out and we'll respond within 24 hours.",
     promotions: [
         {
             icon: <Icons.ThumbsUp />,
-            title: "350+ Projects Done",
-            text: "From banking and insurance to wealth the management and security on there",
+            title: "500+ Companies Formed",
+            text: "Businesses across all Emirates trust Horizon Line for seamless company formation and licensing.",
         },
         {
             icon: <Icons.Support />,
-            title: "500+ Happy Clients",
-            text: "From banking and insurance to wealth the management and security on there",
+            title: "10+ Years of UAE Experience",
+            text: "Deep expertise in mainland, free zone, and offshore setups across all 7 Emirates.",
         },
     ],
     block: {

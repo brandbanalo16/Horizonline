@@ -29,7 +29,7 @@ const HeroSlider2 = ({ wrapperCls, slides }: HeroSliderType) => {
           slidesPerView={1}
           thumbs={{ swiper: thumbsSwiper }}
           autoplay={{
-            delay: 4000,
+            delay: 8000,
             disableOnInteraction: false,
           }}
           loop={true}

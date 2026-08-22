@@ -126,27 +126,6 @@
         "created_at": "2026-10-01T18:00:00Z"
     },
     {
-        "id": 7,
-        "slug": "visa-services",
-        "title": "Visa Services",
-        "icon": "<img src=\"/img/icons/services/visa-service.png\" alt=\"Visa Services\" width=\"40\" height=\"40\" />",
-        "image": "/img/service/main-services/visa-services.webp",
-        "content": "<p class=\"text text-18\" data-aos=\"fade-up\">\r\nHorizon Line Management Consultancy LLC delivers complete Visa Services solutions across the UAE, combining hands-on government liaison with transparent pricing and a dedicated consultant for every client.\r\n</p>\r\n\r\n<p class=\"text text-18\" data-aos=\"fade-up\">\r\nWhether you are a first-time applicant or an established company, our team manages documentation, submissions, and follow-up with the relevant authority so your Visa Services process is fast, accurate, and fully compliant.\r\n</p>\r\n\r\n<div class=\"service-choose-us\" data-aos=\"fade-up\">\r\n<div class=\"grid grid-cols-2 lg:gap-1 service-row\">\r\n<div class=\"md:col-span-1 col-span-2\">\r\n<div class=\"choose-us-img radius18\">\r\n<img\r\nsrc=\"/img/service/sd-1.jpg\"\r\nwidth=\"1000\"\r\nheight=\"962\"\r\nloading=\"lazy\"\r\nalt=\"Visa Services services in UAE by Horizon Line\"\r\n>\r\n</div>\r\n</div>\r\n<div class=\"md:col-span-1 col-span-2\">\r\n<div class=\"choose-us-desc\">\r\n<h2 class=\"heading text-36\">Why Choose Horizon Line</h2>\r\n<p class=\"text text-18\">\r\nDedicated consultants, transparent pricing, and proven UAE government relationships make Horizon Line the trusted choice for Visa Services.\r\n</p>\r\n<ul class=\"text-lists list-unstyled\">\r\n<li class=\"text-item\" data-aos=\"fade-up\">\r\n<svg class=\"icon-24\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M17.9999 6.99486L16.5899 5.58594L10.2499 11.9211L11.6599 13.33L17.9999 6.99486ZM22.2399 5.58594L11.6599 16.1578L7.47991 11.991L6.06991 13.3999L11.6599 18.9857L23.6599 6.99486L22.2399 5.58594ZM0.409912 13.3999L5.99991 18.9857L7.40991 17.5767L1.82991 11.991L0.409912 13.3999Z\" fill=\"CurrentColor\"/></svg>\r\n<div class=\"text text-18 fw-600\">\r\nInvestor & employment visas\r\n</div>\r\n</li>\r\n<li class=\"text-item\" data-aos=\"fade-up\">\r\n<svg class=\"icon-24\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M17.9999 6.99486L16.5899 5.58594L10.2499 11.9211L11.6599 13.33L17.9999 6.99486ZM22.2399 5.58594L11.6599 16.1578L7.47991 11.991L6.06991 13.3999L11.6599 18.9857L23.6599 6.99486L22.2399 5.58594ZM0.409912 13.3999L5.99991 18.9857L7.40991 17.5767L1.82991 11.991L0.409912 13.3999Z\" fill=\"CurrentColor\"/></svg>\r\n<div class=\"text text-18 fw-600\">\r\nFamily & dependent visas\r\n</div>\r\n</li>\r\n<li class=\"text-item\" data-aos=\"fade-up\">\r\n<svg class=\"icon-24\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M17.9999 6.99486L16.5899 5.58594L10.2499 11.9211L11.6599 13.33L17.9999 6.99486ZM22.2399 5.58594L11.6599 16.1578L7.47991 11.991L6.06991 13.3999L11.6599 18.9857L23.6599 6.99486L22.2399 5.58594ZM0.409912 13.3999L5.99991 18.9857L7.40991 17.5767L1.82991 11.991L0.409912 13.3999Z\" fill=\"CurrentColor\"/></svg>\r\n<div class=\"text text-18 fw-600\">\r\nGolden Visa & Emirates ID processing\r\n</div>\r\n</li>\r\n</ul>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n\r\n<p class=\"text text-18\" data-aos=\"fade-up\">\r\nHorizon Line has supported entrepreneurs, investors, and residents across Dubai, Abu Dhabi, and Sharjah with accurate, on-time submissions for Visa Services and every other service in our portfolio. Every client is assigned a dedicated consultant who understands their file end-to-end.\r\n</p>",
-        "description": "Complete visa processing for investors, employees, families, and Golden Visa applicants across the UAE.",
-        "list": [
-            {
-                "title": "Investor & employment visas"
-            },
-            {
-                "title": "Family & dependent visas"
-            },
-            {
-                "title": "Golden Visa & Emirates ID processing"
-            }
-        ],
-        "created_at": "2026-10-01T18:00:00Z"
-    },
-    {
         "id": 8,
         "slug": "ministry-of-education",
         "title": "Ministry of Education",

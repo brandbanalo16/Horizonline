@@ -45,7 +45,7 @@ export const WhyChooseUsData2: SectionProps = {
         {
             icon: <Icons.Risk />,
             title: "All 7 Emirates Covered",
-            text: "Whether it's Dubai's global reach or RAK and Fujairah's fast-growing opportunities, we help you choose — and set up — where it makes the most sense for your business.",
+            text: "In All 7 Emirates we have fast-growing opportunities, we help you choose — and set up — where it makes the most sense for your business across the UAE.",
         }
     ],
 }

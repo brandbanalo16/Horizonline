@@ -40,7 +40,7 @@ export const Services: MenuType[] = [
         path: '/services/corporate-services'
     },
     {
-        title: 'Visa Services',
+        title: 'Visa Assistance',
         path: '/services/visa-services'
     },
     {
@@ -82,7 +82,7 @@ export const MenuContact: MenuType[] = [
         path: 'https://wa.me/97165105959?text=Hello%2C%20I%20would%20like%20to%20know%20more.'
     },
     {
-        title: 'Office No. 103, Juma Al Majid Building Industrial Area 4, Sharjah',
+        title: 'Office No. 103, Juma Al Majid Building, Industrial Area 4, Sharjah, UAE',
         path: 'https://maps.app.goo.gl/yxuFkyDtN54YXyje7'
     }
 ];

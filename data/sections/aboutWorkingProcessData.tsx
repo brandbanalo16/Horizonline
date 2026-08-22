@@ -10,17 +10,17 @@ export const AboutWorkingProcessData: SectionProps = {
         {
             icon: <Icons.Discover />,
             title: "Understand Your Goals",
-            text: "We begin with a free consultation to learn about your business activity, target emirate, budget, and timeline — then recommend the mainland, free zone, or offshore structure that fits best.",
+            text: "We begin with a free consultation to learn about your business activity, target Emirates, budget, and timeline — then recommend the mainland, free zone, or offshore structure that fits best.",
         },
         {
             icon: <Icons.Analyze />,
             title: "Plan Your Licence & Location",
-            text: "Our team helps you select the right trade licence, business activity, and emirate — comparing Dubai, RAK, Fujairah, and other options based on your real needs.",
+            text: "Our team helps you select the right trade licence, business activity, and Emirate — providing the suitable options based on your real needs.",
         },
         {
             icon: <Icons.Plan />,
             title: "Prepare & Submit Documents",
-            text: "We handle MOA drafting, shareholder agreements, tenancy contracts, and all government forms — reviewing everything before submission to avoid delays.",
+            text: "We prepare and submit all required documents — including MOA drafting, shareholder agreements, tenancy contracts, and government forms — ensuring everything is error-free before submission to prevent any delays.",
         },
         {
             icon: <Icons.Launch />,
@@ -29,8 +29,13 @@ export const AboutWorkingProcessData: SectionProps = {
         },
         {
             icon: <Icons.Refine />,
+            title: "Support Post License Registration",
+            text: "We assist with office fit-out, electricity connection, visa and Emirates ID processing, VAT registration, bank account opening.",
+        },
+        {
+            icon: <Icons.Support />,
             title: "Support You After Launch",
-            text: "Post-setup, we assist with office fit-out, visa and Emirates ID processing, VAT registration, bank account opening, and annual licence renewals.",
+            text: "We manage your annual renewals — Trade Licence, Ejari, Emirates ID, and Medical Insurance — so nothing lapses and nothing's on you to track.",
         }
     ],
 }

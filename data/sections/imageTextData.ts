@@ -6,7 +6,7 @@ export const ImageTextData: SectionProps = {
     container: "container",
     subheading: "About Horizon Line",
     heading: "Your Trusted Business Setup Partner — All 7 Emirates",
-    text: "Horizon Line supports entrepreneurs and investors with mainland, free zone, and offshore company formation, visa services, and compliance across Dubai, Abu Dhabi, Sharjah, Ajman, RAK, Fujairah, and Umm Al Quwain.",
+    text: "Horizon Line supports entrepreneurs and investors with mainland, free zone, and offshore company formation, Visa Assistance, and compliance across Dubai, Abu Dhabi, Sharjah, Ajman, RAK, Fujairah, and Umm Al Quwain.",
     button: {
         label: "Book a Consultation",
         href: "/contact-us",

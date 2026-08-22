@@ -9,20 +9,20 @@ const FooterBrand2 = () => {
             data-aos="fade-right"
             data-aos-anchor=".footer-top"
         >
-            <Logo 
+            <Logo
                 src={LogoImage.src}
                 width={189}
                 height={32}
                 url="/"
                 cls="footer-logo"
                 alt="Horizon Line logo"
-                ariaLabel="Horizon Line logo" 
+                ariaLabel="Horizon Line logo"
                 loading="lazy"
             />
             <p className="text text-16">
-                Your trusted partner for business setup, company formation, office solutions, visa services, and corporate compliance across all 7 Emirates of the UAE.
+                Your trusted partner for business setup, company formation, office solutions, Visa Assistance, and corporate compliance across all 7 Emirates of the UAE.
             </p>
-            <Social 
+            <Social
                 wrapperCls="social-icons"
                 aos="fade-up"
                 aosAnchor=".footer-top"
@@ -31,4 +31,4 @@ const FooterBrand2 = () => {
     )
 }
 
-export default FooterBrand2;
+export default FooterBrand2;

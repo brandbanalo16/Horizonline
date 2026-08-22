@@ -67,17 +67,17 @@ const megaMenuData: MegaMenuCategory[] = [
     ],
   },
 
-  // ── VISA SERVICES ─────────────────────────────────────────────────────────
+  // ── Visa Assistance ─────────────────────────────────────────────────────────
   {
     id: "visa-services",
-    title: "Visa Services",
+    title: "Visa Assistance",
     path: "/services/visa-services",
     services: [
       { title: "Investor Visa", path: "/services/investor-visa-uae" },
       { title: "Employment Visa", path: "/services/employment-visa-uae" },
       { title: "Family Visa", path: "/services/family-visa-uae" },
       { title: "Golden Visa", path: "/services/golden-visa-uae" },
-      { title: "Emirates ID", path: "/services/emirates-id-uae" },
+      { title: "Emirates ID", path: "/services/Emirates-id-uae" },
       { title: "Medical Test", path: "/services/medical-test-uae" },
     ],
   },
@@ -291,7 +291,7 @@ const megaMenuData: MegaMenuCategory[] = [
       { title: "Police Clearance Certificate", path: "/services/police-clearance-certificate-uae" },
       { title: "Good Conduct Certificate", path: "/services/good-conduct-certificate-uae" },
       { title: "Lost Passport Report", path: "/services/lost-passport-report-uae" },
-      { title: "Lost Emirates ID Report", path: "/services/lost-emirates-id-report-uae" },
+      { title: "Lost Emirates ID Report", path: "/services/lost-Emirates-id-report-uae" },
       { title: "Lost Mobile Report", path: "/services/lost-mobile-report-uae" },
       { title: "Traffic Fine Payment", path: "/services/traffic-fine-payment-uae" },
       { title: "Traffic Accident Report", path: "/services/traffic-accident-report-uae" },

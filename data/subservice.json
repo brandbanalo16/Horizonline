@@ -1,6 +1,6 @@
 {
-    "content_rule": "Every service either names all 7 Emirates (Dubai, Abu Dhabi, Sharjah, Ajman, Ras Al Khaimah, Fujairah, Umm Al Quwain) or says 'across the UAE' — except Emirate/authority-specific services (DEWA, SEWA, Etihad WE, RTA, both Municipalities, EHS, individual Free Zones) which correctly name only their real jurisdiction.",
-    "seo_rule": "Each of the 90 services now carries a unique focus_keyword (the service name), a unique meta_title, meta_description and url_slug, and the keyword is woven into the body (seo_intro, introduction, emirates_coverage where applicable, seo_summary, closing) 10-12 times per service. Pan-UAE services additionally name all 7 Emirates one-by-one paired with the keyword in emirates_coverage. Jurisdiction-specific services (DEWA, SEWA, RTA, Municipality, individual Free Zones, Northern-Emirates authorities) are scoped only to their real jurisdiction, per content_rule.",
+    "content_rule": "Every service either names all 7 Emirates (Dubai, Abu Dhabi, Sharjah, Ajman, Ras Al Khaimah, Fujairah, Umm Al Quwain) or says 'across the UAE' — except Emirates/authority-specific services (DEWA, SEWA, Etihad WE, RTA, both Municipalities, EHS, individual Free Zones) which correctly name only their real jurisdiction.",
+    "seo_rule": "Each of the 90 services now carries a unique focus_keyword (the service name), a unique meta_title, meta_description and url_slug, and the keyword is woven into the body (seo_intro, introduction, Emirates_coverage where applicable, seo_summary, closing) 10-12 times per service. Pan-UAE services additionally name all 7 Emirates one-by-one paired with the keyword in Emirates_coverage. Jurisdiction-specific services (DEWA, SEWA, RTA, Municipality, individual Free Zones, Northern-Emirates authorities) are scoped only to their real jurisdiction, per content_rule.",
     "content_depth_note": "Each service has an introduction, 4 key benefits, 5-6 documents required, and a 4-step process, every point paired with its own explanation sentence. Documents, benefits, and process steps were audited against real UAE government requirements (DED, ICP, MOHRE, FTA, RTA, SEWA/DEWA, free zone authorities) and expanded from the original 3-item cap wherever a realistic required document or step was missing. No boilerplate is reused between services.",
     "sourcing_note": "Structure and depth informed by commitbiz.com, smartzone.ae and avyanco.com — all wording below is original, written for Horizon Line, not copied from any reference site.",
     "duplicate_names_fixed": "Original file had 3 duplicate 'name' values (Municipality x2, Utilities x3), which broke unique URLs/meta titles. Renamed to: Dubai Municipality Services, Sharjah Municipality Services, DEWA Utility Connection, SEWA Account Activation, Etihad WE Utility Connection.",
@@ -22,7 +22,7 @@
                 },
                 {
                     "point": "Unrestricted trading scope",
-                    "explanation": "You can contract with government entities and open branches in any Emirate, unlike a free zone licence."
+                    "explanation": "You can contract with government entities and open branches in any Emirates, unlike a free zone licence."
                 },
                 {
                     "point": "Visa count tied to office size",
@@ -73,8 +73,8 @@
                     "explanation": "Once fees are paid, the Memorandum of Association is notarised digitally and the trade licence is issued, usually within 1-2 working days."
                 }
             ],
-            "emirates_coverage": "Wherever you're based, Horizon Line delivers the same Mainland Company Formation: Mainland Company Formation in Dubai; Mainland Company Formation in Abu Dhabi; Mainland Company Formation in Sharjah; Mainland Company Formation in Ajman; Mainland Company Formation in Ras Al Khaimah; Mainland Company Formation in Fujairah; Mainland Company Formation in Umm Al Quwain. One point of contact, one process, no matter which of the seven Emirates your business calls home.",
-            "seo_summary": "Looking for Mainland Company Formation handled properly the first time? Horizon Line's Mainland Company Formation team has processed this exact service across every Emirate in the UAE, so your Mainland Company Formation file is prepared, submitted, and followed up on by people who do this daily — not once a quarter.",
+            "Emirates_coverage": "Wherever you're based, Horizon Line delivers the same Mainland Company Formation: Mainland Company Formation in Dubai; Mainland Company Formation in Abu Dhabi; Mainland Company Formation in Sharjah; Mainland Company Formation in Ajman; Mainland Company Formation in Ras Al Khaimah; Mainland Company Formation in Fujairah; Mainland Company Formation in Umm Al Quwain. One point of contact, one process, no matter which of the seven Emirates your business calls home.",
+            "seo_summary": "Looking for Mainland Company Formation handled properly the first time? Horizon Line's Mainland Company Formation team has processed this exact service across every Emirates in the UAE, so your Mainland Company Formation file is prepared, submitted, and followed up on by people who do this daily — not once a quarter.",
             "closing": "We manage mainland incorporation end to end so your licence is activity-matched and correct the first time."
         },
         {
@@ -144,8 +144,8 @@
                     "explanation": "Once the facility agreement is signed, the free zone authority issues the trade licence, typically within 2-4 working days."
                 }
             ],
-            "emirates_coverage": "Wherever you're based, Horizon Line delivers the same Free Zone Company Formation: Free Zone Company Formation in Dubai; Free Zone Company Formation in Abu Dhabi; Free Zone Company Formation in Sharjah; Free Zone Company Formation in Ajman; Free Zone Company Formation in Ras Al Khaimah; Free Zone Company Formation in Fujairah; Free Zone Company Formation in Umm Al Quwain. One point of contact, one process, no matter which of the seven Emirates your business calls home.",
-            "seo_summary": "Looking for Free Zone Company Formation handled properly the first time? Horizon Line's Free Zone Company Formation team has processed this exact service across every Emirate in the UAE, so your Free Zone Company Formation file is prepared, submitted, and followed up on by people who do this daily — not once a quarter.",
+            "Emirates_coverage": "Wherever you're based, Horizon Line delivers the same Free Zone Company Formation: Free Zone Company Formation in Dubai; Free Zone Company Formation in Abu Dhabi; Free Zone Company Formation in Sharjah; Free Zone Company Formation in Ajman; Free Zone Company Formation in Ras Al Khaimah; Free Zone Company Formation in Fujairah; Free Zone Company Formation in Umm Al Quwain. One point of contact, one process, no matter which of the seven Emirates your business calls home.",
+            "seo_summary": "Looking for Free Zone Company Formation handled properly the first time? Horizon Line's Free Zone Company Formation team has processed this exact service across every Emirates in the UAE, so your Free Zone Company Formation file is prepared, submitted, and followed up on by people who do this daily — not once a quarter.",
             "closing": "We match activity, budget and visa needs to the zone that actually fits, not a default preferred partner."
         },
         {
@@ -215,8 +215,8 @@
                     "explanation": "Once the registrar approves the file, the Certificate of Incorporation and share certificates are issued, usually within 3-5 working days."
                 }
             ],
-            "emirates_coverage": "Wherever you're based, Horizon Line delivers the same Offshore Company Formation: Offshore Company Formation in Dubai; Offshore Company Formation in Abu Dhabi; Offshore Company Formation in Sharjah; Offshore Company Formation in Ajman; Offshore Company Formation in Ras Al Khaimah; Offshore Company Formation in Fujairah; Offshore Company Formation in Umm Al Quwain. One point of contact, one process, no matter which of the seven Emirates your business calls home.",
-            "seo_summary": "Looking for Offshore Company Formation handled properly the first time? Horizon Line's Offshore Company Formation team has processed this exact service across every Emirate in the UAE, so your Offshore Company Formation file is prepared, submitted, and followed up on by people who do this daily — not once a quarter.",
+            "Emirates_coverage": "Wherever you're based, Horizon Line delivers the same Offshore Company Formation: Offshore Company Formation in Dubai; Offshore Company Formation in Abu Dhabi; Offshore Company Formation in Sharjah; Offshore Company Formation in Ajman; Offshore Company Formation in Ras Al Khaimah; Offshore Company Formation in Fujairah; Offshore Company Formation in Umm Al Quwain. One point of contact, one process, no matter which of the seven Emirates your business calls home.",
+            "seo_summary": "Looking for Offshore Company Formation handled properly the first time? Horizon Line's Offshore Company Formation team has processed this exact service across every Emirates in the UAE, so your Offshore Company Formation file is prepared, submitted, and followed up on by people who do this daily — not once a quarter.",
             "closing": "We confirm offshore is the right tool for your objective before building the structure — it isn't the right fit for everyone."
         },
         {
@@ -227,7 +227,7 @@
             "meta_description": "Branch Office Setup across Dubai, Abu Dhabi, Sharjah, Ajman, RAK, Fujairah & UAQ. Horizon Line delivers Branch Office Setup fast and fully compliant.",
             "url_slug": "/services/branch-office-setup-uae",
             "seo_intro": "Need Branch Office Setup? Branch Office Setup is one of Horizon Line's core services, and our team manages every Branch Office Setup file directly — no subcontracting, no guesswork.",
-            "introduction": "A branch lets a parent company operate in a new Emirate or free zone without forming a separate legal entity, available across all seven Emirates — Dubai, Abu Dhabi, Sharjah, Ajman, Ras Al Khaimah, Fujairah and Umm Al Quwain.",
+            "introduction": "A branch lets a parent company operate in a new Emirates or free zone without forming a separate legal entity, available across all seven Emirates — Dubai, Abu Dhabi, Sharjah, Ajman, Ras Al Khaimah, Fujairah and Umm Al Quwain.",
             "key_benefits": [
                 {
                     "point": "No new legal entity needed",
@@ -286,8 +286,8 @@
                     "explanation": "Foreign branches are additionally registered in the Ministry of Economy's foreign companies register before the local trade licence is issued."
                 }
             ],
-            "emirates_coverage": "Wherever you're based, Horizon Line delivers the same Branch Office Setup: Branch Office Setup in Dubai; Branch Office Setup in Abu Dhabi; Branch Office Setup in Sharjah; Branch Office Setup in Ajman; Branch Office Setup in Ras Al Khaimah; Branch Office Setup in Fujairah; Branch Office Setup in Umm Al Quwain. One point of contact, one process, no matter which of the seven Emirates your business calls home.",
-            "seo_summary": "Looking for Branch Office Setup handled properly the first time? Horizon Line's Branch Office Setup team has processed this exact service across every Emirate in the UAE, so your Branch Office Setup file is prepared, submitted, and followed up on by people who do this daily — not once a quarter.",
+            "Emirates_coverage": "Wherever you're based, Horizon Line delivers the same Branch Office Setup: Branch Office Setup in Dubai; Branch Office Setup in Abu Dhabi; Branch Office Setup in Sharjah; Branch Office Setup in Ajman; Branch Office Setup in Ras Al Khaimah; Branch Office Setup in Fujairah; Branch Office Setup in Umm Al Quwain. One point of contact, one process, no matter which of the seven Emirates your business calls home.",
+            "seo_summary": "Looking for Branch Office Setup handled properly the first time? Horizon Line's Branch Office Setup team has processed this exact service across every Emirates in the UAE, so your Branch Office Setup file is prepared, submitted, and followed up on by people who do this daily — not once a quarter.",
             "closing": "We check the activity scope carefully since a branch's liability flows directly back to the parent."
         },
         {
@@ -298,7 +298,7 @@
             "meta_description": "Professional License across Dubai, Abu Dhabi, Sharjah, Ajman, RAK, Fujairah & UAQ. Horizon Line delivers Professional License fast and fully compliant.",
             "url_slug": "/services/professional-license-uae",
             "seo_intro": "Need Professional License? Professional License is one of Horizon Line's core services, and our team manages every Professional License file directly — no subcontracting, no guesswork.",
-            "introduction": "A professional licence covers service-based, consultancy, and skill-based activities — legal, accounting, IT consulting, and similar — issued across all seven Emirates — Dubai, Abu Dhabi, Sharjah, Ajman, Ras Al Khaimah, Fujairah and Umm Al Quwain, and unlike commercial licences can often be held with full foreign ownership regardless of Emirate.",
+            "introduction": "A professional licence covers service-based, consultancy, and skill-based activities — legal, accounting, IT consulting, and similar — issued across all seven Emirates — Dubai, Abu Dhabi, Sharjah, Ajman, Ras Al Khaimah, Fujairah and Umm Al Quwain, and unlike commercial licences can often be held with full foreign ownership regardless of Emirates.",
             "key_benefits": [
                 {
                     "point": "100% ownership for qualifying professions",
@@ -357,8 +357,8 @@
                     "explanation": "Where applicable, we register you with bodies like the Ministry of Health or Legal Affairs Department before the licence is finalised."
                 }
             ],
-            "emirates_coverage": "Wherever you're based, Horizon Line delivers the same Professional License: Professional License in Dubai; Professional License in Abu Dhabi; Professional License in Sharjah; Professional License in Ajman; Professional License in Ras Al Khaimah; Professional License in Fujairah; Professional License in Umm Al Quwain. One point of contact, one process, no matter which of the seven Emirates your business calls home.",
-            "seo_summary": "Looking for Professional License handled properly the first time? Horizon Line's Professional License team has processed this exact service across every Emirate in the UAE, so your Professional License file is prepared, submitted, and followed up on by people who do this daily — not once a quarter.",
+            "Emirates_coverage": "Wherever you're based, Horizon Line delivers the same Professional License: Professional License in Dubai; Professional License in Abu Dhabi; Professional License in Sharjah; Professional License in Ajman; Professional License in Ras Al Khaimah; Professional License in Fujairah; Professional License in Umm Al Quwain. One point of contact, one process, no matter which of the seven Emirates your business calls home.",
+            "seo_summary": "Looking for Professional License handled properly the first time? Horizon Line's Professional License team has processed this exact service across every Emirates in the UAE, so your Professional License file is prepared, submitted, and followed up on by people who do this daily — not once a quarter.",
             "closing": "We classify your activity correctly upfront so you're not licensed under the wrong category and forced to amend later."
         },
         {
@@ -428,8 +428,8 @@
                     "explanation": "We confirm the exact commercial activity codes on your licence match what you intend to trade, avoiding compliance issues later."
                 }
             ],
-            "emirates_coverage": "Wherever you're based, Horizon Line delivers the same Commercial License: Commercial License in Dubai; Commercial License in Abu Dhabi; Commercial License in Sharjah; Commercial License in Ajman; Commercial License in Ras Al Khaimah; Commercial License in Fujairah; Commercial License in Umm Al Quwain. One point of contact, one process, no matter which of the seven Emirates your business calls home.",
-            "seo_summary": "Looking for Commercial License handled properly the first time? Horizon Line's Commercial License team has processed this exact service across every Emirate in the UAE, so your Commercial License file is prepared, submitted, and followed up on by people who do this daily — not once a quarter.",
+            "Emirates_coverage": "Wherever you're based, Horizon Line delivers the same Commercial License: Commercial License in Dubai; Commercial License in Abu Dhabi; Commercial License in Sharjah; Commercial License in Ajman; Commercial License in Ras Al Khaimah; Commercial License in Fujairah; Commercial License in Umm Al Quwain. One point of contact, one process, no matter which of the seven Emirates your business calls home.",
+            "seo_summary": "Looking for Commercial License handled properly the first time? Horizon Line's Commercial License team has processed this exact service across every Emirates in the UAE, so your Commercial License file is prepared, submitted, and followed up on by people who do this daily — not once a quarter.",
             "closing": "We map your product range to the correct commercial codes so nothing you sell falls outside your licensed scope."
         },
         {
@@ -499,8 +499,8 @@
                     "explanation": "Before the licence is finalised, the manufacturing site must pass a Civil Defence safety inspection specific to industrial premises."
                 }
             ],
-            "emirates_coverage": "Wherever you're based, Horizon Line delivers the same Industrial License: Industrial License in Dubai; Industrial License in Abu Dhabi; Industrial License in Sharjah; Industrial License in Ajman; Industrial License in Ras Al Khaimah; Industrial License in Fujairah; Industrial License in Umm Al Quwain. One point of contact, one process, no matter which of the seven Emirates your business calls home.",
-            "seo_summary": "Looking for Industrial License handled properly the first time? Horizon Line's Industrial License team has processed this exact service across every Emirate in the UAE, so your Industrial License file is prepared, submitted, and followed up on by people who do this daily — not once a quarter.",
+            "Emirates_coverage": "Wherever you're based, Horizon Line delivers the same Industrial License: Industrial License in Dubai; Industrial License in Abu Dhabi; Industrial License in Sharjah; Industrial License in Ajman; Industrial License in Ras Al Khaimah; Industrial License in Fujairah; Industrial License in Umm Al Quwain. One point of contact, one process, no matter which of the seven Emirates your business calls home.",
+            "seo_summary": "Looking for Industrial License handled properly the first time? Horizon Line's Industrial License team has processed this exact service across every Emirates in the UAE, so your Industrial License file is prepared, submitted, and followed up on by people who do this daily — not once a quarter.",
             "closing": "Industrial licensing involves more moving approval parts than other categories — we sequence them so nothing holds up your production start date."
         },
         {
@@ -570,8 +570,8 @@
                     "explanation": "Any unpaid municipality, immigration, or authority fines linked to the licence are cleared before renewal is approved."
                 }
             ],
-            "emirates_coverage": "Wherever you're based, Horizon Line delivers the same Trade License Renewal: Trade License Renewal in Dubai; Trade License Renewal in Abu Dhabi; Trade License Renewal in Sharjah; Trade License Renewal in Ajman; Trade License Renewal in Ras Al Khaimah; Trade License Renewal in Fujairah; Trade License Renewal in Umm Al Quwain. One point of contact, one process, no matter which of the seven Emirates your business calls home.",
-            "seo_summary": "Looking for Trade License Renewal handled properly the first time? Horizon Line's Trade License Renewal team has processed this exact service across every Emirate in the UAE, so your Trade License Renewal file is prepared, submitted, and followed up on by people who do this daily — not once a quarter.",
+            "Emirates_coverage": "Wherever you're based, Horizon Line delivers the same Trade License Renewal: Trade License Renewal in Dubai; Trade License Renewal in Abu Dhabi; Trade License Renewal in Sharjah; Trade License Renewal in Ajman; Trade License Renewal in Ras Al Khaimah; Trade License Renewal in Fujairah; Trade License Renewal in Umm Al Quwain. One point of contact, one process, no matter which of the seven Emirates your business calls home.",
+            "seo_summary": "Looking for Trade License Renewal handled properly the first time? Horizon Line's Trade License Renewal team has processed this exact service across every Emirates in the UAE, so your Trade License Renewal file is prepared, submitted, and followed up on by people who do this daily — not once a quarter.",
             "closing": "Renewal is one of the easiest compliance failures to avoid — we make sure it never becomes something you have to remember."
         },
         {
@@ -641,8 +641,8 @@
                     "explanation": "Every consultation ends with a short written summary of options and next steps, not just verbal advice, so you have something to act on."
                 }
             ],
-            "emirates_coverage": "Wherever you're based, Horizon Line delivers the same Business Consultation: Business Consultation in Dubai; Business Consultation in Abu Dhabi; Business Consultation in Sharjah; Business Consultation in Ajman; Business Consultation in Ras Al Khaimah; Business Consultation in Fujairah; Business Consultation in Umm Al Quwain. One point of contact, one process, no matter which of the seven Emirates your business calls home.",
-            "seo_summary": "Looking for Business Consultation handled properly the first time? Horizon Line's Business Consultation team has processed this exact service across every Emirate in the UAE, so your Business Consultation file is prepared, submitted, and followed up on by people who do this daily — not once a quarter.",
+            "Emirates_coverage": "Wherever you're based, Horizon Line delivers the same Business Consultation: Business Consultation in Dubai; Business Consultation in Abu Dhabi; Business Consultation in Sharjah; Business Consultation in Ajman; Business Consultation in Ras Al Khaimah; Business Consultation in Fujairah; Business Consultation in Umm Al Quwain. One point of contact, one process, no matter which of the seven Emirates your business calls home.",
+            "seo_summary": "Looking for Business Consultation handled properly the first time? Horizon Line's Business Consultation team has processed this exact service across every Emirates in the UAE, so your Business Consultation file is prepared, submitted, and followed up on by people who do this daily — not once a quarter.",
             "closing": "This is the step that prevents an expensive wrong turn before you've committed to any licence or jurisdiction."
         },
         {
@@ -712,8 +712,8 @@
                     "explanation": "We walk through the draft plan with you and revise numbers or sections before final delivery, rather than sending a one-shot document."
                 }
             ],
-            "emirates_coverage": "Wherever you're based, Horizon Line delivers the same Business Plan: Business Plan in Dubai; Business Plan in Abu Dhabi; Business Plan in Sharjah; Business Plan in Ajman; Business Plan in Ras Al Khaimah; Business Plan in Fujairah; Business Plan in Umm Al Quwain. One point of contact, one process, no matter which of the seven Emirates your business calls home.",
-            "seo_summary": "Looking for Business Plan handled properly the first time? Horizon Line's Business Plan team has processed this exact service across every Emirate in the UAE, so your Business Plan file is prepared, submitted, and followed up on by people who do this daily — not once a quarter.",
+            "Emirates_coverage": "Wherever you're based, Horizon Line delivers the same Business Plan: Business Plan in Dubai; Business Plan in Abu Dhabi; Business Plan in Sharjah; Business Plan in Ajman; Business Plan in Ras Al Khaimah; Business Plan in Fujairah; Business Plan in Umm Al Quwain. One point of contact, one process, no matter which of the seven Emirates your business calls home.",
+            "seo_summary": "Looking for Business Plan handled properly the first time? Horizon Line's Business Plan team has processed this exact service across every Emirates in the UAE, so your Business Plan file is prepared, submitted, and followed up on by people who do this daily — not once a quarter.",
             "closing": "We write plans that hold up under a bank's or investor's actual scrutiny, not just ones that read well."
         },
         {
@@ -783,8 +783,8 @@
                     "explanation": "You receive visibility into what's pending at each authority rather than only hearing from us once something is finished."
                 }
             ],
-            "emirates_coverage": "Wherever you're based, Horizon Line delivers the same PRO Services: PRO Services in Dubai; PRO Services in Abu Dhabi; PRO Services in Sharjah; PRO Services in Ajman; PRO Services in Ras Al Khaimah; PRO Services in Fujairah; PRO Services in Umm Al Quwain. One point of contact, one process, no matter which of the seven Emirates your business calls home.",
-            "seo_summary": "Looking for PRO Services handled properly the first time? Horizon Line's PRO Services team has processed this exact service across every Emirate in the UAE, so your PRO Services file is prepared, submitted, and followed up on by people who do this daily — not once a quarter.",
+            "Emirates_coverage": "Wherever you're based, Horizon Line delivers the same PRO Services: PRO Services in Dubai; PRO Services in Abu Dhabi; PRO Services in Sharjah; PRO Services in Ajman; PRO Services in Ras Al Khaimah; PRO Services in Fujairah; PRO Services in Umm Al Quwain. One point of contact, one process, no matter which of the seven Emirates your business calls home.",
+            "seo_summary": "Looking for PRO Services handled properly the first time? Horizon Line's PRO Services team has processed this exact service across every Emirates in the UAE, so your PRO Services file is prepared, submitted, and followed up on by people who do this daily — not once a quarter.",
             "closing": "PRO services outsource the government-facing side of running your company so you never have to learn the portals yourself."
         },
         {
@@ -854,8 +854,8 @@
                     "explanation": "Cleared documents are returned to you with a log of which authority stamped what, so you have a record for future use."
                 }
             ],
-            "emirates_coverage": "Wherever you're based, Horizon Line delivers the same Document Clearing: Document Clearing in Dubai; Document Clearing in Abu Dhabi; Document Clearing in Sharjah; Document Clearing in Ajman; Document Clearing in Ras Al Khaimah; Document Clearing in Fujairah; Document Clearing in Umm Al Quwain. One point of contact, one process, no matter which of the seven Emirates your business calls home.",
-            "seo_summary": "Looking for Document Clearing handled properly the first time? Horizon Line's Document Clearing team has processed this exact service across every Emirate in the UAE, so your Document Clearing file is prepared, submitted, and followed up on by people who do this daily — not once a quarter.",
+            "Emirates_coverage": "Wherever you're based, Horizon Line delivers the same Document Clearing: Document Clearing in Dubai; Document Clearing in Abu Dhabi; Document Clearing in Sharjah; Document Clearing in Ajman; Document Clearing in Ras Al Khaimah; Document Clearing in Fujairah; Document Clearing in Umm Al Quwain. One point of contact, one process, no matter which of the seven Emirates your business calls home.",
+            "seo_summary": "Looking for Document Clearing handled properly the first time? Horizon Line's Document Clearing team has processed this exact service across every Emirates in the UAE, so your Document Clearing file is prepared, submitted, and followed up on by people who do this daily — not once a quarter.",
             "closing": "Document clearing is entirely about sequence — getting it right the first time avoids a rejected, re-started process."
         },
         {
@@ -925,8 +925,8 @@
                     "explanation": "A liquidation notice is published in local Arabic and English newspapers, opening a statutory window for creditors to file claims."
                 }
             ],
-            "emirates_coverage": "Wherever you're based, Horizon Line delivers the same Company Liquidation: Company Liquidation in Dubai; Company Liquidation in Abu Dhabi; Company Liquidation in Sharjah; Company Liquidation in Ajman; Company Liquidation in Ras Al Khaimah; Company Liquidation in Fujairah; Company Liquidation in Umm Al Quwain. One point of contact, one process, no matter which of the seven Emirates your business calls home.",
-            "seo_summary": "Looking for Company Liquidation handled properly the first time? Horizon Line's Company Liquidation team has processed this exact service across every Emirate in the UAE, so your Company Liquidation file is prepared, submitted, and followed up on by people who do this daily — not once a quarter.",
+            "Emirates_coverage": "Wherever you're based, Horizon Line delivers the same Company Liquidation: Company Liquidation in Dubai; Company Liquidation in Abu Dhabi; Company Liquidation in Sharjah; Company Liquidation in Ajman; Company Liquidation in Ras Al Khaimah; Company Liquidation in Fujairah; Company Liquidation in Umm Al Quwain. One point of contact, one process, no matter which of the seven Emirates your business calls home.",
+            "seo_summary": "Looking for Company Liquidation handled properly the first time? Horizon Line's Company Liquidation team has processed this exact service across every Emirates in the UAE, so your Company Liquidation file is prepared, submitted, and followed up on by people who do this daily — not once a quarter.",
             "closing": "We manage liquidation as a protective process — the goal is a clean exit with no lingering exposure."
         },
         {
@@ -996,8 +996,8 @@
                     "explanation": "Once the restructuring is filed, we help notify your bank and major counterparties so records stay aligned with the new structure."
                 }
             ],
-            "emirates_coverage": "Wherever you're based, Horizon Line delivers the same Corporate Restructuring: Corporate Restructuring in Dubai; Corporate Restructuring in Abu Dhabi; Corporate Restructuring in Sharjah; Corporate Restructuring in Ajman; Corporate Restructuring in Ras Al Khaimah; Corporate Restructuring in Fujairah; Corporate Restructuring in Umm Al Quwain. One point of contact, one process, no matter which of the seven Emirates your business calls home.",
-            "seo_summary": "Looking for Corporate Restructuring handled properly the first time? Horizon Line's Corporate Restructuring team has processed this exact service across every Emirate in the UAE, so your Corporate Restructuring file is prepared, submitted, and followed up on by people who do this daily — not once a quarter.",
+            "Emirates_coverage": "Wherever you're based, Horizon Line delivers the same Corporate Restructuring: Corporate Restructuring in Dubai; Corporate Restructuring in Abu Dhabi; Corporate Restructuring in Sharjah; Corporate Restructuring in Ajman; Corporate Restructuring in Ras Al Khaimah; Corporate Restructuring in Fujairah; Corporate Restructuring in Umm Al Quwain. One point of contact, one process, no matter which of the seven Emirates your business calls home.",
+            "seo_summary": "Looking for Corporate Restructuring handled properly the first time? Horizon Line's Corporate Restructuring team has processed this exact service across every Emirates in the UAE, so your Corporate Restructuring file is prepared, submitted, and followed up on by people who do this daily — not once a quarter.",
             "closing": "We treat restructuring as one coordinated exercise, not a series of disconnected filings that can fall out of sync."
         },
         {
@@ -1067,8 +1067,8 @@
                     "explanation": "Once the entry permit is issued, biometric capture at an ICP centre is required before the residence visa is stamped."
                 }
             ],
-            "emirates_coverage": "Wherever you're based, Horizon Line delivers the same Investor Visa: Investor Visa in Dubai; Investor Visa in Abu Dhabi; Investor Visa in Sharjah; Investor Visa in Ajman; Investor Visa in Ras Al Khaimah; Investor Visa in Fujairah; Investor Visa in Umm Al Quwain. One point of contact, one process, no matter which of the seven Emirates your business calls home.",
-            "seo_summary": "Looking for Investor Visa handled properly the first time? Horizon Line's Investor Visa team has processed this exact service across every Emirate in the UAE, so your Investor Visa file is prepared, submitted, and followed up on by people who do this daily — not once a quarter.",
+            "Emirates_coverage": "Wherever you're based, Horizon Line delivers the same Investor Visa: Investor Visa in Dubai; Investor Visa in Abu Dhabi; Investor Visa in Sharjah; Investor Visa in Ajman; Investor Visa in Ras Al Khaimah; Investor Visa in Fujairah; Investor Visa in Umm Al Quwain. One point of contact, one process, no matter which of the seven Emirates your business calls home.",
+            "seo_summary": "Looking for Investor Visa handled properly the first time? Horizon Line's Investor Visa team has processed this exact service across every Emirates in the UAE, so your Investor Visa file is prepared, submitted, and followed up on by people who do this daily — not once a quarter.",
             "closing": "We align your investor visa route with your actual shareholding so you get the most stable status you legitimately qualify for."
         },
         {
@@ -1138,8 +1138,8 @@
                     "explanation": "The final step registers the employment contract terms with MOHRE, which is what makes the employment legally enforceable."
                 }
             ],
-            "emirates_coverage": "Wherever you're based, Horizon Line delivers the same Employment Visa: Employment Visa in Dubai; Employment Visa in Abu Dhabi; Employment Visa in Sharjah; Employment Visa in Ajman; Employment Visa in Ras Al Khaimah; Employment Visa in Fujairah; Employment Visa in Umm Al Quwain. One point of contact, one process, no matter which of the seven Emirates your business calls home.",
-            "seo_summary": "Looking for Employment Visa handled properly the first time? Horizon Line's Employment Visa team has processed this exact service across every Emirate in the UAE, so your Employment Visa file is prepared, submitted, and followed up on by people who do this daily — not once a quarter.",
+            "Emirates_coverage": "Wherever you're based, Horizon Line delivers the same Employment Visa: Employment Visa in Dubai; Employment Visa in Abu Dhabi; Employment Visa in Sharjah; Employment Visa in Ajman; Employment Visa in Ras Al Khaimah; Employment Visa in Fujairah; Employment Visa in Umm Al Quwain. One point of contact, one process, no matter which of the seven Emirates your business calls home.",
+            "seo_summary": "Looking for Employment Visa handled properly the first time? Horizon Line's Employment Visa team has processed this exact service across every Emirates in the UAE, so your Employment Visa file is prepared, submitted, and followed up on by people who do this daily — not once a quarter.",
             "closing": "Checking quota before filing avoids a much bigger delay later — we never file blind."
         },
         {
@@ -1209,8 +1209,8 @@
                     "explanation": "Each sponsored family member completes biometric capture and Emirates ID registration before their visa is stamped."
                 }
             ],
-            "emirates_coverage": "Wherever you're based, Horizon Line delivers the same Family Visa: Family Visa in Dubai; Family Visa in Abu Dhabi; Family Visa in Sharjah; Family Visa in Ajman; Family Visa in Ras Al Khaimah; Family Visa in Fujairah; Family Visa in Umm Al Quwain. One point of contact, one process, no matter which of the seven Emirates your business calls home.",
-            "seo_summary": "Looking for Family Visa handled properly the first time? Horizon Line's Family Visa team has processed this exact service across every Emirate in the UAE, so your Family Visa file is prepared, submitted, and followed up on by people who do this daily — not once a quarter.",
+            "Emirates_coverage": "Wherever you're based, Horizon Line delivers the same Family Visa: Family Visa in Dubai; Family Visa in Abu Dhabi; Family Visa in Sharjah; Family Visa in Ajman; Family Visa in Ras Al Khaimah; Family Visa in Fujairah; Family Visa in Umm Al Quwain. One point of contact, one process, no matter which of the seven Emirates your business calls home.",
+            "seo_summary": "Looking for Family Visa handled properly the first time? Horizon Line's Family Visa team has processed this exact service across every Emirates in the UAE, so your Family Visa file is prepared, submitted, and followed up on by people who do this daily — not once a quarter.",
             "closing": "We confirm eligibility against real thresholds first, so applications don't stall on a preventable rejection."
         },
         {
@@ -1280,8 +1280,8 @@
                     "explanation": "Depending on category — investor, professional, or specialised talent — the file either goes through direct ICP review or requires nomination from a relevant UAE entity."
                 }
             ],
-            "emirates_coverage": "Wherever you're based, Horizon Line delivers the same Golden Visa: Golden Visa in Dubai; Golden Visa in Abu Dhabi; Golden Visa in Sharjah; Golden Visa in Ajman; Golden Visa in Ras Al Khaimah; Golden Visa in Fujairah; Golden Visa in Umm Al Quwain. One point of contact, one process, no matter which of the seven Emirates your business calls home.",
-            "seo_summary": "Looking for Golden Visa handled properly the first time? Horizon Line's Golden Visa team has processed this exact service across every Emirate in the UAE, so your Golden Visa file is prepared, submitted, and followed up on by people who do this daily — not once a quarter.",
+            "Emirates_coverage": "Wherever you're based, Horizon Line delivers the same Golden Visa: Golden Visa in Dubai; Golden Visa in Abu Dhabi; Golden Visa in Sharjah; Golden Visa in Ajman; Golden Visa in Ras Al Khaimah; Golden Visa in Fujairah; Golden Visa in Umm Al Quwain. One point of contact, one process, no matter which of the seven Emirates your business calls home.",
+            "seo_summary": "Looking for Golden Visa handled properly the first time? Horizon Line's Golden Visa team has processed this exact service across every Emirates in the UAE, so your Golden Visa file is prepared, submitted, and followed up on by people who do this daily — not once a quarter.",
             "closing": "The wrong category is the most common rejection reason — we spend real time confirming the right route before filing."
         },
         {
@@ -1290,7 +1290,7 @@
             "target_location": "UAE (All 7 Emirates)",
             "meta_title": "Emirates ID in UAE | Horizon Line",
             "meta_description": "Emirates ID across Dubai, Abu Dhabi, Sharjah, Ajman, RAK, Fujairah & UAQ. Horizon Line delivers Emirates ID fast and fully compliant.",
-            "url_slug": "/services/emirates-id-uae",
+            "url_slug": "/services/Emirates-id-uae",
             "seo_intro": "Need Emirates ID? Emirates ID is one of Horizon Line's core services, and our team manages every Emirates ID file directly — no subcontracting, no guesswork.",
             "introduction": "An Emirates ID is the mandatory national identity card for every UAE resident, required alongside every visa issuance and renewal, processed across all seven Emirates — Dubai, Abu Dhabi, Sharjah, Ajman, Ras Al Khaimah, Fujairah and Umm Al Quwain.",
             "key_benefits": [
@@ -1351,8 +1351,8 @@
                     "explanation": "Fingerprints, photo, and signature are captured at an ICP-approved centre before the physical card is printed and delivered."
                 }
             ],
-            "emirates_coverage": "Wherever you're based, Horizon Line delivers the same Emirates ID: Emirates ID in Dubai; Emirates ID in Abu Dhabi; Emirates ID in Sharjah; Emirates ID in Ajman; Emirates ID in Ras Al Khaimah; Emirates ID in Fujairah; Emirates ID in Umm Al Quwain. One point of contact, one process, no matter which of the seven Emirates your business calls home.",
-            "seo_summary": "Looking for Emirates ID handled properly the first time? Horizon Line's Emirates ID team has processed this exact service across every Emirate in the UAE, so your Emirates ID file is prepared, submitted, and followed up on by people who do this daily — not once a quarter.",
+            "Emirates_coverage": "Wherever you're based, Horizon Line delivers the same Emirates ID: Emirates ID in Dubai; Emirates ID in Abu Dhabi; Emirates ID in Sharjah; Emirates ID in Ajman; Emirates ID in Ras Al Khaimah; Emirates ID in Fujairah; Emirates ID in Umm Al Quwain. One point of contact, one process, no matter which of the seven Emirates your business calls home.",
+            "seo_summary": "Looking for Emirates ID handled properly the first time? Horizon Line's Emirates ID team has processed this exact service across every Emirates in the UAE, so your Emirates ID file is prepared, submitted, and followed up on by people who do this daily — not once a quarter.",
             "closing": "We treat Emirates ID as a standard companion step to every visa transaction, so it's never the piece left behind."
         },
         {
@@ -1422,8 +1422,8 @@
                     "explanation": "Once results clear, the medical fitness certificate is issued electronically and linked to your Emirates ID application automatically."
                 }
             ],
-            "emirates_coverage": "Wherever you're based, Horizon Line delivers the same Medical Test: Medical Test in Dubai; Medical Test in Abu Dhabi; Medical Test in Sharjah; Medical Test in Ajman; Medical Test in Ras Al Khaimah; Medical Test in Fujairah; Medical Test in Umm Al Quwain. One point of contact, one process, no matter which of the seven Emirates your business calls home.",
-            "seo_summary": "Looking for Medical Test handled properly the first time? Horizon Line's Medical Test team has processed this exact service across every Emirate in the UAE, so your Medical Test file is prepared, submitted, and followed up on by people who do this daily — not once a quarter.",
+            "Emirates_coverage": "Wherever you're based, Horizon Line delivers the same Medical Test: Medical Test in Dubai; Medical Test in Abu Dhabi; Medical Test in Sharjah; Medical Test in Ajman; Medical Test in Ras Al Khaimah; Medical Test in Fujairah; Medical Test in Umm Al Quwain. One point of contact, one process, no matter which of the seven Emirates your business calls home.",
+            "seo_summary": "Looking for Medical Test handled properly the first time? Horizon Line's Medical Test team has processed this exact service across every Emirates in the UAE, so your Medical Test file is prepared, submitted, and followed up on by people who do this daily — not once a quarter.",
             "closing": "We schedule this promptly since it's a required gate before Emirates ID and visa stamping can proceed."
         },
         {
@@ -1493,8 +1493,8 @@
                     "explanation": "Once approved, your Tax Registration Number is issued — we verify it's correctly reflected on your invoices and contracts from day one."
                 }
             ],
-            "emirates_coverage": "Wherever you're based, Horizon Line delivers the same VAT Registration: VAT Registration in Dubai; VAT Registration in Abu Dhabi; VAT Registration in Sharjah; VAT Registration in Ajman; VAT Registration in Ras Al Khaimah; VAT Registration in Fujairah; VAT Registration in Umm Al Quwain. One point of contact, one process, no matter which of the seven Emirates your business calls home.",
-            "seo_summary": "Looking for VAT Registration handled properly the first time? Horizon Line's VAT Registration team has processed this exact service across every Emirate in the UAE, so your VAT Registration file is prepared, submitted, and followed up on by people who do this daily — not once a quarter.",
+            "Emirates_coverage": "Wherever you're based, Horizon Line delivers the same VAT Registration: VAT Registration in Dubai; VAT Registration in Abu Dhabi; VAT Registration in Sharjah; VAT Registration in Ajman; VAT Registration in Ras Al Khaimah; VAT Registration in Fujairah; VAT Registration in Umm Al Quwain. One point of contact, one process, no matter which of the seven Emirates your business calls home.",
+            "seo_summary": "Looking for VAT Registration handled properly the first time? Horizon Line's VAT Registration team has processed this exact service across every Emirates in the UAE, so your VAT Registration file is prepared, submitted, and followed up on by people who do this daily — not once a quarter.",
             "closing": "We confirm your actual threshold status first so you register at the right time — not too early, not too late."
         },
         {
@@ -1564,8 +1564,8 @@
                     "explanation": "Once the return is filed on the FTA portal, we confirm the payable amount and deadline so payment is settled on time."
                 }
             ],
-            "emirates_coverage": "Wherever you're based, Horizon Line delivers the same VAT Return Filing: VAT Return Filing in Dubai; VAT Return Filing in Abu Dhabi; VAT Return Filing in Sharjah; VAT Return Filing in Ajman; VAT Return Filing in Ras Al Khaimah; VAT Return Filing in Fujairah; VAT Return Filing in Umm Al Quwain. One point of contact, one process, no matter which of the seven Emirates your business calls home.",
-            "seo_summary": "Looking for VAT Return Filing handled properly the first time? Horizon Line's VAT Return Filing team has processed this exact service across every Emirate in the UAE, so your VAT Return Filing file is prepared, submitted, and followed up on by people who do this daily — not once a quarter.",
+            "Emirates_coverage": "Wherever you're based, Horizon Line delivers the same VAT Return Filing: VAT Return Filing in Dubai; VAT Return Filing in Abu Dhabi; VAT Return Filing in Sharjah; VAT Return Filing in Ajman; VAT Return Filing in Ras Al Khaimah; VAT Return Filing in Fujairah; VAT Return Filing in Umm Al Quwain. One point of contact, one process, no matter which of the seven Emirates your business calls home.",
+            "seo_summary": "Looking for VAT Return Filing handled properly the first time? Horizon Line's VAT Return Filing team has processed this exact service across every Emirates in the UAE, so your VAT Return Filing file is prepared, submitted, and followed up on by people who do this daily — not once a quarter.",
             "closing": "Accuracy each quarter is what keeps you off the FTA's audit radar — we treat filing as a recurring relationship, not a one-off task."
         },
         {
@@ -1635,8 +1635,8 @@
                     "explanation": "Free zone entities are checked against Qualifying Free Zone Person criteria, which determines whether the 0% or 9% rate applies."
                 }
             ],
-            "emirates_coverage": "Wherever you're based, Horizon Line delivers the same Corporate Tax Registration: Corporate Tax Registration in Dubai; Corporate Tax Registration in Abu Dhabi; Corporate Tax Registration in Sharjah; Corporate Tax Registration in Ajman; Corporate Tax Registration in Ras Al Khaimah; Corporate Tax Registration in Fujairah; Corporate Tax Registration in Umm Al Quwain. One point of contact, one process, no matter which of the seven Emirates your business calls home.",
-            "seo_summary": "Looking for Corporate Tax Registration handled properly the first time? Horizon Line's Corporate Tax Registration team has processed this exact service across every Emirate in the UAE, so your Corporate Tax Registration file is prepared, submitted, and followed up on by people who do this daily — not once a quarter.",
+            "Emirates_coverage": "Wherever you're based, Horizon Line delivers the same Corporate Tax Registration: Corporate Tax Registration in Dubai; Corporate Tax Registration in Abu Dhabi; Corporate Tax Registration in Sharjah; Corporate Tax Registration in Ajman; Corporate Tax Registration in Ras Al Khaimah; Corporate Tax Registration in Fujairah; Corporate Tax Registration in Umm Al Quwain. One point of contact, one process, no matter which of the seven Emirates your business calls home.",
+            "seo_summary": "Looking for Corporate Tax Registration handled properly the first time? Horizon Line's Corporate Tax Registration team has processed this exact service across every Emirates in the UAE, so your Corporate Tax Registration file is prepared, submitted, and followed up on by people who do this daily — not once a quarter.",
             "closing": "This is now mandatory groundwork for every UAE company — we make sure it's on time and sets you up correctly for filings ahead."
         },
         {
@@ -1706,8 +1706,8 @@
                     "explanation": "We walk through disallowed expenses and adjustments with you before filing, so the taxable income figure isn't a surprise."
                 }
             ],
-            "emirates_coverage": "Wherever you're based, Horizon Line delivers the same Corporate Tax Filing: Corporate Tax Filing in Dubai; Corporate Tax Filing in Abu Dhabi; Corporate Tax Filing in Sharjah; Corporate Tax Filing in Ajman; Corporate Tax Filing in Ras Al Khaimah; Corporate Tax Filing in Fujairah; Corporate Tax Filing in Umm Al Quwain. One point of contact, one process, no matter which of the seven Emirates your business calls home.",
-            "seo_summary": "Looking for Corporate Tax Filing handled properly the first time? Horizon Line's Corporate Tax Filing team has processed this exact service across every Emirate in the UAE, so your Corporate Tax Filing file is prepared, submitted, and followed up on by people who do this daily — not once a quarter.",
+            "Emirates_coverage": "Wherever you're based, Horizon Line delivers the same Corporate Tax Filing: Corporate Tax Filing in Dubai; Corporate Tax Filing in Abu Dhabi; Corporate Tax Filing in Sharjah; Corporate Tax Filing in Ajman; Corporate Tax Filing in Ras Al Khaimah; Corporate Tax Filing in Fujairah; Corporate Tax Filing in Umm Al Quwain. One point of contact, one process, no matter which of the seven Emirates your business calls home.",
+            "seo_summary": "Looking for Corporate Tax Filing handled properly the first time? Horizon Line's Corporate Tax Filing team has processed this exact service across every Emirates in the UAE, so your Corporate Tax Filing file is prepared, submitted, and followed up on by people who do this daily — not once a quarter.",
             "closing": "We calculate your taxable income the way the FTA actually expects it presented, not just your accounting profit as-is."
         },
         {
@@ -1777,8 +1777,8 @@
                     "explanation": "You receive a monthly profit-and-loss and balance sheet snapshot, not just once-a-year figures at renewal or audit time."
                 }
             ],
-            "emirates_coverage": "Wherever you're based, Horizon Line delivers the same Accounting & Bookkeeping: Accounting & Bookkeeping in Dubai; Accounting & Bookkeeping in Abu Dhabi; Accounting & Bookkeeping in Sharjah; Accounting & Bookkeeping in Ajman; Accounting & Bookkeeping in Ras Al Khaimah; Accounting & Bookkeeping in Fujairah; Accounting & Bookkeeping in Umm Al Quwain. One point of contact, one process, no matter which of the seven Emirates your business calls home.",
-            "seo_summary": "Looking for Accounting & Bookkeeping handled properly the first time? Horizon Line's Accounting & Bookkeeping team has processed this exact service across every Emirate in the UAE, so your Accounting & Bookkeeping file is prepared, submitted, and followed up on by people who do this daily — not once a quarter.",
+            "Emirates_coverage": "Wherever you're based, Horizon Line delivers the same Accounting & Bookkeeping: Accounting & Bookkeeping in Dubai; Accounting & Bookkeeping in Abu Dhabi; Accounting & Bookkeeping in Sharjah; Accounting & Bookkeeping in Ajman; Accounting & Bookkeeping in Ras Al Khaimah; Accounting & Bookkeeping in Fujairah; Accounting & Bookkeeping in Umm Al Quwain. One point of contact, one process, no matter which of the seven Emirates your business calls home.",
+            "seo_summary": "Looking for Accounting & Bookkeeping handled properly the first time? Horizon Line's Accounting & Bookkeeping team has processed this exact service across every Emirates in the UAE, so your Accounting & Bookkeeping file is prepared, submitted, and followed up on by people who do this daily — not once a quarter.",
             "closing": "Clean books aren't just compliance — they're the tool you actually use to make decisions, and we build them with that in mind."
         },
         {
@@ -1848,8 +1848,8 @@
                     "explanation": "We act as the point of contact for follow-up questions from your external auditor until the report is signed off."
                 }
             ],
-            "emirates_coverage": "Wherever you're based, Horizon Line delivers the same Audit Support: Audit Support in Dubai; Audit Support in Abu Dhabi; Audit Support in Sharjah; Audit Support in Ajman; Audit Support in Ras Al Khaimah; Audit Support in Fujairah; Audit Support in Umm Al Quwain. One point of contact, one process, no matter which of the seven Emirates your business calls home.",
-            "seo_summary": "Looking for Audit Support handled properly the first time? Horizon Line's Audit Support team has processed this exact service across every Emirate in the UAE, so your Audit Support file is prepared, submitted, and followed up on by people who do this daily — not once a quarter.",
+            "Emirates_coverage": "Wherever you're based, Horizon Line delivers the same Audit Support: Audit Support in Dubai; Audit Support in Abu Dhabi; Audit Support in Sharjah; Audit Support in Ajman; Audit Support in Ras Al Khaimah; Audit Support in Fujairah; Audit Support in Umm Al Quwain. One point of contact, one process, no matter which of the seven Emirates your business calls home.",
+            "seo_summary": "Looking for Audit Support handled properly the first time? Horizon Line's Audit Support team has processed this exact service across every Emirates in the UAE, so your Audit Support file is prepared, submitted, and followed up on by people who do this daily — not once a quarter.",
             "closing": "We coordinate the audit around your actual deadlines so it supports renewal or filing, not a last-minute scramble."
         },
         {
@@ -1923,8 +1923,8 @@
                     "explanation": "Most banks require an in-person or video KYC interview with a signatory — we prepare you for what's typically asked."
                 }
             ],
-            "emirates_coverage": "Wherever you're based, Horizon Line delivers the same Corporate Bank Account: Corporate Bank Account in Dubai; Corporate Bank Account in Abu Dhabi; Corporate Bank Account in Sharjah; Corporate Bank Account in Ajman; Corporate Bank Account in Ras Al Khaimah; Corporate Bank Account in Fujairah; Corporate Bank Account in Umm Al Quwain. One point of contact, one process, no matter which of the seven Emirates your business calls home.",
-            "seo_summary": "Looking for Corporate Bank Account handled properly the first time? Horizon Line's Corporate Bank Account team has processed this exact service across every Emirate in the UAE, so your Corporate Bank Account file is prepared, submitted, and followed up on by people who do this daily — not once a quarter.",
+            "Emirates_coverage": "Wherever you're based, Horizon Line delivers the same Corporate Bank Account: Corporate Bank Account in Dubai; Corporate Bank Account in Abu Dhabi; Corporate Bank Account in Sharjah; Corporate Bank Account in Ajman; Corporate Bank Account in Ras Al Khaimah; Corporate Bank Account in Fujairah; Corporate Bank Account in Umm Al Quwain. One point of contact, one process, no matter which of the seven Emirates your business calls home.",
+            "seo_summary": "Looking for Corporate Bank Account handled properly the first time? Horizon Line's Corporate Bank Account team has processed this exact service across every Emirates in the UAE, so your Corporate Bank Account file is prepared, submitted, and followed up on by people who do this daily — not once a quarter.",
             "closing": "We prepare your file the way an experienced compliance officer would review it, so fewer questions come back after submission."
         },
         {
@@ -1994,8 +1994,8 @@
                     "explanation": "Once the agreement is signed, we handle building access setup so you can use the shared desk and meeting rooms immediately."
                 }
             ],
-            "emirates_coverage": "Wherever you're based, Horizon Line delivers the same Flexi Desk: Flexi Desk in Dubai; Flexi Desk in Abu Dhabi; Flexi Desk in Sharjah; Flexi Desk in Ajman; Flexi Desk in Ras Al Khaimah; Flexi Desk in Fujairah; Flexi Desk in Umm Al Quwain. One point of contact, one process, no matter which of the seven Emirates your business calls home.",
-            "seo_summary": "Looking for Flexi Desk handled properly the first time? Horizon Line's Flexi Desk team has processed this exact service across every Emirate in the UAE, so your Flexi Desk file is prepared, submitted, and followed up on by people who do this daily — not once a quarter.",
+            "Emirates_coverage": "Wherever you're based, Horizon Line delivers the same Flexi Desk: Flexi Desk in Dubai; Flexi Desk in Abu Dhabi; Flexi Desk in Sharjah; Flexi Desk in Ajman; Flexi Desk in Ras Al Khaimah; Flexi Desk in Fujairah; Flexi Desk in Umm Al Quwain. One point of contact, one process, no matter which of the seven Emirates your business calls home.",
+            "seo_summary": "Looking for Flexi Desk handled properly the first time? Horizon Line's Flexi Desk team has processed this exact service across every Emirates in the UAE, so your Flexi Desk file is prepared, submitted, and followed up on by people who do this daily — not once a quarter.",
             "closing": "We only recommend a flexi desk when its visa allocation genuinely covers your plan — not just because it's the cheapest listed option."
         },
         {
@@ -2065,8 +2065,8 @@
                     "explanation": "Once active, we configure where physical mail and calls received at the address should be forwarded to."
                 }
             ],
-            "emirates_coverage": "Wherever you're based, Horizon Line delivers the same Virtual Office: Virtual Office in Dubai; Virtual Office in Abu Dhabi; Virtual Office in Sharjah; Virtual Office in Ajman; Virtual Office in Ras Al Khaimah; Virtual Office in Fujairah; Virtual Office in Umm Al Quwain. One point of contact, one process, no matter which of the seven Emirates your business calls home.",
-            "seo_summary": "Looking for Virtual Office handled properly the first time? Horizon Line's Virtual Office team has processed this exact service across every Emirate in the UAE, so your Virtual Office file is prepared, submitted, and followed up on by people who do this daily — not once a quarter.",
+            "Emirates_coverage": "Wherever you're based, Horizon Line delivers the same Virtual Office: Virtual Office in Dubai; Virtual Office in Abu Dhabi; Virtual Office in Sharjah; Virtual Office in Ajman; Virtual Office in Ras Al Khaimah; Virtual Office in Fujairah; Virtual Office in Umm Al Quwain. One point of contact, one process, no matter which of the seven Emirates your business calls home.",
+            "seo_summary": "Looking for Virtual Office handled properly the first time? Horizon Line's Virtual Office team has processed this exact service across every Emirates in the UAE, so your Virtual Office file is prepared, submitted, and followed up on by people who do this daily — not once a quarter.",
             "closing": "We confirm your specific licensing authority actually accepts a virtual office before recommending it — not every activity qualifies."
         },
         {
@@ -2136,8 +2136,8 @@
                     "explanation": "We coordinate the handover timeline with the landlord so your fit-out or move-in doesn't delay your licence renewal deadline."
                 }
             ],
-            "emirates_coverage": "Wherever you're based, Horizon Line delivers the same Private Office: Private Office in Dubai; Private Office in Abu Dhabi; Private Office in Sharjah; Private Office in Ajman; Private Office in Ras Al Khaimah; Private Office in Fujairah; Private Office in Umm Al Quwain. One point of contact, one process, no matter which of the seven Emirates your business calls home.",
-            "seo_summary": "Looking for Private Office handled properly the first time? Horizon Line's Private Office team has processed this exact service across every Emirate in the UAE, so your Private Office file is prepared, submitted, and followed up on by people who do this daily — not once a quarter.",
+            "Emirates_coverage": "Wherever you're based, Horizon Line delivers the same Private Office: Private Office in Dubai; Private Office in Abu Dhabi; Private Office in Sharjah; Private Office in Ajman; Private Office in Ras Al Khaimah; Private Office in Fujairah; Private Office in Umm Al Quwain. One point of contact, one process, no matter which of the seven Emirates your business calls home.",
+            "seo_summary": "Looking for Private Office handled properly the first time? Horizon Line's Private Office team has processed this exact service across every Emirates in the UAE, so your Private Office file is prepared, submitted, and followed up on by people who do this daily — not once a quarter.",
             "closing": "We factor in your likely growth trajectory so this office choice doesn't force an unplanned relocation within the first year."
         },
         {
@@ -2164,7 +2164,7 @@
                 },
                 {
                     "point": "Protection across all 7 Emirates under one registration",
-                    "explanation": "A UAE trademark registration is a single federal filing that protects your mark nationwide, not per Emirate."
+                    "explanation": "A UAE trademark registration is a single federal filing that protects your mark nationwide, not per Emirates."
                 }
             ],
             "documents_required": [
@@ -2207,8 +2207,8 @@
                     "explanation": "Once approved, the mark is published for a statutory opposition period before the final registration certificate is issued."
                 }
             ],
-            "emirates_coverage": "Wherever you're based, Horizon Line delivers the same Trademark Registration: Trademark Registration in Dubai; Trademark Registration in Abu Dhabi; Trademark Registration in Sharjah; Trademark Registration in Ajman; Trademark Registration in Ras Al Khaimah; Trademark Registration in Fujairah; Trademark Registration in Umm Al Quwain. One point of contact, one process, no matter which of the seven Emirates your business calls home.",
-            "seo_summary": "Looking for Trademark Registration handled properly the first time? Horizon Line's Trademark Registration team has processed this exact service across every Emirate in the UAE, so your Trademark Registration file is prepared, submitted, and followed up on by people who do this daily — not once a quarter.",
+            "Emirates_coverage": "Wherever you're based, Horizon Line delivers the same Trademark Registration: Trademark Registration in Dubai; Trademark Registration in Abu Dhabi; Trademark Registration in Sharjah; Trademark Registration in Ajman; Trademark Registration in Ras Al Khaimah; Trademark Registration in Fujairah; Trademark Registration in Umm Al Quwain. One point of contact, one process, no matter which of the seven Emirates your business calls home.",
+            "seo_summary": "Looking for Trademark Registration handled properly the first time? Horizon Line's Trademark Registration team has processed this exact service across every Emirates in the UAE, so your Trademark Registration file is prepared, submitted, and followed up on by people who do this daily — not once a quarter.",
             "closing": "We run the clearance search before filing so you're not investing in a mark likely to be opposed or rejected."
         },
         {
@@ -2278,8 +2278,8 @@
                     "explanation": "Once the Ministry approves the filing, the official copyright certificate is issued and can be used as evidence of ownership."
                 }
             ],
-            "emirates_coverage": "Wherever you're based, Horizon Line delivers the same Copyright Registration: Copyright Registration in Dubai; Copyright Registration in Abu Dhabi; Copyright Registration in Sharjah; Copyright Registration in Ajman; Copyright Registration in Ras Al Khaimah; Copyright Registration in Fujairah; Copyright Registration in Umm Al Quwain. One point of contact, one process, no matter which of the seven Emirates your business calls home.",
-            "seo_summary": "Looking for Copyright Registration handled properly the first time? Horizon Line's Copyright Registration team has processed this exact service across every Emirate in the UAE, so your Copyright Registration file is prepared, submitted, and followed up on by people who do this daily — not once a quarter.",
+            "Emirates_coverage": "Wherever you're based, Horizon Line delivers the same Copyright Registration: Copyright Registration in Dubai; Copyright Registration in Abu Dhabi; Copyright Registration in Sharjah; Copyright Registration in Ajman; Copyright Registration in Ras Al Khaimah; Copyright Registration in Fujairah; Copyright Registration in Umm Al Quwain. One point of contact, one process, no matter which of the seven Emirates your business calls home.",
+            "seo_summary": "Looking for Copyright Registration handled properly the first time? Horizon Line's Copyright Registration team has processed this exact service across every Emirates in the UAE, so your Copyright Registration file is prepared, submitted, and followed up on by people who do this daily — not once a quarter.",
             "closing": "We make sure your registration correctly classifies the work so the certificate actually matches how it would be used in a dispute."
         },
         {
@@ -2349,8 +2349,8 @@
                     "explanation": "Certain agreements — MOAs, powers of attorney, sworn statements — need notary attestation, which we arrange as part of finalising the document."
                 }
             ],
-            "emirates_coverage": "Wherever you're based, Horizon Line delivers the same Legal Documentation: Legal Documentation in Dubai; Legal Documentation in Abu Dhabi; Legal Documentation in Sharjah; Legal Documentation in Ajman; Legal Documentation in Ras Al Khaimah; Legal Documentation in Fujairah; Legal Documentation in Umm Al Quwain. One point of contact, one process, no matter which of the seven Emirates your business calls home.",
-            "seo_summary": "Looking for Legal Documentation handled properly the first time? Horizon Line's Legal Documentation team has processed this exact service across every Emirate in the UAE, so your Legal Documentation file is prepared, submitted, and followed up on by people who do this daily — not once a quarter.",
+            "Emirates_coverage": "Wherever you're based, Horizon Line delivers the same Legal Documentation: Legal Documentation in Dubai; Legal Documentation in Abu Dhabi; Legal Documentation in Sharjah; Legal Documentation in Ajman; Legal Documentation in Ras Al Khaimah; Legal Documentation in Fujairah; Legal Documentation in Umm Al Quwain. One point of contact, one process, no matter which of the seven Emirates your business calls home.",
+            "seo_summary": "Looking for Legal Documentation handled properly the first time? Horizon Line's Legal Documentation team has processed this exact service across every Emirates in the UAE, so your Legal Documentation file is prepared, submitted, and followed up on by people who do this daily — not once a quarter.",
             "closing": "A beautifully worded clause a local court won't uphold isn't protecting you — we draft for UAE enforceability first."
         },
         {
@@ -2420,8 +2420,8 @@
                     "explanation": "After the MOA is amended, we flag which other records — bank KYC, VAT registration, visa sponsorships — may also need updating."
                 }
             ],
-            "emirates_coverage": "Wherever you're based, Horizon Line delivers the same MOA Amendment: MOA Amendment in Dubai; MOA Amendment in Abu Dhabi; MOA Amendment in Sharjah; MOA Amendment in Ajman; MOA Amendment in Ras Al Khaimah; MOA Amendment in Fujairah; MOA Amendment in Umm Al Quwain. One point of contact, one process, no matter which of the seven Emirates your business calls home.",
-            "seo_summary": "Looking for MOA Amendment handled properly the first time? Horizon Line's MOA Amendment team has processed this exact service across every Emirate in the UAE, so your MOA Amendment file is prepared, submitted, and followed up on by people who do this daily — not once a quarter.",
+            "Emirates_coverage": "Wherever you're based, Horizon Line delivers the same MOA Amendment: MOA Amendment in Dubai; MOA Amendment in Abu Dhabi; MOA Amendment in Sharjah; MOA Amendment in Ajman; MOA Amendment in Ras Al Khaimah; MOA Amendment in Fujairah; MOA Amendment in Umm Al Quwain. One point of contact, one process, no matter which of the seven Emirates your business calls home.",
+            "seo_summary": "Looking for MOA Amendment handled properly the first time? Horizon Line's MOA Amendment team has processed this exact service across every Emirates in the UAE, so your MOA Amendment file is prepared, submitted, and followed up on by people who do this daily — not once a quarter.",
             "closing": "We draft amendments to hold up on their own, not just as a formality to satisfy the authority's checklist."
         },
         {
@@ -2491,8 +2491,8 @@
                     "explanation": "Employees receive compliant payslips each cycle, and end-of-service gratuity accruals are tracked automatically as tenure builds."
                 }
             ],
-            "emirates_coverage": "Wherever you're based, Horizon Line delivers the same Payroll Management: Payroll Management in Dubai; Payroll Management in Abu Dhabi; Payroll Management in Sharjah; Payroll Management in Ajman; Payroll Management in Ras Al Khaimah; Payroll Management in Fujairah; Payroll Management in Umm Al Quwain. One point of contact, one process, no matter which of the seven Emirates your business calls home.",
-            "seo_summary": "Looking for Payroll Management handled properly the first time? Horizon Line's Payroll Management team has processed this exact service across every Emirate in the UAE, so your Payroll Management file is prepared, submitted, and followed up on by people who do this daily — not once a quarter.",
+            "Emirates_coverage": "Wherever you're based, Horizon Line delivers the same Payroll Management: Payroll Management in Dubai; Payroll Management in Abu Dhabi; Payroll Management in Sharjah; Payroll Management in Ajman; Payroll Management in Ras Al Khaimah; Payroll Management in Fujairah; Payroll Management in Umm Al Quwain. One point of contact, one process, no matter which of the seven Emirates your business calls home.",
+            "seo_summary": "Looking for Payroll Management handled properly the first time? Horizon Line's Payroll Management team has processed this exact service across every Emirates in the UAE, so your Payroll Management file is prepared, submitted, and followed up on by people who do this daily — not once a quarter.",
             "closing": "Accurate, on-time WPS payroll directly protects your company's ability to sponsor future employees."
         },
         {
@@ -2562,8 +2562,8 @@
                     "explanation": "We help structure the offer — salary, allowances, notice period — in line with what's standard for the role and sector in the UAE."
                 }
             ],
-            "emirates_coverage": "Wherever you're based, Horizon Line delivers the same Recruitment Support: Recruitment Support in Dubai; Recruitment Support in Abu Dhabi; Recruitment Support in Sharjah; Recruitment Support in Ajman; Recruitment Support in Ras Al Khaimah; Recruitment Support in Fujairah; Recruitment Support in Umm Al Quwain. One point of contact, one process, no matter which of the seven Emirates your business calls home.",
-            "seo_summary": "Looking for Recruitment Support handled properly the first time? Horizon Line's Recruitment Support team has processed this exact service across every Emirate in the UAE, so your Recruitment Support file is prepared, submitted, and followed up on by people who do this daily — not once a quarter.",
+            "Emirates_coverage": "Wherever you're based, Horizon Line delivers the same Recruitment Support: Recruitment Support in Dubai; Recruitment Support in Abu Dhabi; Recruitment Support in Sharjah; Recruitment Support in Ajman; Recruitment Support in Ras Al Khaimah; Recruitment Support in Fujairah; Recruitment Support in Umm Al Quwain. One point of contact, one process, no matter which of the seven Emirates your business calls home.",
+            "seo_summary": "Looking for Recruitment Support handled properly the first time? Horizon Line's Recruitment Support team has processed this exact service across every Emirates in the UAE, so your Recruitment Support file is prepared, submitted, and followed up on by people who do this daily — not once a quarter.",
             "closing": "We connect recruitment directly to visa quota reality, so you're not offering a role you can't actually sponsor."
         },
         {
@@ -2633,8 +2633,8 @@
                     "explanation": "Before launch we test across devices and walk your team through basic content updates so you're not dependent on us for every small change."
                 }
             ],
-            "emirates_coverage": "Wherever you're based, Horizon Line delivers the same Website Development: Website Development in Dubai; Website Development in Abu Dhabi; Website Development in Sharjah; Website Development in Ajman; Website Development in Ras Al Khaimah; Website Development in Fujairah; Website Development in Umm Al Quwain. One point of contact, one process, no matter which of the seven Emirates your business calls home.",
-            "seo_summary": "Looking for Website Development handled properly the first time? Horizon Line's Website Development team has processed this exact service across every Emirate in the UAE, so your Website Development file is prepared, submitted, and followed up on by people who do this daily — not once a quarter.",
+            "Emirates_coverage": "Wherever you're based, Horizon Line delivers the same Website Development: Website Development in Dubai; Website Development in Abu Dhabi; Website Development in Sharjah; Website Development in Ajman; Website Development in Ras Al Khaimah; Website Development in Fujairah; Website Development in Umm Al Quwain. One point of contact, one process, no matter which of the seven Emirates your business calls home.",
+            "seo_summary": "Looking for Website Development handled properly the first time? Horizon Line's Website Development team has processed this exact service across every Emirates in the UAE, so your Website Development file is prepared, submitted, and followed up on by people who do this daily — not once a quarter.",
             "closing": "We build with an eye on what UAE banks and payment processors actually check for, not just general aesthetics."
         },
         {
@@ -2704,8 +2704,8 @@
                     "explanation": "You receive a monthly report showing spend, reach, and conversion figures, so budget decisions are based on actual data."
                 }
             ],
-            "emirates_coverage": "Wherever you're based, Horizon Line delivers the same Digital Marketing: Digital Marketing in Dubai; Digital Marketing in Abu Dhabi; Digital Marketing in Sharjah; Digital Marketing in Ajman; Digital Marketing in Ras Al Khaimah; Digital Marketing in Fujairah; Digital Marketing in Umm Al Quwain. One point of contact, one process, no matter which of the seven Emirates your business calls home.",
-            "seo_summary": "Looking for Digital Marketing handled properly the first time? Horizon Line's Digital Marketing team has processed this exact service across every Emirate in the UAE, so your Digital Marketing file is prepared, submitted, and followed up on by people who do this daily — not once a quarter.",
+            "Emirates_coverage": "Wherever you're based, Horizon Line delivers the same Digital Marketing: Digital Marketing in Dubai; Digital Marketing in Abu Dhabi; Digital Marketing in Sharjah; Digital Marketing in Ajman; Digital Marketing in Ras Al Khaimah; Digital Marketing in Fujairah; Digital Marketing in Umm Al Quwain. One point of contact, one process, no matter which of the seven Emirates your business calls home.",
+            "seo_summary": "Looking for Digital Marketing handled properly the first time? Horizon Line's Digital Marketing team has processed this exact service across every Emirates in the UAE, so your Digital Marketing file is prepared, submitted, and followed up on by people who do this daily — not once a quarter.",
             "closing": "We build campaigns around measurable results specific to the UAE market, not recycled global playbooks."
         },
         {
@@ -2775,8 +2775,8 @@
                     "explanation": "Once approved, we flag whether your VAT registration, bank KYC, or visa sponsorships also need updating to match the amended licence."
                 }
             ],
-            "emirates_coverage": "Wherever you're based, Horizon Line delivers the same Business License Amendment: Business License Amendment in Dubai; Business License Amendment in Abu Dhabi; Business License Amendment in Sharjah; Business License Amendment in Ajman; Business License Amendment in Ras Al Khaimah; Business License Amendment in Fujairah; Business License Amendment in Umm Al Quwain. One point of contact, one process, no matter which of the seven Emirates your business calls home.",
-            "seo_summary": "Looking for Business License Amendment handled properly the first time? Horizon Line's Business License Amendment team has processed this exact service across every Emirate in the UAE, so your Business License Amendment file is prepared, submitted, and followed up on by people who do this daily — not once a quarter.",
+            "Emirates_coverage": "Wherever you're based, Horizon Line delivers the same Business License Amendment: Business License Amendment in Dubai; Business License Amendment in Abu Dhabi; Business License Amendment in Sharjah; Business License Amendment in Ajman; Business License Amendment in Ras Al Khaimah; Business License Amendment in Fujairah; Business License Amendment in Umm Al Quwain. One point of contact, one process, no matter which of the seven Emirates your business calls home.",
+            "seo_summary": "Looking for Business License Amendment handled properly the first time? Horizon Line's Business License Amendment team has processed this exact service across every Emirates in the UAE, so your Business License Amendment file is prepared, submitted, and followed up on by people who do this daily — not once a quarter.",
             "closing": "The longer your licence doesn't match reality, the more places that gap can cause a problem — we file amendments promptly."
         },
         {
@@ -2846,8 +2846,8 @@
                     "explanation": "Once all dues are settled, DED or the free zone issues a clearance certificate confirming the licence is fully closed with no outstanding liabilities."
                 }
             ],
-            "emirates_coverage": "Wherever you're based, Horizon Line delivers the same Business License Cancellation: Business License Cancellation in Dubai; Business License Cancellation in Abu Dhabi; Business License Cancellation in Sharjah; Business License Cancellation in Ajman; Business License Cancellation in Ras Al Khaimah; Business License Cancellation in Fujairah; Business License Cancellation in Umm Al Quwain. One point of contact, one process, no matter which of the seven Emirates your business calls home.",
-            "seo_summary": "Looking for Business License Cancellation handled properly the first time? Horizon Line's Business License Cancellation team has processed this exact service across every Emirate in the UAE, so your Business License Cancellation file is prepared, submitted, and followed up on by people who do this daily — not once a quarter.",
+            "Emirates_coverage": "Wherever you're based, Horizon Line delivers the same Business License Cancellation: Business License Cancellation in Dubai; Business License Cancellation in Abu Dhabi; Business License Cancellation in Sharjah; Business License Cancellation in Ajman; Business License Cancellation in Ras Al Khaimah; Business License Cancellation in Fujairah; Business License Cancellation in Umm Al Quwain. One point of contact, one process, no matter which of the seven Emirates your business calls home.",
+            "seo_summary": "Looking for Business License Cancellation handled properly the first time? Horizon Line's Business License Cancellation team has processed this exact service across every Emirates in the UAE, so your Business License Cancellation file is prepared, submitted, and followed up on by people who do this daily — not once a quarter.",
             "closing": "We make sure cancellation is genuinely the right process before filing, rather than starting the wrong closure route."
         },
         {
@@ -2917,8 +2917,8 @@
                     "explanation": "Once attested, documents are formatted and submitted directly to the university or school's admissions office on your behalf."
                 }
             ],
-            "emirates_coverage": "Wherever you're based, Horizon Line delivers the same Student Services: Student Services in Dubai; Student Services in Abu Dhabi; Student Services in Sharjah; Student Services in Ajman; Student Services in Ras Al Khaimah; Student Services in Fujairah; Student Services in Umm Al Quwain. One point of contact, one process, no matter which of the seven Emirates your business calls home.",
-            "seo_summary": "Looking for Student Services handled properly the first time? Horizon Line's Student Services team has processed this exact service across every Emirate in the UAE, so your Student Services file is prepared, submitted, and followed up on by people who do this daily — not once a quarter.",
+            "Emirates_coverage": "Wherever you're based, Horizon Line delivers the same Student Services: Student Services in Dubai; Student Services in Abu Dhabi; Student Services in Sharjah; Student Services in Ajman; Student Services in Ras Al Khaimah; Student Services in Fujairah; Student Services in Umm Al Quwain. One point of contact, one process, no matter which of the seven Emirates your business calls home.",
+            "seo_summary": "Looking for Student Services handled properly the first time? Horizon Line's Student Services team has processed this exact service across every Emirates in the UAE, so your Student Services file is prepared, submitted, and followed up on by people who do this daily — not once a quarter.",
             "closing": "We confirm the receiving institution's exact requirement before submission, since requirements vary by university and programme."
         },
         {
@@ -2988,8 +2988,8 @@
                     "explanation": "We manage any clarification requests from the Ministry of Education directly, keeping the institution's staff out of the back-and-forth."
                 }
             ],
-            "emirates_coverage": "Wherever you're based, Horizon Line delivers the same Academic Services: Academic Services in Dubai; Academic Services in Abu Dhabi; Academic Services in Sharjah; Academic Services in Ajman; Academic Services in Ras Al Khaimah; Academic Services in Fujairah; Academic Services in Umm Al Quwain. One point of contact, one process, no matter which of the seven Emirates your business calls home.",
-            "seo_summary": "Looking for Academic Services handled properly the first time? Horizon Line's Academic Services team has processed this exact service across every Emirate in the UAE, so your Academic Services file is prepared, submitted, and followed up on by people who do this daily — not once a quarter.",
+            "Emirates_coverage": "Wherever you're based, Horizon Line delivers the same Academic Services: Academic Services in Dubai; Academic Services in Abu Dhabi; Academic Services in Sharjah; Academic Services in Ajman; Academic Services in Ras Al Khaimah; Academic Services in Fujairah; Academic Services in Umm Al Quwain. One point of contact, one process, no matter which of the seven Emirates your business calls home.",
+            "seo_summary": "Looking for Academic Services handled properly the first time? Horizon Line's Academic Services team has processed this exact service across every Emirates in the UAE, so your Academic Services file is prepared, submitted, and followed up on by people who do this daily — not once a quarter.",
             "closing": "We keep institutional filings and reporting on schedule so accreditation status is never put at risk by a missed deadline."
         },
         {
@@ -3008,7 +3008,7 @@
                 },
                 {
                     "point": "Correct regulator identified",
-                    "explanation": "We confirm whether MOHAP or the local Emirate health authority (like DHA or DOH) actually governs your specific case."
+                    "explanation": "We confirm whether MOHAP or the local Emirates health authority (like DHA or DOH) actually governs your specific case."
                 },
                 {
                     "point": "Renewal tracking for ongoing compliance",
@@ -3059,9 +3059,9 @@
                     "explanation": "Once documents are submitted, MOHAP conducts a site inspection before issuing or renewing a facility licence."
                 }
             ],
-            "emirates_coverage": "Wherever you're based, Horizon Line delivers the same Health: Health in Dubai; Health in Abu Dhabi; Health in Sharjah; Health in Ajman; Health in Ras Al Khaimah; Health in Fujairah; Health in Umm Al Quwain. One point of contact, one process, no matter which of the seven Emirates your business calls home.",
-            "seo_summary": "Looking for Health handled properly the first time? Horizon Line's Health team has processed this exact service across every Emirate in the UAE, so your Health file is prepared, submitted, and followed up on by people who do this daily — not once a quarter.",
-            "closing": "Since healthcare regulation splits between MOHAP and local Emirate authorities, confirming the right regulator first avoids filing with the wrong one."
+            "Emirates_coverage": "Wherever you're based, Horizon Line delivers the same Health: Health in Dubai; Health in Abu Dhabi; Health in Sharjah; Health in Ajman; Health in Ras Al Khaimah; Health in Fujairah; Health in Umm Al Quwain. One point of contact, one process, no matter which of the seven Emirates your business calls home.",
+            "seo_summary": "Looking for Health handled properly the first time? Horizon Line's Health team has processed this exact service across every Emirates in the UAE, so your Health file is prepared, submitted, and followed up on by people who do this daily — not once a quarter.",
+            "closing": "Since healthcare regulation splits between MOHAP and local Emirates authorities, confirming the right regulator first avoids filing with the wrong one."
         },
         {
             "name": "Patients",
@@ -3201,7 +3201,7 @@
                 }
             ],
             "seo_summary": "Horizon Line handles Dubai Municipality Services in Dubai from start to finish. If you need Dubai Municipality Services processed without the back-and-forth, our Dubai-based team manages your Dubai Municipality Services file directly with the relevant authority until it's closed out. Talk to us if Dubai Municipality Services is next on your list.",
-            "closing": "This service is specific to Dubai — for the equivalent municipal process elsewhere, we use that Emirate's own municipality authority."
+            "closing": "This service is specific to Dubai — for the equivalent municipal process elsewhere, we use that Emirates's own municipality authority."
         },
         {
             "name": "Sharjah Municipality Services",
@@ -3411,7 +3411,7 @@
                 }
             ],
             "seo_summary": "Horizon Line handles SEWA Account Activation in Sharjah from start to finish. If you need SEWA Account Activation processed without the back-and-forth, our Sharjah-based team manages your SEWA Account Activation file directly with the relevant authority until it's closed out. Talk to us if SEWA Account Activation is next on your list.",
-            "closing": "This is Sharjah-specific — for utilities elsewhere in the UAE, we use that Emirate's correct local authority."
+            "closing": "This is Sharjah-specific — for utilities elsewhere in the UAE, we use that Emirates's correct local authority."
         },
         {
             "name": "Electricity Connection",
@@ -4390,8 +4390,8 @@
                     "explanation": "Once FTA responds, we secure written confirmation of the outcome for your records, not just a verbal update."
                 }
             ],
-            "emirates_coverage": "Wherever you're based, Horizon Line delivers the same Tax: Tax in Dubai; Tax in Abu Dhabi; Tax in Sharjah; Tax in Ajman; Tax in Ras Al Khaimah; Tax in Fujairah; Tax in Umm Al Quwain. One point of contact, one process, no matter which of the seven Emirates your business calls home.",
-            "seo_summary": "Looking for Tax handled properly the first time? Horizon Line's Tax team has processed this exact service across every Emirate in the UAE, so your Tax file is prepared, submitted, and followed up on by people who do this daily — not once a quarter.",
+            "Emirates_coverage": "Wherever you're based, Horizon Line delivers the same Tax: Tax in Dubai; Tax in Abu Dhabi; Tax in Sharjah; Tax in Ajman; Tax in Ras Al Khaimah; Tax in Fujairah; Tax in Umm Al Quwain. One point of contact, one process, no matter which of the seven Emirates your business calls home.",
+            "seo_summary": "Looking for Tax handled properly the first time? Horizon Line's Tax team has processed this exact service across every Emirates in the UAE, so your Tax file is prepared, submitted, and followed up on by people who do this daily — not once a quarter.",
             "closing": "We treat FTA correspondence as time-sensitive and handle it with the same care as an initial filing, not as an afterthought."
         },
         {
@@ -5162,7 +5162,7 @@
                 }
             ],
             "seo_summary": "Horizon Line handles Driving Licence Renewal in Dubai from start to finish. If you need Driving Licence Renewal processed without the back-and-forth, our Dubai-based team manages your Driving Licence Renewal file directly with the relevant authority until it's closed out. Talk to us if Driving Licence Renewal is next on your list.",
-            "closing": "This is a Dubai-specific RTA service — the equivalent transaction in other Emirates goes through that Emirate's own traffic authority."
+            "closing": "This is a Dubai-specific RTA service — the equivalent transaction in other Emirates goes through that Emirates's own traffic authority."
         },
         {
             "name": "Driving Licence Replacement",
@@ -5232,7 +5232,7 @@
                 }
             ],
             "seo_summary": "Horizon Line handles Driving Licence Replacement in Dubai from start to finish. If you need Driving Licence Replacement processed without the back-and-forth, our Dubai-based team manages your Driving Licence Replacement file directly with the relevant authority until it's closed out. Talk to us if Driving Licence Replacement is next on your list.",
-            "closing": "This is a Dubai-specific RTA service — the equivalent transaction in other Emirates goes through that Emirate's own traffic authority."
+            "closing": "This is a Dubai-specific RTA service — the equivalent transaction in other Emirates goes through that Emirates's own traffic authority."
         },
         {
             "name": "Vehicle Registration",
@@ -5306,7 +5306,7 @@
                 }
             ],
             "seo_summary": "Horizon Line handles Vehicle Registration in Dubai from start to finish. If you need Vehicle Registration processed without the back-and-forth, our Dubai-based team manages your Vehicle Registration file directly with the relevant authority until it's closed out. Talk to us if Vehicle Registration is next on your list.",
-            "closing": "This is a Dubai-specific RTA service — the equivalent transaction in other Emirates goes through that Emirate's own traffic authority."
+            "closing": "This is a Dubai-specific RTA service — the equivalent transaction in other Emirates goes through that Emirates's own traffic authority."
         },
         {
             "name": "Vehicle Renewal",
@@ -5376,7 +5376,7 @@
                 }
             ],
             "seo_summary": "Horizon Line handles Vehicle Renewal in Dubai from start to finish. If you need Vehicle Renewal processed without the back-and-forth, our Dubai-based team manages your Vehicle Renewal file directly with the relevant authority until it's closed out. Talk to us if Vehicle Renewal is next on your list.",
-            "closing": "This is a Dubai-specific RTA service — the equivalent transaction in other Emirates goes through that Emirate's own traffic authority."
+            "closing": "This is a Dubai-specific RTA service — the equivalent transaction in other Emirates goes through that Emirates's own traffic authority."
         },
         {
             "name": "Vehicle Transfer",
@@ -5446,7 +5446,7 @@
                 }
             ],
             "seo_summary": "Horizon Line handles Vehicle Transfer in Dubai from start to finish. If you need Vehicle Transfer processed without the back-and-forth, our Dubai-based team manages your Vehicle Transfer file directly with the relevant authority until it's closed out. Talk to us if Vehicle Transfer is next on your list.",
-            "closing": "This is a Dubai-specific RTA service — the equivalent transaction in other Emirates goes through that Emirate's own traffic authority."
+            "closing": "This is a Dubai-specific RTA service — the equivalent transaction in other Emirates goes through that Emirates's own traffic authority."
         },
         {
             "name": "Salik Account",
@@ -5516,7 +5516,7 @@
                 }
             ],
             "seo_summary": "Horizon Line handles Salik Account in Dubai from start to finish. If you need Salik Account processed without the back-and-forth, our Dubai-based team manages your Salik Account file directly with the relevant authority until it's closed out. Talk to us if Salik Account is next on your list.",
-            "closing": "This is a Dubai-specific RTA service — the equivalent transaction in other Emirates goes through that Emirate's own traffic authority."
+            "closing": "This is a Dubai-specific RTA service — the equivalent transaction in other Emirates goes through that Emirates's own traffic authority."
         },
         {
             "name": "Parking Permit",
@@ -5586,7 +5586,7 @@
                 }
             ],
             "seo_summary": "Horizon Line handles Parking Permit in Dubai from start to finish. If you need Parking Permit processed without the back-and-forth, our Dubai-based team manages your Parking Permit file directly with the relevant authority until it's closed out. Talk to us if Parking Permit is next on your list.",
-            "closing": "This is a Dubai-specific RTA service — the equivalent transaction in other Emirates goes through that Emirate's own traffic authority."
+            "closing": "This is a Dubai-specific RTA service — the equivalent transaction in other Emirates goes through that Emirates's own traffic authority."
         },
         {
             "name": "Vehicle Export Certificate",
@@ -5656,7 +5656,7 @@
                 }
             ],
             "seo_summary": "Horizon Line handles Vehicle Export Certificate in Dubai from start to finish. If you need Vehicle Export Certificate processed without the back-and-forth, our Dubai-based team manages your Vehicle Export Certificate file directly with the relevant authority until it's closed out. Talk to us if Vehicle Export Certificate is next on your list.",
-            "closing": "This is a Dubai-specific RTA service — the equivalent transaction in other Emirates goes through that Emirate's own traffic authority."
+            "closing": "This is a Dubai-specific RTA service — the equivalent transaction in other Emirates goes through that Emirates's own traffic authority."
         },
         {
             "name": "Police Clearance Certificate",
@@ -5725,8 +5725,8 @@
                     "explanation": "Where the receiving country requires it, we arrange attestation of the certificate for use outside the UAE."
                 }
             ],
-            "emirates_coverage": "Wherever you're based, Horizon Line delivers the same Police Clearance Certificate: Police Clearance Certificate in Dubai; Police Clearance Certificate in Abu Dhabi; Police Clearance Certificate in Sharjah; Police Clearance Certificate in Ajman; Police Clearance Certificate in Ras Al Khaimah; Police Clearance Certificate in Fujairah; Police Clearance Certificate in Umm Al Quwain. One point of contact, one process, no matter which of the seven Emirates your business calls home.",
-            "seo_summary": "Looking for Police Clearance Certificate handled properly the first time? Horizon Line's Police Clearance Certificate team has processed this exact service across every Emirate in the UAE, so your Police Clearance Certificate file is prepared, submitted, and followed up on by people who do this daily — not once a quarter.",
+            "Emirates_coverage": "Wherever you're based, Horizon Line delivers the same Police Clearance Certificate: Police Clearance Certificate in Dubai; Police Clearance Certificate in Abu Dhabi; Police Clearance Certificate in Sharjah; Police Clearance Certificate in Ajman; Police Clearance Certificate in Ras Al Khaimah; Police Clearance Certificate in Fujairah; Police Clearance Certificate in Umm Al Quwain. One point of contact, one process, no matter which of the seven Emirates your business calls home.",
+            "seo_summary": "Looking for Police Clearance Certificate handled properly the first time? Horizon Line's Police Clearance Certificate team has processed this exact service across every Emirates in the UAE, so your Police Clearance Certificate file is prepared, submitted, and followed up on by people who do this daily — not once a quarter.",
             "closing": "We make sure the police clearance certificate process is filed correctly the first time, since these matters often feed directly into another time-sensitive process."
         },
         {
@@ -5796,8 +5796,8 @@
                     "explanation": "Where needed, we arrange attestation for the certificate to be accepted outside the UAE."
                 }
             ],
-            "emirates_coverage": "Wherever you're based, Horizon Line delivers the same Good Conduct Certificate: Good Conduct Certificate in Dubai; Good Conduct Certificate in Abu Dhabi; Good Conduct Certificate in Sharjah; Good Conduct Certificate in Ajman; Good Conduct Certificate in Ras Al Khaimah; Good Conduct Certificate in Fujairah; Good Conduct Certificate in Umm Al Quwain. One point of contact, one process, no matter which of the seven Emirates your business calls home.",
-            "seo_summary": "Looking for Good Conduct Certificate handled properly the first time? Horizon Line's Good Conduct Certificate team has processed this exact service across every Emirate in the UAE, so your Good Conduct Certificate file is prepared, submitted, and followed up on by people who do this daily — not once a quarter.",
+            "Emirates_coverage": "Wherever you're based, Horizon Line delivers the same Good Conduct Certificate: Good Conduct Certificate in Dubai; Good Conduct Certificate in Abu Dhabi; Good Conduct Certificate in Sharjah; Good Conduct Certificate in Ajman; Good Conduct Certificate in Ras Al Khaimah; Good Conduct Certificate in Fujairah; Good Conduct Certificate in Umm Al Quwain. One point of contact, one process, no matter which of the seven Emirates your business calls home.",
+            "seo_summary": "Looking for Good Conduct Certificate handled properly the first time? Horizon Line's Good Conduct Certificate team has processed this exact service across every Emirates in the UAE, so your Good Conduct Certificate file is prepared, submitted, and followed up on by people who do this daily — not once a quarter.",
             "closing": "We make sure the good conduct certificate process is filed correctly the first time, since these matters often feed directly into another time-sensitive process."
         },
         {
@@ -5867,8 +5867,8 @@
                     "explanation": "Once filed, we ensure you have the report in the format your embassy requires for the replacement passport application."
                 }
             ],
-            "emirates_coverage": "Wherever you're based, Horizon Line delivers the same Lost Passport Report: Lost Passport Report in Dubai; Lost Passport Report in Abu Dhabi; Lost Passport Report in Sharjah; Lost Passport Report in Ajman; Lost Passport Report in Ras Al Khaimah; Lost Passport Report in Fujairah; Lost Passport Report in Umm Al Quwain. One point of contact, one process, no matter which of the seven Emirates your business calls home.",
-            "seo_summary": "Looking for Lost Passport Report handled properly the first time? Horizon Line's Lost Passport Report team has processed this exact service across every Emirate in the UAE, so your Lost Passport Report file is prepared, submitted, and followed up on by people who do this daily — not once a quarter.",
+            "Emirates_coverage": "Wherever you're based, Horizon Line delivers the same Lost Passport Report: Lost Passport Report in Dubai; Lost Passport Report in Abu Dhabi; Lost Passport Report in Sharjah; Lost Passport Report in Ajman; Lost Passport Report in Ras Al Khaimah; Lost Passport Report in Fujairah; Lost Passport Report in Umm Al Quwain. One point of contact, one process, no matter which of the seven Emirates your business calls home.",
+            "seo_summary": "Looking for Lost Passport Report handled properly the first time? Horizon Line's Lost Passport Report team has processed this exact service across every Emirates in the UAE, so your Lost Passport Report file is prepared, submitted, and followed up on by people who do this daily — not once a quarter.",
             "closing": "We make sure the lost passport report process is filed correctly the first time, since these matters often feed directly into another time-sensitive process."
         },
         {
@@ -5877,7 +5877,7 @@
             "target_location": "UAE (All 7 Emirates)",
             "meta_title": "Lost Emirates ID Report in UAE | Horizon Line",
             "meta_description": "Lost Emirates ID Report across Dubai, Abu Dhabi, Sharjah, Ajman, RAK, Fujairah & UAQ. Horizon Line delivers Lost Emirates ID Report fast and fully compliant.",
-            "url_slug": "/services/lost-emirates-id-report-uae",
+            "url_slug": "/services/lost-Emirates-id-report-uae",
             "seo_intro": "Need Lost Emirates ID Report? Lost Emirates ID Report is one of Horizon Line's core services, and our team manages every Lost Emirates ID Report file directly — no subcontracting, no guesswork.",
             "introduction": "The Lost Emirates ID Report service covers filing a report for a lost Emirates ID, needed before applying for a replacement through ICP, coordinated for individual and corporate clients across all seven Emirates — Dubai, Abu Dhabi, Sharjah, Ajman, Ras Al Khaimah, Fujairah and Umm Al Quwain.",
             "key_benefits": [
@@ -5938,9 +5938,9 @@
                     "explanation": "Once the report is filed, we proceed directly to submitting your replacement Emirates ID application with ICP."
                 }
             ],
-            "emirates_coverage": "Wherever you're based, Horizon Line delivers the same Lost Emirates ID Report: Lost Emirates ID Report in Dubai; Lost Emirates ID Report in Abu Dhabi; Lost Emirates ID Report in Sharjah; Lost Emirates ID Report in Ajman; Lost Emirates ID Report in Ras Al Khaimah; Lost Emirates ID Report in Fujairah; Lost Emirates ID Report in Umm Al Quwain. One point of contact, one process, no matter which of the seven Emirates your business calls home.",
-            "seo_summary": "Looking for Lost Emirates ID Report handled properly the first time? Horizon Line's Lost Emirates ID Report team has processed this exact service across every Emirate in the UAE, so your Lost Emirates ID Report file is prepared, submitted, and followed up on by people who do this daily — not once a quarter.",
-            "closing": "We make sure the lost emirates id report process is filed correctly the first time, since these matters often feed directly into another time-sensitive process."
+            "Emirates_coverage": "Wherever you're based, Horizon Line delivers the same Lost Emirates ID Report: Lost Emirates ID Report in Dubai; Lost Emirates ID Report in Abu Dhabi; Lost Emirates ID Report in Sharjah; Lost Emirates ID Report in Ajman; Lost Emirates ID Report in Ras Al Khaimah; Lost Emirates ID Report in Fujairah; Lost Emirates ID Report in Umm Al Quwain. One point of contact, one process, no matter which of the seven Emirates your business calls home.",
+            "seo_summary": "Looking for Lost Emirates ID Report handled properly the first time? Horizon Line's Lost Emirates ID Report team has processed this exact service across every Emirates in the UAE, so your Lost Emirates ID Report file is prepared, submitted, and followed up on by people who do this daily — not once a quarter.",
+            "closing": "We make sure the lost Emirates id report process is filed correctly the first time, since these matters often feed directly into another time-sensitive process."
         },
         {
             "name": "Lost Mobile Report",
@@ -6009,8 +6009,8 @@
                     "explanation": "We provide the report in the format your insurer typically requires to process a claim."
                 }
             ],
-            "emirates_coverage": "Wherever you're based, Horizon Line delivers the same Lost Mobile Report: Lost Mobile Report in Dubai; Lost Mobile Report in Abu Dhabi; Lost Mobile Report in Sharjah; Lost Mobile Report in Ajman; Lost Mobile Report in Ras Al Khaimah; Lost Mobile Report in Fujairah; Lost Mobile Report in Umm Al Quwain. One point of contact, one process, no matter which of the seven Emirates your business calls home.",
-            "seo_summary": "Looking for Lost Mobile Report handled properly the first time? Horizon Line's Lost Mobile Report team has processed this exact service across every Emirate in the UAE, so your Lost Mobile Report file is prepared, submitted, and followed up on by people who do this daily — not once a quarter.",
+            "Emirates_coverage": "Wherever you're based, Horizon Line delivers the same Lost Mobile Report: Lost Mobile Report in Dubai; Lost Mobile Report in Abu Dhabi; Lost Mobile Report in Sharjah; Lost Mobile Report in Ajman; Lost Mobile Report in Ras Al Khaimah; Lost Mobile Report in Fujairah; Lost Mobile Report in Umm Al Quwain. One point of contact, one process, no matter which of the seven Emirates your business calls home.",
+            "seo_summary": "Looking for Lost Mobile Report handled properly the first time? Horizon Line's Lost Mobile Report team has processed this exact service across every Emirates in the UAE, so your Lost Mobile Report file is prepared, submitted, and followed up on by people who do this daily — not once a quarter.",
             "closing": "We make sure the lost mobile report process is filed correctly the first time, since these matters often feed directly into another time-sensitive process."
         },
         {
@@ -6080,8 +6080,8 @@
                     "explanation": "You receive confirmation of fines cleared, useful for your own records or fleet reporting."
                 }
             ],
-            "emirates_coverage": "Wherever you're based, Horizon Line delivers the same Traffic Fine Payment: Traffic Fine Payment in Dubai; Traffic Fine Payment in Abu Dhabi; Traffic Fine Payment in Sharjah; Traffic Fine Payment in Ajman; Traffic Fine Payment in Ras Al Khaimah; Traffic Fine Payment in Fujairah; Traffic Fine Payment in Umm Al Quwain. One point of contact, one process, no matter which of the seven Emirates your business calls home.",
-            "seo_summary": "Looking for Traffic Fine Payment handled properly the first time? Horizon Line's Traffic Fine Payment team has processed this exact service across every Emirate in the UAE, so your Traffic Fine Payment file is prepared, submitted, and followed up on by people who do this daily — not once a quarter.",
+            "Emirates_coverage": "Wherever you're based, Horizon Line delivers the same Traffic Fine Payment: Traffic Fine Payment in Dubai; Traffic Fine Payment in Abu Dhabi; Traffic Fine Payment in Sharjah; Traffic Fine Payment in Ajman; Traffic Fine Payment in Ras Al Khaimah; Traffic Fine Payment in Fujairah; Traffic Fine Payment in Umm Al Quwain. One point of contact, one process, no matter which of the seven Emirates your business calls home.",
+            "seo_summary": "Looking for Traffic Fine Payment handled properly the first time? Horizon Line's Traffic Fine Payment team has processed this exact service across every Emirates in the UAE, so your Traffic Fine Payment file is prepared, submitted, and followed up on by people who do this daily — not once a quarter.",
             "closing": "We make sure the traffic fine payment process is filed correctly the first time, since these matters often feed directly into another time-sensitive process."
         },
         {
@@ -6151,8 +6151,8 @@
                     "explanation": "Once obtained, we ensure the report reaches your insurance provider in the format they require to open a claim."
                 }
             ],
-            "emirates_coverage": "Wherever you're based, Horizon Line delivers the same Traffic Accident Report: Traffic Accident Report in Dubai; Traffic Accident Report in Abu Dhabi; Traffic Accident Report in Sharjah; Traffic Accident Report in Ajman; Traffic Accident Report in Ras Al Khaimah; Traffic Accident Report in Fujairah; Traffic Accident Report in Umm Al Quwain. One point of contact, one process, no matter which of the seven Emirates your business calls home.",
-            "seo_summary": "Looking for Traffic Accident Report handled properly the first time? Horizon Line's Traffic Accident Report team has processed this exact service across every Emirate in the UAE, so your Traffic Accident Report file is prepared, submitted, and followed up on by people who do this daily — not once a quarter.",
+            "Emirates_coverage": "Wherever you're based, Horizon Line delivers the same Traffic Accident Report: Traffic Accident Report in Dubai; Traffic Accident Report in Abu Dhabi; Traffic Accident Report in Sharjah; Traffic Accident Report in Ajman; Traffic Accident Report in Ras Al Khaimah; Traffic Accident Report in Fujairah; Traffic Accident Report in Umm Al Quwain. One point of contact, one process, no matter which of the seven Emirates your business calls home.",
+            "seo_summary": "Looking for Traffic Accident Report handled properly the first time? Horizon Line's Traffic Accident Report team has processed this exact service across every Emirates in the UAE, so your Traffic Accident Report file is prepared, submitted, and followed up on by people who do this daily — not once a quarter.",
             "closing": "We make sure the traffic accident report process is filed correctly the first time, since these matters often feed directly into another time-sensitive process."
         },
         {
@@ -6222,8 +6222,8 @@
                     "explanation": "Some impound cases require a brief roadworthiness check before the vehicle is released, which we confirm in advance."
                 }
             ],
-            "emirates_coverage": "Wherever you're based, Horizon Line delivers the same Vehicle Impound Release: Vehicle Impound Release in Dubai; Vehicle Impound Release in Abu Dhabi; Vehicle Impound Release in Sharjah; Vehicle Impound Release in Ajman; Vehicle Impound Release in Ras Al Khaimah; Vehicle Impound Release in Fujairah; Vehicle Impound Release in Umm Al Quwain. One point of contact, one process, no matter which of the seven Emirates your business calls home.",
-            "seo_summary": "Looking for Vehicle Impound Release handled properly the first time? Horizon Line's Vehicle Impound Release team has processed this exact service across every Emirate in the UAE, so your Vehicle Impound Release file is prepared, submitted, and followed up on by people who do this daily — not once a quarter.",
+            "Emirates_coverage": "Wherever you're based, Horizon Line delivers the same Vehicle Impound Release: Vehicle Impound Release in Dubai; Vehicle Impound Release in Abu Dhabi; Vehicle Impound Release in Sharjah; Vehicle Impound Release in Ajman; Vehicle Impound Release in Ras Al Khaimah; Vehicle Impound Release in Fujairah; Vehicle Impound Release in Umm Al Quwain. One point of contact, one process, no matter which of the seven Emirates your business calls home.",
+            "seo_summary": "Looking for Vehicle Impound Release handled properly the first time? Horizon Line's Vehicle Impound Release team has processed this exact service across every Emirates in the UAE, so your Vehicle Impound Release file is prepared, submitted, and followed up on by people who do this daily — not once a quarter.",
             "closing": "We make sure the vehicle impound release process is filed correctly the first time, since these matters often feed directly into another time-sensitive process."
         },
         {
@@ -6293,8 +6293,8 @@
                     "explanation": "We track the case reference number and follow up on status so the complaint isn't left unmonitored."
                 }
             ],
-            "emirates_coverage": "Wherever you're based, Horizon Line delivers the same Cybercrime Complaint: Cybercrime Complaint in Dubai; Cybercrime Complaint in Abu Dhabi; Cybercrime Complaint in Sharjah; Cybercrime Complaint in Ajman; Cybercrime Complaint in Ras Al Khaimah; Cybercrime Complaint in Fujairah; Cybercrime Complaint in Umm Al Quwain. One point of contact, one process, no matter which of the seven Emirates your business calls home.",
-            "seo_summary": "Looking for Cybercrime Complaint handled properly the first time? Horizon Line's Cybercrime Complaint team has processed this exact service across every Emirate in the UAE, so your Cybercrime Complaint file is prepared, submitted, and followed up on by people who do this daily — not once a quarter.",
+            "Emirates_coverage": "Wherever you're based, Horizon Line delivers the same Cybercrime Complaint: Cybercrime Complaint in Dubai; Cybercrime Complaint in Abu Dhabi; Cybercrime Complaint in Sharjah; Cybercrime Complaint in Ajman; Cybercrime Complaint in Ras Al Khaimah; Cybercrime Complaint in Fujairah; Cybercrime Complaint in Umm Al Quwain. One point of contact, one process, no matter which of the seven Emirates your business calls home.",
+            "seo_summary": "Looking for Cybercrime Complaint handled properly the first time? Horizon Line's Cybercrime Complaint team has processed this exact service across every Emirates in the UAE, so your Cybercrime Complaint file is prepared, submitted, and followed up on by people who do this daily — not once a quarter.",
             "closing": "We make sure the cybercrime complaint process is filed correctly the first time, since these matters often feed directly into another time-sensitive process."
         },
         {
@@ -6364,8 +6364,8 @@
                     "explanation": "We track the case reference and follow up on status on your behalf."
                 }
             ],
-            "emirates_coverage": "Wherever you're based, Horizon Line delivers the same Criminal Complaint: Criminal Complaint in Dubai; Criminal Complaint in Abu Dhabi; Criminal Complaint in Sharjah; Criminal Complaint in Ajman; Criminal Complaint in Ras Al Khaimah; Criminal Complaint in Fujairah; Criminal Complaint in Umm Al Quwain. One point of contact, one process, no matter which of the seven Emirates your business calls home.",
-            "seo_summary": "Looking for Criminal Complaint handled properly the first time? Horizon Line's Criminal Complaint team has processed this exact service across every Emirate in the UAE, so your Criminal Complaint file is prepared, submitted, and followed up on by people who do this daily — not once a quarter.",
+            "Emirates_coverage": "Wherever you're based, Horizon Line delivers the same Criminal Complaint: Criminal Complaint in Dubai; Criminal Complaint in Abu Dhabi; Criminal Complaint in Sharjah; Criminal Complaint in Ajman; Criminal Complaint in Ras Al Khaimah; Criminal Complaint in Fujairah; Criminal Complaint in Umm Al Quwain. One point of contact, one process, no matter which of the seven Emirates your business calls home.",
+            "seo_summary": "Looking for Criminal Complaint handled properly the first time? Horizon Line's Criminal Complaint team has processed this exact service across every Emirates in the UAE, so your Criminal Complaint file is prepared, submitted, and followed up on by people who do this daily — not once a quarter.",
             "closing": "We make sure the criminal complaint process is filed correctly the first time, since these matters often feed directly into another time-sensitive process."
         }
     ]

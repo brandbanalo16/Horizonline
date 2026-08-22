@@ -6,7 +6,7 @@ export const AboutContactData: SectionProps = {
     container: "container",
     subheading: "Work With Us",
     heading: "Ready to Start Your Business Anywhere in the UAE?",
-    text: "Speak with a Horizon Line consultant about mainland, free zone, or offshore setup in Dubai, RAK, Fujairah, or any other emirate. We respond within 24 hours with expert guidance tailored to your goals.",
+    text: "Speak with a Horizon Line consultant about mainland, free zone, or offshore setup in Dubai, RAK, Fujairah, or any other Emirates. We respond within 24 hours with expert guidance tailored to your goals.",
     promotions: [
         {
             icon: <Icons.ThumbsUp />,
@@ -21,7 +21,7 @@ export const AboutContactData: SectionProps = {
     ],
     block: {
         heading: "Book a Free Consultation",
-        text: "Tell us about your business plans and preferred emirate — we will outline the best setup path for you.",
+        text: "Tell us about your business plans and preferred Emirates — we will outline the best setup path for you.",
         button: {
             label: "Send Your Enquiry",
             href: "/contact-us",

@@ -10,7 +10,7 @@ interface FooterProps {
 const FooterStyle4 = ({ container, cls }: FooterProps) => {
     return (
         <div
-            className={`footer-main footer-2 bg-contain ${cls}`}
+            className={`footer-main footer-2 bg-cover bg-no-repeat bg-center ${cls}`}
             style={{ backgroundImage: `url(${FooterBgImage.src})` }}
         >
             <FooterTop4 container={container} />

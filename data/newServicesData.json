@@ -14522,7 +14522,7 @@
         "focus_keyword_visible_mentions_on_page": 15,
         "image_alt_tag": "Business Support services in UAE by Horizon Line Management Consultancy LLC",
         "internal_link": {
-          "anchor_text": "Explore our Visa Services services",
+          "anchor_text": "Explore our Visa Assistance services",
           "url": "/services/visa-services"
         },
         "external_link": {
@@ -15756,23 +15756,23 @@
     {
       "id": 7,
       "slug": "visa-services",
-      "category": "Visa Services",
+      "category": "Visa Assistance",
       "seo": {
-        "meta_title": "Visa Services Services in UAE | Horizon Line",
-        "meta_description": "Expert Visa Services services across Dubai, Abu Dhabi & Sharjah with Horizon Line Management Consultancy LLC. Transparent pricing, fast processing & full gov...",
+        "meta_title": "Visa Assistance Services in UAE | Horizon Line",
+        "meta_description": "Expert Visa Assistance services across Dubai, Abu Dhabi & Sharjah with Horizon Line Management Consultancy LLC. Transparent pricing, fast processing & full gov...",
         "url_slug": "/services/visa-services",
         "canonical_url": "https://www.horizonlineconsultancy.ae/services/visa-services",
-        "h1_tag": "Visa Services Services in the UAE",
-        "focus_keyword": "Visa Services",
+        "h1_tag": "Visa Assistance Services in the UAE",
+        "focus_keyword": "Visa Assistance",
         "keywords": [
-          "visa services UAE",
-          "visa services Dubai",
-          "visa services services Horizon Line",
-          "visa services Abu Dhabi Sharjah",
-          "best visa services consultants UAE"
+          "Visa Assistance UAE",
+          "Visa Assistance Dubai",
+          "Visa Assistance services Horizon Line",
+          "Visa Assistance Abu Dhabi Sharjah",
+          "best Visa Assistance consultants UAE"
         ],
         "focus_keyword_visible_mentions_on_page": 19,
-        "image_alt_tag": "Visa Services services in UAE by Horizon Line Management Consultancy LLC",
+        "image_alt_tag": "Visa Assistance services in UAE by Horizon Line Management Consultancy LLC",
         "internal_link": {
           "anchor_text": "Explore our Ministry of Education services",
           "url": "/services/ministry-of-education"
@@ -15783,20 +15783,20 @@
           "rel": "nofollow noopener noreferrer"
         },
         "open_graph": {
-          "og_title": "Visa Services Services in UAE | Horizon Line",
-          "og_description": "Expert Visa Services services across Dubai, Abu Dhabi & Sharjah with Horizon Line Management Consultancy LLC. Transparent pricing, fast processing & full gov...",
-          "og_image_alt": "Visa Services services in UAE by Horizon Line Management Consultancy LLC",
+          "og_title": "Visa Assistance Services in UAE | Horizon Line",
+          "og_description": "Expert Visa Assistance services across Dubai, Abu Dhabi & Sharjah with Horizon Line Management Consultancy LLC. Transparent pricing, fast processing & full gov...",
+          "og_image_alt": "Visa Assistance services in UAE by Horizon Line Management Consultancy LLC",
           "og_type": "website"
         },
         "twitter_card": {
           "card": "summary_large_image",
-          "title": "Visa Services Services in UAE | Horizon Line",
-          "description": "Expert Visa Services services across Dubai, Abu Dhabi & Sharjah with Horizon Line Management Consultancy LLC. Transparent pricing, fast processing & full gov..."
+          "title": "Visa Assistance Services in UAE | Horizon Line",
+          "description": "Expert Visa Assistance services across Dubai, Abu Dhabi & Sharjah with Horizon Line Management Consultancy LLC. Transparent pricing, fast processing & full gov..."
         },
         "schema_markup": {
           "@context": "https://schema.org",
           "@type": "Service",
-          "serviceType": "Visa Services",
+          "serviceType": "Visa Assistance",
           "provider": {
             "@type": "Organization",
             "name": "Horizon Line Management Consultancy LLC",
@@ -15829,25 +15829,25 @@
             {
               "@type": "ListItem",
               "position": 3,
-              "name": "Visa Services",
+              "name": "Visa Assistance",
               "item": "https://www.horizonlineconsultancy.ae/services/visa-services"
             }
           ]
         },
         "recommended_keyword_set": [
-          "visa services UAE",
-          "visa services Dubai",
-          "visa services services UAE",
-          "visa services consultant UAE",
-          "visa services services Dubai"
+          "Visa Assistance UAE",
+          "Visa Assistance Dubai",
+          "Visa Assistance services UAE",
+          "Visa Assistance consultant UAE",
+          "Visa Assistance services Dubai"
         ],
         "content_seo": {
-          "focus_keyword": "Visa Services",
+          "focus_keyword": "Visa Assistance",
           "secondary_keywords": [
-            "visa services Dubai",
-            "visa services services UAE",
-            "visa services consultant UAE",
-            "visa services services Dubai"
+            "Visa Assistance Dubai",
+            "Visa Assistance services UAE",
+            "Visa Assistance consultant UAE",
+            "Visa Assistance services Dubai"
           ],
           "recommended_usage": {
             "h1": 1,
@@ -15861,8 +15861,8 @@
         }
       },
       "hero": {
-        "page_title": "Visa Services",
-        "breadcrumb": "Home > Visa Services"
+        "page_title": "Visa Assistance",
+        "breadcrumb": "Home > Visa Assistance"
       },
       "our_company_section": {
         "eyebrow": "+ Our Company +",
@@ -15892,32 +15892,32 @@
           {
             "title": "Investor Visa",
             "slug": "visa-services/investor-visa",
-            "description": "Horizon Line Management Consultancy LLC provides professional investor visa services across the UAE with complete documentation, government processing, compliance support, and end-to-end customer assistance.",
+            "description": "Horizon Line Management Consultancy LLC provides professional investor Visa Assistance across the UAE with complete documentation, government processing, compliance support, and end-to-end customer assistance.",
             "image": "/img/service/main-services/investor-visa.webp"
           },
           {
             "title": "Employment Visa",
             "slug": "visa-services/employment-visa",
-            "description": "Horizon Line Management Consultancy LLC provides professional employment visa services across the UAE with complete documentation, government processing, compliance support, and end-to-end customer assistance.",
+            "description": "Horizon Line Management Consultancy LLC provides professional employment Visa Assistance across the UAE with complete documentation, government processing, compliance support, and end-to-end customer assistance.",
             "image": "/img/service/main-services/employment-visa.webp"
           },
           {
             "title": "Family Visa",
             "slug": "visa-services/family-visa",
-            "description": "Horizon Line Management Consultancy LLC provides professional family visa services across the UAE with complete documentation, government processing, compliance support, and end-to-end customer assistance.",
+            "description": "Horizon Line Management Consultancy LLC provides professional family Visa Assistance across the UAE with complete documentation, government processing, compliance support, and end-to-end customer assistance.",
             "image": "/img/service/main-services/family-visa.webp"
           },
           {
             "title": "Golden Visa",
             "slug": "visa-services/golden-visa",
-            "description": "Horizon Line Management Consultancy LLC provides professional golden visa services across the UAE with complete documentation, government processing, compliance support, and end-to-end customer assistance.",
+            "description": "Horizon Line Management Consultancy LLC provides professional golden Visa Assistance across the UAE with complete documentation, government processing, compliance support, and end-to-end customer assistance.",
             "image": "/img/service/main-services/golden-visa.webp"
           },
           {
             "title": "Emirates ID",
-            "slug": "visa-services/emirates-id",
-            "description": "Horizon Line Management Consultancy LLC provides professional emirates id services across the UAE with complete documentation, government processing, compliance support, and end-to-end customer assistance.",
-            "image": "/img/service/main-services/emirates-id.webp"
+            "slug": "visa-services/Emirates-id",
+            "description": "Horizon Line Management Consultancy LLC provides professional Emirates id services across the UAE with complete documentation, government processing, compliance support, and end-to-end customer assistance.",
+            "image": "/img/service/main-services/Emirates-id.webp"
           },
           {
             "title": "Medical Test",
@@ -16038,7 +16038,7 @@
       },
       "final_cta_banner": {
         "eyebrow": "+ Get Started Today +",
-        "heading": "Visa Services",
+        "heading": "Visa Assistance",
         "subtext": "Applying for a UAE visa or sponsoring family members? Let Horizon Line manage the process from entry permit to Emirates ID.",
         "cta_button": "Book a Free Consultation"
       },
@@ -16073,8 +16073,8 @@
           "Contact Our Team"
         ],
         "content_identity": {
-          "service_name": "Visa Services",
-          "service_group": "Visa Services",
+          "service_name": "Visa Assistance",
+          "service_group": "Visa Assistance",
           "avoid_generic_copy": true,
           "unique_heading_required": true,
           "unique_intro_required": true,
@@ -16084,19 +16084,19 @@
       "seo_content": {
         "unique_introduction": {
           "eyebrow": "+ About This Service +",
-          "heading": "Professional Visa Services Support in the UAE",
+          "heading": "Professional Visa Assistance Support in the UAE",
           "subtext": "UAE visa processes vary depending on whether you're sponsoring an employee, a family member, or applying for your own residency — and errors in medical, biometric or Emirates ID steps can delay the whole file. Horizon Line manages each visa type from application through to Emirates ID collection.",
           "cta_button": "Book a Free Consultation"
         },
         "quick_cta_banner": {
           "eyebrow": "+ Need Assistance? +",
-          "heading": "Need Help With Visa Services in the UAE?",
-          "subtext": "Speak with Horizon Line about your visa services requirements and understand the next steps.",
+          "heading": "Need Help With Visa Assistance in the UAE?",
+          "subtext": "Speak with Horizon Line about your Visa Assistance requirements and understand the next steps.",
           "cta_button": "Book a Free Consultation"
         },
         "getting_started_section": {
           "eyebrow": "+ Getting Started +",
-          "heading": "How to Get Started With Visa Services",
+          "heading": "How to Get Started With Visa Assistance",
           "steps": [
             {
               "step": "01",
@@ -16117,7 +16117,7 @@
         },
         "image_seo": {
           "recommended_filename": "visa-services.webp",
-          "alt_text": "Visa Services services in UAE by Horizon Line Management Consultancy LLC",
+          "alt_text": "Visa Assistance services in UAE by Horizon Line Management Consultancy LLC",
           "loading": "lazy",
           "format": "webp",
           "notes": "Use descriptive filenames and ALT text that accurately match the actual image."
@@ -16153,8 +16153,8 @@
           {
             "id": 19,
             "title": "Emirates ID",
-            "slug": "visa-services/emirates-id",
-            "url": "/services/visa-services/emirates-id"
+            "slug": "visa-services/Emirates-id",
+            "url": "/services/visa-services/Emirates-id"
           },
           {
             "id": 20,
@@ -16169,24 +16169,24 @@
           "id": 15,
           "slug": "visa-services/investor-visa",
           "main_service_group": "Visa & Immigration Services",
-          "category": "Visa Services",
+          "category": "Visa Assistance",
           "sub_category": "Investor Visa",
           "seo": {
             "meta_title": "Investor Visa in UAE | Horizon Line",
-            "meta_description": "Get expert Investor Visa services in the UAE with Horizon Line Management Consultancy LLC. Fast processing, full documentation support & transparent pricing....",
+            "meta_description": "Get expert Investor Visa Assistance in the UAE with Horizon Line Management Consultancy LLC. Fast processing, full documentation support & transparent pricing....",
             "url_slug": "/services/visa-services/investor-visa",
             "canonical_url": "https://www.horizonlineconsultancy.ae/services/visa-services/investor-visa",
-            "h1_tag": "Investor Visa Services in the UAE",
+            "h1_tag": "Investor Visa Assistance in the UAE",
             "focus_keyword": "Investor Visa",
             "keywords": [
               "investor visa UAE",
               "investor visa Dubai",
               "investor visa Horizon Line",
-              "visa services services UAE",
+              "Visa Assistance services UAE",
               "best investor visa consultants UAE"
             ],
             "focus_keyword_visible_mentions_on_page": 10,
-            "image_alt_tag": "Investor Visa services in UAE by Horizon Line Management Consultancy LLC",
+            "image_alt_tag": "Investor Visa Assistance in UAE by Horizon Line Management Consultancy LLC",
             "internal_link": {
               "anchor_text": "Explore our Employment Visa service",
               "url": "/services/visa-services/employment-visa"
@@ -16198,14 +16198,14 @@
             },
             "open_graph": {
               "og_title": "Investor Visa in UAE | Horizon Line",
-              "og_description": "Get expert Investor Visa services in the UAE with Horizon Line Management Consultancy LLC. Fast processing, full documentation support & transparent pricing....",
-              "og_image_alt": "Investor Visa services in UAE by Horizon Line Management Consultancy LLC",
+              "og_description": "Get expert Investor Visa Assistance in the UAE with Horizon Line Management Consultancy LLC. Fast processing, full documentation support & transparent pricing....",
+              "og_image_alt": "Investor Visa Assistance in UAE by Horizon Line Management Consultancy LLC",
               "og_type": "website"
             },
             "twitter_card": {
               "card": "summary_large_image",
               "title": "Investor Visa in UAE | Horizon Line",
-              "description": "Get expert Investor Visa services in the UAE with Horizon Line Management Consultancy LLC. Fast processing, full documentation support & transparent pricing...."
+              "description": "Get expert Investor Visa Assistance in the UAE with Horizon Line Management Consultancy LLC. Fast processing, full documentation support & transparent pricing...."
             },
             "schema_markup": {
               "@context": "https://schema.org",
@@ -16237,7 +16237,7 @@
                 {
                   "@type": "ListItem",
                   "position": 2,
-                  "name": "Visa Services",
+                  "name": "Visa Assistance",
                   "item": "https://www.horizonlineconsultancy.ae/services/visa-services"
                 },
                 {
@@ -16251,19 +16251,19 @@
             "recommended_keyword_set": [
               "investor visa UAE",
               "investor visa Dubai",
-              "investor visa services UAE",
+              "investor Visa Assistance UAE",
               "investor visa consultant UAE",
-              "investor visa services Dubai",
-              "investor visa visa services UAE"
+              "investor Visa Assistance Dubai",
+              "investor visa Visa Assistance UAE"
             ],
             "content_seo": {
               "focus_keyword": "Investor Visa",
               "secondary_keywords": [
                 "investor visa Dubai",
-                "investor visa services UAE",
+                "investor Visa Assistance UAE",
                 "investor visa consultant UAE",
-                "investor visa services Dubai",
-                "investor visa visa services UAE"
+                "investor Visa Assistance Dubai",
+                "investor visa Visa Assistance UAE"
               ],
               "recommended_usage": {
                 "h1": 1,
@@ -16277,8 +16277,8 @@
             }
           },
           "hero": {
-            "page_title": "Investor Visa Services in the UAE",
-            "breadcrumb": "Home > Visa Services > Investor Visa"
+            "page_title": "Investor Visa Assistance in the UAE",
+            "breadcrumb": "Home > Visa Assistance > Investor Visa"
           },
           "our_company_section": {
             "eyebrow": "+ Our Company +",
@@ -16558,7 +16558,7 @@
             ],
             "content_identity": {
               "service_name": "Investor Visa",
-              "service_group": "Visa Services",
+              "service_group": "Visa Assistance",
               "avoid_generic_copy": true,
               "unique_heading_required": true,
               "unique_intro_required": true,
@@ -16601,7 +16601,7 @@
             },
             "image_seo": {
               "recommended_filename": "visa-services-investor-visa.webp",
-              "alt_text": "Investor Visa services in UAE by Horizon Line Management Consultancy LLC",
+              "alt_text": "Investor Visa Assistance in UAE by Horizon Line Management Consultancy LLC",
               "loading": "lazy",
               "format": "webp",
               "notes": "Use descriptive filenames and ALT text that accurately match the actual image."
@@ -16612,24 +16612,24 @@
           "id": 16,
           "slug": "visa-services/employment-visa",
           "main_service_group": "Visa & Immigration Services",
-          "category": "Visa Services",
+          "category": "Visa Assistance",
           "sub_category": "Employment Visa",
           "seo": {
             "meta_title": "Employment Visa in UAE | Horizon Line",
-            "meta_description": "Get expert Employment Visa services in the UAE with Horizon Line Management Consultancy LLC. Fast processing, full documentation support & transparent pricin...",
+            "meta_description": "Get expert Employment Visa Assistance in the UAE with Horizon Line Management Consultancy LLC. Fast processing, full documentation support & transparent pricin...",
             "url_slug": "/services/visa-services/employment-visa",
             "canonical_url": "https://www.horizonlineconsultancy.ae/services/visa-services/employment-visa",
-            "h1_tag": "Employment Visa Services in the UAE",
+            "h1_tag": "Employment Visa Assistance in the UAE",
             "focus_keyword": "Employment Visa",
             "keywords": [
               "employment visa UAE",
               "employment visa Dubai",
               "employment visa Horizon Line",
-              "visa services services UAE",
+              "Visa Assistance services UAE",
               "best employment visa consultants UAE"
             ],
             "focus_keyword_visible_mentions_on_page": 10,
-            "image_alt_tag": "Employment Visa services in UAE by Horizon Line Management Consultancy LLC",
+            "image_alt_tag": "Employment Visa Assistance in UAE by Horizon Line Management Consultancy LLC",
             "internal_link": {
               "anchor_text": "Explore our Investor Visa service",
               "url": "/services/visa-services/investor-visa"
@@ -16641,14 +16641,14 @@
             },
             "open_graph": {
               "og_title": "Employment Visa in UAE | Horizon Line",
-              "og_description": "Get expert Employment Visa services in the UAE with Horizon Line Management Consultancy LLC. Fast processing, full documentation support & transparent pricin...",
-              "og_image_alt": "Employment Visa services in UAE by Horizon Line Management Consultancy LLC",
+              "og_description": "Get expert Employment Visa Assistance in the UAE with Horizon Line Management Consultancy LLC. Fast processing, full documentation support & transparent pricin...",
+              "og_image_alt": "Employment Visa Assistance in UAE by Horizon Line Management Consultancy LLC",
               "og_type": "website"
             },
             "twitter_card": {
               "card": "summary_large_image",
               "title": "Employment Visa in UAE | Horizon Line",
-              "description": "Get expert Employment Visa services in the UAE with Horizon Line Management Consultancy LLC. Fast processing, full documentation support & transparent pricin..."
+              "description": "Get expert Employment Visa Assistance in the UAE with Horizon Line Management Consultancy LLC. Fast processing, full documentation support & transparent pricin..."
             },
             "schema_markup": {
               "@context": "https://schema.org",
@@ -16680,7 +16680,7 @@
                 {
                   "@type": "ListItem",
                   "position": 2,
-                  "name": "Visa Services",
+                  "name": "Visa Assistance",
                   "item": "https://www.horizonlineconsultancy.ae/services/visa-services"
                 },
                 {
@@ -16694,19 +16694,19 @@
             "recommended_keyword_set": [
               "employment visa UAE",
               "employment visa Dubai",
-              "employment visa services UAE",
+              "employment Visa Assistance UAE",
               "employment visa consultant UAE",
-              "employment visa services Dubai",
-              "employment visa visa services UAE"
+              "employment Visa Assistance Dubai",
+              "employment visa Visa Assistance UAE"
             ],
             "content_seo": {
               "focus_keyword": "Employment Visa",
               "secondary_keywords": [
                 "employment visa Dubai",
-                "employment visa services UAE",
+                "employment Visa Assistance UAE",
                 "employment visa consultant UAE",
-                "employment visa services Dubai",
-                "employment visa visa services UAE"
+                "employment Visa Assistance Dubai",
+                "employment visa Visa Assistance UAE"
               ],
               "recommended_usage": {
                 "h1": 1,
@@ -16720,8 +16720,8 @@
             }
           },
           "hero": {
-            "page_title": "Employment Visa Services in the UAE",
-            "breadcrumb": "Home > Visa Services > Employment Visa"
+            "page_title": "Employment Visa Assistance in the UAE",
+            "breadcrumb": "Home > Visa Assistance > Employment Visa"
           },
           "our_company_section": {
             "eyebrow": "+ Our Company +",
@@ -17001,7 +17001,7 @@
             ],
             "content_identity": {
               "service_name": "Employment Visa",
-              "service_group": "Visa Services",
+              "service_group": "Visa Assistance",
               "avoid_generic_copy": true,
               "unique_heading_required": true,
               "unique_intro_required": true,
@@ -17044,7 +17044,7 @@
             },
             "image_seo": {
               "recommended_filename": "visa-services-employment-visa.webp",
-              "alt_text": "Employment Visa services in UAE by Horizon Line Management Consultancy LLC",
+              "alt_text": "Employment Visa Assistance in UAE by Horizon Line Management Consultancy LLC",
               "loading": "lazy",
               "format": "webp",
               "notes": "Use descriptive filenames and ALT text that accurately match the actual image."
@@ -17055,24 +17055,24 @@
           "id": 17,
           "slug": "visa-services/family-visa",
           "main_service_group": "Visa & Immigration Services",
-          "category": "Visa Services",
+          "category": "Visa Assistance",
           "sub_category": "Family Visa",
           "seo": {
             "meta_title": "Family Visa in UAE | Horizon Line",
-            "meta_description": "Get expert Family Visa services in the UAE with Horizon Line Management Consultancy LLC. Fast processing, full documentation support & transparent pricing. B...",
+            "meta_description": "Get expert Family Visa Assistance in the UAE with Horizon Line Management Consultancy LLC. Fast processing, full documentation support & transparent pricing. B...",
             "url_slug": "/services/visa-services/family-visa",
             "canonical_url": "https://www.horizonlineconsultancy.ae/services/visa-services/family-visa",
-            "h1_tag": "Family Visa Services in the UAE",
+            "h1_tag": "Family Visa Assistance in the UAE",
             "focus_keyword": "Family Visa",
             "keywords": [
               "family visa UAE",
               "family visa Dubai",
               "family visa Horizon Line",
-              "visa services services UAE",
+              "Visa Assistance services UAE",
               "best family visa consultants UAE"
             ],
             "focus_keyword_visible_mentions_on_page": 10,
-            "image_alt_tag": "Family Visa services in UAE by Horizon Line Management Consultancy LLC",
+            "image_alt_tag": "Family Visa Assistance in UAE by Horizon Line Management Consultancy LLC",
             "internal_link": {
               "anchor_text": "Explore our Investor Visa service",
               "url": "/services/visa-services/investor-visa"
@@ -17084,14 +17084,14 @@
             },
             "open_graph": {
               "og_title": "Family Visa in UAE | Horizon Line",
-              "og_description": "Get expert Family Visa services in the UAE with Horizon Line Management Consultancy LLC. Fast processing, full documentation support & transparent pricing. B...",
-              "og_image_alt": "Family Visa services in UAE by Horizon Line Management Consultancy LLC",
+              "og_description": "Get expert Family Visa Assistance in the UAE with Horizon Line Management Consultancy LLC. Fast processing, full documentation support & transparent pricing. B...",
+              "og_image_alt": "Family Visa Assistance in UAE by Horizon Line Management Consultancy LLC",
               "og_type": "website"
             },
             "twitter_card": {
               "card": "summary_large_image",
               "title": "Family Visa in UAE | Horizon Line",
-              "description": "Get expert Family Visa services in the UAE with Horizon Line Management Consultancy LLC. Fast processing, full documentation support & transparent pricing. B..."
+              "description": "Get expert Family Visa Assistance in the UAE with Horizon Line Management Consultancy LLC. Fast processing, full documentation support & transparent pricing. B..."
             },
             "schema_markup": {
               "@context": "https://schema.org",
@@ -17123,7 +17123,7 @@
                 {
                   "@type": "ListItem",
                   "position": 2,
-                  "name": "Visa Services",
+                  "name": "Visa Assistance",
                   "item": "https://www.horizonlineconsultancy.ae/services/visa-services"
                 },
                 {
@@ -17137,19 +17137,19 @@
             "recommended_keyword_set": [
               "family visa UAE",
               "family visa Dubai",
-              "family visa services UAE",
+              "family Visa Assistance UAE",
               "family visa consultant UAE",
-              "family visa services Dubai",
-              "family visa visa services UAE"
+              "family Visa Assistance Dubai",
+              "family visa Visa Assistance UAE"
             ],
             "content_seo": {
               "focus_keyword": "Family Visa",
               "secondary_keywords": [
                 "family visa Dubai",
-                "family visa services UAE",
+                "family Visa Assistance UAE",
                 "family visa consultant UAE",
-                "family visa services Dubai",
-                "family visa visa services UAE"
+                "family Visa Assistance Dubai",
+                "family visa Visa Assistance UAE"
               ],
               "recommended_usage": {
                 "h1": 1,
@@ -17163,8 +17163,8 @@
             }
           },
           "hero": {
-            "page_title": "Family Visa Services in the UAE",
-            "breadcrumb": "Home > Visa Services > Family Visa"
+            "page_title": "Family Visa Assistance in the UAE",
+            "breadcrumb": "Home > Visa Assistance > Family Visa"
           },
           "our_company_section": {
             "eyebrow": "+ Our Company +",
@@ -17444,7 +17444,7 @@
             ],
             "content_identity": {
               "service_name": "Family Visa",
-              "service_group": "Visa Services",
+              "service_group": "Visa Assistance",
               "avoid_generic_copy": true,
               "unique_heading_required": true,
               "unique_intro_required": true,
@@ -17487,7 +17487,7 @@
             },
             "image_seo": {
               "recommended_filename": "visa-services-family-visa.webp",
-              "alt_text": "Family Visa services in UAE by Horizon Line Management Consultancy LLC",
+              "alt_text": "Family Visa Assistance in UAE by Horizon Line Management Consultancy LLC",
               "loading": "lazy",
               "format": "webp",
               "notes": "Use descriptive filenames and ALT text that accurately match the actual image."
@@ -17498,24 +17498,24 @@
           "id": 18,
           "slug": "visa-services/golden-visa",
           "main_service_group": "Visa & Immigration Services",
-          "category": "Visa Services",
+          "category": "Visa Assistance",
           "sub_category": "Golden Visa",
           "seo": {
             "meta_title": "Golden Visa in UAE | Horizon Line",
-            "meta_description": "Get expert Golden Visa services in the UAE with Horizon Line Management Consultancy LLC. Fast processing, full documentation support & transparent pricing. B...",
+            "meta_description": "Get expert Golden Visa Assistance in the UAE with Horizon Line Management Consultancy LLC. Fast processing, full documentation support & transparent pricing. B...",
             "url_slug": "/services/visa-services/golden-visa",
             "canonical_url": "https://www.horizonlineconsultancy.ae/services/visa-services/golden-visa",
-            "h1_tag": "Golden Visa Services in the UAE",
+            "h1_tag": "Golden Visa Assistance in the UAE",
             "focus_keyword": "Golden Visa",
             "keywords": [
               "golden visa UAE",
               "golden visa Dubai",
               "golden visa Horizon Line",
-              "visa services services UAE",
+              "Visa Assistance services UAE",
               "best golden visa consultants UAE"
             ],
             "focus_keyword_visible_mentions_on_page": 10,
-            "image_alt_tag": "Golden Visa services in UAE by Horizon Line Management Consultancy LLC",
+            "image_alt_tag": "Golden Visa Assistance in UAE by Horizon Line Management Consultancy LLC",
             "internal_link": {
               "anchor_text": "Explore our Investor Visa service",
               "url": "/services/visa-services/investor-visa"
@@ -17527,14 +17527,14 @@
             },
             "open_graph": {
               "og_title": "Golden Visa in UAE | Horizon Line",
-              "og_description": "Get expert Golden Visa services in the UAE with Horizon Line Management Consultancy LLC. Fast processing, full documentation support & transparent pricing. B...",
-              "og_image_alt": "Golden Visa services in UAE by Horizon Line Management Consultancy LLC",
+              "og_description": "Get expert Golden Visa Assistance in the UAE with Horizon Line Management Consultancy LLC. Fast processing, full documentation support & transparent pricing. B...",
+              "og_image_alt": "Golden Visa Assistance in UAE by Horizon Line Management Consultancy LLC",
               "og_type": "website"
             },
             "twitter_card": {
               "card": "summary_large_image",
               "title": "Golden Visa in UAE | Horizon Line",
-              "description": "Get expert Golden Visa services in the UAE with Horizon Line Management Consultancy LLC. Fast processing, full documentation support & transparent pricing. B..."
+              "description": "Get expert Golden Visa Assistance in the UAE with Horizon Line Management Consultancy LLC. Fast processing, full documentation support & transparent pricing. B..."
             },
             "schema_markup": {
               "@context": "https://schema.org",
@@ -17566,7 +17566,7 @@
                 {
                   "@type": "ListItem",
                   "position": 2,
-                  "name": "Visa Services",
+                  "name": "Visa Assistance",
                   "item": "https://www.horizonlineconsultancy.ae/services/visa-services"
                 },
                 {
@@ -17580,19 +17580,19 @@
             "recommended_keyword_set": [
               "golden visa UAE",
               "golden visa Dubai",
-              "golden visa services UAE",
+              "golden Visa Assistance UAE",
               "golden visa consultant UAE",
-              "golden visa services Dubai",
-              "golden visa visa services UAE"
+              "golden Visa Assistance Dubai",
+              "golden visa Visa Assistance UAE"
             ],
             "content_seo": {
               "focus_keyword": "Golden Visa",
               "secondary_keywords": [
                 "golden visa Dubai",
-                "golden visa services UAE",
+                "golden Visa Assistance UAE",
                 "golden visa consultant UAE",
-                "golden visa services Dubai",
-                "golden visa visa services UAE"
+                "golden Visa Assistance Dubai",
+                "golden visa Visa Assistance UAE"
               ],
               "recommended_usage": {
                 "h1": 1,
@@ -17606,8 +17606,8 @@
             }
           },
           "hero": {
-            "page_title": "Golden Visa Services in the UAE",
-            "breadcrumb": "Home > Visa Services > Golden Visa"
+            "page_title": "Golden Visa Assistance in the UAE",
+            "breadcrumb": "Home > Visa Assistance > Golden Visa"
           },
           "our_company_section": {
             "eyebrow": "+ Our Company +",
@@ -17887,7 +17887,7 @@
             ],
             "content_identity": {
               "service_name": "Golden Visa",
-              "service_group": "Visa Services",
+              "service_group": "Visa Assistance",
               "avoid_generic_copy": true,
               "unique_heading_required": true,
               "unique_intro_required": true,
@@ -17930,7 +17930,7 @@
             },
             "image_seo": {
               "recommended_filename": "visa-services-golden-visa.webp",
-              "alt_text": "Golden Visa services in UAE by Horizon Line Management Consultancy LLC",
+              "alt_text": "Golden Visa Assistance in UAE by Horizon Line Management Consultancy LLC",
               "loading": "lazy",
               "format": "webp",
               "notes": "Use descriptive filenames and ALT text that accurately match the actual image."
@@ -17939,23 +17939,23 @@
         },
         {
           "id": 19,
-          "slug": "visa-services/emirates-id",
+          "slug": "visa-services/Emirates-id",
           "main_service_group": "Visa & Immigration Services",
-          "category": "Visa Services",
+          "category": "Visa Assistance",
           "sub_category": "Emirates ID",
           "seo": {
             "meta_title": "Emirates ID in UAE | Horizon Line",
             "meta_description": "Get expert Emirates ID services in the UAE with Horizon Line Management Consultancy LLC. Fast processing, full documentation support & transparent pricing. B...",
-            "url_slug": "/services/visa-services/emirates-id",
-            "canonical_url": "https://www.horizonlineconsultancy.ae/services/visa-services/emirates-id",
+            "url_slug": "/services/visa-services/Emirates-id",
+            "canonical_url": "https://www.horizonlineconsultancy.ae/services/visa-services/Emirates-id",
             "h1_tag": "Emirates ID Services in the UAE",
             "focus_keyword": "Emirates ID",
             "keywords": [
-              "emirates id UAE",
-              "emirates id Dubai",
-              "emirates id Horizon Line",
-              "visa services services UAE",
-              "best emirates id consultants UAE"
+              "Emirates id UAE",
+              "Emirates id Dubai",
+              "Emirates id Horizon Line",
+              "Visa Assistance services UAE",
+              "best Emirates id consultants UAE"
             ],
             "focus_keyword_visible_mentions_on_page": 10,
             "image_alt_tag": "Emirates ID services in UAE by Horizon Line Management Consultancy LLC",
@@ -17994,7 +17994,7 @@
                 "Sharjah",
                 "United Arab Emirates"
               ],
-              "url": "https://www.horizonlineconsultancy.ae/services/visa-services/emirates-id"
+              "url": "https://www.horizonlineconsultancy.ae/services/visa-services/Emirates-id"
             },
             "breadcrumb_schema": {
               "@context": "https://schema.org",
@@ -18009,33 +18009,33 @@
                 {
                   "@type": "ListItem",
                   "position": 2,
-                  "name": "Visa Services",
+                  "name": "Visa Assistance",
                   "item": "https://www.horizonlineconsultancy.ae/services/visa-services"
                 },
                 {
                   "@type": "ListItem",
                   "position": 3,
                   "name": "Emirates ID",
-                  "item": "https://www.horizonlineconsultancy.ae/services/visa-services/emirates-id"
+                  "item": "https://www.horizonlineconsultancy.ae/services/visa-services/Emirates-id"
                 }
               ]
             },
             "recommended_keyword_set": [
-              "emirates id UAE",
-              "emirates id Dubai",
-              "emirates id services UAE",
-              "emirates id consultant UAE",
-              "emirates id services Dubai",
-              "emirates id visa services UAE"
+              "Emirates id UAE",
+              "Emirates id Dubai",
+              "Emirates id services UAE",
+              "Emirates id consultant UAE",
+              "Emirates id services Dubai",
+              "Emirates id Visa Assistance UAE"
             ],
             "content_seo": {
               "focus_keyword": "Emirates ID",
               "secondary_keywords": [
-                "emirates id Dubai",
-                "emirates id services UAE",
-                "emirates id consultant UAE",
-                "emirates id services Dubai",
-                "emirates id visa services UAE"
+                "Emirates id Dubai",
+                "Emirates id services UAE",
+                "Emirates id consultant UAE",
+                "Emirates id services Dubai",
+                "Emirates id Visa Assistance UAE"
               ],
               "recommended_usage": {
                 "h1": 1,
@@ -18050,7 +18050,7 @@
           },
           "hero": {
             "page_title": "Emirates ID Services in the UAE",
-            "breadcrumb": "Home > Visa Services > Emirates ID"
+            "breadcrumb": "Home > Visa Assistance > Emirates ID"
           },
           "our_company_section": {
             "eyebrow": "+ Our Company +",
@@ -18068,7 +18068,7 @@
             ],
             "cta_button": "More About Us",
             "image": {
-              "src": "/img/service/main-services/emirates-id.webp",
+              "src": "/img/service/main-services/Emirates-id.webp",
               "width": 968,
               "height": 862,
               "alt": "Emirates ID",
@@ -18078,9 +18078,9 @@
           "what_we_offer_section": {
             "eyebrow": "+ What We Offer +",
             "heading": "Our Services",
-            "subtext": "Horizon Line provides end-to-end support for emirates id, from initial consultation through approval and ongoing compliance.",
+            "subtext": "Horizon Line provides end-to-end support for Emirates id, from initial consultation through approval and ongoing compliance.",
             "checklist": [
-              "Full processing support for emirates id",
+              "Full processing support for Emirates id",
               "Document review and attestation guidance",
               "Appointment scheduling with the relevant authority",
               "Status tracking and update notifications",
@@ -18097,7 +18097,7 @@
             "mission_vision_awards": [
               {
                 "title": "Our Mission",
-                "text": "Our mission is to make emirates id in the UAE simple, transparent, and fast."
+                "text": "Our mission is to make Emirates id in the UAE simple, transparent, and fast."
               },
               {
                 "title": "Our Vision",
@@ -18204,9 +18204,9 @@
             "eyebrow": "+ Why Trust Us +",
             "heading": "Why Businesses Trust Horizon Line",
             "badge": "10+ Years Experience",
-            "content": "Horizon Line Management Consultancy LLC has supported entrepreneurs, investors, and residents across the UAE with transparent pricing, hands-on government liaison, and a track record of accurate, on-time submissions for emirates id. Every client is assigned a dedicated consultant who understands their file end-to-end — no call centres, no repeated explanations, no surprises.",
+            "content": "Horizon Line Management Consultancy LLC has supported entrepreneurs, investors, and residents across the UAE with transparent pricing, hands-on government liaison, and a track record of accurate, on-time submissions for Emirates id. Every client is assigned a dedicated consultant who understands their file end-to-end — no call centres, no repeated explanations, no surprises.",
             "checklist": [
-              "Full processing support for emirates id",
+              "Full processing support for Emirates id",
               "Document review and attestation guidance",
               "Appointment scheduling with the relevant authority",
               "Status tracking and update notifications"
@@ -18230,12 +18230,12 @@
                 "quote": "Horizon Line handled the paperwork so I could focus on actually running my business."
               }
             ],
-            "closing_line": "Horizon Line has helped hundreds of clients complete emirates id quickly and correctly. Choose Horizon Line for emirates id and get a dedicated consultant from day one."
+            "closing_line": "Horizon Line has helped hundreds of clients complete Emirates id quickly and correctly. Choose Horizon Line for Emirates id and get a dedicated consultant from day one."
           },
           "faq_section": {
             "eyebrow": "+ Questions +",
             "heading": "Have Any Questions? Here Some Answers.",
-            "subtext": "In relation to emirates id, our team considers the details that matter most to your application.",
+            "subtext": "In relation to Emirates id, our team considers the details that matter most to your application.",
             "cta_button": "Ask Your Question",
             "items": [
               {
@@ -18263,7 +18263,7 @@
           "contact_section": {
             "eyebrow": "+ Contact Us +",
             "heading": "Let's Build an Awesome Project Together",
-            "subtext": "Every client is different — we tailor our approach to your goals, so you get emirates id support that truly fits.",
+            "subtext": "Every client is different — we tailor our approach to your goals, so you get Emirates id support that truly fits.",
             "stats": [
               {
                 "number": "350+",
@@ -18330,7 +18330,7 @@
             ],
             "content_identity": {
               "service_name": "Emirates ID",
-              "service_group": "Visa Services",
+              "service_group": "Visa Assistance",
               "avoid_generic_copy": true,
               "unique_heading_required": true,
               "unique_intro_required": true,
@@ -18341,13 +18341,13 @@
             "unique_introduction": {
               "eyebrow": "+ About This Service +",
               "heading": "Professional Emirates ID Support in the UAE",
-              "subtext": "Horizon Line Management Consultancy LLC provides structured support for emirates id requirements across the UAE. Our team helps clients understand the relevant process, organise documentation, coordinate with the appropriate authority and stay informed throughout the engagement.",
+              "subtext": "Horizon Line Management Consultancy LLC provides structured support for Emirates id requirements across the UAE. Our team helps clients understand the relevant process, organise documentation, coordinate with the appropriate authority and stay informed throughout the engagement.",
               "cta_button": "Book a Free Consultation"
             },
             "quick_cta_banner": {
               "eyebrow": "+ Need Assistance? +",
               "heading": "Need Help With Emirates ID in the UAE?",
-              "subtext": "Speak with Horizon Line about your emirates id requirements and understand the next steps.",
+              "subtext": "Speak with Horizon Line about your Emirates id requirements and understand the next steps.",
               "cta_button": "Book a Free Consultation"
             },
             "getting_started_section": {
@@ -18357,7 +18357,7 @@
                 {
                   "step": "01",
                   "title": "Discuss Your Requirement",
-                  "description": "Tell us about your emirates id requirement, objectives and current situation."
+                  "description": "Tell us about your Emirates id requirement, objectives and current situation."
                 },
                 {
                   "step": "02",
@@ -18372,7 +18372,7 @@
               ]
             },
             "image_seo": {
-              "recommended_filename": "visa-services-emirates-id.webp",
+              "recommended_filename": "visa-services-Emirates-id.webp",
               "alt_text": "Emirates ID services in UAE by Horizon Line Management Consultancy LLC",
               "loading": "lazy",
               "format": "webp",
@@ -18384,7 +18384,7 @@
           "id": 20,
           "slug": "visa-services/medical-test",
           "main_service_group": "Visa & Immigration Services",
-          "category": "Visa Services",
+          "category": "Visa Assistance",
           "sub_category": "Medical Test",
           "seo": {
             "meta_title": "Medical Test in UAE | Horizon Line",
@@ -18397,7 +18397,7 @@
               "medical test UAE",
               "medical test Dubai",
               "medical test Horizon Line",
-              "visa services services UAE",
+              "Visa Assistance services UAE",
               "best medical test consultants UAE"
             ],
             "focus_keyword_visible_mentions_on_page": 11,
@@ -18452,7 +18452,7 @@
                 {
                   "@type": "ListItem",
                   "position": 2,
-                  "name": "Visa Services",
+                  "name": "Visa Assistance",
                   "item": "https://www.horizonlineconsultancy.ae/services/visa-services"
                 },
                 {
@@ -18469,7 +18469,7 @@
               "medical test services UAE",
               "medical test consultant UAE",
               "medical test services Dubai",
-              "medical test visa services UAE"
+              "medical test Visa Assistance UAE"
             ],
             "content_seo": {
               "focus_keyword": "Medical Test",
@@ -18478,7 +18478,7 @@
                 "medical test services UAE",
                 "medical test consultant UAE",
                 "medical test services Dubai",
-                "medical test visa services UAE"
+                "medical test Visa Assistance UAE"
               ],
               "recommended_usage": {
                 "h1": 1,
@@ -18493,7 +18493,7 @@
           },
           "hero": {
             "page_title": "Medical Test Services in the UAE",
-            "breadcrumb": "Home > Visa Services > Medical Test"
+            "breadcrumb": "Home > Visa Assistance > Medical Test"
           },
           "our_company_section": {
             "eyebrow": "+ Our Company +",
@@ -18773,7 +18773,7 @@
             ],
             "content_identity": {
               "service_name": "Medical Test",
-              "service_group": "Visa Services",
+              "service_group": "Visa Assistance",
               "avoid_generic_copy": true,
               "unique_heading_required": true,
               "unique_intro_required": true,
@@ -21087,7 +21087,7 @@
           },
           {
             "question": "How often do EHS permits need renewal?",
-            "answer": "Typically annually, though specific permits may have different cycles depending on the activity and emirate."
+            "answer": "Typically annually, though specific permits may have different cycles depending on the activity and Emirates."
           },
           {
             "question": "What happens if my facility fails an EHS inspection?",
@@ -21102,7 +21102,7 @@
       "contact_section": {
         "eyebrow": "+ Contact Us +",
         "heading": "Let's Build an Awesome Project Together",
-        "subtext": "EHS requirements vary significantly by industry and emirate — we confirm exactly what applies to your operation.",
+        "subtext": "EHS requirements vary significantly by industry and Emirates — we confirm exactly what applies to your operation.",
         "stats": [
           {
             "number": "350+",
@@ -21785,7 +21785,7 @@
       "our_company_section": {
         "eyebrow": "+ Our Company +",
         "heading": "Police Clearance and Certificate Processing",
-        "subtext": "Whether it's for an overseas job application or a visa requirement, a police clearance certificate needs to be requested through the right emirate's police department, with the right supporting documents.",
+        "subtext": "Whether it's for an overseas job application or a visa requirement, a police clearance certificate needs to be requested through the right Emirates's police department, with the right supporting documents.",
         "icon_blocks": [
           {
             "title": "Clearance Certificates",
@@ -21793,7 +21793,7 @@
           },
           {
             "title": "Correct Department Routing",
-            "text": "Applications filed with the relevant emirate's police authority."
+            "text": "Applications filed with the relevant Emirates's police authority."
           },
           {
             "title": "Fast Turnaround",
@@ -21827,9 +21827,9 @@
           },
           {
             "title": "Lost Emirates ID Report",
-            "slug": "police/lost-emirates-id-report",
+            "slug": "police/lost-Emirates-id-report",
             "description": "Horizon Line Management Consultancy LLC services for Lost Emirates ID Report, government processing, compliance support, and end-to-end customer assistance.",
-            "image": "/img/service/main-services/lost-emirates-id-report.webp"
+            "image": "/img/service/main-services/lost-Emirates-id-report.webp"
           },
           {
             "title": "Lost Mobile Report",
@@ -21892,7 +21892,7 @@
         "mission_vision_awards": [
           {
             "title": "Correct Filing",
-            "text": "Applications routed to the right emirate's police department first time."
+            "text": "Applications routed to the right Emirates's police department first time."
           },
           {
             "title": "Documentation Support",
@@ -22089,8 +22089,8 @@
           {
             "id": 84,
             "title": "Lost Emirates ID Report",
-            "slug": "police/lost-emirates-id-report",
-            "url": "/services/police/lost-emirates-id-report"
+            "slug": "police/lost-Emirates-id-report",
+            "url": "/services/police/lost-Emirates-id-report"
           },
           {
             "id": 85,
@@ -23462,23 +23462,23 @@
         },
         {
           "id": 84,
-          "slug": "police/lost-emirates-id-report",
+          "slug": "police/lost-Emirates-id-report",
           "main_service_group": "Visa & Immigration Services",
           "category": "Police",
           "sub_category": "Lost Emirates ID Report",
           "seo": {
             "meta_title": "Lost Emirates ID Report in UAE | Horizon Line",
             "meta_description": "Get expert Lost Emirates ID Report services in the UAE with Horizon Line Management Consultancy LLC. Fast processing, full documentation support & transparen...",
-            "url_slug": "/services/police/lost-emirates-id-report",
-            "canonical_url": "https://www.horizonlineconsultancy.ae/services/police/lost-emirates-id-report",
+            "url_slug": "/services/police/lost-Emirates-id-report",
+            "canonical_url": "https://www.horizonlineconsultancy.ae/services/police/lost-Emirates-id-report",
             "h1_tag": "Lost Emirates ID Report Services in the UAE",
             "focus_keyword": "Lost Emirates ID Report",
             "keywords": [
-              "lost emirates id report UAE",
-              "lost emirates id report Dubai",
-              "lost emirates id report Horizon Line",
+              "lost Emirates id report UAE",
+              "lost Emirates id report Dubai",
+              "lost Emirates id report Horizon Line",
               "police services UAE",
-              "best lost emirates id report consultants UAE"
+              "best lost Emirates id report consultants UAE"
             ],
             "focus_keyword_visible_mentions_on_page": 10,
             "image_alt_tag": "Lost Emirates ID Report services in UAE by Horizon Line Management Consultancy LLC",
@@ -23517,7 +23517,7 @@
                 "Sharjah",
                 "United Arab Emirates"
               ],
-              "url": "https://www.horizonlineconsultancy.ae/services/police/lost-emirates-id-report"
+              "url": "https://www.horizonlineconsultancy.ae/services/police/lost-Emirates-id-report"
             },
             "breadcrumb_schema": {
               "@context": "https://schema.org",
@@ -23539,26 +23539,26 @@
                   "@type": "ListItem",
                   "position": 3,
                   "name": "Lost Emirates ID Report",
-                  "item": "https://www.horizonlineconsultancy.ae/services/police/lost-emirates-id-report"
+                  "item": "https://www.horizonlineconsultancy.ae/services/police/lost-Emirates-id-report"
                 }
               ]
             },
             "recommended_keyword_set": [
-              "lost emirates id report UAE",
-              "lost emirates id report Dubai",
-              "lost emirates id report services UAE",
-              "lost emirates id report consultant UAE",
-              "lost emirates id report services Dubai",
-              "lost emirates id report police UAE"
+              "lost Emirates id report UAE",
+              "lost Emirates id report Dubai",
+              "lost Emirates id report services UAE",
+              "lost Emirates id report consultant UAE",
+              "lost Emirates id report services Dubai",
+              "lost Emirates id report police UAE"
             ],
             "content_seo": {
               "focus_keyword": "Lost Emirates ID Report",
               "secondary_keywords": [
-                "lost emirates id report Dubai",
-                "lost emirates id report services UAE",
-                "lost emirates id report consultant UAE",
-                "lost emirates id report services Dubai",
-                "lost emirates id report police UAE"
+                "lost Emirates id report Dubai",
+                "lost Emirates id report services UAE",
+                "lost Emirates id report consultant UAE",
+                "lost Emirates id report services Dubai",
+                "lost Emirates id report police UAE"
               ],
               "recommended_usage": {
                 "h1": 1,
@@ -23591,7 +23591,7 @@
             ],
             "cta_button": "More About Us",
             "image": {
-              "src": "/img/service/main-services/lost-emirates-id-report.webp",
+              "src": "/img/service/main-services/lost-Emirates-id-report.webp",
               "width": 968,
               "height": 862,
               "alt": "Lost Emirates ID Report",
@@ -23601,9 +23601,9 @@
           "what_we_offer_section": {
             "eyebrow": "+ What We Offer +",
             "heading": "Our Services",
-            "subtext": "Horizon Line provides end-to-end support for lost emirates id report, from initial consultation through approval and ongoing compliance.",
+            "subtext": "Horizon Line provides end-to-end support for lost Emirates id report, from initial consultation through approval and ongoing compliance.",
             "checklist": [
-              "Full processing support for lost emirates id report",
+              "Full processing support for lost Emirates id report",
               "Document review and attestation guidance",
               "Appointment scheduling with the relevant authority",
               "Status tracking and update notifications",
@@ -23620,7 +23620,7 @@
             "mission_vision_awards": [
               {
                 "title": "Our Mission",
-                "text": "Our mission is to make lost emirates id report in the UAE simple, transparent, and fast."
+                "text": "Our mission is to make lost Emirates id report in the UAE simple, transparent, and fast."
               },
               {
                 "title": "Our Vision",
@@ -23727,9 +23727,9 @@
             "eyebrow": "+ Why Trust Us +",
             "heading": "Why Businesses Trust Horizon Line",
             "badge": "10+ Years Experience",
-            "content": "Horizon Line Management Consultancy LLC has supported entrepreneurs, investors, and residents across the UAE with transparent pricing, hands-on government liaison, and a track record of accurate, on-time submissions for lost emirates id report. Every client is assigned a dedicated consultant who understands their file end-to-end — no call centres, no repeated explanations, no surprises.",
+            "content": "Horizon Line Management Consultancy LLC has supported entrepreneurs, investors, and residents across the UAE with transparent pricing, hands-on government liaison, and a track record of accurate, on-time submissions for lost Emirates id report. Every client is assigned a dedicated consultant who understands their file end-to-end — no call centres, no repeated explanations, no surprises.",
             "checklist": [
-              "Full processing support for lost emirates id report",
+              "Full processing support for lost Emirates id report",
               "Document review and attestation guidance",
               "Appointment scheduling with the relevant authority",
               "Status tracking and update notifications"
@@ -23753,12 +23753,12 @@
                 "quote": "I never had to chase anyone for updates — Horizon Line kept me informed at every stage."
               }
             ],
-            "closing_line": "Horizon Line has helped hundreds of clients complete lost emirates id report quickly and correctly. Choose Horizon Line for lost emirates id report and get a dedicated consultant from day one."
+            "closing_line": "Horizon Line has helped hundreds of clients complete lost Emirates id report quickly and correctly. Choose Horizon Line for lost Emirates id report and get a dedicated consultant from day one."
           },
           "faq_section": {
             "eyebrow": "+ Questions +",
             "heading": "Have Any Questions? Here Some Answers.",
-            "subtext": "In relation to lost emirates id report, our team considers the details that matter most to your application.",
+            "subtext": "In relation to lost Emirates id report, our team considers the details that matter most to your application.",
             "cta_button": "Ask Your Question",
             "items": [
               {
@@ -23786,7 +23786,7 @@
           "contact_section": {
             "eyebrow": "+ Contact Us +",
             "heading": "Let's Build an Awesome Project Together",
-            "subtext": "Every client is different — we tailor our approach to your goals, so you get lost emirates id report support that truly fits.",
+            "subtext": "Every client is different — we tailor our approach to your goals, so you get lost Emirates id report support that truly fits.",
             "stats": [
               {
                 "number": "350+",
@@ -23864,13 +23864,13 @@
             "unique_introduction": {
               "eyebrow": "+ About This Service +",
               "heading": "Professional Lost Emirates ID Report Support in the UAE",
-              "subtext": "Horizon Line Management Consultancy LLC provides structured support for lost emirates id report requirements across the UAE. Our team helps clients understand the relevant process, organise documentation, coordinate with the appropriate authority and stay informed throughout the engagement.",
+              "subtext": "Horizon Line Management Consultancy LLC provides structured support for lost Emirates id report requirements across the UAE. Our team helps clients understand the relevant process, organise documentation, coordinate with the appropriate authority and stay informed throughout the engagement.",
               "cta_button": "Book a Free Consultation"
             },
             "quick_cta_banner": {
               "eyebrow": "+ Need Assistance? +",
               "heading": "Need Help With Lost Emirates ID Report in the UAE?",
-              "subtext": "Speak with Horizon Line about your lost emirates id report requirements and understand the next steps.",
+              "subtext": "Speak with Horizon Line about your lost Emirates id report requirements and understand the next steps.",
               "cta_button": "Book a Free Consultation"
             },
             "getting_started_section": {
@@ -23880,7 +23880,7 @@
                 {
                   "step": "01",
                   "title": "Discuss Your Requirement",
-                  "description": "Tell us about your lost emirates id report requirement, objectives and current situation."
+                  "description": "Tell us about your lost Emirates id report requirement, objectives and current situation."
                 },
                 {
                   "step": "02",
@@ -23895,7 +23895,7 @@
               ]
             },
             "image_seo": {
-              "recommended_filename": "police-lost-emirates-id-report.webp",
+              "recommended_filename": "police-lost-Emirates-id-report.webp",
               "alt_text": "Lost Emirates ID Report services in UAE by Horizon Line Management Consultancy LLC",
               "loading": "lazy",
               "format": "webp",
@@ -32265,7 +32265,7 @@
         "mission_vision_awards": [
           {
             "title": "Sharjah-Specific Knowledge",
-            "text": "Familiarity with SEWA's distinct process from other emirates' utility providers."
+            "text": "Familiarity with SEWA's distinct process from other Emirates' utility providers."
           },
           {
             "title": "Complete Applications",
@@ -32326,7 +32326,7 @@
       "contact_section": {
         "eyebrow": "+ Contact Us +",
         "heading": "Let's Build an Awesome Project Together",
-        "subtext": "SEWA's process differs from other emirates — we confirm exactly what's needed for your Sharjah property.",
+        "subtext": "SEWA's process differs from other Emirates — we confirm exactly what's needed for your Sharjah property.",
         "stats": [
           {
             "number": "350+",
@@ -38397,7 +38397,7 @@
       "our_company_section": {
         "eyebrow": "+ Our Company +",
         "heading": "Utility Connections Across the Northern Emirates",
-        "subtext": "EtihadWE covers Ajman, Umm Al Quwain, Ras Al Khaimah and Fujairah, each with slightly different local processing nuances — we handle the application correctly regardless of emirate.",
+        "subtext": "EtihadWE covers Ajman, Umm Al Quwain, Ras Al Khaimah and Fujairah, each with slightly different local processing nuances — we handle the application correctly regardless of Emirates.",
         "icon_blocks": [
           {
             "title": "Northern Emirates Coverage",
@@ -38449,7 +38449,7 @@
         "badge": "10+ Years Experience",
         "mission_vision_awards": [
           {
-            "title": "Multi-Emirate Coverage",
+            "title": "Multi-Emirates Coverage",
             "text": "Applications handled across all four Northern Emirates served by EtihadWE."
           },
           {
@@ -38487,7 +38487,7 @@
         "cta_button": "Ask Your Question",
         "items": [
           {
-            "question": "Which emirates does EtihadWE cover?",
+            "question": "Which Emirates does EtihadWE cover?",
             "answer": "Ajman, Umm Al Quwain, Ras Al Khaimah and Fujairah."
           },
           {
@@ -38499,7 +38499,7 @@
             "answer": "Typically a few working days, though this can vary slightly by local office."
           },
           {
-            "question": "Can I manage this remotely if I'm not based in that emirate?",
+            "question": "Can I manage this remotely if I'm not based in that Emirates?",
             "answer": "Yes, we handle the application and correspondence on your behalf without you needing to be physically present."
           },
           {
@@ -38511,7 +38511,7 @@
       "contact_section": {
         "eyebrow": "+ Contact Us +",
         "heading": "Let's Build an Awesome Project Together",
-        "subtext": "Requirements can vary slightly between local EtihadWE offices — we confirm the exact process for your specific emirate.",
+        "subtext": "Requirements can vary slightly between local EtihadWE offices — we confirm the exact process for your specific Emirates.",
         "stats": [
           {
             "number": "350+",
@@ -38585,7 +38585,7 @@
         "unique_introduction": {
           "eyebrow": "+ About This Service +",
           "heading": "Professional Etihad Water and Electricity Support in the UAE",
-          "subtext": "Properties in the Northern Emirates are served by Etihad Water and Electricity (EtihadWE), which has its own application process distinct from DEWA or SEWA. Horizon Line manages new connections, transfers and closures for tenants and businesses across these emirates.",
+          "subtext": "Properties in the Northern Emirates are served by Etihad Water and Electricity (EtihadWE), which has its own application process distinct from DEWA or SEWA. Horizon Line manages new connections, transfers and closures for tenants and businesses across these Emirates.",
           "cta_button": "Book a Free Consultation"
         },
         "quick_cta_banner": {
@@ -38606,7 +38606,7 @@
             {
               "step": "02",
               "title": "Application Submission",
-              "description": "We file with the relevant local office for your emirate."
+              "description": "We file with the relevant local office for your Emirates."
             },
             {
               "step": "03",
@@ -40024,7 +40024,7 @@
       "what_we_offer_section": {
         "eyebrow": "+ What We Offer +",
         "heading": "Our Services",
-        "subtext": "We support food trade approvals, health certification, building permits and other Sharjah Municipality requirements for businesses across the emirate.",
+        "subtext": "We support food trade approvals, health certification, building permits and other Sharjah Municipality requirements for businesses across the Emirates.",
         "checklist": [
           "Food trade licence approval",
           "Health and hygiene certification",
@@ -40105,7 +40105,7 @@
       "contact_section": {
         "eyebrow": "+ Contact Us +",
         "heading": "Let's Build an Awesome Project Together",
-        "subtext": "Sharjah Municipality's requirements differ from other emirates — we confirm the exact process for your business.",
+        "subtext": "Sharjah Municipality's requirements differ from other Emirates — we confirm the exact process for your business.",
         "stats": [
           {
             "number": "350+",
@@ -40179,7 +40179,7 @@
         "unique_introduction": {
           "eyebrow": "+ About This Service +",
           "heading": "Professional Sharjah Municipality Support in the UAE",
-          "subtext": "Sharjah Municipality regulates trade activities, building permits and health certifications for businesses operating in the emirate, with its own approval process separate from Dubai's. Horizon Line manages these filings for businesses setting up or operating in Sharjah.",
+          "subtext": "Sharjah Municipality regulates trade activities, building permits and health certifications for businesses operating in the Emirates, with its own approval process separate from Dubai's. Horizon Line manages these filings for businesses setting up or operating in Sharjah.",
           "cta_button": "Book a Free Consultation"
         },
         "quick_cta_banner": {

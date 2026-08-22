@@ -11,11 +11,11 @@ export const StickyBannerData: SectionProps = {
     blockList: [
         {
             subheading: "Mainland Setup",
-            heading: "Launch in Dubai, Abu Dhabi — or Beyond",
-            text: "We guide you through mainland company formation, licensing, documentation, and government coordination for a faster launch anywhere in the UAE.",
+            heading: "Mainland Company Formation",
+            text: "Licensed by the DED, with full freedom to trade anywhere in the UAE — including government contracts. 100% foreign ownership on most activities, with visa quota tied to your office size. Best for businesses serving the local UAE market directly.",
             button: {
-                label: "Learn More",
-                href: "/services/business-setup",
+                label: "Explore Mainland Setup in UAE",
+                href: "/services/mainland-company-formation-uae",
                 type: "primary"
             },
             image: {
@@ -23,33 +23,16 @@ export const StickyBannerData: SectionProps = {
                 width: 1000,
                 height: 707,
                 loading: "lazy",
-                alt: "Mainland company setup across the UAE",
-            },
-        },
-        {
-            subheading: "New Frontier",
-            heading: "Planning to Start Your Business? Think RAK — the Thriving New Emirate of the UAE",
-            text: "RAK and Fujairah are home to some of the UAE's most ambitious new developments — from waterfront districts to industrial and tourism megaprojects. Lower costs, faster approvals, and huge growth potential make these emirates the smart pick for startups and small businesses.",
-            button: {
-                label: "Discover RAK & Fujairah Opportunities",
-                href: "/contact-us",
-                type: "primary"
-            },
-            image: {
-                src: Image2.src,
-                width: 1000,
-                height: 707,
-                loading: "lazy",
-                alt: "Business setup in Ras Al Khaimah and Fujairah",
+                alt: "Mainland company formation across all 7 Emirates of the UAE",
             },
         },
         {
             subheading: "Free Zone Setup",
-            heading: "Choose the Right Free Zone for Your Business",
-            text: "From free zone company formation to trade licence support, we help you compare options across every emirate's free zones and complete the process smoothly.",
+            heading: "Free Zone Company Formation in UAE",
+            text: "Fast, affordable setup with 100% ownership and full profit repatriation. Comes bundled with office space and a visa quota — but you can't trade directly in the mainland market without a distributor. Best for international trade, consulting, and e-commerce.",
             button: {
-                label: "Learn More",
-                href: "/services/free-zone",
+                label: "Explore Free Zone Setup",
+                href: "/services/free-zone-company-formation-uae",
                 type: "primary"
             },
             image: {
@@ -57,33 +40,16 @@ export const StickyBannerData: SectionProps = {
                 width: 1000,
                 height: 707,
                 loading: "lazy",
-                alt: "Free zone company formation in the UAE",
+                alt: "Free zone company formation across UAE — DMCC, IFZA, RAKEZ, JAFZA",
             },
         },
         {
-            subheading: "Office & Location",
-            heading: "Find the Perfect Spot — and Set It Up Right",
-            text: "Finding an eye-catching, budget-right location is one of the biggest challenges for new businesses. We scout commercial spaces matched to your licence and handle interior fit-out so you can move in ready to work.",
+            subheading: "Offshore Company Formation",
+            heading: "Offshore Company Formation in UAE",
+            text: "No physical office, no UAE visa, no local trading — built purely for holding assets, shares, or property, and running international business. Fast, low-cost, and highly confidential. Best if you're structuring globally, not operating in the UAE day-to-day.",
             button: {
-                label: "Explore Office Solutions",
-                href: "/services/office-solutions",
-                type: "primary"
-            },
-            image: {
-                src: Image1.src,
-                width: 1000,
-                height: 707,
-                loading: "lazy",
-                alt: "Commercial office space and interior fit-out in the UAE",
-            },
-        },
-        {
-            subheading: "Visa & Compliance",
-            heading: "Stay Legal, Stay Compliant While Your Business Grows",
-            text: "We support investor visas, family visas, Emirates ID, police clearance certificates, attestation, VAT registration, and corporate tax guidance — so your legal status and operations stay fully compliant.",
-            button: {
-                label: "Learn More",
-                href: "/services/visa-services",
+                label: "Explore Offshore Setup",
+                href: "/services/offshore-company-formation-uae",
                 type: "primary"
             },
             image: {
@@ -91,7 +57,7 @@ export const StickyBannerData: SectionProps = {
                 width: 1000,
                 height: 707,
                 loading: "lazy",
-                alt: "UAE visa services and legal status compliance",
+                alt: "Offshore company formation in the UAE — RAK ICC and JAFZA",
             },
         }
     ]

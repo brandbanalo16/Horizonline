@@ -13,7 +13,8 @@ export const ServiceSidebarRight = ({ serviceName = 'this service' }: { serviceN
 
     return (
         <div className="svc-right-col" style={{ width: '100%', minWidth: 0 }}>
-            <style dangerouslySetInnerHTML={{ __html: `
+            <style dangerouslySetInnerHTML={{
+                __html: `
                 .right-sticky {
                     position: sticky;
                     top: 90px;

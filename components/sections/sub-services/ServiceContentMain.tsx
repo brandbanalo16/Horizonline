@@ -14,7 +14,7 @@ export const ServiceContentMain = ({ service }: { service: NewServiceType }) => 
     const group = service.main_service_group || 'UAE Authorities';
 
     // SEO fields from subservice.json
-    const emiratesCoverage = (service as any).emirates_coverage;
+    const EmiratesCoverage = (service as any).Emirates_coverage;
     const seoSummary = (service as any).seo_summary;
     const closing = (service as any).closing;
 
@@ -550,9 +550,9 @@ export const ServiceContentMain = ({ service }: { service: NewServiceType }) => 
                     </div>
 
                     {/* SEO Summary & Coverage */}
-                    {(emiratesCoverage || seoSummary || closing) && (
+                    {(EmiratesCoverage || seoSummary || closing) && (
                         <div className="svc-seo-block">
-                            {emiratesCoverage && <p className="svc-seo-text">{emiratesCoverage}</p>}
+                            {EmiratesCoverage && <p className="svc-seo-text">{EmiratesCoverage}</p>}
                             {seoSummary && <p className="svc-seo-text">{seoSummary}</p>}
                             {closing && <p className="svc-seo-text" style={{ marginBottom: 0 }}><strong>{closing}</strong></p>}
                         </div>

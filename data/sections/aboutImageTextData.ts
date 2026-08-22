@@ -6,7 +6,7 @@ export const AboutImageTextData: SectionProps = {
     container: "container",
     subheading: "Who We Are",
     heading: "Your Trusted UAE Business Setup Partner — All 7 Emirates",
-    text: "Horizon Line Management Consultancy LLC was built to make UAE company formation straightforward for founders, investors, and growing businesses. From Dubai and Abu Dhabi to Ras Al Khaimah, Fujairah, Ajman, Sharjah, and Umm Al Quwain — we guide you through licensing, visas, and compliance with a dedicated consultant on every file.",
+    text: "Horizon Line Management Consultancy LLC was built to make UAE company formation straightforward for founders, investors, and growing businesses. In Dubai, Abu Dhabi, Ras Al Khaimah, Fujairah, Ajman, Sharjah, and Umm Al Quwain — we guide you through licensing, visas, and compliance with a dedicated consultant managing your journey.",
     button: {
         label: "Book a Consultation",
         href: "/contact-us",
@@ -21,7 +21,7 @@ export const AboutImageTextData: SectionProps = {
     },
     textList: [
         {
-            text: "Mainland, free zone, and offshore formation in every emirate"
+            text: "Mainland, free zone, and offshore formation in every Emirates"
         },
         {
             text: "Visa, licensing, Emirates ID, and legal status under one roof"

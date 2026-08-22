@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     },
     openGraph: {
         title: 'About Horizon Line — UAE Business Setup Across All 7 Emirates',
-        description: 'Horizon Line helps entrepreneurs and investors set up businesses across every emirate — with honest guidance, transparent pricing, and end-to-end support.',
+        description: 'Horizon Line helps entrepreneurs and investors set up businesses across every Emirates — with honest guidance, transparent pricing, and end-to-end support.',
         url: 'https://www.horizonlineconsultancy.ae/about-us',
         type: 'website'
     }
