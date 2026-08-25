@@ -314,31 +314,31 @@
     flex-wrap: nowrap;
     align-items: center;
     justify-content: center;
-    overflow-x: auto;
+    /* Removed overflow-x: auto to avoid horizontal scrollbars */
+    overflow: visible;
     white-space: nowrap;
   }
 
   .menu-link-main {
     white-space: nowrap;
-    font-size: 16px;
-  }
-
-  /* Reduce vertical padding so header is not so tall */
-  .menu-link-main {
-    padding: 12px 10px;
+    /* Reduced font-size to fit all categories */
+    font-size: 14px;
+    /* Reduced padding to fit all categories */
+    padding: 20px 8px;
   }
 }
 
 @media (max-width: 1600px) {
   .menu-link-main {
-    padding: 28px 8px;
+    padding: 20px 6px;
+    font-size: 13px;
   }
 }
 
 @media (max-width: 1365px) {
   .menu-link-main {
-    padding: 30px 8px;
-    font-size: 17px;
+    padding: 20px 4px;
+    font-size: 12px;
   }
 }
 
@@ -437,8 +437,189 @@
   .menu-link * {
     pointer-events: none;
   }
+}
 
-  .header-megamenu .nav-item .menu-link > .heading {
-    width: 100%;
+/* ═══════════════════════════════════════════════════════════════════
+   NAVBAR DROPDOWN — desktop hover dropdowns + mobile accordion
+   ═══════════════════════════════════════════════════════════════════ */
+
+
+/* ── DESKTOP nav list ───────────────────────────────────────────── */
+.desktop-nav-list {
+  display: none; /* hidden on mobile */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.desktop-nav-item {
+  position: relative;
+}
+
+.desktop-nav-link {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 18px 10px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #2c3650;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: color 0.2s;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+.desktop-nav-link:hover {
+  color: #266464;
+}
+
+.nav-chevron {
+  flex-shrink: 0;
+  opacity: 0.6;
+  transition: transform 0.2s;
+}
+
+.desktop-nav-item:hover .nav-chevron {
+  transform: rotate(180deg);
+}
+
+/* ── DESKTOP dropdown panel ─────────────────────────────────────── */
+.desktop-dropdown {
+  position: absolute;
+  top: calc(100% + 2px);
+  left: 50%;
+  transform: translateX(-50%);
+  min-width: 210px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+  padding: 8px 0;
+  list-style: none;
+  margin: 0;
+  /* hidden by default */
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.18s ease, transform 0.18s ease, visibility 0.18s;
+  transform: translateX(-50%) translateY(6px);
+  z-index: 999;
+}
+
+.desktop-nav-item:hover .desktop-dropdown {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: translateX(-50%) translateY(0);
+}
+
+.desktop-dropdown-link {
+  display: block;
+  padding: 9px 18px;
+  font-size: 13.5px;
+  font-weight: 400;
+  color: #2c3650;
+  text-decoration: none;
+  transition: background 0.15s, color 0.15s;
+  white-space: nowrap;
+}
+
+.desktop-dropdown-link:hover {
+  background: #f0f7f7;
+  color: #266464;
+}
+
+/* ── MOBILE nav list ────────────────────────────────────────────── */
+.mobile-nav-list {
+  display: block; /* visible on mobile */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.mob-nav-item {
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.mob-nav-btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 13px 15px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #2c3650;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+}
+
+.mob-chevron {
+  display: inline-flex;
+  transition: transform 0.2s;
+}
+
+.mob-chevron--open {
+  transform: rotate(180deg);
+}
+
+.mob-submenu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.28s ease;
+  background: rgba(0, 0, 0, 0.02);
+}
+
+.mob-service-link {
+  display: block;
+  padding: 9px 28px;
+  font-size: 14px;
+  color: #266464;
+  text-decoration: none;
+  transition: background 0.15s;
+}
+
+.mob-service-link:hover {
+  background: rgba(38, 100, 100, 0.06);
+}
+
+/* ── SHOW desktop list only on lg+ ─────────────────────────────── */
+@media (min-width: 992px) {
+  .desktop-nav-list {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 0;
+  }
+
+  .desktop-nav-link {
+    font-size: 13px;
+    padding: 20px 8px;
+  }
+
+  .mobile-nav-list {
+    display: none;
   }
 }
+
+@media (min-width: 1200px) {
+  .desktop-nav-link {
+    font-size: 13.5px;
+    padding: 20px 10px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .desktop-nav-link {
+    font-size: 14px;
+    padding: 20px 12px;
+  }
+}
+

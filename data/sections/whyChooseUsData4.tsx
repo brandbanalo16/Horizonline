@@ -1,5 +1,5 @@
 import { SectionProps } from "@/types/sectionProps";
-import WhyChooseUsImage from "@/public/img/service/secvice-contact.jpg";
+import WhyChooseUsImage from "@/public/img/service/sd-1.jpg";
 
 export const WhyChooseUsData4: SectionProps = {
     wrapperCls: "why-choose-video",

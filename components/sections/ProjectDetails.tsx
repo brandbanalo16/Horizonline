@@ -4,7 +4,7 @@ import "@/styles/project-details.css";
 import Image from "next/image";
 import parse from 'html-react-parser';
 import { formatDate } from "@/utils/formatDate";
-import SidebarPhoneImage from "@/public/img/service/secvice-contact.jpg";
+import SidebarPhoneImage from "@/public/img/service/sd-1.jpg";
 
 import { ProjectType } from "@/types/project";
 import ProjectBlock from "../ProjectBlock";

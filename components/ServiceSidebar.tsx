@@ -1,11 +1,11 @@
 import Link from "next/link";
 import Icons from "./Icons";
-import SidebarPhoneImage from "@/public/img/service/secvice-contact.jpg";
+import SidebarPhoneImage from "@/public/img/service/sd-1.jpg";
 
 import SidebarPhone from "./SidebarPhone";
 import SidebarPdfDownload from "./SidebarPdfDownload";
 import DrawerOpener from "./DrawerOpener";
-import NewServicesData from "@/data/newServicesData.json";
+import SubserviceData from "@/data/subservice.json";
 import Services from "@/data/services.json";
 import { NewServiceType } from "@/types/newService";
 
@@ -16,12 +16,9 @@ const ServiceSidebar = ({
     slug?: string;
     category?: string;
 }) => {
-    const rawData = NewServicesData as any;
-    const main = (rawData.main_services || []) as NewServiceType[];
-    const sub = (rawData.sub_services || main.flatMap((m: any) => m.sub_services || [])) as NewServiceType[];
-    const newServices: NewServiceType[] = Array.isArray(rawData)
-        ? (rawData as NewServiceType[])
-        : [...main, ...sub];
+    const rawData = SubserviceData.services as any;
+    const newServices: any[] = Array.isArray(rawData) ? rawData : [];
+    
     const relatedServices = category
         ? newServices.filter((item) => item.slug !== slug && item.category === category)
         : newServices.filter((item) => item.slug !== slug);

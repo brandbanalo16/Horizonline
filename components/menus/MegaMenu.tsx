@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import React, { useState, useEffect, useRef, useCallback, useId } from 'react';
 import Link from 'next/link';
@@ -6,7 +6,7 @@ import { usePathname } from 'next/navigation';
 import megaMenuData, { MegaMenuCategory } from '@/data/megaMenuData';
 import '@/styles/mega-menu.css';
 
-// ── Inline SVG icons (no external dependency) ──────────────────────────────
+// ── Icons ───────────────────────────────────────────────────────────────────
 const ChevronDown = () => (
   <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
     <path d="M3 6l5 5 5-5" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"/>
@@ -14,13 +14,13 @@ const ChevronDown = () => (
 );
 
 const ChevronRight = () => (
-  <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+  <svg width="13" height="13" viewBox="0 0 14 14" fill="none" aria-hidden="true">
     <path d="M5 2.5l4.5 4.5L5 11.5" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"/>
   </svg>
 );
 
 const GridIcon = () => (
-  <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+  <svg width="13" height="13" viewBox="0 0 14 14" fill="none" aria-hidden="true">
     <rect x="1" y="1" width="5" height="5" rx="1" fill="currentColor"/>
     <rect x="8" y="1" width="5" height="5" rx="1" fill="currentColor"/>
     <rect x="1" y="8" width="5" height="5" rx="1" fill="currentColor"/>
@@ -34,82 +34,7 @@ const ArrowRight = () => (
   </svg>
 );
 
-// ── Accordion sub-panel (desktop) ──────────────────────────────────────────
-function CategoryCard({
-  category,
-  isOpen,
-  onHover,
-  panelId,
-  onClose,
-}: {
-  category: MegaMenuCategory;
-  isOpen: boolean;
-  onHover: () => void;
-  panelId: string;
-  onClose: () => void;
-}) {
-  const panelRef = useRef<HTMLDivElement>(null);
-
-  // Animate max-height
-  useEffect(() => {
-    const el = panelRef.current;
-    if (!el) return;
-    if (isOpen) {
-      el.style.maxHeight = `${el.scrollHeight}px`;
-    } else {
-      el.style.maxHeight = '0px';
-    }
-  }, [isOpen]);
-
-  return (
-    // Hover on the whole card (button + panel) keeps it expanded
-    <div className="mm-category" onMouseEnter={onHover}>
-      <button
-        type="button"
-        className="mm-cat-btn"
-        aria-expanded={isOpen}
-        aria-controls={panelId}
-        // keyboard users can also activate via Enter/Space
-        onClick={onHover}
-      >
-        <span className="mm-cat-btn-label">
-          <span className="mm-cat-icon">
-            <GridIcon />
-          </span>
-          <span className="mm-cat-title">{category.title}</span>
-        </span>
-        <span className="mm-cat-chevron">
-          <ChevronRight />
-        </span>
-      </button>
-
-      {/* Sub-services panel */}
-      <div
-        id={panelId}
-        ref={panelRef}
-        className={`mm-services-panel${isOpen ? ' mm-services-panel--open' : ''}`}
-        role="region"
-        aria-label={`${category.title} services`}
-      >
-        <ul className="mm-services-list" role="list">
-          {category.services.map((service) => (
-            <li key={service.path}>
-              <Link
-                href={service.path}
-                className="mm-service-link"
-                onClick={onClose}
-              >
-                {service.title}
-              </Link>
-            </li>
-          ))}
-        </ul>
-      </div>
-    </div>
-  );
-}
-
-// ── Mobile category accordion ──────────────────────────────────────────────
+// ── Mobile category accordion ─────────────────────────────────────────────
 function MobileCategoryAccordion({
   category,
   isOpen,
@@ -128,11 +53,7 @@ function MobileCategoryAccordion({
   useEffect(() => {
     const el = panelRef.current;
     if (!el) return;
-    if (isOpen) {
-      el.style.maxHeight = `${el.scrollHeight}px`;
-    } else {
-      el.style.maxHeight = '0px';
-    }
+    el.style.maxHeight = isOpen ? `${el.scrollHeight}px` : '0px';
   }, [isOpen]);
 
   return (
@@ -145,11 +66,8 @@ function MobileCategoryAccordion({
         onClick={onToggle}
       >
         {category.title}
-        <span className="mm-mobile-cat-chevron">
-          <ChevronRight />
-        </span>
+        <span className="mm-mobile-cat-chevron"><ChevronRight /></span>
       </button>
-
       <div
         id={panelId}
         ref={panelRef}
@@ -160,11 +78,7 @@ function MobileCategoryAccordion({
         <ul className="mm-mobile-services-list" role="list">
           {category.services.map((service) => (
             <li key={service.path}>
-              <Link
-                href={service.path}
-                className="mm-mobile-service-link"
-                onClick={onClose}
-              >
+              <Link href={service.path} className="mm-mobile-service-link" onClick={onClose}>
                 {service.title}
               </Link>
             </li>
@@ -175,10 +89,10 @@ function MobileCategoryAccordion({
   );
 }
 
-// ── Main MegaMenu component ────────────────────────────────────────────────
+// ── Main MegaMenu component ───────────────────────────────────────────────
 export default function MegaMenu() {
   const [isOpen, setIsOpen] = useState(false);
-  const [openCategoryId, setOpenCategoryId] = useState<string | null>(null);
+  const [hoveredCategoryId, setHoveredCategoryId] = useState<string>(megaMenuData[0]?.id ?? '');
   const [mobileOpen, setMobileOpen] = useState(false);
   const [mobileOpenCategoryId, setMobileOpenCategoryId] = useState<string | null>(null);
   const [panelTop, setPanelTop] = useState(0);
@@ -190,10 +104,11 @@ export default function MegaMenu() {
   const baseId = useId();
   const pathname = usePathname();
 
+  const activeCategory = megaMenuData.find(c => c.id === hoveredCategoryId) ?? megaMenuData[0];
+
   // ── Close on route change ────────────────────────────────────────────────
   useEffect(() => {
     setIsOpen(false);
-    setOpenCategoryId(null);
     setMobileOpen(false);
     setMobileOpenCategoryId(null);
   }, [pathname]);
@@ -201,9 +116,7 @@ export default function MegaMenu() {
   // ── Position panel below header ──────────────────────────────────────────
   const updatePanelTop = useCallback(() => {
     const header = document.querySelector<HTMLElement>('header');
-    if (header) {
-      setPanelTop(header.getBoundingClientRect().bottom);
-    }
+    if (header) setPanelTop(header.getBoundingClientRect().bottom);
   }, []);
 
   useEffect(() => {
@@ -220,25 +133,21 @@ export default function MegaMenu() {
   useEffect(() => {
     if (!isOpen) return;
     const handleOutside = (e: MouseEvent) => {
-      const target = e.target as Node;
-      if (
-        panelRef.current && !panelRef.current.contains(target) &&
-        triggerRef.current && !triggerRef.current.contains(target)
-      ) {
+      const t = e.target as Node;
+      if (panelRef.current && !panelRef.current.contains(t) &&
+          triggerRef.current && !triggerRef.current.contains(t)) {
         setIsOpen(false);
-        setOpenCategoryId(null);
       }
     };
     document.addEventListener('mousedown', handleOutside);
     return () => document.removeEventListener('mousedown', handleOutside);
   }, [isOpen]);
 
-  // ── Escape key ───────────────────────────────────────────────────────────
+  // ── Escape key ────────────────────────────────────────────────────────────
   useEffect(() => {
     const handleKey = (e: KeyboardEvent) => {
       if (e.key === 'Escape') {
         setIsOpen(false);
-        setOpenCategoryId(null);
         setMobileOpen(false);
         setMobileOpenCategoryId(null);
         triggerRef.current?.focus();
@@ -248,66 +157,30 @@ export default function MegaMenu() {
     return () => document.removeEventListener('keydown', handleKey);
   }, []);
 
-  // ── Body scroll lock on mobile ───────────────────────────────────────────
-  useEffect(() => {
-    if (typeof window === 'undefined') return;
-    // No scroll lock needed — mobile uses the existing drawer nav scroll area
-  }, [mobileOpen]);
-
-  // ── Animate mobile panel ─────────────────────────────────────────────────
+  // ── Mobile panel animation ────────────────────────────────────────────────
   useEffect(() => {
     const el = mobilePanelRef.current;
     if (!el) return;
-    if (mobileOpen) {
-      el.style.maxHeight = `${el.scrollHeight + 2000}px`; // generous for nested content
-    } else {
-      el.style.maxHeight = '0px';
-    }
-  }, [mobileOpen, mobileOpenCategoryId]); // re-run when a sub-accordion opens to expand parent
+    el.style.maxHeight = mobileOpen ? `${el.scrollHeight + 2000}px` : '0px';
+  }, [mobileOpen, mobileOpenCategoryId]);
 
-  // ── Handlers ─────────────────────────────────────────────────────────────
-  const handleTriggerClick = () => {
-    setIsOpen((prev) => {
-      if (prev) setOpenCategoryId(null);
-      return !prev;
-    });
-    updatePanelTop();
-  };
-
-  const handleCategoryHover = (id: string) => {
-    setOpenCategoryId(id);
-  };
-
-  const handleGridMouseLeave = () => {
-    setOpenCategoryId(null);
-  };
-
-  const handleMobileTriggerClick = () => {
-    setMobileOpen((prev) => !prev);
-    if (mobileOpen) setMobileOpenCategoryId(null);
+  const closeAll = () => {
+    setIsOpen(false);
+    setMobileOpen(false);
+    setMobileOpenCategoryId(null);
   };
 
   const handleMobileCategoryToggle = (id: string) => {
-    setMobileOpenCategoryId((prev) => (prev === id ? null : id));
-    // Re-trigger parent panel height recalculation after state settles
+    setMobileOpenCategoryId(prev => (prev === id ? null : id));
     setTimeout(() => {
       const el = mobilePanelRef.current;
       if (el) el.style.maxHeight = `${el.scrollHeight + 2000}px`;
     }, 10);
   };
 
-  const closeAll = () => {
-    setIsOpen(false);
-    setOpenCategoryId(null);
-    setMobileOpen(false);
-    setMobileOpenCategoryId(null);
-  };
-
-  // ── Render ────────────────────────────────────────────────────────────────
   return (
     <>
-
-      {/* ── DESKTOP trigger (nav item) ──────────────────────────────────── */}
+      {/* ── DESKTOP: Services trigger ──────────────────────────────────────── */}
       <li className="mega-menu-root nav-item" style={{ position: 'static' }}>
         <button
           ref={triggerRef}
@@ -316,15 +189,13 @@ export default function MegaMenu() {
           aria-expanded={isOpen}
           aria-haspopup="true"
           aria-controls={`${baseId}-panel`}
-          onClick={handleTriggerClick}
+          onClick={() => { setIsOpen(prev => !prev); updatePanelTop(); }}
         >
           Services
-          <span className="mm-trigger-chevron">
-            <ChevronDown />
-          </span>
+          <span className="mm-trigger-chevron"><ChevronDown /></span>
         </button>
 
-        {/* ── Desktop mega panel ──────────────────────────────────────── */}
+        {/* ── Desktop mega panel ─────────────────────────────────────────── */}
         <div
           id={`${baseId}-panel`}
           ref={panelRef}
@@ -334,50 +205,69 @@ export default function MegaMenu() {
           style={{ top: `${panelTop}px` }}
         >
           <div className="mm-panel-inner">
-            {/* All services link */}
-            <Link
-              href="/services"
-              className="mm-all-services"
-              onClick={closeAll}
-            >
+            {/* View all link */}
+            <Link href="/services" className="mm-all-services" onClick={closeAll}>
               <GridIcon />
-              View all services
+              VIEW ALL SERVICES
               <ArrowRight />
             </Link>
 
-            {/* Categories grid — hover to expand sub-services */}
-            <div
-              className="mm-grid"
-              role="list"
-              onMouseLeave={handleGridMouseLeave}
-            >
-              {megaMenuData.map((category) => {
-                const panelId = `${baseId}-cat-${category.id}`;
-                return (
-                  <div key={category.id} role="listitem">
-                    <CategoryCard
-                      category={category}
-                      isOpen={openCategoryId === category.id}
-                      onHover={() => handleCategoryHover(category.id)}
-                      panelId={panelId}
-                      onClose={closeAll}
-                    />
-                  </div>
-                );
-              })}
+            {/* ── Split layout: categories left | services right ─────────── */}
+            <div className="mm-split">
+              {/* Left: category list */}
+              <div className="mm-split-cats">
+                {megaMenuData.map((category) => (
+                  <button
+                    key={category.id}
+                    type="button"
+                    className={`mm-cat-row${hoveredCategoryId === category.id ? ' mm-cat-row--active' : ''}`}
+                    onMouseEnter={() => setHoveredCategoryId(category.id)}
+                    onClick={() => { closeAll(); window.location.href = category.path; }}
+                    aria-current={hoveredCategoryId === category.id ? 'true' : undefined}
+                  >
+                    <span className="mm-cat-row-label">
+                      <span className="mm-cat-icon"><GridIcon /></span>
+                      <span className="mm-cat-title">{category.title}</span>
+                    </span>
+                    <span className="mm-cat-chevron"><ChevronRight /></span>
+                  </button>
+                ))}
+              </div>
+
+              {/* Right: services for hovered category */}
+              <div className="mm-split-services">
+                <div className="mm-split-services-heading">
+                  <span className="mm-cat-icon"><GridIcon /></span>
+                  <span>{activeCategory?.title}</span>
+                </div>
+                <ul className="mm-split-services-list">
+                  {activeCategory?.services.map((service) => (
+                    <li key={service.path}>
+                      <Link
+                        href={service.path}
+                        className="mm-split-service-link"
+                        onClick={closeAll}
+                      >
+                        <span className="mm-split-service-dot" />
+                        {service.title}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
             </div>
           </div>
         </div>
 
-        {/* ── Backdrop ────────────────────────────────────────────────── */}
+        {/* ── Backdrop ──────────────────────────────────────────────────── */}
         <div
           className={`mm-backdrop${isOpen ? ' mm-backdrop--visible' : ''}`}
           aria-hidden="true"
-          onClick={() => { setIsOpen(false); setOpenCategoryId(null); }}
+          onClick={() => setIsOpen(false)}
         />
       </li>
 
-      {/* ── MOBILE trigger (inside the drawer nav) ─────────────────────── */}
+      {/* ── MOBILE trigger (inside drawer nav) ──────────────────────────── */}
       <li className="mm-mobile-wrapper nav-item" style={{ width: '100%' }}>
         <button
           type="button"
@@ -385,12 +275,10 @@ export default function MegaMenu() {
           aria-expanded={mobileOpen}
           aria-haspopup="true"
           aria-controls={`${baseId}-mobile-panel`}
-          onClick={handleMobileTriggerClick}
+          onClick={() => setMobileOpen(prev => !prev)}
         >
           Services
-          <span className="mm-mobile-trigger-chevron">
-            <ChevronDown />
-          </span>
+          <span className="mm-mobile-trigger-chevron"><ChevronDown /></span>
         </button>
 
         <div
@@ -400,19 +288,16 @@ export default function MegaMenu() {
           role="navigation"
           aria-label="Services mobile menu"
         >
-          {megaMenuData.map((category) => {
-            const panelId = `${baseId}-mobile-cat-${category.id}`;
-            return (
-              <MobileCategoryAccordion
-                key={category.id}
-                category={category}
-                isOpen={mobileOpenCategoryId === category.id}
-                onToggle={() => handleMobileCategoryToggle(category.id)}
-                panelId={panelId}
-                onClose={closeAll}
-              />
-            );
-          })}
+          {megaMenuData.map((category) => (
+            <MobileCategoryAccordion
+              key={category.id}
+              category={category}
+              isOpen={mobileOpenCategoryId === category.id}
+              onToggle={() => handleMobileCategoryToggle(category.id)}
+              panelId={`${baseId}-mobile-cat-${category.id}`}
+              onClose={closeAll}
+            />
+          ))}
         </div>
       </li>
     </>
