@@ -2,7 +2,7 @@ import Link from "next/link";
 import Icons from "../Icons";
 import { ThemeButtonType } from "@/types/themeButton";
 
-const SlimButton = ({ label, href, cls, ariaLabel, showIcon = true, type = 'submit' }: ThemeButtonType) => {
+const SlimButton = ({ label, href, cls, ariaLabel, showIcon = true, type = 'submit', onClick }: ThemeButtonType) => {
     return (
         <>
         {
@@ -20,6 +20,7 @@ const SlimButton = ({ label, href, cls, ariaLabel, showIcon = true, type = 'subm
                     type={type}
                     className={`button button--slim ${cls}`}
                     aria-label={ariaLabel}
+                    onClick={onClick}
                 >
                     {label}
                     {showIcon && <span className="svg-wrapper"><Icons.ArrowCircle /></span>}

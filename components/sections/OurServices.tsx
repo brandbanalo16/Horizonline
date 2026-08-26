@@ -10,7 +10,7 @@ import ServiceList from "@/data/services.json";
 import CardService from "../CardService";
 import { SectionProps } from "@/types/sectionProps";
 
-const OurServices = ({ data }: { data: SectionProps }) => {
+const OurServices = ({ data, maxItems = 3 }: { data: SectionProps; maxItems?: number }) => {
     const serviceList = ServiceList;
     if(serviceList.length == 0) return null;
 
@@ -58,7 +58,7 @@ const OurServices = ({ data }: { data: SectionProps }) => {
 
                 <div className="multicolumn-inner">
                     <div className="grid lg:grid-cols-3 lg:gap-1">
-                        {serviceList.slice(0, 3).map((service) => (
+                        {serviceList.slice(0, maxItems).map((service) => (
                             <div 
                                 className="col-span-1 multi-col" 
                                 data-aos="fade-up" 

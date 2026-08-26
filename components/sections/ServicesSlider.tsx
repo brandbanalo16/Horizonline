@@ -90,44 +90,42 @@ const ServicesSlider = ({
                 </div>                
 
                 <div className="section-content" data-aos="fade-up">
-                    <div className={container}>
-                        <service-slider className="service-slider">
-                            <Swiper
-                                modules={pagination ? [Pagination] : []}
-                                pagination={pagination ? { clickable: true } : undefined}
-                                breakpoints={{
-                                    0: {
-                                        spaceBetween: 20,
-                                        slidesPerView: 1,
-                                    },
-                                    575: {
-                                        spaceBetween: 20,
-                                        slidesPerView: 1.2,
-                                    },
-                                    768: {
-                                        spaceBetween: 20,
-                                        slidesPerView: 1.8,
-                                    },
-                                    992: {
-                                        spaceBetween: 20,
-                                        slidesPerView: 2,
-                                    },
-                                    1200: {
-                                        spaceBetween: 20,
-                                        slidesPerView: 2.4,
-                                    },
-                                }}
-                                onSwiper={(swiper) => (swiperRef.current = swiper)}
-                                className="swiper"
-                            >
-                                {serviceList.slice(0, maxItems).map((service) => (
-                                    <SwiperSlide key={service.id}>
-                                        <CardService2 data={service} />
-                                    </SwiperSlide>
-                                ))}
-                            </Swiper>
-                        </service-slider>                
-                    </div>
+                    <service-slider className="service-slider">
+                        <Swiper
+                            modules={pagination ? [Pagination] : []}
+                            pagination={pagination ? { clickable: true } : undefined}
+                            breakpoints={{
+                                0: {
+                                    spaceBetween: 20,
+                                    slidesPerView: 1,
+                                },
+                                575: {
+                                    spaceBetween: 20,
+                                    slidesPerView: 1.2,
+                                },
+                                768: {
+                                    spaceBetween: 20,
+                                    slidesPerView: 1.8,
+                                },
+                                992: {
+                                    spaceBetween: 20,
+                                    slidesPerView: 2,
+                                },
+                                1200: {
+                                    spaceBetween: 20,
+                                    slidesPerView: 2.4,
+                                },
+                            }}
+                            onSwiper={(swiper) => (swiperRef.current = swiper)}
+                            className="swiper"
+                        >
+                            {serviceList.slice(0, maxItems).map((service) => (
+                                <SwiperSlide key={service.id}>
+                                    <CardService2 data={service} />
+                                </SwiperSlide>
+                            ))}
+                        </Swiper>
+                    </service-slider>                
                 </div>
             </div>
         </div>

@@ -1,4 +1,4 @@
-﻿'use client';
+'use client';
 import { useEffect, useRef } from "react";
 import { usePathname } from "next/navigation";
 import Logo from "../Logo";
@@ -51,6 +51,9 @@ const NavBar = () => {
           <MegaMenu />
           <li className="nav-item">
             <Link className="menu-link menu-link-main" href="/blogs">Blog</Link>
+          </li>
+          <li className="nav-item">
+            <Link className="menu-link menu-link-main" href="/contact-us">Contact Us</Link>
           </li>
         </ul>
       </nav>

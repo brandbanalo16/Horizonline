@@ -1,0 +1,1264 @@
+[
+  {
+    "id": 1001,
+    "slug": "business-setup",
+    "isCategory": true,
+    "category": "Business Setup",
+    "sub_category": "",
+    "seo": {
+      "meta_title": "Business Setup Services in the UAE | Horizon Line",
+      "meta_description": "Horizon Line Management Consultancy LLC delivers complete Business Setup solutions across the UAE — Mainland, Free Zone, and Offshore company formation.",
+      "url_slug": "/services/business-setup",
+      "canonical_url": "https://horizonline.ae/services/business-setup"
+    },
+    "hero": {
+      "page_title": "Business Setup Services",
+      "breadcrumb": "Business Setup Services"
+    },
+    "our_company_section": {
+      "eyebrow": "In Horizon Line",
+      "heading": "Comprehensive Business Setup Solutions in UAE all 7 Emirates",
+      "subtext": "Horizon Line Management Consultancy LLC delivers complete Business Setup solutions across the UAE, combining hands-on government liaison with transparent pricing and a dedicated consultant for every client. Whether you are a first-time applicant or an established enterprise, our team manages documentation, submissions, and follow-up with relevant authorities so your Business Setup process is fast, accurate, and fully compliant.",
+      "cta_button": "Discover more"
+    },
+    "our_services_slider": {
+      "eyebrow": "Our Services",
+      "heading": "Solutions Tailored to Your Business Needs",
+      "top_cta_button": "View all",
+      "cards": [
+        {
+          "title": "Mainland Company Formation",
+          "slug": "mainland-company-formation-uae",
+          "description": "Set up your business with mainland company formation in UAE. Horizon Line guides you through structure, licensing, and documentation for direct UAE market access.",
+          "image": "/img/service/main-services/mainland-company-formation.webp"
+        },
+        {
+          "title": "Free Zone Company Formation",
+          "slug": "free-zone-company-formation-uae",
+          "description": "Start your business with Free Zone Company Formation in UAE. Get expert guidance on top jurisdictions, licensing, visas, and setup.",
+          "image": "/img/service/main-services/free-zone-company-formation.webp"
+        },
+        {
+          "title": "Offshore Company Formation",
+          "slug": "offshore-company-formation-uae",
+          "description": "Considering offshore company formation in UAE? Horizon Line helps with structuring, documentation, and registration for asset protection.",
+          "image": "/img/service/main-services/offshore-company-formation.webp"
+        },
+        {
+          "title": "Branch Office Setup",
+          "slug": "branch-office-setup-uae",
+          "description": "Expand your existing local or international business into the UAE market with streamlined branch office setup support.",
+          "image": "/img/service/main-services/branch-office-setup.webp"
+        },
+        {
+          "title": "Company Registration Process",
+          "slug": "company-registration-process-uae",
+          "description": "Comprehensive step-by-step registration support, including trade name reservation, initial approvals, and ministry filings.",
+          "image": "/img/service/main-services/company-liquidation.webp"
+        },
+        {
+          "title": "Trade License",
+          "slug": "trade-license-uae",
+          "description": "Obtain commercial, professional, or industrial trade licenses swiftly with end-to-end document clearance.",
+          "image": "/img/service/main-services/trade-license-renewal.webp"
+        }
+      ]
+    },
+    "what_we_offer_section": {
+      "eyebrow": "What We Offer",
+      "heading": "Our Services",
+      "subtext": "From initial trade name reservation to final licence issuance, we handle every detail of your business setup. We offer clear advice on jurisdictions, costs, and compliance so you can focus on building your business.",
+      "checklist": [
+        "Mainland & Free Zone company formation",
+        "Offshore company registration & asset protection",
+        "Branch office setup for local & foreign firms",
+        "End-to-end company registration process",
+        "Trade licence issuance & annual renewal"
+      ],
+      "cta_button": "Talk To Our Consultant"
+    },
+    "why_choose_us_section": {
+      "eyebrow": "Why Choose Us",
+      "heading": "Supporting Growth on a Global Scale",
+      "subtext": "Partnering with Horizon Line ensures your business structure, license scope, and compliance obligations are carefully aligned from day one. Enjoy transparent pricing and expert insights.",
+      "cta_button": "Discover more",
+      "badge": "10+ Years",
+      "mission_vision_awards": [
+        {
+          "title": "Management",
+          "text": "Dedicated consultants ensuring full compliance and fast setup."
+        },
+        {
+          "title": "UAE Network",
+          "text": "Proven connections with government authorities across the UAE."
+        },
+        {
+          "title": "Professional Services",
+          "text": "Expert guidance on licensing, visas, and essential corporate documentation."
+        }
+      ]
+    },
+    "testimonials_section": {
+      "eyebrow": "Testimonials",
+      "heading": "See What Our Customers Have to Say About Us",
+      "items": [
+        {
+          "name": "Sarah Miller",
+          "role": "Entrepreneur",
+          "rating": 5,
+          "quote": "The experts at Horizon Line made my Dubai mainland setup incredibly smooth and completely stress-free. Highly recommended!"
+        },
+        {
+          "name": "Ahmed Al Fasi",
+          "role": "CEO",
+          "rating": 5,
+          "quote": "Transparent pricing, fast execution, and outstanding local knowledge. The best business consultants I've worked with."
+        },
+        {
+          "name": "James Smith",
+          "role": "Director",
+          "rating": 5,
+          "quote": "Horizon Line walked us through every step of our Free Zone formation and even helped with corporate banking."
+        }
+      ]
+    },
+    "faq_section": {
+      "eyebrow": "Answers to",
+      "heading": "Have Any Questions? Here Some Answers.",
+      "subtext": "Find quick answers to common questions about setting up a business in the UAE, licensing, and compliance.",
+      "cta_button": "Ask more question",
+      "items": [
+        {
+          "question": "What is the difference between Mainland and Free Zone?",
+          "answer": "Mainland allows direct trading anywhere in the UAE market and internationally without restrictions. Free Zone companies operate within specific geographic zones or international trade channels with specialized tax benefits."
+        },
+        {
+          "question": "How long does it take to get a trade licence?",
+          "answer": "Depending on jurisdiction, Free Zone licences take 3-5 business days, while Mainland licences typically take 1-2 weeks."
+        },
+        {
+          "question": "Do I need physical office space?",
+          "answer": "Mainland setups generally require an Ejari lease, while many Free Zones offer flexible virtual desk or flexi-desk options."
+        }
+      ]
+    },
+    "contact_section": {
+      "eyebrow": "Contact Us",
+      "heading": "Let's Build an Awesome Project Together",
+      "subtext": "Reach out to our experts to start your UAE business setup journey today.",
+      "stats": [],
+      "form": {
+        "heading": "Make an Appointment",
+        "subtext": "Fill the form and we will contact you.",
+        "fields": [],
+        "cta_button": "Send Message"
+      }
+    },
+    "image": "/img/service/main-services/business-setup.webp"
+  },
+  {
+    "id": 1002,
+    "slug": "corporate-services",
+    "isCategory": true,
+    "category": "Corporate Services",
+    "sub_category": "",
+    "seo": {
+      "meta_title": "Corporate Services in the UAE | Horizon Line",
+      "meta_description": "Horizon Line Management Consultancy LLC delivers complete Corporate Services solutions — PRO services, document clearing, business plans, consultation, and liquidation.",
+      "url_slug": "/services/corporate-services",
+      "canonical_url": "https://horizonline.ae/services/corporate-services"
+    },
+    "hero": {
+      "page_title": "Corporate Services",
+      "breadcrumb": "Corporate Services"
+    },
+    "our_company_section": {
+      "eyebrow": "In Horizon Line",
+      "heading": "Comprehensive Corporate Support for UAE Businesses",
+      "subtext": "Horizon Line Management Consultancy LLC delivers complete Corporate Services solutions across the UAE, combining hands-on government liaison with transparent pricing. From business consultation and strategic planning to dedicated PRO services, document clearing, and company liquidation, our team manages every stage so your corporate lifecycle is fully compliant.",
+      "cta_button": "Discover more"
+    },
+    "our_services_slider": {
+      "eyebrow": "Our Services",
+      "heading": "Corporate Solutions Tailored to Your Business",
+      "top_cta_button": "View all",
+      "cards": [
+        {
+          "title": "Business Consultation",
+          "slug": "business-consultation-uae",
+          "description": "Expert business advisory to optimize corporate structures, navigate regulations, and scale operations in the UAE.",
+          "image": "/img/service/main-services/business-consultation.webp"
+        },
+        {
+          "title": "Business Plan",
+          "slug": "business-plan-services-uae",
+          "description": "Professional market-ready business plans required for bank account opening, free zone entry, and investor funding.",
+          "image": "/img/service/main-services/business-plan.webp"
+        },
+        {
+          "title": "PRO Services",
+          "slug": "pro-services-uae",
+          "description": "Comprehensive PRO and government liaison services — visa processing, Emirates ID, and authority approvals managed end-to-end.",
+          "image": "/img/service/main-services/pro-services.webp"
+        },
+        {
+          "title": "Document Clearing",
+          "slug": "document-clearing-services-uae",
+          "description": "Professional document clearing, attestation, and ministry approvals for UAE entities.",
+          "image": "/img/service/main-services/document-clearing.webp"
+        },
+        {
+          "title": "Company Liquidation",
+          "slug": "company-liquidation-uae",
+          "description": "Structured liquidation and license cancellation services including final audit coordination and government NOC clearances.",
+          "image": "/img/service/main-services/company-liquidation.webp"
+        }
+      ]
+    },
+    "what_we_offer_section": {
+      "eyebrow": "What We Offer",
+      "heading": "Our Services",
+      "subtext": "Complete ongoing corporate support including PRO retainers, strategic planning, government document clearance, and orderly corporate closures for UAE entities.",
+      "checklist": [
+        "Strategic business consultation & advisory",
+        "Comprehensive business plan writing",
+        "Dedicated PRO & government liaison services",
+        "Fast-track document clearing & ministry approvals",
+        "Official company liquidation & de-registration"
+      ],
+      "cta_button": "Talk To Our Consultant"
+    },
+    "why_choose_us_section": {
+      "eyebrow": "Why Choose Us",
+      "heading": "Expert Corporate Management You Can Rely On",
+      "subtext": "Partnering with Horizon Line ensures your corporate obligations are met on time, with minimal operational disruption. Our experts navigate complex government frameworks so you can focus on core growth.",
+      "cta_button": "Discover more",
+      "badge": "10+ Years",
+      "mission_vision_awards": [
+        {
+          "title": "Speed & Accuracy",
+          "text": "Fast processing with meticulous attention to statutory requirements."
+        },
+        {
+          "title": "Government Networks",
+          "text": "Established channels with UAE regulatory authorities for smooth operations."
+        },
+        {
+          "title": "Lifecycle Support",
+          "text": "End-to-end management from business planning to corporate liquidation."
+        }
+      ]
+    },
+    "testimonials_section": {
+      "eyebrow": "Testimonials",
+      "heading": "See What Our Customers Have to Say About Us",
+      "items": [
+        {
+          "name": "Michael Torres",
+          "role": "Managing Director",
+          "rating": 5,
+          "quote": "Horizon Line handles all our corporate PRO work and government filings. Completely reliable and always accurate."
+        },
+        {
+          "name": "Nadia Al Rashidi",
+          "role": "Company Secretary",
+          "rating": 5,
+          "quote": "Their team produced an exceptional business plan that helped us secure bank approval quickly. Excellent service."
+        },
+        {
+          "name": "Tom Nguyen",
+          "role": "Entrepreneur",
+          "rating": 5,
+          "quote": "Fast, professional, and transparent. Horizon Line made our company liquidation process completely painless."
+        }
+      ]
+    },
+    "faq_section": {
+      "eyebrow": "Answers to",
+      "heading": "Have Any Questions? Here Some Answers.",
+      "subtext": "Find quick answers to common questions about PRO services, business plans, and corporate liquidation in the UAE.",
+      "cta_button": "Ask more question",
+      "items": [
+        {
+          "question": "What is included in PRO services?",
+          "answer": "PRO (Public Relations Officer) services include handling employee visas, trade license renewals, immigration approvals, labor permits, and official ministry paperwork."
+        },
+        {
+          "question": "Why do I need a professionally written business plan in the UAE?",
+          "answer": "Banks, Free Zone authorities, and investor networks require detailed business plans to verify financial projections, compliance, and business model feasibility."
+        },
+        {
+          "question": "What is involved in company liquidation?",
+          "answer": "Liquidation requires appointing a registered liquidator, publishing notices, settling liabilities, cancelling visas, and securing NOCs from tax, municipal, and utility bodies."
+        }
+      ]
+    },
+    "contact_section": {
+      "eyebrow": "Contact Us",
+      "heading": "Let's Manage Your Corporate Obligations Together",
+      "subtext": "Reach out to our corporate services team to handle your business consultation, PRO work, and filings.",
+      "stats": [],
+      "form": {
+        "heading": "Make an Appointment",
+        "subtext": "Fill the form and we will contact you.",
+        "fields": [],
+        "cta_button": "Send Message"
+      }
+    },
+    "image": "/img/service/main-services/corporate-services.webp"
+  },
+  {
+    "id": 1003,
+    "slug": "trademark-ip",
+    "isCategory": true,
+    "category": "Trademark & IP",
+    "sub_category": "",
+    "seo": {
+      "meta_title": "Trademark & IP Registration Services in UAE | Horizon Line",
+      "meta_description": "Protect your brand identity with Horizon Line. Complete Trademark and Copyright Registration services in Dubai and across the UAE.",
+      "url_slug": "/services/trademark-ip",
+      "canonical_url": "https://horizonline.ae/services/trademark-ip"
+    },
+    "hero": {
+      "page_title": "Trademark & IP",
+      "breadcrumb": "Trademark & IP"
+    },
+    "our_company_section": {
+      "eyebrow": "In Horizon Line",
+      "heading": "Safeguarding Your Brand Assets & Intellectual Property",
+      "subtext": "Horizon Line Management Consultancy LLC offers full-service Intellectual Property protection across the UAE. From trademark registration with the Ministry of Economy to securing copyright registration for creative works, we protect your business identity, logos, and digital assets against unauthorized use or infringement.",
+      "cta_button": "Discover more"
+    },
+    "our_services_slider": {
+      "eyebrow": "Our Services",
+      "heading": "Intellectual Property Solutions",
+      "top_cta_button": "View all",
+      "cards": [
+        {
+          "title": "Trademark Registration",
+          "slug": "trademark-registration-uae",
+          "description": "Secure exclusive legal ownership of your business brand name, logo, slogan, or symbol with UAE Ministry of Economy filing.",
+          "image": "/img/service/main-services/trademark-registration.webp"
+        },
+        {
+          "title": "Copyright Registration",
+          "slug": "copyright-registration-uae",
+          "description": "Protect original software code, artistic creations, written literature, and commercial designs under official UAE copyright laws.",
+          "image": "/img/service/main-services/copyright-registration.webp"
+        }
+      ]
+    },
+    "what_we_offer_section": {
+      "eyebrow": "What We Offer",
+      "heading": "Our Services",
+      "subtext": "Comprehensive legal filing, brand search auditing, classification, and registration services for trademarks and creative copyrights in the UAE.",
+      "checklist": [
+        "Comprehensive trademark availability search & risk audit",
+        "Trademark filing & publication management",
+        "Copyright registration for digital & creative assets",
+        "Opposition handling & dispute advisory",
+        "IP portfolio renewal and protection strategies"
+      ],
+      "cta_button": "Talk To Our Consultant"
+    },
+    "why_choose_us_section": {
+      "eyebrow": "Why Choose Us",
+      "heading": "Securing Brand Integrity Across the Region",
+      "subtext": "Without proper registration, your brand remains vulnerable. Horizon Line delivers end-to-end IP protection, shielding your business reputation and commercial valuation.",
+      "cta_button": "Discover more",
+      "badge": "10+ Years",
+      "mission_vision_awards": [
+        {
+          "title": "Ministry Direct",
+          "text": "Direct liaison with the UAE Ministry of Economy IP Department."
+        },
+        {
+          "title": "Clear Search",
+          "text": "Pre-filing trademark clearance searches to ensure rapid acceptance."
+        },
+        {
+          "title": "Full Ownership",
+          "text": "Ensuring legally binding commercial rights for your business assets."
+        }
+      ]
+    },
+    "testimonials_section": {
+      "eyebrow": "Testimonials",
+      "heading": "See What Our Customers Have to Say About Us",
+      "items": [
+        {
+          "name": "Daniel Vance",
+          "role": "Brand Founder",
+          "rating": 5,
+          "quote": "Horizon Line successfully registered our trademark in record time. Excellent communication during the entire Ministry of Economy process."
+        },
+        {
+          "name": "Elena Rostova",
+          "role": "Software Architect",
+          "rating": 5,
+          "quote": "They helped protect our software codebase through copyright registration. Professional, swift, and highly knowledgeable."
+        },
+        {
+          "name": "Omar Al Habbai",
+          "role": "Retail Director",
+          "rating": 5,
+          "quote": "Outstanding IP counsel! They made sure our logos and brand names were completely protected across all trade classes."
+        }
+      ]
+    },
+    "faq_section": {
+      "eyebrow": "Answers to",
+      "heading": "Have Any Questions? Here Some Answers.",
+      "subtext": "Find quick answers to common questions regarding trademark and copyright filings in the UAE.",
+      "cta_button": "Ask more question",
+      "items": [
+        {
+          "question": "How long is a trademark valid in the UAE?",
+          "answer": "A registered trademark in the UAE is protected for 10 years from the date of application and can be renewed indefinitely for equal periods."
+        },
+        {
+          "question": "What is the difference between Trademark and Copyright?",
+          "answer": "Trademarks protect brand identity elements like names, logos, and slogans. Copyright protects original expression, such as software, literature, music, and art."
+        },
+        {
+          "question": "Can I register a trademark before starting business operations?",
+          "answer": "Yes, individuals or prospective company owners can apply to reserve and protect trademark rights prior to full commercial launch."
+        }
+      ]
+    },
+    "contact_section": {
+      "eyebrow": "Contact Us",
+      "heading": "Protect Your Intellectual Property Today",
+      "subtext": "Speak with our IP legal specialists to initiate a brand clearance search or copyright filing.",
+      "stats": [],
+      "form": {
+        "heading": "Make an Appointment",
+        "subtext": "Fill the form and we will contact you.",
+        "fields": [],
+        "cta_button": "Send Message"
+      }
+    },
+    "image": "/img/service/main-services/trademark-and-ip.webp"
+  },
+  {
+    "id": 1004,
+    "slug": "visa-immigration",
+    "isCategory": true,
+    "category": "Visa and Immigration",
+    "sub_category": "",
+    "seo": {
+      "meta_title": "Visa & Immigration Services in UAE | Horizon Line",
+      "meta_description": "Complete UAE Visa & Immigration services — Golden Visa, Mainland & Free Zone Visas, Family Sponsorship, Tourist, Student, and Medical Visas.",
+      "url_slug": "/services/visa-immigration",
+      "canonical_url": "https://horizonline.ae/services/visa-immigration"
+    },
+    "hero": {
+      "page_title": "Visa & Immigration",
+      "breadcrumb": "Visa & Immigration"
+    },
+    "our_company_section": {
+      "eyebrow": "In Horizon Line",
+      "heading": "Seamless UAE Visa & Residency Processing",
+      "subtext": "Horizon Line Management Consultancy LLC delivers comprehensive UAE Visa & Immigration solutions, ensuring fast, compliant, and hassle-free processing for investors, employees, tourists, and families. From 10-year Golden Visas to residency cancellations and citizenship advice, our team coordinates directly with ICP and GDRFA to fast-track your entry permits, medical fitness tests, and Emirates ID stamping.",
+      "cta_button": "Discover more"
+    },
+    "our_services_slider": {
+      "eyebrow": "Our Services",
+      "heading": "Tailored UAE Residency & Immigration Solutions",
+      "top_cta_button": "View all",
+      "cards": [
+        {
+          "title": "Golden Visa",
+          "slug": "golden-visa-uae",
+          "description": "Secure 10-year long-term UAE residency for investors, real estate owners, specialized talents, and top graduates.",
+          "image": "/img/service/main-services/golden-visa.webp"
+        },
+        {
+          "title": "Tourist Visa",
+          "slug": "tourist-visa-uae",
+          "description": "Hassle-free 30-day, 90-day, and multiple-entry visitor visas for individuals and family holidays.",
+          "image": "/img/service/main-services/family-visa.webp"
+        },
+        {
+          "title": "Mainland Visas",
+          "slug": "mainland-visas-uae",
+          "description": "Work permits, investor visas, and employment residence visas for companies licensed under DED mainland.",
+          "image": "/img/service/main-services/mainland-company-formation.webp"
+        },
+        {
+          "title": "Free Zone Visas",
+          "slug": "free-zone-visas-uae",
+          "description": "Residency visa quota allocation and issuance for Free Zone company founders and employees.",
+          "image": "/img/service/main-services/free-zone-company-formation.webp"
+        },
+        {
+          "title": "Sponsorship Services",
+          "slug": "sponsorship-services-uae",
+          "description": "Sponsor your spouse, children, domestic workers, or parents under UAE residency guidelines.",
+          "image": "/img/service/main-services/pro-services.webp"
+        },
+        {
+          "title": "Second Citizenship & Residency",
+          "slug": "second-citizenship-residency-uae",
+          "description": "Strategic advisory and application support for global citizenship-by-investment and second passport programs.",
+          "image": "/img/service/main-services/golden-visa.webp"
+        },
+        {
+          "title": "Visa Cancellation",
+          "slug": "visa-cancellation-uae",
+          "description": "Compliant cancellation of employment, family, or investor residency permits without overstay penalties.",
+          "image": "/img/service/main-services/employment-visa.webp"
+        },
+        {
+          "title": "Student Visa",
+          "slug": "student-visa-uae",
+          "description": "Residency visa sponsorship for students enrolled in accredited UAE universities and academic institutions.",
+          "image": "/img/service/main-services/student-services.webp"
+        },
+        {
+          "title": "Medical Visa",
+          "slug": "medical-visa-uae",
+          "description": "Special entry permits for overseas patients seeking medical treatment in accredited UAE healthcare centers.",
+          "image": "/img/service/main-services/medical-test.webp"
+        }
+      ]
+    },
+    "what_we_offer_section": {
+      "eyebrow": "What We Offer",
+      "heading": "Our Services",
+      "subtext": "Full-spectrum visa processing and immigration clearance for businesses, tourists, students, and long-term residents across the UAE.",
+      "checklist": [
+        "10-Year Golden Visa application & eligibility filing",
+        "Mainland & Free Zone corporate employment visas",
+        "Family, spouse, child & parent sponsorship",
+        "Tourist, student, and medical entry permits",
+        "Visa cancellation & second citizenship advisory"
+      ],
+      "cta_button": "Talk To Our Consultant"
+    },
+    "why_choose_us_section": {
+      "eyebrow": "Why Choose Us",
+      "heading": "Your Express Route to UAE Residency",
+      "subtext": "Immigration rules in the UAE evolve constantly. Horizon Line ensures your visa files are accurate, submitted swiftly through GDRFA/ICP systems, and backed by VIP processing.",
+      "cta_button": "Discover more",
+      "badge": "10+ Years",
+      "mission_vision_awards": [
+        {
+          "title": "High Approval",
+          "text": "Meticulous pre-checks to prevent delays or rejection."
+        },
+        {
+          "title": "VIP Coordination",
+          "text": "Priority appointments for medical screenings and biometrics."
+        },
+        {
+          "title": "Full Support",
+          "text": "Handling applications, renewals, and cancellations under one roof."
+        }
+      ]
+    },
+    "testimonials_section": {
+      "eyebrow": "Testimonials",
+      "heading": "See What Our Customers Have to Say About Us",
+      "items": [
+        {
+          "name": "Marcus Vance",
+          "role": "Real Estate Investor",
+          "rating": 5,
+          "quote": "Horizon Line made my Golden Visa process smooth and fast. They managed every detail from real estate valuations to final Emirates ID!"
+        },
+        {
+          "name": "Amira Al Sayed",
+          "role": "HR Director",
+          "rating": 5,
+          "quote": "Processing Free Zone employment visas for our tech team took only a few days. Outstanding PRO team!"
+        },
+        {
+          "name": "Tariq Mansoor",
+          "role": "Business Owner",
+          "rating": 5,
+          "quote": "Sponsoring my family was so simple with Horizon Line. Clear guidance on income rules and fast document clearance."
+        }
+      ]
+    },
+    "faq_section": {
+      "eyebrow": "Answers to",
+      "heading": "Have Any Questions? Here Some Answers.",
+      "subtext": "Find quick answers to common questions about UAE Visas, Golden Visas, and Sponsorship.",
+      "cta_button": "Ask more question",
+      "items": [
+        {
+          "question": "Who qualifies for the 10-year UAE Golden Visa?",
+          "answer": "Real estate owners (property value AED 2M+), high-salaried executives, entrepreneurs, doctors, scientists, and outstanding academic graduates."
+        },
+        {
+          "question": "How long does employment visa processing take?",
+          "answer": "From entry permit issuance to medical test and Emirates ID stamping, employment visa processing typically takes 5 to 7 working days."
+        },
+        {
+          "question": "Can I cancel a visa while outside the UAE?",
+          "answer": "Yes, under specific conditions and duration thresholds, visas can be cancelled online via immigration portals."
+        }
+      ]
+    },
+    "contact_section": {
+      "eyebrow": "Contact Us",
+      "heading": "Secure Your UAE Residency Today",
+      "subtext": "Reach out to our visa specialists to evaluate your visa eligibility and start your application.",
+      "stats": [],
+      "form": {
+        "heading": "Make an Appointment",
+        "subtext": "Fill the form and we will contact you.",
+        "fields": [],
+        "cta_button": "Send Message"
+      }
+    },
+    "image": "/img/service/main-services/employment-visa.webp"
+  },
+  {
+    "id": 1005,
+    "slug": "accounting-finance-tax",
+    "isCategory": true,
+    "category": "Accounting / Finance / Tax",
+    "sub_category": "",
+    "seo": {
+      "meta_title": "Accounting, Finance & Tax Services in UAE | Horizon Line",
+      "meta_description": "Horizon Line provides expert Accounting, Finance & Tax services in UAE — VAT, Corporate Tax, Bookkeeping, Audit Support, and ICV Certification.",
+      "url_slug": "/services/accounting-finance-tax",
+      "canonical_url": "https://horizonline.ae/services/accounting-finance-tax"
+    },
+    "hero": {
+      "page_title": "Accounting, Finance & Tax Services",
+      "breadcrumb": "Accounting / Finance / Tax"
+    },
+    "our_company_section": {
+      "eyebrow": "In Horizon Line",
+      "heading": "Accurate Financials, Full Tax & ICV Compliance",
+      "subtext": "Horizon Line Management Consultancy LLC delivers complete Accounting, Finance & Tax solutions across the UAE. Combining in-depth FTA regulatory knowledge with transparent pricing, our team handles VAT filings, corporate tax registrations, bookkeeping, external audit support, and In-Country Value (ICV) certification to optimize your financial operations.",
+      "cta_button": "Discover more"
+    },
+    "our_services_slider": {
+      "eyebrow": "Our Services",
+      "heading": "Comprehensive Tax & Financial Solutions",
+      "top_cta_button": "View all",
+      "cards": [
+        {
+          "title": "VAT Registration",
+          "slug": "vat-registration-uae",
+          "description": "Register your business for VAT with expert support from Horizon Line — eligibility assessments to FTA portal submission.",
+          "image": "/img/service/main-services/vat-registration.webp"
+        },
+        {
+          "title": "VAT Return Filing",
+          "slug": "vat-return-filing-uae",
+          "description": "Ensure timely and accurate quarterly VAT return filings to avoid FTA non-compliance penalties.",
+          "image": "/img/service/main-services/vat-return-filing.webp"
+        },
+        {
+          "title": "Corporate Tax Registration",
+          "slug": "corporate-tax-registration-uae",
+          "description": "Register your UAE business for Corporate Tax on the EmaraTax platform ahead of statutory deadlines.",
+          "image": "/img/service/main-services/corporate-tax-registration.webp"
+        },
+        {
+          "title": "Corporate Tax Filing",
+          "slug": "corporate-tax-filing-uae",
+          "description": "Stay compliant with UAE corporate tax filing requirements with expert financial statement adjustments.",
+          "image": "/img/service/main-services/corporate-tax-filing.webp"
+        },
+        {
+          "title": "Accounting & Bookkeeping",
+          "slug": "accounting-bookkeeping-uae",
+          "description": "Maintain compliant financial records, ledgers, and cash flow reports tailored for UAE regulatory standards.",
+          "image": "/img/service/main-services/accounting-and-bookkeeping.webp"
+        },
+        {
+          "title": "Audit Support",
+          "slug": "audit-support-uae",
+          "description": "Comprehensive audit preparation, financial record verification, and support during external or FTA tax audits.",
+          "image": "/img/service/main-services/audit-support.webp"
+        },
+        {
+          "title": "ICV Certificate",
+          "slug": "icv-certificate-uae",
+          "description": "Calculate and obtain your In-Country Value (ICV) certificate to boost tender scoring for ADNOC and government projects.",
+          "image": "/img/service/main-services/tax-and-compliance.webp"
+        }
+      ]
+    },
+    "what_we_offer_section": {
+      "eyebrow": "What We Offer",
+      "heading": "Our Services",
+      "subtext": "From VAT and Corporate Tax compliance to external audit coordination and ICV certification, Horizon Line keeps your business financially sound and compliant.",
+      "checklist": [
+        "VAT registration & quarterly return filing",
+        "Corporate Tax registration, calculation & filing",
+        "Full-scope accounting & bookkeeping retainer services",
+        "External audit preparation & audit support",
+        "In-Country Value (ICV) certificate guidance & filing"
+      ],
+      "cta_button": "Talk To Our Consultant"
+    },
+    "why_choose_us_section": {
+      "eyebrow": "Why Choose Us",
+      "heading": "Your Trusted UAE Financial Partner",
+      "subtext": "Partnering with Horizon Line ensures your accounts are transparent, tax liabilities are accurately computed, and your ICV score is maximized for government contract bidding.",
+      "cta_button": "Discover more",
+      "badge": "10+ Years",
+      "mission_vision_awards": [
+        {
+          "title": "Tax Specialists",
+          "text": "Certified corporate tax and VAT practitioners with deep FTA knowledge."
+        },
+        {
+          "title": "Precision Bookkeeping",
+          "text": "Accurate, IFRS-compliant accounting standards for UAE enterprises."
+        },
+        {
+          "title": "Tender Ready",
+          "text": "Maximize ICV scores to gain competitive edges in semi-government tenders."
+        }
+      ]
+    },
+    "testimonials_section": {
+      "eyebrow": "Testimonials",
+      "heading": "See What Our Customers Have to Say About Us",
+      "items": [
+        {
+          "name": "Ravi Sharma",
+          "role": "CFO",
+          "rating": 5,
+          "quote": "Horizon Line made our UAE VAT filings and corporate tax registration smooth and straightforward."
+        },
+        {
+          "name": "Fatima Al Mansoori",
+          "role": "Business Owner",
+          "rating": 5,
+          "quote": "Their bookkeeping and ICV certification team gave us the exact documentation needed to win major government supply contracts."
+        },
+        {
+          "name": "David Clarke",
+          "role": "Finance Director",
+          "rating": 5,
+          "quote": "Outstanding corporate tax guidance during our first UAE tax return cycle. Highly recommended!"
+        }
+      ]
+    },
+    "faq_section": {
+      "eyebrow": "Answers to",
+      "heading": "Have Any Questions? Here Some Answers.",
+      "subtext": "Find quick answers to common questions about VAT, Corporate Tax, ICV, and Accounting in the UAE.",
+      "cta_button": "Ask more question",
+      "items": [
+        {
+          "question": "What is the threshold for mandatory VAT registration?",
+          "answer": "Businesses must register for VAT if taxable supplies and imports exceed AED 375,000 in the previous 12 months or are expected to exceed it in the next 30 days."
+        },
+        {
+          "question": "What is an ICV Certificate?",
+          "answer": "An In-Country Value (ICV) certificate measures a company's contribution to the UAE economy, used primarily for procurement advantages in ADNOC and government tenders."
+        },
+        {
+          "question": "What is the standard Corporate Tax rate in the UAE?",
+          "answer": "The standard corporate tax rate is 9% on taxable net profit exceeding AED 375,000."
+        }
+      ]
+    },
+    "contact_section": {
+      "eyebrow": "Contact Us",
+      "heading": "Let's Keep Your Finances in Order",
+      "subtext": "Reach out to our accounting and tax experts to ensure full UAE tax compliance and accurate bookkeeping.",
+      "stats": [],
+      "form": {
+        "heading": "Make an Appointment",
+        "subtext": "Fill the form and we will contact you.",
+        "fields": [],
+        "cta_button": "Send Message"
+      }
+    },
+    "image": "/img/service/main-services/tax.webp"
+  },
+  {
+    "id": 1006,
+    "slug": "legal-services",
+    "isCategory": true,
+    "category": "Legal Services",
+    "sub_category": "",
+    "seo": {
+      "meta_title": "Legal Services in the UAE | Horizon Line",
+      "meta_description": "Horizon Line Management Consultancy LLC delivers complete Legal Services solutions — contracts, MOA amendments, Power of Attorney, notary support, and local sponsor liaison.",
+      "url_slug": "/services/legal-services",
+      "canonical_url": "https://horizonline.ae/services/legal-services"
+    },
+    "hero": {
+      "page_title": "Legal Services",
+      "breadcrumb": "Legal Services"
+    },
+    "our_company_section": {
+      "eyebrow": "In Horizon Line",
+      "heading": "Professional Legal Assistance Across the UAE",
+      "subtext": "Horizon Line Management Consultancy LLC delivers comprehensive legal coordination solutions across the UAE. From contract drafting, notary coordination, and MOA amendments to legal translation, document clearance, local sponsor arrangements, and legal license procurement, we ensure your documents are accurate and legally sound.",
+      "cta_button": "Discover more"
+    },
+    "our_services_slider": {
+      "eyebrow": "Our Services",
+      "heading": "Legal Solutions for UAE Businesses & Individuals",
+      "top_cta_button": "View all",
+      "cards": [
+        {
+          "title": "Legal Documentation",
+          "slug": "legal-documentation-services-uae",
+          "description": "Professional drafting, review, and execution of legally binding agreements and corporate documents.",
+          "image": "/img/service/main-services/legal-documentation.webp"
+        },
+        {
+          "title": "MOA Amendment",
+          "slug": "moa-amendment-uae",
+          "description": "Expert handling of Memorandum of Association changes — share transfers, activity additions, and restructuring.",
+          "image": "/img/service/main-services/moa-amendment.webp"
+        },
+        {
+          "title": "Power of Attorney",
+          "slug": "power-of-attorney-uae",
+          "description": "Drafting, notarization, and attestation of general and special Power of Attorney (POA) documents.",
+          "image": "/img/service/main-services/legal-documentation.webp"
+        },
+        {
+          "title": "Notary Services",
+          "slug": "notary-services-uae",
+          "description": "Complete guidance and appointment coordination with local public and private notary courts.",
+          "image": "/img/service/main-services/legal-documentation.webp"
+        },
+        {
+          "title": "Intellectual Properties",
+          "slug": "intellectual-properties-legal-uae",
+          "description": "Legal protection, defense agreements, and enforcement contracts for corporate intellectual property.",
+          "image": "/img/service/main-services/trademark-and-ip.webp"
+        },
+        {
+          "title": "Commercial Contract",
+          "slug": "commercial-contract-uae",
+          "description": "Tailored drafting and review of shareholder agreements, non-disclosures, joint ventures, and sales contracts.",
+          "image": "/img/service/main-services/commercial-license.webp"
+        },
+        {
+          "title": "Legal Translation",
+          "slug": "legal-translation-uae",
+          "description": "Ministry of Justice certified Arabic-English legal translations for official court and government acceptance.",
+          "image": "/img/service/main-services/legal-documentation.webp"
+        },
+        {
+          "title": "Document Clearance",
+          "slug": "document-clearance-legal-uae",
+          "description": "End-to-end legal document clearance through government ministries and judicial departments.",
+          "image": "/img/service/main-services/document-clearing.webp"
+        },
+        {
+          "title": "Local Sponsor",
+          "slug": "local-sponsor-services-uae",
+          "description": "Arranging dependable corporate or individual local service agents and sponsors with protective legal agreements.",
+          "image": "/img/service/main-services/corporate-services.webp"
+        },
+        {
+          "title": "Legal License",
+          "slug": "legal-license-uae",
+          "description": "Securing regulatory approvals and licenses for specialized legal, consultancy, and professional practices.",
+          "image": "/img/service/main-services/legal-documentation.webp"
+        }
+      ]
+    },
+    "what_we_offer_section": {
+      "eyebrow": "What We Offer",
+      "heading": "Our Services",
+      "subtext": "Complete legal documentation, commercial contract drafting, certified translations, notary clearance, and local sponsorship coordination for UAE operations.",
+      "checklist": [
+        "MOA amendments & shareholder restructuring",
+        "Power of Attorney (POA) drafting & notary attestation",
+        "Commercial contracts & IP legal agreements",
+        "Ministry of Justice certified legal translation",
+        "Local sponsor/service agent agreements & legal licensing"
+      ],
+      "cta_button": "Talk To Our Consultant"
+    },
+    "why_choose_us_section": {
+      "eyebrow": "Why Choose Us",
+      "heading": "Reliable Legal Coordination You Can Trust",
+      "subtext": "Partnering with Horizon Line ensures your agreements are legally airtight, compliant with UAE law, and notarized without administrative delays.",
+      "cta_button": "Discover more",
+      "badge": "10+ Years",
+      "mission_vision_awards": [
+        {
+          "title": "Legal Accuracy",
+          "text": "Meticulous drafting to safeguard commercial interests."
+        },
+        {
+          "title": "Notary Liaison",
+          "text": "Direct submission to public and private notary authorities."
+        },
+        {
+          "title": "Protected Agreements",
+          "text": "Ironclad legal contracts for local sponsorship and shareholding."
+        }
+      ]
+    },
+    "testimonials_section": {
+      "eyebrow": "Testimonials",
+      "heading": "See What Our Customers Have to Say About Us",
+      "items": [
+        {
+          "name": "Priya Kapoor",
+          "role": "Legal Manager",
+          "rating": 5,
+          "quote": "Horizon Line handled our commercial contracts and MOA amendment rapidly and flawlessly."
+        },
+        {
+          "name": "Hassan Al Qassim",
+          "role": "Business Owner",
+          "rating": 5,
+          "quote": "Professional legal translations and local sponsor coordination. Everything was completed on schedule."
+        },
+        {
+          "name": "Laura Mitchell",
+          "role": "Director",
+          "rating": 5,
+          "quote": "Our Power of Attorney was drafted, translated, and notarized in record time. Exceptional service."
+        }
+      ]
+    },
+    "faq_section": {
+      "eyebrow": "Answers to",
+      "heading": "Have Any Questions? Here Some Answers.",
+      "subtext": "Find quick answers to common questions about legal agreements, notary, and MOA amendments.",
+      "cta_button": "Ask more question",
+      "items": [
+        {
+          "question": "Why is certified legal translation required?",
+          "answer": "UAE courts and government entities require official documents written in foreign languages to be legally translated into Arabic by a Ministry of Justice licensed translator."
+        },
+        {
+          "question": "What is an MOA amendment?",
+          "answer": "An MOA amendment legally updates a company's Memorandum of Association to reflect changes such as new shareholders, business name changes, capital changes, or business activities."
+        },
+        {
+          "question": "Is a local sponsor still required for Mainland companies?",
+          "answer": "While 100% foreign ownership is available for most commercial activities, certain specialized activities still require a UAE national Local Service Agent (LSA) or sponsor."
+        }
+      ]
+    },
+    "contact_section": {
+      "eyebrow": "Contact Us",
+      "heading": "Let's Handle Your Legal Requirements Together",
+      "subtext": "Reach out to our legal coordination team to get your contracts, translations, and notary filings handled.",
+      "stats": [],
+      "form": {
+        "heading": "Make an Appointment",
+        "subtext": "Fill the form and we will contact you.",
+        "fields": [],
+        "cta_button": "Send Message"
+      }
+    },
+    "image": "/img/service/main-services/legal-services.webp"
+  },
+  {
+    "id": 1007,
+    "slug": "public-services",
+    "isCategory": true,
+    "category": "Public Services",
+    "sub_category": "",
+    "seo": {
+      "meta_title": "Public & Government Liaison Services in UAE | Horizon Line",
+      "meta_description": "Horizon Line provides complete Public Services in UAE — Police clearance, Traffic & Driving logistics, Vehicle services, Utilities, Accounts, and Municipal Permits.",
+      "url_slug": "/services/public-services",
+      "canonical_url": "https://horizonline.ae/services/public-services"
+    },
+    "hero": {
+      "page_title": "Public Services",
+      "breadcrumb": "Public Services"
+    },
+    "our_company_section": {
+      "eyebrow": "In Horizon Line",
+      "heading": "Navigating Public Sector Logistics with Ease",
+      "subtext": "Horizon Line Management Consultancy LLC simplifies public sector processes for individuals and corporate entities across the UAE. We manage police and legal clearances, traffic and driving licensing, vehicle registration and transfers, utility bill setups (DEWA/SEWA), public account payments, and official government permits.",
+      "cta_button": "Discover more"
+    },
+    "our_services_slider": {
+      "eyebrow": "Our Services",
+      "heading": "Government & Public Service Solutions",
+      "top_cta_button": "View all",
+      "cards": [
+        {
+          "title": "Police & Legal Services",
+          "slug": "police-legal-public-services-uae",
+          "description": "Police Clearance Certificates (PCC), criminal background checks, and legal fine settlements across UAE police authorities.",
+          "image": "/img/service/main-services/police.webp"
+        },
+        {
+          "title": "Traffic & Driving Services",
+          "slug": "traffic-driving-services-uae",
+          "description": "Driving license conversions, file openings, traffic fine clearance, and RTA/Traffic Department coordination.",
+          "image": "/img/service/main-services/traffic-accident-report.webp"
+        },
+        {
+          "title": "Vehicle Services",
+          "slug": "vehicle-services-uae",
+          "description": "Commercial and personal vehicle registration, annual testing clearance, ownership transfers, and fleet management.",
+          "image": "/img/service/main-services/vehicle-export-certificate.webp"
+        },
+        {
+          "title": "Utilities & Billing",
+          "slug": "utilities-billing-services-uae",
+          "description": "Setup, activation, housing fee adjustments, and bill clearance for DEWA, SEWA, FEWA/Etihad WE, and telecom accounts.",
+          "image": "/img/service/main-services/dewa-utilities.webp"
+        },
+        {
+          "title": "Accounts & Payments",
+          "slug": "accounts-payments-public-uae",
+          "description": "Managing official government portal payments, municipal fees, escrow deposits, and fee settlements.",
+          "image": "/img/service/main-services/bill-payment.webp"
+        },
+        {
+          "title": "Permits & Complaints",
+          "slug": "permits-complaints-uae",
+          "description": "Securing public event permits, signboards, municipal NOCs, and resolving official administrative complaints.",
+          "image": "/img/service/main-services/complaint-registration.webp"
+        }
+      ]
+    },
+    "what_we_offer_section": {
+      "eyebrow": "What We Offer",
+      "heading": "Our Services",
+      "subtext": "Streamlined access to essential public services, police certificates, traffic logistics, utility connections, and official permits across the UAE.",
+      "checklist": [
+        "Police Clearance Certificate (PCC) & fine clearance",
+        "Driving license file opening & foreign license conversion",
+        "Vehicle registration renewal, testing & ownership transfer",
+        "DEWA/SEWA utility connections & billing clearance",
+        "Public permits, signboard NOCs & complaint resolutions"
+      ],
+      "cta_button": "Talk To Our Consultant"
+    },
+    "why_choose_us_section": {
+      "eyebrow": "Why Choose Us",
+      "heading": "Saving Time on Public & Municipal Formalities",
+      "subtext": "Avoid government queues and complex online portal requirements. Horizon Line coordinates directly with public departments to handle your filings promptly.",
+      "cta_button": "Discover more",
+      "badge": "10+ Years",
+      "mission_vision_awards": [
+        {
+          "title": "Rapid Execution",
+          "text": "Fast-track processing for police certificates and vehicle clearances."
+        },
+        {
+          "title": "Portal Expertise",
+          "text": "Navigating RTA, MOI, DEWA, and Municipal government portals."
+        },
+        {
+          "title": "Hassle-Free",
+          "text": "Complete paperwork management for corporate fleets and individuals."
+        }
+      ]
+    },
+    "testimonials_section": {
+      "eyebrow": "Testimonials",
+      "heading": "See What Our Customers Have to Say About Us",
+      "items": [
+        {
+          "name": "Jean-Pierre Laurent",
+          "role": "Logistics Manager",
+          "rating": 5,
+          "quote": "Horizon Line renewed our entire fleet registration and handled all RTA testing without a single delay."
+        },
+        {
+          "name": "Sunita Patel",
+          "role": "Resident",
+          "rating": 5,
+          "quote": "Converting my foreign driving license and securing my Police Clearance Certificate was effortless thanks to their PRO team."
+        },
+        {
+          "name": "Carlos Gomez",
+          "role": "Operations Head",
+          "rating": 5,
+          "quote": "They cleared our corporate utility deposits and managed municipal permits quickly. Top service!"
+        }
+      ]
+    },
+    "faq_section": {
+      "eyebrow": "Answers to",
+      "heading": "Have Any Questions? Here Some Answers.",
+      "subtext": "Find quick answers to common questions about public services, vehicle registration, and police clearances.",
+      "cta_button": "Ask more question",
+      "items": [
+        {
+          "question": "How do I get a Police Clearance Certificate (PCC) in the UAE?",
+          "answer": "A PCC (Good Conduct Certificate) can be requested through the Ministry of Interior or Dubai Police app/portal using an active Emirates ID."
+        },
+        {
+          "question": "Can Horizon Line handle corporate vehicle fleet registration?",
+          "answer": "Yes, we handle vehicle testing, insurance coordination, RTA renewals, and ownership transfers for commercial corporate fleets."
+        },
+        {
+          "question": "What is needed to activate DEWA utility services?",
+          "answer": "Activation requires a registered Ejari contract, passport copy, Emirates ID, and security deposit payment."
+        }
+      ]
+    },
+    "contact_section": {
+      "eyebrow": "Contact Us",
+      "heading": "Streamline Your Public Sector Support Today",
+      "subtext": "Contact our public service coordinators to resolve vehicle, utility, or police clearance procedures.",
+      "stats": [],
+      "form": {
+        "heading": "Make an Appointment",
+        "subtext": "Fill the form and we will contact you.",
+        "fields": [],
+        "cta_button": "Send Message"
+      }
+    },
+    "image": "/img/service/main-services/digital-services.webp"
+  },
+  {
+    "id": 1008,
+    "slug": "other-services",
+    "isCategory": true,
+    "category": "Other Services",
+    "sub_category": "",
+    "seo": {
+      "meta_title": "Specialized Municipal & Health Services in UAE | Horizon Line",
+      "meta_description": "Horizon Line provides specialized public services in UAE — Health & Medical, Child Vaccination tracking, Utilities & Municipal clearances, and Civil & Identity services.",
+      "url_slug": "/services/other-services",
+      "canonical_url": "https://horizonline.ae/services/other-services"
+    },
+    "hero": {
+      "page_title": "Other Services",
+      "breadcrumb": "Other Services"
+    },
+    "our_company_section": {
+      "eyebrow": "In Horizon Line",
+      "heading": "Supporting Your Operations Beyond the Essentials",
+      "subtext": "Horizon Line Management Consultancy LLC provides specialized assistance across essential public health, utility, civil identity, and municipal sectors in the UAE. From securing government approvals and civil identity registrations to coordinating visa medical screenings and municipal NOCs, we handle vital regulatory logistics.",
+      "cta_button": "Discover more"
+    },
+    "our_services_slider": {
+      "eyebrow": "Our Services",
+      "heading": "Specialized Regulatory & Health Solutions",
+      "top_cta_button": "View all",
+      "cards": [
+        {
+          "title": "Government Approvals & Permits",
+          "slug": "government-approvals-permits-uae",
+          "description": "Securing regulatory approvals and NOCs from Civil Defence, RTA, Ministry of Health, and municipal bodies.",
+          "image": "/img/service/main-services/dubai-municipality.webp"
+        },
+        {
+          "title": "Civil & Identity Services",
+          "slug": "civil-identity-services-uae",
+          "description": "Complete assistance with Emirates ID biometrics, family book updates, and civil certificate legalisation.",
+          "image": "/img/service/main-services/emirates-id.webp"
+        },
+        {
+          "title": "Health & Medical Services",
+          "slug": "health-medical-services-uae",
+          "description": "Coordination for residency visa medical fitness screenings, pre-employment health checks, and child immunization tracking.",
+          "image": "/img/service/main-services/health.webp"
+        },
+        {
+          "title": "Utilities & Municipalities",
+          "slug": "utilities-municipalities-services-uae",
+          "description": "End-to-end NOCs, commercial fit-out permits, and load connections across DEWA, SEWA, and Municipalities.",
+          "image": "/img/service/main-services/dewa-utilities.webp"
+        }
+      ]
+    },
+    "what_we_offer_section": {
+      "eyebrow": "What We Offer",
+      "heading": "Our Services",
+      "subtext": "Integrated logistics support across government permits, civil registries, public health screenings, and municipal clearances in all UAE Emirates.",
+      "checklist": [
+        "Government approvals & special authority NOCs",
+        "Civil identity registration & Emirates ID biometric assistance",
+        "Residency visa medical fitness screening & child health tracking",
+        "DEWA, SEWA, and municipal commercial fit-out permits",
+        "Inter-governmental registry clearances and attestations"
+      ],
+      "cta_button": "Talk To Our Consultant"
+    },
+    "why_choose_us_section": {
+      "eyebrow": "Why Choose Us",
+      "heading": "Complete Public Sector Clearance Capabilities",
+      "subtext": "Partnering with Horizon Line gives you a single point of contact for every public authority in the UAE, eliminating bureaucratic delays and ensuring strict regulatory adherence.",
+      "cta_button": "Discover more",
+      "badge": "10+ Years",
+      "mission_vision_awards": [
+        {
+          "title": "Public Health Focus",
+          "text": "Express VIP coordination for visa medical fitness tests and health tracking."
+        },
+        {
+          "title": "Municipal Access",
+          "text": "Direct access to municipal technical portals for rapid fit-out permits."
+        },
+        {
+          "title": "Civil Compliance",
+          "text": "Complete guidance on family registry and Emirates ID compliance."
+        }
+      ]
+    },
+    "testimonials_section": {
+      "eyebrow": "Testimonials",
+      "heading": "See What Our Customers Have to Say About Us",
+      "items": [
+        {
+          "name": "Dr. Aris Thorne",
+          "role": "Clinic Director",
+          "rating": 5,
+          "quote": "Horizon Line managed our medical center's municipal permits and government approvals seamlessly!"
+        },
+        {
+          "name": "Maria Santos",
+          "role": "Parent & Resident",
+          "rating": 5,
+          "quote": "They helped transfer overseas child immunization records into the UAE health registry system effortlessly."
+        },
+        {
+          "name": "Sultan Al Nuaimi",
+          "role": "Facility Head",
+          "rating": 5,
+          "quote": "Securing Civil Defence approvals and municipal fit-out permits was fast and trouble-free with Horizon Line."
+        }
+      ]
+    },
+    "faq_section": {
+      "eyebrow": "Answers to",
+      "heading": "Have Any Questions? Here Some Answers.",
+      "subtext": "Find quick answers to common questions about public health tests, government approvals, and municipal permits.",
+      "cta_button": "Ask more question",
+      "items": [
+        {
+          "question": "What is included in the UAE Visa Medical Fitness test?",
+          "answer": "The test includes blood screening for infectious diseases and a chest X-ray for active pulmonary tuberculosis."
+        },
+        {
+          "question": "Is Municipal approval required before commercial fit-outs?",
+          "answer": "Yes, any structural, electrical, or partitioning modifications in commercial offices or shops require approval from the local Municipality."
+        },
+        {
+          "question": "How are overseas child vaccination records registered in the UAE?",
+          "answer": "Foreign vaccination documents are audited, legally translated, and submitted into local UAE health registries for school enrollment."
+        }
+      ]
+    },
+    "contact_section": {
+      "eyebrow": "Contact Us",
+      "heading": "Let's Handle Your Specialized Approvals",
+      "subtext": "Reach out to our public coordination team to handle your municipal permits, utility approvals, or health medical logistics.",
+      "stats": [],
+      "form": {
+        "heading": "Make an Appointment",
+        "subtext": "Fill the form and we will contact you.",
+        "fields": [],
+        "cta_button": "Send Message"
+      }
+    },
+    "image": "/img/service/main-services/office-solutions.webp"
+  }
+]

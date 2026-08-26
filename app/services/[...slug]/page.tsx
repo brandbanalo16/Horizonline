@@ -15,6 +15,7 @@ import { ProcessSection } from '@/components/service/ProcessSection';
 import { DocsSection } from '@/components/service/DocsSection';
 import { IndustriesSection } from '@/components/service/IndustriesSection';
 import ContactSection from '@/components/sections/Contact';
+import ServicePageLegacy from '@/components/sections/ServicePageLegacy';
 import { Contact2Data } from '@/data/sections/contact2Data';
 import fs from 'fs';
 import path from 'path';
@@ -25,15 +26,24 @@ import path from 'path';
 const getRawServices = () => {
   try {
     const dir = path.join(process.cwd(), 'data', 'service-data');
-    if (!fs.existsSync(dir)) return [];
-    const files = fs.readdirSync(dir).filter(f => f.endsWith('.json'));
     const all: any[] = [];
-    for (const file of files) {
-      const content = fs.readFileSync(path.join(dir, file), 'utf8');
+    if (fs.existsSync(dir)) {
+      const files = fs.readdirSync(dir).filter(f => f.endsWith('.json'));
+      for (const file of files) {
+        const content = fs.readFileSync(path.join(dir, file), 'utf8');
+        const data = JSON.parse(content);
+        if (Array.isArray(data)) all.push(...data);
+        else if (data && data.services) all.push(...data.services);
+      }
+    }
+
+    const categoryFile = path.join(process.cwd(), 'data', 'category-data.json');
+    if (fs.existsSync(categoryFile)) {
+      const content = fs.readFileSync(categoryFile, 'utf8');
       const data = JSON.parse(content);
       if (Array.isArray(data)) all.push(...data);
-      else if (data && data.services) all.push(...data.services);
     }
+
     return all;
   } catch (e) {
     console.error('Error reading service data', e);
@@ -43,6 +53,7 @@ const getRawServices = () => {
 const rawServices = getRawServices();
 
 const extractSlug = (item: any): string => {
+  if (item.slug) return item.slug;
   let parsed = item.metadata?.['URL Slug'];
   if (parsed) {
     parsed = parsed.replace(/[`/]/g, '').trim();
@@ -50,7 +61,8 @@ const extractSlug = (item: any): string => {
   }
   const kw = item.metadata?.['Primary SEO Keyword'];
   if (kw) return kw.toLowerCase().trim().replace(/[^a-z0-9]+/g, '-').replace(/-uae$/, '');
-  return item.title.toLowerCase().trim().replace(/[^a-z0-9]+/g, '-').replace(/-uae$/, '');
+  const title = item.title || item.hero?.page_title || item.category || '';
+  return title.toLowerCase().trim().replace(/[^a-z0-9]+/g, '-').replace(/-uae$/, '');
 };
 
 const allServices = rawServices.filter((item, index, self) =>
@@ -102,12 +114,12 @@ const getConfig = (s: any, type: SvcType) => {
   const name = s.metadata?.['Service Name'] || s.title || 'this service';
   const CONFIGS: Record<SvcType, { formTitle: string; formSub: string; ctaNote: string }> = {
     business: { formTitle: `Set Up Your ${name}`, formSub: `Get professional guidance on ${name.toLowerCase()} requirements.`, ctaNote: 'Ready to establish your business in the UAE?' },
-    visa:     { formTitle: `Get Guidance on Your ${name}`, formSub: `Our team can help assess your eligibility and guide you.`, ctaNote: 'Need help with your UAE visa or immigration requirement?' },
-    tax:      { formTitle: `Get Help With ${name}`, formSub: `Speak with our tax team about your obligations.`, ctaNote: 'Need assistance with UAE tax compliance?' },
-    trademark:{ formTitle: `Protect Your Brand — ${name}`, formSub: 'Get expert assistance with trademark registration.', ctaNote: 'Ready to protect your brand and intellectual property?' },
-    legal:    { formTitle: `Get Assistance — ${name}`, formSub: 'Speak with our legal coordination team.', ctaNote: 'Need help with a UAE legal document or service?' },
-    public:   { formTitle: `Get Help With Your ${name}`, formSub: 'Our team can guide you through the process.', ctaNote: 'Need assistance with this UAE government or public service?' },
-    general:  { formTitle: `Get Expert Assistance`, formSub: `Speak with our team about your requirements.`, ctaNote: 'Ready to get started?' },
+    visa: { formTitle: `Get Guidance on Your ${name}`, formSub: `Our team can help assess your eligibility and guide you.`, ctaNote: 'Need help with your UAE visa or immigration requirement?' },
+    tax: { formTitle: `Get Help With ${name}`, formSub: `Speak with our tax team about your obligations.`, ctaNote: 'Need assistance with UAE tax compliance?' },
+    trademark: { formTitle: `Protect Your Brand — ${name}`, formSub: 'Get expert assistance with trademark registration.', ctaNote: 'Ready to protect your brand and intellectual property?' },
+    legal: { formTitle: `Get Assistance — ${name}`, formSub: 'Speak with our legal coordination team.', ctaNote: 'Need help with a UAE legal document or service?' },
+    public: { formTitle: `Get Help With Your ${name}`, formSub: 'Our team can guide you through the process.', ctaNote: 'Need assistance with this UAE government or public service?' },
+    general: { formTitle: `Get Expert Assistance`, formSub: `Speak with our team about your requirements.`, ctaNote: 'Ready to get started?' },
   };
   return CONFIGS[type];
 };
@@ -232,11 +244,39 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 /* ─────────────────────────────────────────────────────────────────────────
  * Page
  * ─────────────────────────────────────────────────────────────────────────*/
+
 const Page = async ({ params }: { params: Promise<{ slug: string[] }> }) => {
   const { slug } = await params;
   const service = findService(slug.join('/'));
-  if (!service) notFound();
 
+  if (!service) {
+    notFound();
+  }
+
+  // If this is a main category page, render the legacy full page layout
+  if (service.isCategory) {
+    const bannerTitle = service.hero?.page_title || service.hero?.breadcrumb || service.category || 'Our Services';
+    return (
+      <>
+        <BreadcrumbBanner
+          title={bannerTitle}
+          image={{
+            src: BreadcrumbBannerImage.src,
+            srcTablet: BreadcrumbBannerImageTablet.src,
+            srcMobile: BreadcrumbBannerImageMobile.src,
+            width: 1920,
+            height: 520,
+            cls: 'media media-bg',
+            alt: `${bannerTitle} — Horizon Line UAE`,
+            loading: 'eager',
+          }}
+        />
+        <ServicePageLegacy service={service as any} relatedServices={[]} />
+      </>
+    );
+  }
+
+  // Otherwise, render the dynamic sub-service layout
   const type = detectType(service);
   const cfg = getConfig(service, type);
   const serviceName = service.metadata?.['Service Name'] || service.title;
@@ -260,14 +300,14 @@ const Page = async ({ params }: { params: Promise<{ slug: string[] }> }) => {
     bgCounter++;
 
     if (isCoverage) return <IndustriesSection key={i} s={s} isGray={false} isDark={true} />;
-    if (v === 'support')     return <CardsSection key={i} s={s} isGray={isGray} label="Why Choose Us" />;
-    if (v === 'options')     return <CardsSection key={i} s={s} isGray={isGray} label="Our Services" showNumber={true} />;
-    if (v === 'benefits')    return <CardsSection key={i} s={s} isGray={isGray} label="Key Benefits" />;
-    if (v === 'process')     return <ProcessSection key={i} s={s} isGray={isGray} />;
-    if (v === 'docs')        return <DocsSection key={i} s={s} isGray={isGray} />;
+    if (v === 'support') return <CardsSection key={i} s={s} isGray={isGray} label="Why Choose Us" />;
+    if (v === 'options') return <CardsSection key={i} s={s} isGray={isGray} label="Our Services" showNumber={true} />;
+    if (v === 'benefits') return <CardsSection key={i} s={s} isGray={isGray} label="Key Benefits" />;
+    if (v === 'process') return <ProcessSection key={i} s={s} isGray={isGray} />;
+    if (v === 'docs') return <DocsSection key={i} s={s} isGray={isGray} />;
     if (v === 'eligibility') return <DocsSection key={i} s={s} isGray={isGray} />;
-    if (v === 'industries')  return <IndustriesSection key={i} s={s} isGray={isGray} />;
-    if (v === 'intro')       return <IntroSection key={i} s={s} isGray={isGray} imgSrc={serviceImg} />;
+    if (v === 'industries') return <IndustriesSection key={i} s={s} isGray={isGray} />;
+    if (v === 'intro') return <IntroSection key={i} s={s} isGray={isGray} imgSrc={serviceImg} />;
 
     // Generic prose/fallback section
     const contentBlocks = s.content || (s.paragraphs ? s.paragraphs.map((p: string) => ({ type: 'paragraph', text: p })) : []);
@@ -327,8 +367,8 @@ const Page = async ({ params }: { params: Promise<{ slug: string[] }> }) => {
               <h1 className="sp-hero-h1">{service.title}</h1>
               <p className="sp-hero-desc">{heroDesc.length > 260 ? heroDesc.slice(0, 260).trimEnd() + '…' : heroDesc}</p>
               <div className="sp-hero-actions">
-                <Link href="/contact" className="sp-btn-primary">Get Started <ArrowUpRight size={18} style={{ marginLeft: 6 }} /></Link>
-                <Link href="#content" className="sp-btn-outline">Contact Us <ArrowUpRight size={18} style={{ marginLeft: 6 }} /></Link>
+                <Link href="#content" className="sp-btn-primary">Read More <ArrowUpRight size={18} style={{ marginLeft: 6 }} /></Link>
+                <Link href="/contact-us" className="sp-btn-outline">Contact Us <ArrowUpRight size={18} style={{ marginLeft: 6 }} /></Link>
               </div>
               <div className="sp-hero-trust">
                 <div className="sp-hero-trust-item"><Briefcase /> Expert Guidance</div>
@@ -356,7 +396,7 @@ const Page = async ({ params }: { params: Promise<{ slug: string[] }> }) => {
         const mid = Math.ceil(faqData.length / 2);
         const faqLeft = faqData.slice(0, mid);
         const faqRight = faqData.slice(mid);
-        
+
         return (
           <section className="sp-section-wrap bg-gray" style={{ padding: '100px 0' }}>
             <div className="sp-container">

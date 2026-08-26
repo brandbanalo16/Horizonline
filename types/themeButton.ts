@@ -5,4 +5,5 @@ export interface ThemeButtonType {
     ariaLabel?: string;
     showIcon?: boolean;
     type?: 'submit' | 'button' | 'reset';
+    onClick?: () => void;
 }

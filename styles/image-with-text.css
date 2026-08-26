@@ -97,6 +97,7 @@
   position: sticky;
   padding: 60px 40px;
   background-color: var(--color-background);
+  margin-bottom: 120px;
 }
 
 .text-image-sticky .image-text-card {
@@ -251,6 +252,7 @@
     min-width: 48px;
     height: 48px;
   }
+
   .text-image-sticky .image-text-card {
     padding: 48px 24px;
   }

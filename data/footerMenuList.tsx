@@ -9,20 +9,24 @@ export const QuickLink: MenuType[] = [
         path: '/about-us'
     },
     {
-        title: 'Our Team',
-        path: '/teams'
-    },
-    {
         title: 'Contact Us',
         path: '/contact-us'
     },
     {
-        title: 'FAQ',
-        path: '/faq'
-    },
-    {
         title: 'Blogs',
         path: '/blogs'
+    },
+    {
+        title: 'Visa & Immigration',
+        path: '/services/visa-immigration'
+    },
+    {
+        title: 'Accounting & VAT',
+        path: '/services/accounting-vat'
+    },
+    {
+        title: 'Trademark & IP',
+        path: '/services/trademark-ip'
     }
 ];
 
@@ -32,20 +36,20 @@ export const Services: MenuType[] = [
         path: '/services/business-setup'
     },
     {
-        title: 'Free Zone',
-        path: '/services/free-zone'
+        title: 'Free Zone Company Formation',
+        path: '/services/free-zone-company-formation'
+    },
+    {
+        title: 'Offshore Company Formation',
+        path: '/services/offshore-company-formation'
+    },
+    {
+        title: 'PRO Services',
+        path: '/services/pro-services'
     },
     {
         title: 'Corporate Services',
         path: '/services/corporate-services'
-    },
-    {
-        title: 'Visa Assistance',
-        path: '/services/visa-services'
-    },
-    {
-        title: 'Accounting & VAT',
-        path: '/services/accounting-and-vat'
     }
 ];
 
@@ -58,20 +62,12 @@ export const Information: MenuType[] = [
         title: 'Terms & Conditions',
         path: '/terms-condition'
     },
-    {
-        title: 'FAQ',
-        path: '/faq'
-    },
-    {
-        title: 'Contact',
-        path: '/contact-us'
-    }
 ];
 
 export const MenuContact: MenuType[] = [
     {
-        title: 'info@horizonlineuae.com',
-        path: 'mailto:info@horizonlineuae.com'
+        title: 'enquiry@horizonlineuae.com',
+        path: 'mailto:enquiry@horizonlineuae.com'
     },
     {
         title: '+971-555013225',

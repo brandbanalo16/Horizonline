@@ -10,7 +10,7 @@ import Pagination from "../Pagination";
 const BlogGrid = ({ cls }: { cls: string }) => {
     const posts = Posts;
 
-    if(posts.length == 0) {
+    if (posts.length == 0) {
         return <NotFoundMsg message="No posts found!" />
     }
 
@@ -20,14 +20,14 @@ const BlogGrid = ({ cls }: { cls: string }) => {
                 <div className="grid grid-cols-12 md:gap-1 product-grid">
                     {posts.map((article) => {
                         const author: AuthorType | undefined = Authors.find((author: AuthorType) => author.id === article.authorId);
-                        return (                            
+                        return (
                             <div
                                 className="col-span-12 md:col-span-6 lg:col-span-4"
                                 data-aos="fade-up"
                                 data-aos-delay="100"
                                 key={`article-${article.id}`}
                             >
-                                <CardBlog 
+                                <CardBlog
                                     article={article}
                                     width={1000}
                                     height={707}
@@ -36,9 +36,10 @@ const BlogGrid = ({ cls }: { cls: string }) => {
                                     showDate={true}
                                 />
                             </div>
-                    )})}
+                        )
+                    })}
                 </div>
-                
+
                 <Pagination />
             </div>
         </div>

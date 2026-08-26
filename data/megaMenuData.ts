@@ -17,37 +17,6 @@ export interface MegaMenuGroup {
 
 const megaMenuData: MegaMenuCategory[] = [
   {
-    "id": "accounting-finance-tax",
-    "title": "Accounting / Finance / Tax",
-    "path": "/services/accounting-finance-tax",
-    "services": [
-      {
-        "title": "VAT Return Filing",
-        "path": "/services/vat-return-filing-uae"
-      },
-      {
-        "title": "Corporate Tax Registration",
-        "path": "/services/corporate-tax-registration-uae"
-      },
-      {
-        "title": "Corporate Tax Filing",
-        "path": "/services/corporate-tax-filing-uae"
-      },
-      {
-        "title": "Accounting & Bookkeeping",
-        "path": "/services/accounting-bookkeeping-services-uae"
-      },
-      {
-        "title": "Audit Support",
-        "path": "/services/audit-support-services-uae"
-      },
-      {
-        "title": "ICV Certificate",
-        "path": "/services/icv-certificate-uae"
-      }
-    ]
-  },
-  {
     "id": "business-setup",
     "title": "Business Setup",
     "path": "/services/business-setup",
@@ -106,6 +75,95 @@ const megaMenuData: MegaMenuCategory[] = [
     ]
   },
   {
+    "id": "trademark-ip",
+    "title": "Trademark & IP",
+    "path": "/services/trademark-ip",
+    "services": [
+      {
+        "title": "Trademark Registration",
+        "path": "/services/trademark-registration-uae"
+      },
+      {
+        "title": "Copyright Registration",
+        "path": "/services/Copyright Registration"
+      }
+    ]
+  },
+  {
+    "id": "visa-immigration",
+    "title": "Visa and Immigration",
+    "path": "/services/visa-immigration",
+    "services": [
+      {
+        "title": "Golden Visa",
+        "path": "/services/golden-visa-uae"
+      },
+      {
+        "title": "Tourist Visa",
+        "path": "/services/tourist-visa-uae"
+      },
+      {
+        "title": "Mainland Visas",
+        "path": "/services/mainland-visa-uae"
+      },
+      {
+        "title": "Free Zone Visas",
+        "path": "/services/free-zone-visa-uae"
+      },
+      {
+        "title": "Sponsorship",
+        "path": "/services/family-sponsorship-visa-uae"
+      },
+      {
+        "title": "Second Citizenship & Residency",
+        "path": "/services/second-citizenship-residency-uae"
+      },
+      {
+        "title": "Visa Cancellation",
+        "path": "/services/visa-cancellation-uae"
+      },
+      {
+        "title": "Student Visa",
+        "path": "/services/student-visa-uae"
+      },
+      {
+        "title": "Medical Visa",
+        "path": "/services/medical-visa-uae"
+      }
+    ]
+  },
+  {
+    "id": "accounting-finance-tax",
+    "title": "Accounting / Finance / Tax",
+    "path": "/services/accounting-finance-tax",
+    "services": [
+      {
+        "title": "VAT Return Filing",
+        "path": "/services/vat-return-filing-uae"
+      },
+      {
+        "title": "Corporate Tax Registration",
+        "path": "/services/corporate-tax-registration-uae"
+      },
+      {
+        "title": "Corporate Tax Filing",
+        "path": "/services/corporate-tax-filing-uae"
+      },
+      {
+        "title": "Accounting & Bookkeeping",
+        "path": "/services/accounting-bookkeeping-services-uae"
+      },
+      {
+        "title": "Audit Support",
+        "path": "/services/audit-support-services-uae"
+      },
+      {
+        "title": "ICV Certificate",
+        "path": "/services/icv-certificate-uae"
+      }
+    ]
+  },
+  {
     "id": "legal-services",
     "title": "Legal Services",
     "path": "/services/legal-services",
@@ -153,29 +211,6 @@ const megaMenuData: MegaMenuCategory[] = [
     ]
   },
   {
-    "id": "other-services",
-    "title": "Other Services",
-    "path": "/services/other-services",
-    "services": [
-      {
-        "title": "Government Approvals & Permits",
-        "path": "/services/government-approvals-permits-uae"
-      },
-      {
-        "title": "Civil & Identity Services",
-        "path": "/services/civil-identity-services-uae"
-      },
-      {
-        "title": "Health & Medical Services",
-        "path": "/services/health-medical-services-uae"
-      },
-      {
-        "title": "Utilities & Municipalities Services",
-        "path": "/services/utilities-municipalities-services-uae"
-      }
-    ]
-  },
-  {
     "id": "public-services",
     "title": "Public Services",
     "path": "/services/public-services",
@@ -207,63 +242,29 @@ const megaMenuData: MegaMenuCategory[] = [
     ]
   },
   {
-    "id": "trademark-ip",
-    "title": "Trademark & IP",
-    "path": "/services/trademark-ip",
+    "id": "other-services",
+    "title": "Other Services",
+    "path": "/services/other-services",
     "services": [
       {
-        "title": "Trademark Registration",
-        "path": "/services/trademark-registration-uae"
+        "title": "Government Approvals & Permits",
+        "path": "/services/government-approvals-permits-uae"
       },
       {
-        "title": "Copyright Registration",
-        "path": "/services/Copyright Registration"
-      }
-    ]
-  },
-  {
-    "id": "visa-and-immigration",
-    "title": "Visa and Immigration",
-    "path": "/services/visa-and-immigration",
-    "services": [
-      {
-        "title": "Golden Visa",
-        "path": "/services/golden-visa-uae"
+        "title": "Civil & Identity Services",
+        "path": "/services/civil-identity-services-uae"
       },
       {
-        "title": "Tourist Visa",
-        "path": "/services/tourist-visa-uae"
+        "title": "Health & Medical Services",
+        "path": "/services/health-medical-services-uae"
       },
       {
-        "title": "Mainland Visas",
-        "path": "/services/mainland-visa-uae"
-      },
-      {
-        "title": "Free Zone Visas",
-        "path": "/services/free-zone-visa-uae"
-      },
-      {
-        "title": "Sponsorship",
-        "path": "/services/family-sponsorship-visa-uae"
-      },
-      {
-        "title": "Second Citizenship & Residency",
-        "path": "/services/second-citizenship-residency-uae"
-      },
-      {
-        "title": "Visa Cancellation",
-        "path": "/services/visa-cancellation-uae"
-      },
-      {
-        "title": "Student Visa",
-        "path": "/services/student-visa-uae"
-      },
-      {
-        "title": "Medical Visa",
-        "path": "/services/medical-visa-uae"
+        "title": "Utilities & Municipalities Services",
+        "path": "/services/utilities-municipalities-services-uae"
       }
     ]
   }
+
 ];
 
 export default megaMenuData;

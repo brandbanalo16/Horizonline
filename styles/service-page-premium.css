@@ -247,7 +247,7 @@
   overflow: hidden;
   box-shadow: var(--sp-shadow-md);
   position: relative;
-  width: 140%;
+  width: 120%;
 }
 
 .sp-hero-image::after {

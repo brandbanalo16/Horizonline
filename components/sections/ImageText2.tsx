@@ -57,25 +57,25 @@ const ImageText2 = ({ data }: { data: SectionProps }) => {
 
                     <div className="lg:col-span-1 col-span-2">
                         <div className="content section-headings">
-                            {subheading && 
-                                <Subheading 
+                            {subheading &&
+                                <Subheading
                                     title={subheading}
                                     cls="text-20"
                                     aos="fade-up"
                                 />
                             }
 
-                            {heading && 
-                                <Heading 
+                            {heading &&
+                                <Heading
                                     title={heading}
-                                    cls="text-50"
+                                    cls="text-40"
                                     aos="fade-up"
                                     aosDelay="50"
                                 />
                             }
 
-                            {text && 
-                                <Text 
+                            {text &&
+                                <Text
                                     text={text}
                                     cls="text-18"
                                     aos="fade-up"
@@ -86,14 +86,14 @@ const ImageText2 = ({ data }: { data: SectionProps }) => {
                             {textList &&
                                 <ul className="list-block list-unstyled">
                                     {textList.map((item, index) => (
-                                        <li 
-                                            className="text-item text text-18" 
-                                            data-aos="fade-up" 
+                                        <li
+                                            className="text-item text text-18"
+                                            data-aos="fade-up"
                                             key={`text-item-${index}`}
                                         >
                                             {item.icon}
 
-                                            {item.title && 
+                                            {item.title &&
                                                 <h3 className="title text text-22 fw-600">
                                                     {item.title}
                                                 </h3>
@@ -104,11 +104,11 @@ const ImageText2 = ({ data }: { data: SectionProps }) => {
                                     ))}
                                 </ul>
                             }
-                            
+
                             {button &&
                                 <div className="buttons" data-aos="fade-up">
                                     {button.type == 'primary' &&
-                                        <PrimaryButton 
+                                        <PrimaryButton
                                             label={button.label}
                                             href={button.href}
                                             ariaLabel={button.label}
@@ -116,7 +116,7 @@ const ImageText2 = ({ data }: { data: SectionProps }) => {
                                     }
 
                                     {button.type == 'secondary' &&
-                                        <SecondaryButton 
+                                        <SecondaryButton
                                             label={button.label}
                                             href={button.href}
                                             ariaLabel={button.label}
@@ -128,7 +128,7 @@ const ImageText2 = ({ data }: { data: SectionProps }) => {
                     </div>
                 </div>
             </div>
-      </div>
+        </div>
     )
 }
 
