@@ -7,9 +7,15 @@
         "image": "/img/service/main-services/business-setup.webp",
         "description": "End-to-end company formation and licensing support for mainland, free zone, and offshore business setup across Dubai, Abu Dhabi and Sharjah.",
         "list": [
-            { "title": "Mainland & free zone company formation" },
-            { "title": "Trade licence application & renewal" },
-            { "title": "Business activity & jurisdiction selection" }
+            {
+                "title": "Mainland & free zone company formation"
+            },
+            {
+                "title": "Trade licence application & renewal"
+            },
+            {
+                "title": "Business activity & jurisdiction selection"
+            }
         ],
         "content": "<p class=\"text text-18\" data-aos=\"fade-up\">\r\nHorizon Line delivers complete Business Setup solutions across the UAE, combining hands-on government liaison with transparent pricing and a dedicated consultant for every client.\r\n</p>\r\n\r\n<div class=\"service-choose-us\" data-aos=\"fade-up\">\r\n<div class=\"grid grid-cols-2 lg:gap-1 service-row\">\r\n<div class=\"md:col-span-1 col-span-2\">\r\n<div class=\"choose-us-img radius18\">\r\n<img src=\"/img/service/sd-1.jpg\" width=\"1000\" height=\"962\" loading=\"lazy\" alt=\"Business Setup services in UAE by Horizon Line\">\r\n</div>\r\n</div>\r\n<div class=\"md:col-span-1 col-span-2\">\r\n<div class=\"choose-us-desc\">\r\n<h2 class=\"heading text-36\">Why Choose Horizon Line</h2>\r\n<ul class=\"text-lists list-unstyled\">\r\n<li class=\"text-item\" data-aos=\"fade-up\"><svg class=\"icon-24\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M17.9999 6.99486L16.5899 5.58594L10.2499 11.9211L11.6599 13.33L17.9999 6.99486ZM22.2399 5.58594L11.6599 16.1578L7.47991 11.991L6.06991 13.3999L11.6599 18.9857L23.6599 6.99486L22.2399 5.58594ZM0.409912 13.3999L5.99991 18.9857L7.40991 17.5767L1.82991 11.991L0.409912 13.3999Z\" fill=\"CurrentColor\"/></svg><div class=\"text text-18 fw-600\">Mainland & free zone company formation</div></li>\r\n<li class=\"text-item\" data-aos=\"fade-up\"><svg class=\"icon-24\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M17.9999 6.99486L16.5899 5.58594L10.2499 11.9211L11.6599 13.33L17.9999 6.99486ZM22.2399 5.58594L11.6599 16.1578L7.47991 11.991L6.06991 13.3999L11.6599 18.9857L23.6599 6.99486L22.2399 5.58594ZM0.409912 13.3999L5.99991 18.9857L7.40991 17.5767L1.82991 11.991L0.409912 13.3999Z\" fill=\"CurrentColor\"/></svg><div class=\"text text-18 fw-600\">Trade licence application & renewal</div></li>\r\n<li class=\"text-item\" data-aos=\"fade-up\"><svg class=\"icon-24\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M17.9999 6.99486L16.5899 5.58594L10.2499 11.9211L11.6599 13.33L17.9999 6.99486ZM22.2399 5.58594L11.6599 16.1578L7.47991 11.991L6.06991 13.3999L11.6599 18.9857L23.6599 6.99486L22.2399 5.58594ZM0.409912 13.3999L5.99991 18.9857L7.40991 17.5767L1.82991 11.991L0.409912 13.3999Z\" fill=\"CurrentColor\"/></svg><div class=\"text text-18 fw-600\">Business activity & jurisdiction selection</div></li>\r\n</ul>\r\n</div>\r\n</div>\r\n</div>\r\n</div>",
         "created_at": "2026-10-01T18:00:00Z"
@@ -22,24 +28,36 @@
         "image": "/img/service/main-services/corporate-services.webp",
         "description": "Ongoing corporate support including PRO services, document clearing, restructuring, and liquidation for UAE-registered companies.",
         "list": [
-            { "title": "PRO & government liaison services" },
-            { "title": "Document clearing & attestation" },
-            { "title": "Corporate restructuring & liquidation" }
+            {
+                "title": "PRO & government liaison services"
+            },
+            {
+                "title": "Document clearing & attestation"
+            },
+            {
+                "title": "Corporate restructuring & liquidation"
+            }
         ],
         "content": "<p class=\"text text-18\" data-aos=\"fade-up\">\r\nHorizon Line delivers complete Corporate Services solutions across the UAE, combining hands-on government liaison with transparent pricing and a dedicated consultant for every client.\r\n</p>\r\n\r\n<div class=\"service-choose-us\" data-aos=\"fade-up\">\r\n<div class=\"grid grid-cols-2 lg:gap-1 service-row\">\r\n<div class=\"md:col-span-1 col-span-2\">\r\n<div class=\"choose-us-img radius18\">\r\n<img src=\"/img/service/sd-1.jpg\" width=\"1000\" height=\"962\" loading=\"lazy\" alt=\"Corporate Services in UAE by Horizon Line\">\r\n</div>\r\n</div>\r\n<div class=\"md:col-span-1 col-span-2\">\r\n<div class=\"choose-us-desc\">\r\n<h2 class=\"heading text-36\">Why Choose Horizon Line</h2>\r\n<ul class=\"text-lists list-unstyled\">\r\n<li class=\"text-item\" data-aos=\"fade-up\"><svg class=\"icon-24\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M17.9999 6.99486L16.5899 5.58594L10.2499 11.9211L11.6599 13.33L17.9999 6.99486ZM22.2399 5.58594L11.6599 16.1578L7.47991 11.991L6.06991 13.3999L11.6599 18.9857L23.6599 6.99486L22.2399 5.58594ZM0.409912 13.3999L5.99991 18.9857L7.40991 17.5767L1.82991 11.991L0.409912 13.3999Z\" fill=\"CurrentColor\"/></svg><div class=\"text text-18 fw-600\">PRO & government liaison services</div></li>\r\n<li class=\"text-item\" data-aos=\"fade-up\"><svg class=\"icon-24\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M17.9999 6.99486L16.5899 5.58594L10.2499 11.9211L11.6599 13.33L17.9999 6.99486ZM22.2399 5.58594L11.6599 16.1578L7.47991 11.991L6.06991 13.3999L11.6599 18.9857L23.6599 6.99486L22.2399 5.58594ZM0.409912 13.3999L5.99991 18.9857L7.40991 17.5767L1.82991 11.991L0.409912 13.3999Z\" fill=\"CurrentColor\"/></svg><div class=\"text text-18 fw-600\">Document clearing & attestation</div></li>\r\n<li class=\"text-item\" data-aos=\"fade-up\"><svg class=\"icon-24\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M17.9999 6.99486L16.5899 5.58594L10.2499 11.9211L11.6599 13.33L17.9999 6.99486ZM22.2399 5.58594L11.6599 16.1578L7.47991 11.991L6.06991 13.3999L11.6599 18.9857L23.6599 6.99486L22.2399 5.58594ZM0.409912 13.3999L5.99991 18.9857L7.40991 17.5767L1.82991 11.991L0.409912 13.3999Z\" fill=\"CurrentColor\"/></svg><div class=\"text text-18 fw-600\">Corporate restructuring & liquidation</div></li>\r\n</ul>\r\n</div>\r\n</div>\r\n</div>\r\n</div>",
         "created_at": "2026-10-01T18:00:00Z"
     },
     {
         "id": 3,
-        "slug": "trademark-and-ip",
+        "slug": "trademark-ip",
         "title": "Trademark & IP",
         "icon": "<img src=\"/img/icons/services/trademarks&i.png\" alt=\"Trademark & IP\" width=\"40\" height=\"40\" />",
         "image": "/img/service/main-services/trademark-and-ip.webp",
         "description": "Protect your brand with trademark registration, copyright filing, and intellectual property advisory across the UAE.",
         "list": [
-            { "title": "Trademark registration & search" },
-            { "title": "Copyright registration" },
-            { "title": "IP protection & renewal advisory" }
+            {
+                "title": "Trademark registration & search"
+            },
+            {
+                "title": "Copyright registration"
+            },
+            {
+                "title": "IP protection & renewal advisory"
+            }
         ],
         "content": "<p class=\"text text-18\" data-aos=\"fade-up\">\r\nHorizon Line delivers complete Trademark & IP solutions across the UAE, combining expert brand protection with transparent pricing and a dedicated consultant for every client.\r\n</p>\r\n\r\n<div class=\"service-choose-us\" data-aos=\"fade-up\">\r\n<div class=\"grid grid-cols-2 lg:gap-1 service-row\">\r\n<div class=\"md:col-span-1 col-span-2\">\r\n<div class=\"choose-us-img radius18\">\r\n<img src=\"/img/service/sd-1.jpg\" width=\"1000\" height=\"962\" loading=\"lazy\" alt=\"Trademark & IP services in UAE by Horizon Line\">\r\n</div>\r\n</div>\r\n<div class=\"md:col-span-1 col-span-2\">\r\n<div class=\"choose-us-desc\">\r\n<h2 class=\"heading text-36\">Why Choose Horizon Line</h2>\r\n<ul class=\"text-lists list-unstyled\">\r\n<li class=\"text-item\" data-aos=\"fade-up\"><svg class=\"icon-24\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M17.9999 6.99486L16.5899 5.58594L10.2499 11.9211L11.6599 13.33L17.9999 6.99486ZM22.2399 5.58594L11.6599 16.1578L7.47991 11.991L6.06991 13.3999L11.6599 18.9857L23.6599 6.99486L22.2399 5.58594ZM0.409912 13.3999L5.99991 18.9857L7.40991 17.5767L1.82991 11.991L0.409912 13.3999Z\" fill=\"CurrentColor\"/></svg><div class=\"text text-18 fw-600\">Trademark registration & search</div></li>\r\n<li class=\"text-item\" data-aos=\"fade-up\"><svg class=\"icon-24\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M17.9999 6.99486L16.5899 5.58594L10.2499 11.9211L11.6599 13.33L17.9999 6.99486ZM22.2399 5.58594L11.6599 16.1578L7.47991 11.991L6.06991 13.3999L11.6599 18.9857L23.6599 6.99486L22.2399 5.58594ZM0.409912 13.3999L5.99991 18.9857L7.40991 17.5767L1.82991 11.991L0.409912 13.3999Z\" fill=\"CurrentColor\"/></svg><div class=\"text text-18 fw-600\">Copyright registration</div></li>\r\n<li class=\"text-item\" data-aos=\"fade-up\"><svg class=\"icon-24\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M17.9999 6.99486L16.5899 5.58594L10.2499 11.9211L11.6599 13.33L17.9999 6.99486ZM22.2399 5.58594L11.6599 16.1578L7.47991 11.991L6.06991 13.3999L11.6599 18.9857L23.6599 6.99486L22.2399 5.58594ZM0.409912 13.3999L5.99991 18.9857L7.40991 17.5767L1.82991 11.991L0.409912 13.3999Z\" fill=\"CurrentColor\"/></svg><div class=\"text text-18 fw-600\">IP protection & renewal advisory</div></li>\r\n</ul>\r\n</div>\r\n</div>\r\n</div>\r\n</div>",
         "created_at": "2026-10-01T18:00:00Z"
@@ -52,9 +70,15 @@
         "image": "/img/service/main-services/visa-services.webp",
         "description": "End-to-end visa processing for investors, employees, and families — including golden visa, employment visa, and Emirates ID.",
         "list": [
-            { "title": "Investor & golden visa processing" },
-            { "title": "Employment & family visa support" },
-            { "title": "Emirates ID & medical test coordination" }
+            {
+                "title": "Investor & golden visa processing"
+            },
+            {
+                "title": "Employment & family visa support"
+            },
+            {
+                "title": "Emirates ID & medical test coordination"
+            }
         ],
         "content": "<p class=\"text text-18\" data-aos=\"fade-up\">\r\nHorizon Line delivers complete Visa and Immigration solutions across the UAE, handling every stage from eligibility assessment to Emirates ID and medical coordination.\r\n</p>\r\n\r\n<div class=\"service-choose-us\" data-aos=\"fade-up\">\r\n<div class=\"grid grid-cols-2 lg:gap-1 service-row\">\r\n<div class=\"md:col-span-1 col-span-2\">\r\n<div class=\"choose-us-img radius18\">\r\n<img src=\"/img/service/sd-1.jpg\" width=\"1000\" height=\"962\" loading=\"lazy\" alt=\"Visa and Immigration services in UAE by Horizon Line\">\r\n</div>\r\n</div>\r\n<div class=\"md:col-span-1 col-span-2\">\r\n<div class=\"choose-us-desc\">\r\n<h2 class=\"heading text-36\">Why Choose Horizon Line</h2>\r\n<ul class=\"text-lists list-unstyled\">\r\n<li class=\"text-item\" data-aos=\"fade-up\"><svg class=\"icon-24\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M17.9999 6.99486L16.5899 5.58594L10.2499 11.9211L11.6599 13.33L17.9999 6.99486ZM22.2399 5.58594L11.6599 16.1578L7.47991 11.991L6.06991 13.3999L11.6599 18.9857L23.6599 6.99486L22.2399 5.58594ZM0.409912 13.3999L5.99991 18.9857L7.40991 17.5767L1.82991 11.991L0.409912 13.3999Z\" fill=\"CurrentColor\"/></svg><div class=\"text text-18 fw-600\">Investor & golden visa processing</div></li>\r\n<li class=\"text-item\" data-aos=\"fade-up\"><svg class=\"icon-24\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M17.9999 6.99486L16.5899 5.58594L10.2499 11.9211L11.6599 13.33L17.9999 6.99486ZM22.2399 5.58594L11.6599 16.1578L7.47991 11.991L6.06991 13.3999L11.6599 18.9857L23.6599 6.99486L22.2399 5.58594ZM0.409912 13.3999L5.99991 18.9857L7.40991 17.5767L1.82991 11.991L0.409912 13.3999Z\" fill=\"CurrentColor\"/></svg><div class=\"text text-18 fw-600\">Employment & family visa support</div></li>\r\n<li class=\"text-item\" data-aos=\"fade-up\"><svg class=\"icon-24\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M17.9999 6.99486L16.5899 5.58594L10.2499 11.9211L11.6599 13.33L17.9999 6.99486ZM22.2399 5.58594L11.6599 16.1578L7.47991 11.991L6.06991 13.3999L11.6599 18.9857L23.6599 6.99486L22.2399 5.58594ZM0.409912 13.3999L5.99991 18.9857L7.40991 17.5767L1.82991 11.991L0.409912 13.3999Z\" fill=\"CurrentColor\"/></svg><div class=\"text text-18 fw-600\">Emirates ID & medical test coordination</div></li>\r\n</ul>\r\n</div>\r\n</div>\r\n</div>\r\n</div>",
         "created_at": "2026-10-01T18:00:00Z"
@@ -67,9 +91,15 @@
         "image": "/img/service/main-services/tax-and-compliance.webp",
         "description": "VAT registration, corporate tax filing, bookkeeping, and full financial compliance support for UAE businesses.",
         "list": [
-            { "title": "VAT registration & return filing" },
-            { "title": "Corporate tax registration & filing" },
-            { "title": "Accounting, bookkeeping & audit support" }
+            {
+                "title": "VAT registration & return filing"
+            },
+            {
+                "title": "Corporate tax registration & filing"
+            },
+            {
+                "title": "Accounting, bookkeeping & audit support"
+            }
         ],
         "content": "<p class=\"text text-18\" data-aos=\"fade-up\">\r\nHorizon Line delivers complete Accounting, Finance, and Tax solutions across the UAE — from VAT registration to corporate tax filing and bookkeeping.\r\n</p>\r\n\r\n<div class=\"service-choose-us\" data-aos=\"fade-up\">\r\n<div class=\"grid grid-cols-2 lg:gap-1 service-row\">\r\n<div class=\"md:col-span-1 col-span-2\">\r\n<div class=\"choose-us-img radius18\">\r\n<img src=\"/img/service/sd-1.jpg\" width=\"1000\" height=\"962\" loading=\"lazy\" alt=\"Accounting Finance Tax services in UAE by Horizon Line\">\r\n</div>\r\n</div>\r\n<div class=\"md:col-span-1 col-span-2\">\r\n<div class=\"choose-us-desc\">\r\n<h2 class=\"heading text-36\">Why Choose Horizon Line</h2>\r\n<ul class=\"text-lists list-unstyled\">\r\n<li class=\"text-item\" data-aos=\"fade-up\"><svg class=\"icon-24\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M17.9999 6.99486L16.5899 5.58594L10.2499 11.9211L11.6599 13.33L17.9999 6.99486ZM22.2399 5.58594L11.6599 16.1578L7.47991 11.991L6.06991 13.3999L11.6599 18.9857L23.6599 6.99486L22.2399 5.58594ZM0.409912 13.3999L5.99991 18.9857L7.40991 17.5767L1.82991 11.991L0.409912 13.3999Z\" fill=\"CurrentColor\"/></svg><div class=\"text text-18 fw-600\">VAT registration & return filing</div></li>\r\n<li class=\"text-item\" data-aos=\"fade-up\"><svg class=\"icon-24\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M17.9999 6.99486L16.5899 5.58594L10.2499 11.9211L11.6599 13.33L17.9999 6.99486ZM22.2399 5.58594L11.6599 16.1578L7.47991 11.991L6.06991 13.3999L11.6599 18.9857L23.6599 6.99486L22.2399 5.58594ZM0.409912 13.3999L5.99991 18.9857L7.40991 17.5767L1.82991 11.991L0.409912 13.3999Z\" fill=\"CurrentColor\"/></svg><div class=\"text text-18 fw-600\">Corporate tax registration & filing</div></li>\r\n<li class=\"text-item\" data-aos=\"fade-up\"><svg class=\"icon-24\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M17.9999 6.99486L16.5899 5.58594L10.2499 11.9211L11.6599 13.33L17.9999 6.99486ZM22.2399 5.58594L11.6599 16.1578L7.47991 11.991L6.06991 13.3999L11.6599 18.9857L23.6599 6.99486L22.2399 5.58594ZM0.409912 13.3999L5.99991 18.9857L7.40991 17.5767L1.82991 11.991L0.409912 13.3999Z\" fill=\"CurrentColor\"/></svg><div class=\"text text-18 fw-600\">Accounting, bookkeeping & audit support</div></li>\r\n</ul>\r\n</div>\r\n</div>\r\n</div>\r\n</div>",
         "created_at": "2026-10-01T18:00:00Z"
@@ -82,9 +112,15 @@
         "image": "/img/service/main-services/legal-services.webp",
         "description": "Legal documentation, contract drafting, and MOA amendment support to keep your business legally sound.",
         "list": [
-            { "title": "Legal documentation & drafting" },
-            { "title": "MOA amendment & updates" },
-            { "title": "Contract review & advisory" }
+            {
+                "title": "Legal documentation & drafting"
+            },
+            {
+                "title": "MOA amendment & updates"
+            },
+            {
+                "title": "Contract review & advisory"
+            }
         ],
         "content": "<p class=\"text text-18\" data-aos=\"fade-up\">\r\nHorizon Line delivers complete Legal Services solutions across the UAE, from document drafting and MOA amendments to contract review and notarisation support.\r\n</p>\r\n\r\n<div class=\"service-choose-us\" data-aos=\"fade-up\">\r\n<div class=\"grid grid-cols-2 lg:gap-1 service-row\">\r\n<div class=\"md:col-span-1 col-span-2\">\r\n<div class=\"choose-us-img radius18\">\r\n<img src=\"/img/service/sd-1.jpg\" width=\"1000\" height=\"962\" loading=\"lazy\" alt=\"Legal Services in UAE by Horizon Line\">\r\n</div>\r\n</div>\r\n<div class=\"md:col-span-1 col-span-2\">\r\n<div class=\"choose-us-desc\">\r\n<h2 class=\"heading text-36\">Why Choose Horizon Line</h2>\r\n<ul class=\"text-lists list-unstyled\">\r\n<li class=\"text-item\" data-aos=\"fade-up\"><svg class=\"icon-24\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M17.9999 6.99486L16.5899 5.58594L10.2499 11.9211L11.6599 13.33L17.9999 6.99486ZM22.2399 5.58594L11.6599 16.1578L7.47991 11.991L6.06991 13.3999L11.6599 18.9857L23.6599 6.99486L22.2399 5.58594ZM0.409912 13.3999L5.99991 18.9857L7.40991 17.5767L1.82991 11.991L0.409912 13.3999Z\" fill=\"CurrentColor\"/></svg><div class=\"text text-18 fw-600\">Legal documentation & drafting</div></li>\r\n<li class=\"text-item\" data-aos=\"fade-up\"><svg class=\"icon-24\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M17.9999 6.99486L16.5899 5.58594L10.2499 11.9211L11.6599 13.33L17.9999 6.99486ZM22.2399 5.58594L11.6599 16.1578L7.47991 11.991L6.06991 13.3999L11.6599 18.9857L23.6599 6.99486L22.2399 5.58594ZM0.409912 13.3999L5.99991 18.9857L7.40991 17.5767L1.82991 11.991L0.409912 13.3999Z\" fill=\"CurrentColor\"/></svg><div class=\"text text-18 fw-600\">MOA amendment & updates</div></li>\r\n<li class=\"text-item\" data-aos=\"fade-up\"><svg class=\"icon-24\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M17.9999 6.99486L16.5899 5.58594L10.2499 11.9211L11.6599 13.33L17.9999 6.99486ZM22.2399 5.58594L11.6599 16.1578L7.47991 11.991L6.06991 13.3999L11.6599 18.9857L23.6599 6.99486L22.2399 5.58594ZM0.409912 13.3999L5.99991 18.9857L7.40991 17.5767L1.82991 11.991L0.409912 13.3999Z\" fill=\"CurrentColor\"/></svg><div class=\"text text-18 fw-600\">Contract review & advisory</div></li>\r\n</ul>\r\n</div>\r\n</div>\r\n</div>\r\n</div>",
         "created_at": "2026-10-01T18:00:00Z"
@@ -97,9 +133,15 @@
         "image": "/img/service/main-services/digital-services.webp",
         "description": "Government and public service coordination including police, MOHAP, EHS, Ministry of Education, and municipality services.",
         "list": [
-            { "title": "Police clearance & good conduct certificates" },
-            { "title": "MOHAP & EHS health service coordination" },
-            { "title": "Municipality & Ministry of Education services" }
+            {
+                "title": "Police clearance & good conduct certificates"
+            },
+            {
+                "title": "MOHAP & EHS health service coordination"
+            },
+            {
+                "title": "Municipality & Ministry of Education services"
+            }
         ],
         "content": "<p class=\"text text-18\" data-aos=\"fade-up\">\r\nHorizon Line coordinates all UAE public and government services — from police clearances and health certificates to municipality and education authority submissions.\r\n</p>\r\n\r\n<div class=\"service-choose-us\" data-aos=\"fade-up\">\r\n<div class=\"grid grid-cols-2 lg:gap-1 service-row\">\r\n<div class=\"md:col-span-1 col-span-2\">\r\n<div class=\"choose-us-img radius18\">\r\n<img src=\"/img/service/sd-1.jpg\" width=\"1000\" height=\"962\" loading=\"lazy\" alt=\"Public Services in UAE by Horizon Line\">\r\n</div>\r\n</div>\r\n<div class=\"md:col-span-1 col-span-2\">\r\n<div class=\"choose-us-desc\">\r\n<h2 class=\"heading text-36\">Why Choose Horizon Line</h2>\r\n<ul class=\"text-lists list-unstyled\">\r\n<li class=\"text-item\" data-aos=\"fade-up\"><svg class=\"icon-24\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M17.9999 6.99486L16.5899 5.58594L10.2499 11.9211L11.6599 13.33L17.9999 6.99486ZM22.2399 5.58594L11.6599 16.1578L7.47991 11.991L6.06991 13.3999L11.6599 18.9857L23.6599 6.99486L22.2399 5.58594ZM0.409912 13.3999L5.99991 18.9857L7.40991 17.5767L1.82991 11.991L0.409912 13.3999Z\" fill=\"CurrentColor\"/></svg><div class=\"text text-18 fw-600\">Police clearance & good conduct certificates</div></li>\r\n<li class=\"text-item\" data-aos=\"fade-up\"><svg class=\"icon-24\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M17.9999 6.99486L16.5899 5.58594L10.2499 11.9211L11.6599 13.33L17.9999 6.99486ZM22.2399 5.58594L11.6599 16.1578L7.47991 11.991L6.06991 13.3999L11.6599 18.9857L23.6599 6.99486L22.2399 5.58594ZM0.409912 13.3999L5.99991 18.9857L7.40991 17.5767L1.82991 11.991L0.409912 13.3999Z\" fill=\"CurrentColor\"/></svg><div class=\"text text-18 fw-600\">MOHAP & EHS health service coordination</div></li>\r\n<li class=\"text-item\" data-aos=\"fade-up\"><svg class=\"icon-24\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M17.9999 6.99486L16.5899 5.58594L10.2499 11.9211L11.6599 13.33L17.9999 6.99486ZM22.2399 5.58594L11.6599 16.1578L7.47991 11.991L6.06991 13.3999L11.6599 18.9857L23.6599 6.99486L22.2399 5.58594ZM0.409912 13.3999L5.99991 18.9857L7.40991 17.5767L1.82991 11.991L0.409912 13.3999Z\" fill=\"CurrentColor\"/></svg><div class=\"text text-18 fw-600\">Municipality & Ministry of Education services</div></li>\r\n</ul>\r\n</div>\r\n</div>\r\n</div>\r\n</div>",
         "created_at": "2026-10-01T18:00:00Z"
@@ -112,9 +154,15 @@
         "image": "/img/service/main-services/corporate-services.webp",
         "description": "Additional business support including utility connections, vehicle services, HR support, and digital solutions.",
         "list": [
-            { "title": "Utility connections (DEWA, SEWA, FEWA)" },
-            { "title": "Vehicle registration & RTA services" },
-            { "title": "HR, payroll & digital marketing support" }
+            {
+                "title": "Utility connections (DEWA, SEWA, FEWA)"
+            },
+            {
+                "title": "Vehicle registration & RTA services"
+            },
+            {
+                "title": "HR, payroll & digital marketing support"
+            }
         ],
         "content": "<p class=\"text text-18\" data-aos=\"fade-up\">\r\nHorizon Line offers a broad range of additional services to support your business and personal needs across the UAE — from utility connections to vehicle registration and HR solutions.\r\n</p>\r\n\r\n<div class=\"service-choose-us\" data-aos=\"fade-up\">\r\n<div class=\"grid grid-cols-2 lg:gap-1 service-row\">\r\n<div class=\"md:col-span-1 col-span-2\">\r\n<div class=\"choose-us-img radius18\">\r\n<img src=\"/img/service/sd-1.jpg\" width=\"1000\" height=\"962\" loading=\"lazy\" alt=\"Other Services in UAE by Horizon Line\">\r\n</div>\r\n</div>\r\n<div class=\"md:col-span-1 col-span-2\">\r\n<div class=\"choose-us-desc\">\r\n<h2 class=\"heading text-36\">Why Choose Horizon Line</h2>\r\n<ul class=\"text-lists list-unstyled\">\r\n<li class=\"text-item\" data-aos=\"fade-up\"><svg class=\"icon-24\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M17.9999 6.99486L16.5899 5.58594L10.2499 11.9211L11.6599 13.33L17.9999 6.99486ZM22.2399 5.58594L11.6599 16.1578L7.47991 11.991L6.06991 13.3999L11.6599 18.9857L23.6599 6.99486L22.2399 5.58594ZM0.409912 13.3999L5.99991 18.9857L7.40991 17.5767L1.82991 11.991L0.409912 13.3999Z\" fill=\"CurrentColor\"/></svg><div class=\"text text-18 fw-600\">Utility connections (DEWA, SEWA, FEWA)</div></li>\r\n<li class=\"text-item\" data-aos=\"fade-up\"><svg class=\"icon-24\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M17.9999 6.99486L16.5899 5.58594L10.2499 11.9211L11.6599 13.33L17.9999 6.99486ZM22.2399 5.58594L11.6599 16.1578L7.47991 11.991L6.06991 13.3999L11.6599 18.9857L23.6599 6.99486L22.2399 5.58594ZM0.409912 13.3999L5.99991 18.9857L7.40991 17.5767L1.82991 11.991L0.409912 13.3999Z\" fill=\"CurrentColor\"/></svg><div class=\"text text-18 fw-600\">Vehicle registration & RTA services</div></li>\r\n<li class=\"text-item\" data-aos=\"fade-up\"><svg class=\"icon-24\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M17.9999 6.99486L16.5899 5.58594L10.2499 11.9211L11.6599 13.33L17.9999 6.99486ZM22.2399 5.58594L11.6599 16.1578L7.47991 11.991L6.06991 13.3999L11.6599 18.9857L23.6599 6.99486L22.2399 5.58594ZM0.409912 13.3999L5.99991 18.9857L7.40991 17.5767L1.82991 11.991L0.409912 13.3999Z\" fill=\"CurrentColor\"/></svg><div class=\"text text-18 fw-600\">HR, payroll & digital marketing support</div></li>\r\n</ul>\r\n</div>\r\n</div>\r\n</div>\r\n</div>",
         "created_at": "2026-10-01T18:00:00Z"
