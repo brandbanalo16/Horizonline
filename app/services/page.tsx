@@ -35,16 +35,19 @@ const PageServices = () => {
                 }}
             />
 
-            <OurServices 
-                data={{
-                    ...OurServicesData,
-                    wrapperCls: "section-padding",
-                    subheading: "Our Services",
-                    heading: "Wide Range of Services to Support Your Business Across the UAE",
-                    button: undefined,
-                }} 
-                maxItems={8}
-            />
+            <div style={{ backgroundColor: '#ffffff' }}>
+                <OurServices 
+                    data={{
+                        ...OurServicesData,
+                        wrapperCls: "section-padding",
+                        subheading: "Our Services",
+                        heading: "Wide Range of Services to Support Your Business Across the UAE",
+                        button: undefined,
+                        backgroundImage: undefined,
+                    }} 
+                    maxItems={8}
+                />
+            </div>
 
             <ContactSection data={Contact2Data} />
         </>

@@ -1,6 +1,5 @@
 import { SectionProps } from "@/types/sectionProps";
-import Image1 from "@/public/img/brand/logo.png";
-import Image2 from "@/public/img/brand/logo-2.png";
+import Image1 from "@/public/img/logo.png";
 
 export const ScrollingLargeTextData: SectionProps = {
     wrapperCls: "py-2",
@@ -24,7 +23,7 @@ export const ScrollingLargeTextData: SectionProps = {
     ],
     imageList2: [        
         {
-            src: Image2.src,
+            src: Image1.src,
             alt: "Scrolling image",
             width: 80,
             height: 80,
@@ -32,7 +31,7 @@ export const ScrollingLargeTextData: SectionProps = {
             title: "Your Journey"
         },
         {
-            src: Image2.src,
+            src: Image1.src,
             alt: "Scrolling image",
             width: 80,
             height: 80,

@@ -1,5 +1,4 @@
 import FooterContact2 from "../FooterContact2";
-import FooterContactImage from "@/public/img/contact/contact.jpg";
 
 interface FooterProps {
     container: string;
@@ -10,9 +9,6 @@ const FooterContactForm = ({ container }: FooterProps) => {
         <>
             <FooterContact2
                 container={container}
-                imageUrl={FooterContactImage.src}
-                width={1290}
-                height={1400}
                 alt="Contact image"
                 aosAnchor=".contact-box"
                 subheading="Contact Us"
