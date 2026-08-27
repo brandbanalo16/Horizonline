@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     template: '%s | Horizon Line',
     default: 'Business Setup in Dubai, UAE | Horizon Line',
   },
-  description: 'Horizon Line provides expert business setup in Dubai, UAE, Sharjah, and Abu Dhabi with mainland and free zone company formation, visas, VAT, and compliance support.',
+  description: 'Horizon Line provides expert business setup in All 7 Emirates, UAE, Sharjah, and Abu Dhabi with mainland and free zone company formation, visas, VAT, and compliance support.',
   alternates: {
     canonical: 'https://www.horizonlineconsultancy.ae/'
   },
