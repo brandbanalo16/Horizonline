@@ -32,26 +32,6 @@ const Share = ({ title }: SocialShareProps) => {
                     <span className="visually-hidden">Facebook</span>
                 </a>
             </li>
-            <li>
-                <a
-                    className="social-link text"
-                    href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodedUrl}`}
-                    target="_blank"
-                >
-                    <Icons.LinkedIn />
-                    <span className="visually-hidden">Linkedin</span>
-                </a>
-            </li>
-            <li>
-                <a
-                    className="social-link text"
-                    href={`https://twitter.com/intent/tweet?url=${encodedUrl}&text=${encodedTitle}`}
-                    target="_blank"
-                >
-                    <Icons.Twitter />
-                    <span className="visually-hidden">Twitter</span>
-                </a>
-            </li>
         </ul>
     )
 }

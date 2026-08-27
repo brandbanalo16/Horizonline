@@ -119,32 +119,6 @@ const TeamMemberDetails = ({
                                         </li>
                                     }
 
-                                    {social.linkedin_url &&
-                                        <li data-aos="fade-up" data-aos-delay="200">
-                                            <Link
-                                                className="social-link text"
-                                                href={social.linkedin_url}
-                                                target="_blank"
-                                            >
-                                                <Icons.LinkedIn />
-                                                <span className="visually-hidden">Linkedin</span>
-                                            </Link>
-                                        </li>
-                                    }
-
-                                    {social.twitter_url &&
-                                        <li data-aos="fade-up" data-aos-delay="300">
-                                            <Link
-                                                className="social-link text"
-                                                href={social.twitter_url}
-                                                target="_blank"
-                                            >
-                                                <Icons.Twitter />
-                                                <span className="visually-hidden">Twitter</span>
-                                            </Link>
-                                        </li>
-                                    }
-
                                     {social.instagram_url &&
                                         <li data-aos="fade-up" data-aos-delay="400">
                                             <Link

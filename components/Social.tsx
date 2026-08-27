@@ -10,22 +10,12 @@ interface SocialProps {
 const menuSocial = [
     {
         label: "Facebook",
-        href: "https://web.facebook.com",
+        href: "https://www.facebook.com/horizonlineuae/",
         icon: <Icons.FaceBook />
     },
     {
-        label: "Linkedin",
-        href: "https://www.linkedin.com/",
-        icon: <Icons.LinkedIn />
-    },
-    {
-        label: "Twitter",
-        href: "https://x.com/",
-        icon: <Icons.Twitter />
-    },
-    {
         label: "Instagram",
-        href: "https://www.instagram.com/",
+        href: "https://www.instagram.com/horizonlineuae/?hl=en",
         icon: <Icons.Instagram />
     }
 ]

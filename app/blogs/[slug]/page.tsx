@@ -35,7 +35,7 @@ const Page = async ({ params }: {params: Promise<{slug: string}>}) => {
                 }}
             />
             {article ? (
-              <BlogDetails container="container" article={article} />
+              <BlogDetails container="w-[85%] mx-auto" article={article} />
             ) : (
               notFound()
             )}
