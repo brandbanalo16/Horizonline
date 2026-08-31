@@ -14,33 +14,33 @@ export const metadata: Metadata = {
   title: PAGE_TITLE,
 }
 
-const Page = async ({ params }: {params: Promise<{slug: string}>}) => {
-    const { slug } = await params;
-    const posts = Posts;
-    const article: ArticleType | undefined = posts.find((post: ArticleType) => post.slug === slug);
+const Page = async ({ params }: { params: Promise<{ slug: string }> }) => {
+  const { slug } = await params;
+  const posts = Posts;
+  const article: ArticleType | undefined = posts.find((post: ArticleType) => post.slug === slug);
 
-    return (
-        <>
-            <BreadcrumbBanner 
-                title={PAGE_TITLE}
-                image={{
-                    src: BreadcrumbBannerImage.src,
-                    srcMobile: BreadcrumbBannerImageTablet.src,
-                    srcTablet: BreadcrumbBannerImageMobile.src,
-                    width: 1920,
-                    height: 520,
-                    cls: "media media-bg",
-                    alt: "Banner Image",
-                    loading: "eager"
-                }}
-            />
-            {article ? (
-              <BlogDetails container="w-[85%] mx-auto" article={article} />
-            ) : (
-              notFound()
-            )}
-        </>
-    )
+  return (
+    <>
+      <BreadcrumbBanner
+        title={PAGE_TITLE}
+        image={{
+          src: BreadcrumbBannerImage.src,
+          srcMobile: BreadcrumbBannerImageTablet.src,
+          srcTablet: BreadcrumbBannerImageMobile.src,
+          width: 1920,
+          height: 520,
+          cls: "media media-bg",
+          alt: "Banner Image",
+          loading: "eager"
+        }}
+      />
+      {article ? (
+        <BlogDetails container="w-[85%] mx-auto" article={article} />
+      ) : (
+        notFound()
+      )}
+    </>
+  )
 }
 
 export default Page;

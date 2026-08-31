@@ -230,3 +230,36 @@
 a.contact-info-value:hover {
   color: rgba(38, 100, 100, 1);
 }
+
+/* Phone field — country code select + number input side by side */
+.phone-field-group {
+  display: flex;
+  gap: 10px;
+  align-items: stretch;
+}
+
+.phone-field-group .country-code-select {
+  width: 130px;
+  flex-shrink: 0;
+  min-height: 54px;
+  padding: 0 10px;
+  border: 1px solid var(--color-input-border, rgba(220, 220, 220, 1));
+  border-radius: 6px;
+  background-color: var(--color-input-background, #fff);
+  color: var(--color-input-text, rgba(93, 102, 111, 1));
+  font-size: 16px;
+  cursor: pointer;
+  appearance: auto;
+}
+
+.phone-field-group .phone-number-input {
+  flex: 1;
+  min-width: 0;
+}
+
+@media (max-width: 767px) {
+  .phone-field-group .country-code-select {
+    min-height: 48px;
+    width: 115px;
+  }
+}

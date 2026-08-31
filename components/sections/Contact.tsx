@@ -43,7 +43,7 @@ const ContactSection = ({ data }: { data: SectionProps }) => {
 
             setLoading(true);
 
-            const response = await fetch("/api/contact", {
+            const response = await fetch("https://horizonlineuae.com/mail/send-mail.php", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(data),
@@ -51,7 +51,7 @@ const ContactSection = ({ data }: { data: SectionProps }) => {
 
             const formMessage = await response.json();
 
-            if (response.ok) {
+            if (formMessage.success) {
                 setLoading(false);
                 setStatus("success");
                 setMessage(formMessage.message);
@@ -60,13 +60,16 @@ const ContactSection = ({ data }: { data: SectionProps }) => {
             } else {
                 setLoading(false);
                 setStatus("error");
-                setMessage(formMessage.error);
-                clearMessage(4000);
+                const errText = Array.isArray(formMessage.errors)
+                    ? formMessage.errors.join(" · ")
+                    : (formMessage.message || "Something went wrong.");
+                setMessage(errText);
+                clearMessage(6000);
             }
         } catch (error: any) {
             setLoading(false);
             setStatus("error");
-            setMessage(error.message);
+            setMessage("Network error. Please try again.");
             clearMessage(4000);
         }
     };
@@ -168,6 +171,7 @@ const ContactSection = ({ data }: { data: SectionProps }) => {
                                     cls="form contact-form main-contact-form"
                                     onSubmitHandler={handleSubmit}
                                 >
+                                    {/* Name */}
                                     <TextField
                                         cls="text-16"
                                         id="ContactForm-name"
@@ -178,33 +182,63 @@ const ContactSection = ({ data }: { data: SectionProps }) => {
                                         required={true}
                                     />
 
+                                    {/* Email (optional) */}
                                     <TextField
                                         cls="text-16"
                                         id="ContactForm-email"
                                         label="Your Email"
                                         type="email"
-                                        placeholder="Email Here*"
+                                        placeholder="Email (optional)"
                                         name="email"
                                         required={false}
                                     />
 
+                                    {/* Phone + Country Code */}
+                                    <div className="field phone-field-group" data-aos="fade-up">
+                                        <label htmlFor="ContactForm-phone" className="visually-hidden">Phone Number</label>
+                                        <select
+                                            id="ContactForm-countryCode"
+                                            name="countryCode"
+                                            className="country-code-select text-16"
+                                            defaultValue="+971"
+                                            aria-label="Country code"
+                                        >
+                                            <option value="+971">+971 (UAE)</option>
+                                            <option value="+91">+91 (India)</option>
+                                        </select>
+                                        <input
+                                            id="ContactForm-phone"
+                                            className="phone-number-input text-16"
+                                            type="tel"
+                                            placeholder="Phone Number*"
+                                            name="phone"
+                                            required
+                                            inputMode="numeric"
+                                            minLength={10}
+                                            maxLength={10}
+                                            pattern="[0-9]{10}"
+                                        />
+                                    </div>
+
+                                    {/* City */}
                                     <TextField
                                         cls="text-16"
-                                        id="ContactForm-service"
-                                        label="Service Type"
+                                        id="ContactForm-city"
+                                        label="City"
                                         type="text"
-                                        placeholder="Service Type"
-                                        name="service"
-                                        required={false}
+                                        placeholder="City*"
+                                        name="city"
+                                        required={true}
                                     />
 
+                                    {/* Message (optional) */}
                                     <TextArea
                                         cls="text-16"
                                         id="ContactForm-body"
-                                        label="Your Comment"
-                                        placeholder="Your Comment*"
+                                        label="Your Message"
+                                        placeholder="Message (optional)"
                                         name="message"
-                                        required={true}
+                                        required={false}
                                     />
 
                                     <div
@@ -216,11 +250,12 @@ const ContactSection = ({ data }: { data: SectionProps }) => {
                                                 cls="loading"
                                                 label="Sending..."
                                                 ariaLabel="Sending message"
+                                                type="button"
                                             />
                                         ) : (
                                             <SecondaryButton
-                                                label="Send Message"
-                                                ariaLabel="Send Message"
+                                                label="Send Enquiry"
+                                                ariaLabel="Send Enquiry"
                                             />
                                         )}
                                     </div>
