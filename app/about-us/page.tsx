@@ -40,12 +40,12 @@ export const metadata: Metadata = {
         'Fujairah Company Formation',
     ],
     alternates: {
-        canonical: 'https://www.horizononlineuae.com/about-us'
+        canonical: 'https://horizononlineuae.com/about-us'
     },
     openGraph: {
         title: 'About Horizon Line — UAE Business Setup Across All 7 Emirates',
         description: 'Horizon Line helps entrepreneurs and investors set up businesses across every Emirates — with honest guidance, transparent pricing, and end-to-end support.',
-        url: 'https://www.horizononlineuae.com/about-us',
+        url: 'https://horizononlineuae.com/about-us',
         type: 'website'
     }
 };

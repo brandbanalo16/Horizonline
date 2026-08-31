@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     title: PAGE_TITLE,
     description: "Explore Horizon Line's comprehensive range of business setup, corporate, legal, tax, and visa services across the UAE.",
     alternates: {
-        canonical: 'https://www.horizononlineuae.com/services'
+        canonical: 'https://horizononlineuae.com/services'
     },
 };
 

@@ -45,12 +45,12 @@ export const metadata: Metadata = {
         'Legal Status Regularization UAE'
     ],
     alternates: {
-        canonical: 'https://www.horizononlineuae.com/'
+        canonical: 'https://horizononlineuae.com/'
     },
     openGraph: {
         title: 'Horizon Line — Business Setup Across All 7 Emirates of the UAE',
         description: 'From mainland and free zone formation to visas, office space, and bank account opening — Horizon Line supports your business journey across Dubai, Abu Dhabi, Sharjah, RAK, Fujairah, Ajman & UAQ.',
-        url: 'https://www.horizononlineuae.com/',
+        url: 'https://horizononlineuae.com/',
         type: 'website'
     }
 };

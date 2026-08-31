@@ -18,12 +18,12 @@ export const metadata: Metadata = {
   },
   description: 'Horizon Line provides expert business setup in All 7 Emirates, UAE, Sharjah, and Abu Dhabi with mainland and free zone company formation, visas, VAT, and compliance support.',
   alternates: {
-    canonical: 'https://www.horizononlineuae.com/'
+    canonical: 'https://horizononlineuae.com/'
   },
   openGraph: {
     title: 'Business Setup in Dubai, UAE | Horizon Line',
     description: 'Trusted support for company formation, licensing, visas, VAT, and compliance across Dubai, Sharjah, Abu Dhabi, and the wider UAE.',
-    url: 'https://www.horizononlineuae.com/',
+    url: 'https://horizononlineuae.com/',
     type: 'website',
   },
   verification: {
