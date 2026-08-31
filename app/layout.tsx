@@ -26,6 +26,9 @@ export const metadata: Metadata = {
     url: 'https://www.horizonlineconsultancy.ae/',
     type: 'website',
   },
+  verification: {
+    google: 'Rb00mp0pIktf64pQjcjBll7gcohr-q_aQy2GvC-8NaI',
+  },
 };
 
 export default function RootLayout({
