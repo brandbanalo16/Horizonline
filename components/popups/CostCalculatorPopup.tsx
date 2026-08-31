@@ -11,6 +11,51 @@ interface CostCalculatorPopupProps {
 
 const CostCalculatorPopup: React.FC<CostCalculatorPopupProps> = ({ isOpen, onClose }) => {
 
+    const [loading, setLoading] = React.useState(false);
+    const [status, setStatus] = React.useState('');
+    const [message, setMessage] = React.useState('');
+
+    const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
+        event.preventDefault();
+        try {
+            setLoading(true);
+            const form = event.currentTarget;
+            const formData = new FormData(form);
+            const data = Object.fromEntries(formData.entries());
+            
+            // Add a default city since it's required by the PHP script but not in this popup
+            data.city = "Not provided (Popup)";
+
+            const response = await fetch("https://horizonlineuae.com/mail/send-mail.php", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify(data),
+            });
+
+            const formMessage = await response.json();
+
+            if (formMessage.success) {
+                setStatus("success");
+                setMessage(formMessage.message);
+                form.reset();
+                setTimeout(() => setMessage(""), 6000);
+            } else {
+                setStatus("error");
+                const errText = Array.isArray(formMessage.errors)
+                    ? formMessage.errors.join(" · ")
+                    : (formMessage.message || "Something went wrong.");
+                setMessage(errText);
+                setTimeout(() => setMessage(""), 6000);
+            }
+        } catch (error: any) {
+            setStatus("error");
+            setMessage("Network error. Please try again.");
+            setTimeout(() => setMessage(""), 4000);
+        } finally {
+            setLoading(false);
+        }
+    };
+
     // Lock body scroll when popup is open and fix positioning
     useEffect(() => {
         if (isOpen) {
@@ -127,13 +172,13 @@ const CostCalculatorPopup: React.FC<CostCalculatorPopupProps> = ({ isOpen, onClo
                     backgroundColor: 'rgba(20, 30, 48, 0.65)',
                     display: 'flex', flexDirection: 'column', flexShrink: 0,
                 }}>
-                    <form onSubmit={(e) => e.preventDefault()} style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
+                    <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
 
                         <div>
                             <label style={{ display: 'block', fontSize: '14px', fontWeight: '700', color: '#f3f4f6', marginBottom: '8px' }}>
                                 Full Name <span style={{ color: '#ef4444' }}>*</span>
                             </label>
-                            <input type="text" placeholder="Enter your full name" style={{
+                            <input type="text" name="name" required placeholder="Enter your full name" style={{
                                 width: '100%', padding: '12px', borderRadius: '8px', border: 'none',
                                 fontSize: '14px', outline: 'none', backgroundColor: '#e5e7eb', color: '#111827'
                             }} />
@@ -143,7 +188,7 @@ const CostCalculatorPopup: React.FC<CostCalculatorPopupProps> = ({ isOpen, onClo
                             <label style={{ display: 'block', fontSize: '14px', fontWeight: '700', color: '#f3f4f6', marginBottom: '8px' }}>
                                 Email Address <span style={{ color: '#ef4444' }}>*</span>
                             </label>
-                            <input type="email" placeholder="Enter your email" style={{
+                            <input type="email" name="email" required placeholder="Enter your email" style={{
                                 width: '100%', padding: '12px', borderRadius: '8px', border: 'none',
                                 fontSize: '14px', outline: 'none', backgroundColor: '#e5e7eb', color: '#111827'
                             }} />
@@ -151,14 +196,14 @@ const CostCalculatorPopup: React.FC<CostCalculatorPopupProps> = ({ isOpen, onClo
 
                         <div>
                             <label style={{ display: 'block', fontSize: '14px', fontWeight: '700', color: '#f3f4f6', marginBottom: '8px' }}>
-                                Phone Number
+                                Phone Number <span style={{ color: '#ef4444' }}>*</span>
                             </label>
                             <div style={{ display: 'flex', gap: '10px' }}>
-                                <select style={{ padding: '12px', borderRadius: '8px', border: 'none', outline: 'none', backgroundColor: '#e5e7eb', color: '#111827' }}>
-                                    <option>UAE +971</option>
-                                    <option>IN +91</option>
+                                <select name="countryCode" defaultValue="+971" style={{ padding: '12px', borderRadius: '8px', border: 'none', outline: 'none', backgroundColor: '#e5e7eb', color: '#111827' }}>
+                                    <option value="+971">UAE +971</option>
+                                    <option value="+91">IN +91</option>
                                 </select>
-                                <input type="tel" placeholder="Enter number" style={{
+                                <input type="tel" name="phone" required minLength={10} maxLength={10} pattern="[0-9]{10}" inputMode="numeric" placeholder="Enter number" style={{
                                     flex: '1', padding: '12px', borderRadius: '8px', border: 'none',
                                     fontSize: '14px', outline: 'none', backgroundColor: '#e5e7eb', color: '#111827'
                                 }} />
@@ -170,6 +215,7 @@ const CostCalculatorPopup: React.FC<CostCalculatorPopupProps> = ({ isOpen, onClo
                                 Message
                             </label>
                             <textarea
+                                name="message"
                                 placeholder="Share Your Business Idea Here..."
                                 rows={3}
                                 style={{
@@ -180,12 +226,29 @@ const CostCalculatorPopup: React.FC<CostCalculatorPopupProps> = ({ isOpen, onClo
                             />
                         </div>
 
-                        <button type="submit" style={{
+                        <button type="submit" disabled={loading} style={{
                             width: '100%', padding: '14px', backgroundColor: '#2563eb', color: '#fff',
-                            borderRadius: '8px', border: 'none', fontSize: '16px', fontWeight: '600', cursor: 'pointer'
+                            borderRadius: '8px', border: 'none', fontSize: '16px', fontWeight: '600', cursor: loading ? 'not-allowed' : 'pointer',
+                            opacity: loading ? 0.7 : 1
                         }}>
-                            Submit →
+                            {loading ? 'Sending...' : 'Submit →'}
                         </button>
+                        
+                        {message && (
+                            <div style={{
+                                padding: '10px',
+                                borderRadius: '6px',
+                                fontSize: '14px',
+                                fontWeight: '600',
+                                textAlign: 'center',
+                                marginTop: '10px',
+                                backgroundColor: status === 'success' ? 'rgba(34, 197, 94, 0.15)' : 'rgba(239, 68, 68, 0.15)',
+                                color: status === 'success' ? '#4ade80' : '#f87171',
+                                border: `1px solid ${status === 'success' ? '#4ade80' : '#f87171'}`
+                            }}>
+                                {message}
+                            </div>
+                        )}
                     </form>
                 </div>
 

@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     title: PAGE_TITLE,
     description: "Explore Horizon Line's comprehensive range of business setup, corporate, legal, tax, and visa services across the UAE.",
     alternates: {
-        canonical: 'https://www.horizonlineconsultancy.ae/services'
+        canonical: 'https://www.horizononlineuae.com/services'
     },
 };
 
@@ -36,7 +36,7 @@ const PageServices = () => {
             />
 
             <div style={{ backgroundColor: '#ffffff' }}>
-                <OurServices 
+                <OurServices
                     data={{
                         ...OurServicesData,
                         wrapperCls: "section-padding",
@@ -44,7 +44,7 @@ const PageServices = () => {
                         heading: "Wide Range of Services to Support Your Business Across the UAE",
                         button: undefined,
                         backgroundImage: undefined,
-                    }} 
+                    }}
                     maxItems={8}
                 />
             </div>
