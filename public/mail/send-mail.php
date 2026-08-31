@@ -1,5 +1,14 @@
 <?php
-header("Access-Control-Allow-Origin: https://horizonlineuae.com");
+$allowedOrigins = [
+    "https://horizonlineuae.com",
+    "https://www.horizonlineuae.com"
+];
+
+$origin = $_SERVER['HTTP_ORIGIN'] ?? '';
+
+if (in_array($origin, $allowedOrigins)) {
+    header("Access-Control-Allow-Origin: $origin");
+}
 header("Access-Control-Allow-Methods: POST, OPTIONS");
 header("Access-Control-Allow-Headers: Content-Type");
 header("Content-Type: application/json");
