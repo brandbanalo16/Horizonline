@@ -74,10 +74,6 @@ export const MenuContact: MenuType[] = [
         path: 'tel:+971541787863'
     },
     {
-        title: '+971541787863',
-        path: 'https://wa.me/971541787863?text=Hello%2C%20I%20would%20like%20to%20know%20more.'
-    },
-    {
         title: 'Office No. 103, Juma Al Majid Building, Industrial Area 4, Sharjah, UAE',
         path: 'https://maps.app.goo.gl/yxuFkyDtN54YXyje7'
     }
