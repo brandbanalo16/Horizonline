@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: '*',
       allow: '/',
     },
-    sitemap: 'https://horizononlineuae.com/sitemap.xml',
+    sitemap: 'https://www.horizonlineuae.com/sitemap.xml',
   };
 }

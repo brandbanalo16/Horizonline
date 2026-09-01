@@ -23,7 +23,7 @@ const CardBlog = ({
                         </div>
                     }
 
-                    {showDate && article.created_at && 
+                    {showDate && article.created_at &&
                         <div className="card-blog-meta-item text text-18">
                             <Icons.Calendar />
                             {formatDate(article.created_at)}
@@ -42,11 +42,6 @@ const CardBlog = ({
                 href={`/blogs/${article.slug}`}
                 aria-label={article.title}
             >
-                {article.category &&
-                    <span className="blog-tag subheading subheading-bg text-16 fw-500">
-                        {article.category}
-                    </span>
-                }
 
                 {article.image &&
                     <div className="media">
@@ -56,6 +51,7 @@ const CardBlog = ({
                             height={height}
                             alt={alt ? alt : article.title}
                             loading="lazy"
+                            style={{ objectFit: 'contain' }}
                         />
                     </div>
                 }

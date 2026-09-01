@@ -43,7 +43,7 @@ const ContactSection = ({ data }: { data: SectionProps }) => {
 
             setLoading(true);
 
-            const response = await fetch("https://horizonlineuae.com/mail/send-mail.php", {
+            const response = await fetch("https://www.horizonlineuae.com/mail/send-mail.php", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(data),
@@ -141,8 +141,7 @@ const ContactSection = ({ data }: { data: SectionProps }) => {
                                         </div>
                                         <div className="contact-info-content">
                                             <span className="contact-info-label">Call Us</span>
-                                            <a href="tel:+971555013225" className="contact-info-value">+971-555013225</a>
-                                            <a href="tel:+97165105959" className="contact-info-value">+971-65105959</a>
+                                            <a href="tel:+971541787863" className="contact-info-value">+971541787863</a>
                                         </div>
                                     </div>
                                 </div>

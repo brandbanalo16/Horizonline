@@ -222,8 +222,7 @@ const PrivacyPolicySection = () => {
                                     <li><strong>Horizonline</strong></li>
                                     <li><strong>Website:</strong> www.horizonlineuae.com</li>
                                     <li><strong>Email:</strong> enquiry@horizonlineuae.com</li>
-                                    <li><strong>Phone:</strong> +971-555013225</li>
-                                    <li><strong>Phone:</strong> +971-65105959</li>
+                                    <li><strong>Phone:</strong> +971541787863</li>
                                     <li><strong>Office Address:</strong> Office No. 103, Juma Al Majid Building, Industrial Area 4, Sharjah, UAE</li>
                                 </ul>
                                 <p>

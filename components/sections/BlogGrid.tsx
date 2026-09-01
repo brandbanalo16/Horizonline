@@ -40,7 +40,6 @@ const BlogGrid = ({ cls }: { cls: string }) => {
                     })}
                 </div>
 
-                <Pagination />
             </div>
         </div>
     )

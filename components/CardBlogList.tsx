@@ -25,6 +25,7 @@ const CardBlogList = ({
                             height={height}
                             alt={alt ? alt : title}
                             loading="lazy"
+                            style={{ objectFit: 'contain' }}
                         />
                     </div>
                 </div>

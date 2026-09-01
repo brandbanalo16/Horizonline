@@ -34,10 +34,10 @@ const nextConfig: NextConfig = {
         has: [
           {
             type: 'host',
-            value: 'www.horizononlineuae.com',
+            value: 'horizonlineuae.com',
           },
         ],
-        destination: 'https://horizononlineuae.com/:path*',
+        destination: 'https://www.horizonlineuae.com/:path*',
         permanent: true,
       },
     ];

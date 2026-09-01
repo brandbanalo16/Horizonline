@@ -26,7 +26,7 @@ const CostCalculatorPopup: React.FC<CostCalculatorPopupProps> = ({ isOpen, onClo
             // Add a default city since it's required by the PHP script but not in this popup
             data.city = "Not provided (Popup)";
 
-            const response = await fetch("https://horizonlineuae.com/mail/send-mail.php", {
+            const response = await fetch("https://www.horizonlineuae.com/mail/send-mail.php", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(data),

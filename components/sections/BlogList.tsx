@@ -47,7 +47,6 @@ const BlogList = ({ cls }: { cls: string }) => {
                             )})}
                         </div>
                 
-                        <Pagination />
                     </div>
                     <div className="col-span-12 lg:col-span-5">
                         <BlogSidebar />

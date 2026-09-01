@@ -4,7 +4,7 @@ import subservicesData from '@/data/subservice.json';
 import postsData from '@/data/posts.json';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://horizononlineuae.com';
+  const baseUrl = 'https://www.horizonlineuae.com';
 
   const staticRoutes = [
     '',
