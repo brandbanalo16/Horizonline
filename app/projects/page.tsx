@@ -10,6 +10,10 @@ import Projects from '@/components/sections/Projects';
 const PAGE_TITLE: string = 'Our Projects';
 export const metadata: Metadata = {
   title: PAGE_TITLE,
+  description: 'See Horizon Line project work, business growth case studies, and strategic consulting results across the UAE.',
+  alternates: {
+    canonical: 'https://www.horizonlineuae.com/projects',
+  },
 }
 
 const PageProjects = () => {

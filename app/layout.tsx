@@ -10,6 +10,7 @@ import AdditionalDrawer from "@/components/AdditionalDrawer";
 import Footer from "@/components/sections/Footer";
 import ScrollTop from "@/components/ScrollToTop";
 import DrawerOverlay from "@/components/DrawerOverlay";
+import CookieConsent from "@/components/CookieConsent";
 
 export const metadata: Metadata = {
   title: {
@@ -55,6 +56,9 @@ export default function RootLayout({
 
         {/* Scroll to Top Button */}
         <ScrollTop />
+
+        {/* Cookie Consent */}
+        <CookieConsent />
       </body>
     </html>
   );

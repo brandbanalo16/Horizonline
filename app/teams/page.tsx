@@ -9,6 +9,10 @@ import OurTeam from '@/components/sections/OurTeam';
 const PAGE_TITLE: string = 'Our Team';
 export const metadata: Metadata = {
   title: PAGE_TITLE,
+  description: 'Meet the Horizon Line team supporting UAE company formation, business strategy, compliance, and advisory services.',
+  alternates: {
+    canonical: 'https://www.horizonlineuae.com/teams',
+  },
 }
 
 const Team = () => {

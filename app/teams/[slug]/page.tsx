@@ -11,8 +11,25 @@ import BreadcrumbBanner from "@/components/BreadcrumbBanner";
 import TeamMemberDetails from '@/components/sections/TeamMemberDetails';
 
 const PAGE_TITLE: string = 'Team Details';
-export const metadata: Metadata = {
-  title: PAGE_TITLE,
+
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
+  const { slug } = await params;
+  const teamMember = TeamMemberList.find((member: TeamMemberType) => member.slug === slug);
+
+  if (!teamMember) {
+    return {
+      title: PAGE_TITLE,
+      description: 'Meet the Horizon Line team and learn about our business setup and advisory specialists.',
+    };
+  }
+
+  return {
+    title: `${teamMember.name} | Horizon Line`,
+    description: teamMember.expertise || `${teamMember.name} is part of the Horizon Line advisory team.`,
+    alternates: {
+      canonical: `https://www.horizonlineuae.com/teams/${teamMember.slug}`,
+    },
+  };
 }
 
 const Page = async ({ params }: {params: Promise<{slug: string}>}) => {

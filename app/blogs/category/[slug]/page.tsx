@@ -8,8 +8,22 @@ import BreadcrumbBanner from "@/components/BreadcrumbBanner";
 import BlogCategory from '@/components/sections/BlogCategory';
 
 const PAGE_TITLE: string = 'Category';
-export const metadata: Metadata = {
-  title: PAGE_TITLE,
+
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
+  const { slug } = await params;
+  const label = slug
+    .split('-')
+    .filter(Boolean)
+    .map(part => part.charAt(0).toUpperCase() + part.slice(1))
+    .join(' ');
+
+  return {
+    title: `${label || PAGE_TITLE} | Horizon Line`,
+    description: `Browse Horizon Line articles and guides about ${label || 'business setup'} in the UAE.`,
+    alternates: {
+      canonical: `https://www.horizonlineuae.com/blogs/category/${slug}`,
+    },
+  };
 }
 
 interface CategoryPageProps {

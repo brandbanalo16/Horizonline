@@ -9,6 +9,10 @@ import BlogGrid from '@/components/sections/BlogGrid';
 const PAGE_TITLE: string = 'Our Blog';
 export const metadata: Metadata = {
   title: PAGE_TITLE,
+  description: 'Explore Horizon Line blog articles on UAE business setup, mainland and free zone company formation, visas, licensing, and compliance.',
+  alternates: {
+    canonical: 'https://www.horizonlineuae.com/blogs',
+  },
 }
 
 const Blog = () => {

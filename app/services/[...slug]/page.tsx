@@ -235,10 +235,17 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }: { params: Promise<{ slug: string[] }> }): Promise<Metadata> {
   const { slug } = await params;
   const service = findService(slug.join('/'));
-  if (!service) return { title: 'Service | Horizon Line' };
-  const titleStr = service.metadata?.['SEO Title'] || service.title;
-  const desc = service.metadata?.['Meta Description'] || '';
-  return { title: titleStr, description: desc, robots: { index: true, follow: true } };
+  if (!service) return { title: 'Service | Horizon Line', description: 'Explore Horizon Line business services in the UAE.' };
+  const titleStr = service.metadata?.['SEO Title'] || service.title || 'Service | Horizon Line';
+  const desc = service.metadata?.['Meta Description'] || service.summary || service.excerpt || 'Explore Horizon Line UAE business, licensing, visa, tax, and legal services.';
+  return {
+    title: titleStr,
+    description: desc,
+    robots: { index: true, follow: true },
+    alternates: {
+      canonical: `https://www.horizonlineuae.com/services/${slug.join('/')}`,
+    },
+  };
 }
 
 /* ─────────────────────────────────────────────────────────────────────────

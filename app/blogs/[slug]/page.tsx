@@ -10,8 +10,24 @@ import { notFound } from 'next/navigation';
 
 const PAGE_TITLE: string = 'Blog Details';
 
-export const metadata: Metadata = {
-  title: PAGE_TITLE,
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
+  const { slug } = await params;
+  const article = Posts.find((post: ArticleType) => post.slug === slug);
+
+  if (!article) {
+    return {
+      title: PAGE_TITLE,
+      description: 'Read business setup insights, company formation guides, and UAE market updates from Horizon Line.',
+    };
+  }
+
+  return {
+    title: article.metaTitle || article.title || PAGE_TITLE,
+    description: article.metaDescription || article.excerpt || 'Read the latest business setup insights from Horizon Line.',
+    alternates: {
+      canonical: `https://www.horizonlineuae.com/blogs/${article.slug}`,
+    },
+  };
 }
 
 const Page = async ({ params }: { params: Promise<{ slug: string }> }) => {
