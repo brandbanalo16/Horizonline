@@ -51,8 +51,22 @@ export const metadata: Metadata = {
         title: 'Horizon Line — Business Setup Across All 7 Emirates of the UAE',
         description: 'From mainland and free zone formation to visas, office space, and bank account opening — Horizon Line supports your business journey across Dubai, Abu Dhabi, Sharjah, RAK, Fujairah, Ajman & UAQ.',
         url: 'https://www.horizonlineuae.com/',
-        type: 'website'
-    }
+        type: 'website',
+        images: [
+            {
+                url: 'https://www.horizonlineuae.com/img/og-image.png',
+                width: 1200,
+                height: 630,
+                alt: 'Horizon Line — Business Setup Across All 7 UAE Emirates',
+            },
+        ],
+    },
+    twitter: {
+        card: 'summary_large_image',
+        title: 'Horizon Line — Business Setup Across All 7 UAE Emirates',
+        description: 'Mainland, free zone, offshore, visas, VAT, PRO services and more — Horizon Line covers all your UAE business setup needs.',
+        images: ['https://www.horizonlineuae.com/img/og-image.png'],
+    },
 };
 
 const Home3 = () => {

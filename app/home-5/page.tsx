@@ -1,3 +1,4 @@
+import type { Metadata } from 'next';
 import { HeroTextBannerData } from "@/data/sections/heroTextBannerData";
 import { ScrollingLargeTextData } from "@/data/sections/scrollingLargeTextData";
 import { ServicesSliderHeadingsData } from "@/data/sections/servicesSliderHeadings";

@@ -6,9 +6,17 @@ import BreadcrumbBannerImageMobile from '@/public/img/banner/page-banner-575.jpg
 import BreadcrumbBanner from "@/components/BreadcrumbBanner";
 import PrivacyPolicySection from '@/components/sections/PrivacyPolicy';
 
-const PAGE_TITLE: string = 'Privacy Policy';
+const PAGE_TITLE: string = 'Privacy Policy | Horizon Line';
 export const metadata: Metadata = {
   title: PAGE_TITLE,
+  description: 'Read Horizon Line\'s Privacy Policy to understand how we collect, use, and protect your personal information when you use our UAE business setup services.',
+  alternates: {
+    canonical: 'https://www.horizonlineuae.com/privacy-policy',
+  },
+  robots: {
+    index: false,
+    follow: false,
+  },
 }
 
 const Privacy = () => {

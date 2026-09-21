@@ -1,3 +1,4 @@
+import type { Metadata } from 'next';
 import { HeroVideoBannerData } from "@/data/sections/heroVideoBannerData";
 import { ImageCounterVideoData } from "@/data/sections/imageCounterVideoData";
 import { OurExpertiseData } from "@/data/sections/ourExpertiseData";
@@ -15,6 +16,11 @@ import RecentProjectSlider from "@/components/sections/RecentProjectSlider";
 import Testimonials from "@/components/sections/Testimonials";
 import TeamSlider3 from "@/components/sections/TeamSlider3";
 import FeaturedBlog3 from "@/components/sections/FeaturedBlog3";
+
+export const metadata: Metadata = {
+  title: 'Home 9 | Horizon Line',
+  robots: { index: false, follow: false },
+};
 
 const Home9 = () => {
   return (

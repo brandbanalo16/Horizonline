@@ -6,12 +6,23 @@ import BreadcrumbBannerImageMobile from '@/public/img/banner/page-banner-575.jpg
 import BreadcrumbBanner from "@/components/BreadcrumbBanner";
 import BlogGrid from '@/components/sections/BlogGrid';
 
-const PAGE_TITLE: string = 'Our Blog';
+const PAGE_TITLE: string = 'UAE Business Setup Blog — Insights & Guides';
 export const metadata: Metadata = {
   title: PAGE_TITLE,
   description: 'Explore Horizon Line blog articles on UAE business setup, mainland and free zone company formation, visas, licensing, and compliance.',
   alternates: {
     canonical: 'https://www.horizonlineuae.com/blogs',
+  },
+  openGraph: {
+    title: 'UAE Business Setup Blog — Insights & Guides | Horizon Line',
+    description: 'Expert articles and guides on UAE company formation, free zone setup, visa processes, VAT, trade licensing, and business compliance.',
+    url: 'https://www.horizonlineuae.com/blogs',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'UAE Business Setup Blog | Horizon Line',
+    description: 'Guides and insights on UAE business setup, company formation, visas, VAT, and compliance.',
   },
 }
 

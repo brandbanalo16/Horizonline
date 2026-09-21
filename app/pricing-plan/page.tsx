@@ -11,9 +11,24 @@ import PricingPlan from '@/components/sections/PricingPlan';
 import WhyChooseUsGrid from '@/components/sections/WhyChooseUsGrid';
 import Faq from '@/components/sections/Faq';
 
-const PAGE_TITLE: string = 'Pricing Plan';
+const PAGE_TITLE: string = 'Business Setup Pricing Plans | Horizon Line UAE';
 export const metadata: Metadata = {
   title: PAGE_TITLE,
+  description: 'Explore Horizon Line\'s transparent business setup pricing plans for UAE company formation, trade licensing, visa packages, and PRO services across mainland and free zones.',
+  alternates: {
+    canonical: 'https://www.horizonlineuae.com/pricing-plan',
+  },
+  openGraph: {
+    title: 'Business Setup Pricing Plans | Horizon Line UAE',
+    description: 'Clear, transparent pricing for UAE company formation, licensing, visa, and compliance services across Dubai, Sharjah, Abu Dhabi, and all 7 Emirates.',
+    url: 'https://www.horizonlineuae.com/pricing-plan',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Business Setup Pricing Plans | Horizon Line UAE',
+    description: 'Transparent UAE business setup pricing — mainland, free zone, visa, and compliance packages.',
+  },
 }
 
 const PricingPlanPage = () => {

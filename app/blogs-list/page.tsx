@@ -8,6 +8,13 @@ import BlogList from '@/components/sections/BlogList';
 const PAGE_TITLE: string = 'Our Blog';
 export const metadata: Metadata = {
   title: PAGE_TITLE,
+  alternates: {
+    canonical: 'https://www.horizonlineuae.com/blogs',
+  },
+  robots: {
+    index: false,
+    follow: false,
+  },
 }
 
 const Blog = () => {

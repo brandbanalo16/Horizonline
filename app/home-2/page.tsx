@@ -1,3 +1,4 @@
+import type { Metadata } from 'next';
 import { BannerWithSliderData } from '@/data/sections/bannerWithSliderData';
 import { ImageText2Data } from '@/data/sections/imageText2Data';
 import { OurServicesDataAccordion } from '@/data/sections/ourServicesDataAccordion';
@@ -18,6 +19,10 @@ import TestimonialSliderWithThumb from '@/components/sections/TestimonialSliderW
 import Faq from '@/components/sections/Faq';
 import FeaturedBlog from '@/components/sections/FeaturedBlog';
 
+export const metadata: Metadata = {
+  title: 'Home 2 | Horizon Line',
+  robots: { index: false, follow: false },
+};
 
 const Home2 = () => {
     return(

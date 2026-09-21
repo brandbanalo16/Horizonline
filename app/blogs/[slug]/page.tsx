@@ -8,7 +8,15 @@ import BlogDetails from '@/components/sections/BlogDetails';
 import { ArticleType } from '@/types/article';
 import { notFound } from 'next/navigation';
 
-const PAGE_TITLE: string = 'Blog Details';
+const BASE_URL = 'https://www.horizonlineuae.com';
+const DEFAULT_OG_IMAGE = `${BASE_URL}/img/og-image.png`;
+
+// Pre-render all blog posts at build time
+export async function generateStaticParams() {
+  return Posts.map((post: ArticleType) => ({
+    slug: post.slug,
+  }));
+}
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params;
@@ -16,16 +24,41 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 
   if (!article) {
     return {
-      title: PAGE_TITLE,
+      title: 'Blog Article | Horizon Line',
       description: 'Read business setup insights, company formation guides, and UAE market updates from Horizon Line.',
+      robots: { index: false, follow: false },
     };
   }
 
+  const ogImage = article.image
+    ? article.image.startsWith('http') ? article.image : `${BASE_URL}${article.image}`
+    : DEFAULT_OG_IMAGE;
+
   return {
-    title: article.metaTitle || article.title || PAGE_TITLE,
+    title: article.metaTitle || article.title,
     description: article.metaDescription || article.excerpt || 'Read the latest business setup insights from Horizon Line.',
     alternates: {
-      canonical: `https://www.horizonlineuae.com/blogs/${article.slug}`,
+      canonical: `${BASE_URL}/blogs/${article.slug}`,
+    },
+    openGraph: {
+      title: article.metaTitle || article.title,
+      description: article.metaDescription || article.excerpt || '',
+      url: `${BASE_URL}/blogs/${article.slug}`,
+      type: 'article',
+      images: [
+        {
+          url: ogImage,
+          width: 1200,
+          height: 630,
+          alt: article.title,
+        },
+      ],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: article.metaTitle || article.title,
+      description: article.metaDescription || article.excerpt || '',
+      images: [ogImage],
     },
   };
 }
@@ -38,7 +71,7 @@ const Page = async ({ params }: { params: Promise<{ slug: string }> }) => {
   return (
     <>
       <BreadcrumbBanner
-        title={PAGE_TITLE}
+        title={article?.title || 'Blog Article'}
         image={{
           src: BreadcrumbBannerImage.src,
           srcMobile: BreadcrumbBannerImageTablet.src,
@@ -46,7 +79,7 @@ const Page = async ({ params }: { params: Promise<{ slug: string }> }) => {
           width: 1920,
           height: 520,
           cls: "media media-bg",
-          alt: "Banner Image",
+          alt: article ? `${article.title} — Horizon Line Blog` : "Horizon Line Blog",
           loading: "eager"
         }}
       />
@@ -59,4 +92,4 @@ const Page = async ({ params }: { params: Promise<{ slug: string }> }) => {
   )
 }
 
-export default Page;
+export default Page;

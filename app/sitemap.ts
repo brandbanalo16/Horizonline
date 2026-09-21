@@ -6,19 +6,18 @@ import postsData from '@/data/posts.json';
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://www.horizonlineuae.com';
 
+  // Static routes — only canonical, indexable, public pages
+  // Excluded: /blogs-list (duplicate of /blogs), /privacy-policy and /terms-condition (noindex)
   const staticRoutes = [
     '',
     '/about-us',
     '/services',
     '/blogs',
-    '/blogs-list',
     '/contact-us',
     '/faq',
     '/pricing-plan',
-    '/privacy-policy',
     '/projects',
     '/teams',
-    '/terms-condition',
   ].map((route) => ({
     url: `${baseUrl}${route}`,
     lastModified: new Date(),
@@ -26,7 +25,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: route === '' ? 1 : 0.8,
   }));
 
-  // Map dynamic services
+  // Map dynamic services (main category pages)
   const dynamicServices = servicesData.map((service: any) => ({
     url: `${baseUrl}/services/${service.slug}`,
     lastModified: new Date(),
@@ -34,10 +33,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }));
 
-  // Map dynamic subservices
+  // Map dynamic subservices — force slugs to lowercase to prevent capitalization issues
   const dynamicSubservices = subservicesData.services.map((sub: any) => {
-    // Some url_slugs in the JSON might start with a slash, some might not. Ensure format:
-    const slugPath = sub.url_slug.startsWith('/') ? sub.url_slug : `/${sub.url_slug}`;
+    const rawSlug = sub.url_slug.startsWith('/') ? sub.url_slug : `/${sub.url_slug}`;
+    // Lowercase the entire path to avoid canonical mismatches (e.g. Emirates-id → emirates-id)
+    const slugPath = rawSlug.toLowerCase();
     return {
       url: `${baseUrl}${slugPath}`,
       lastModified: new Date(),

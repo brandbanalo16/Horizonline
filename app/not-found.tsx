@@ -8,10 +8,15 @@ import BreadcrumbBannerImageTablet from '@/public/img/banner/page-banner-991.jpg
 import BreadcrumbBannerImageMobile from '@/public/img/banner/page-banner-575.jpg';
 import Icons from '@/components/Icons';
 
-const PAGE_TITLE: string = 'Error';
+const PAGE_TITLE: string = 'Page Not Found';
 
 export const metadata: Metadata = {
-  title: PAGE_TITLE,
+  title: '404 — Page Not Found | Horizon Line',
+  description: 'The page you are looking for does not exist. Return to the Horizon Line homepage for UAE business setup, company formation, and corporate services.',
+  robots: {
+    index: false,
+    follow: false,
+  },
 }
  
 export default function NotFound() {
