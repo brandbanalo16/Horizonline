@@ -27,6 +27,15 @@ const getRawServices = () => {
   try {
     const dir = path.join(process.cwd(), 'data', 'service-data');
     const all: any[] = [];
+    const subserviceFile = path.join(process.cwd(), 'data', 'subservice.json');
+    if (fs.existsSync(subserviceFile)) {
+      const content = fs.readFileSync(subserviceFile, 'utf8');
+      const data = JSON.parse(content);
+      if (data && Array.isArray(data.services)) {
+        all.push(...data.services);
+      }
+    }
+
     if (fs.existsSync(dir)) {
       const files = fs.readdirSync(dir).filter(f => f.endsWith('.json'));
       for (const file of files) {
@@ -53,15 +62,16 @@ const getRawServices = () => {
 const rawServices = getRawServices();
 
 const extractSlug = (item: any): string => {
-  if (item.slug) return item.slug;
+  if (item.url_slug) return item.url_slug.replace('/services/', '').toLowerCase().trim();
+  if (item.slug) return item.slug.toLowerCase().trim();
   let parsed = item.metadata?.['URL Slug'];
   if (parsed) {
-    parsed = parsed.replace(/[`/]/g, '').trim();
+    parsed = parsed.replace(/[`/]/g, '').trim().toLowerCase();
     if (parsed) return parsed;
   }
   const kw = item.metadata?.['Primary SEO Keyword'];
   if (kw) return kw.toLowerCase().trim().replace(/[^a-z0-9]+/g, '-').replace(/-uae$/, '');
-  const title = item.title || item.hero?.page_title || item.category || '';
+  const title = item.title || item.name || item.hero?.page_title || item.category || '';
   return title.toLowerCase().trim().replace(/[^a-z0-9]+/g, '-').replace(/-uae$/, '');
 };
 
@@ -96,8 +106,8 @@ const findService = (slugPath: string) => {
  * ─────────────────────────────────────────────────────────────────────────*/
 type SvcType = 'business' | 'visa' | 'tax' | 'legal' | 'trademark' | 'public' | 'general';
 const detectType = (s: any): SvcType => {
-  const c = (s.metadata?.['Main Category'] || '').toLowerCase();
-  const t = (s.title || '').toLowerCase();
+  const c = (s.metadata?.['Main Category'] || s.category || '').toLowerCase();
+  const t = (s.title || s.name || '').toLowerCase();
   if (c.includes('visa') || t.includes('visa') || t.includes('immigration') || t.includes('citizenship') || t.includes('residency')) return 'visa';
   if (c.includes('tax') || c.includes('account') || t.includes('vat') || t.includes('tax') || t.includes('audit') || t.includes('bookkeeping')) return 'tax';
   if (c.includes('trademark') || t.includes('trademark') || t.includes('copyright') || t.includes('intellectual property')) return 'trademark';
@@ -111,7 +121,7 @@ const detectType = (s: any): SvcType => {
  * Adaptive config per service type
  * ─────────────────────────────────────────────────────────────────────────*/
 const getConfig = (s: any, type: SvcType) => {
-  const name = s.metadata?.['Service Name'] || s.title || 'this service';
+  const name = s.metadata?.['Service Name'] || s.name || s.title || 'this service';
   const CONFIGS: Record<SvcType, { formTitle: string; formSub: string; ctaNote: string }> = {
     business: { formTitle: `Set Up Your ${name}`, formSub: `Get professional guidance on ${name.toLowerCase()} requirements.`, ctaNote: 'Ready to establish your business in the UAE?' },
     visa: { formTitle: `Get Guidance on Your ${name}`, formSub: `Our team can help assess your eligibility and guide you.`, ctaNote: 'Need help with your UAE visa or immigration requirement?' },
@@ -147,8 +157,8 @@ const getVariant = (h: string): Variant => {
  * ─────────────────────────────────────────────────────────────────────────*/
 const BASE = '/img/service/main-services/';
 const getServiceImage = (service: any): string => {
-  const t = ((service.metadata?.['Service Name'] || service.title) as string).toLowerCase();
-  const c = (service.metadata?.['Main Category'] || '').toLowerCase();
+  const t = ((service.metadata?.['Service Name'] || service.name || service.title || '') as string).toLowerCase();
+  const c = (service.metadata?.['Main Category'] || service.category || '').toLowerCase();
   if (t.includes('mainland company') || t.includes('mainland formation')) return `${BASE}mainland-company-formation.webp`;
   if (t.includes('free zone company') || t.includes('free zone formation')) return `${BASE}free-zone-company-formation.webp`;
   if (t.includes('offshore company') || t.includes('offshore formation')) return `${BASE}offshore-company-formation.webp`;
@@ -286,14 +296,57 @@ const Page = async ({ params }: { params: Promise<{ slug: string[] }> }) => {
   // Otherwise, render the dynamic sub-service layout
   const type = detectType(service);
   const cfg = getConfig(service, type);
-  const serviceName = service.metadata?.['Service Name'] || service.title;
+  const serviceName = service.metadata?.['Service Name'] || service.name || service.title;
   const serviceImg = getServiceImage(service);
 
-  const visibleSections = (service.sections || []).filter((s: any) => !isHidden(s.heading));
+  // Normalize flat JSON schema into expected sections array
+  let normalizedSections = service.sections || [];
+  if (!service.sections) {
+    normalizedSections = [];
+    if (service.seo_intro || service.introduction) {
+      normalizedSections.push({
+        heading: "Overview",
+        content: [{ type: "paragraph", text: `${service.seo_intro || ''} ${service.introduction || ''}`.trim() }]
+      });
+    }
+    if (service.key_benefits && service.key_benefits.length > 0) {
+      normalizedSections.push({
+        heading: "Key Benefits",
+        items: service.key_benefits.map((b: any) => ({ title: b.point, text: b.explanation }))
+      });
+    }
+    if (service.documents_required && service.documents_required.length > 0) {
+      normalizedSections.push({
+        heading: "Documents Required",
+        items: service.documents_required.map((b: any) => ({ title: b.point, text: b.explanation }))
+      });
+    }
+    if (service.process && service.process.length > 0) {
+      normalizedSections.push({
+        heading: "Step-by-Step Process",
+        items: service.process.map((b: any) => ({ title: b.point, text: b.explanation }))
+      });
+    }
+    if (service.Emirates_coverage) {
+      normalizedSections.push({
+        heading: "Coverage",
+        content: [{ type: "paragraph", text: service.Emirates_coverage }]
+      });
+    }
+    if (service.seo_summary || service.closing) {
+      normalizedSections.push({
+        heading: "Summary",
+        content: [{ type: "paragraph", text: `${service.seo_summary || ''} ${service.closing || ''}`.trim() }]
+      });
+    }
+  }
+
+  const visibleSections = normalizedSections.filter((s: any) => !isHidden(s.heading));
   const heroDesc =
     visibleSections[0]?.content?.find((b: any) => b.type === 'paragraph')?.text ||
     visibleSections[0]?.paragraphs?.[0] ||
-    service.hero_description || '';
+    service.hero_description || 
+    service.meta_description || '';
 
   const faqSection = visibleSections.find((s: any) => getVariant(s.heading) === 'faq');
   const otherSections = visibleSections.filter((s: any) => getVariant(s.heading) !== 'faq');

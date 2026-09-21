@@ -39,22 +39,15 @@ export default function NotFound() {
             <div className="section-error section-padding">
               <div className="container">
                 <div className="section-headings text-center">
-                  <div className="error-media" data-aos="zoom-in-up">
-                    <Image
-                      src="/img/error/error.png"
-                      alt="404 error image"
-                      width={658}
-                      height={277}
-                      loading="lazy"
-                    />
-                  </div>
-
-                  <p className="text text-18" data-aos="fade-up">
-                    Sorry, the page you&apos;re looking for doesn&apos;t exist. If you think something is broken, report a porblem. 
+                  <h1 style={{ fontSize: '120px', fontWeight: 'bold', color: 'var(--sp-primary)', marginBottom: '20px' }}>404</h1>
+                  <h2 style={{ fontSize: '32px', marginBottom: '20px' }}>Page Not Found</h2>
+                  <p className="text text-18" data-aos="fade-up" style={{ marginBottom: '40px' }}>
+                    Sorry, the page you're looking for doesn't exist. If you think something is broken, please report the problem. 
                   </p>
 
                   <div className="buttons" data-aos="fade-up">
                     <Link
+
                       href="/"
                       className="button button--primary"
                       aria-label="Back to Home"

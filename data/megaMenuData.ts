@@ -35,7 +35,7 @@ const megaMenuData: MegaMenuCategory[] = [
       },
       {
         "title": "Trade License",
-        "path": "/services/trade-license-uae"
+        "path": "/services/trade-license-renewal-uae"
       },
       {
         "title": "Branch Office Setup",
@@ -58,7 +58,7 @@ const megaMenuData: MegaMenuCategory[] = [
       },
       {
         "title": "Business Plan",
-        "path": "/services/business-plan-services-uae"
+        "path": "/services/business-plan-uae"
       },
       {
         "title": "PRO Services",
@@ -66,7 +66,7 @@ const megaMenuData: MegaMenuCategory[] = [
       },
       {
         "title": "Document Clearing",
-        "path": "/services/document-clearing-services-uae"
+        "path": "/services/document-clearing-uae"
       },
       {
         "title": "Company Liquidation",
@@ -85,7 +85,7 @@ const megaMenuData: MegaMenuCategory[] = [
       },
       {
         "title": "Copyright Registration",
-        "path": "/services/Copyright Registration"
+        "path": "/services/copyright-registration-uae"
       }
     ]
   },
@@ -151,11 +151,11 @@ const megaMenuData: MegaMenuCategory[] = [
       },
       {
         "title": "Accounting & Bookkeeping",
-        "path": "/services/accounting-bookkeeping-services-uae"
+        "path": "/services/accounting-bookkeeping-uae"
       },
       {
         "title": "Audit Support",
-        "path": "/services/audit-support-services-uae"
+        "path": "/services/audit-support-uae"
       },
       {
         "title": "ICV Certificate",
@@ -170,7 +170,7 @@ const megaMenuData: MegaMenuCategory[] = [
     "services": [
       {
         "title": "Legal Documentation",
-        "path": "/services/legal-documentation-services-uae"
+        "path": "/services/legal-documentation-uae"
       },
       {
         "title": "MOA Amendment",
@@ -256,7 +256,7 @@ const megaMenuData: MegaMenuCategory[] = [
       },
       {
         "title": "Health & Medical Services",
-        "path": "/services/health-medical-services-uae"
+        "path": "/services/health-uae"
       },
       {
         "title": "Utilities & Municipalities Services",
