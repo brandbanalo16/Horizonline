@@ -15,7 +15,7 @@ import PrimaryButton from "../buttons/PrimaryButton";
 import SecondaryButton from "../buttons/SecondaryButton";
 
 const FeaturedBlog2 = ({ data }: { data: SectionProps }) => {
-  const posts = Posts;
+  const posts = [...Posts].reverse();
   if (posts.length == 0) return null;
 
   const { wrapperCls, container, subheading, heading, button } = data || {};

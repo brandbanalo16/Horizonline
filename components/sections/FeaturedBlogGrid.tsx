@@ -18,7 +18,7 @@ import SecondaryButton from "../buttons/SecondaryButton";
 
 
 const FeaturedBlogGrid = ({ data }: { data: SectionProps; }) => {
-    const posts = Posts;
+    const posts = [...Posts].reverse();
     if(posts.length == 0) return null;
 
     const {

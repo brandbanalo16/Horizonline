@@ -8,7 +8,7 @@ import Pagination from "../Pagination";
 
 
 const BlogGrid = ({ cls }: { cls: string }) => {
-    const posts = Posts;
+    const posts = [...Posts].reverse();
 
     if (posts.length == 0) {
         return <NotFoundMsg message="No posts found!" />
