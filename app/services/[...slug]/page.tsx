@@ -23,7 +23,8 @@ import path from 'path';
 
 /* ─────────────────────────────────────────────────────────────────────────
  * Types & Data
- * ─────────────────────────────────────────────────────────────────────────*/
+ * ───────────────────────────
+ * ──────────────────────────────────────────────*/
 const getRawServices = () => {
   try {
     const dir = path.join(process.cwd(), 'data', 'service-data');
@@ -36,7 +37,6 @@ const getRawServices = () => {
         all.push(...data.services);
       }
     }
-
     if (fs.existsSync(dir)) {
       const files = fs.readdirSync(dir).filter(f => f.endsWith('.json'));
       for (const file of files) {
@@ -256,9 +256,17 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     .trim();
 
   const desc = service.metadata?.['Meta Description'] || service.summary || service.excerpt || 'Explore Horizon Line UAE business, licensing, visa, tax, and legal services.';
-  
+
+  const suffixes = [
+    "Horizonline UAE Leading Business Setup service Provider company",
+    "Horizonline UAE Business Setup Experts",
+    "Horizonline Leading Business Setup"
+  ];
+  const suffixIndex = slug.join('').length % suffixes.length;
+  const suffix = suffixes[suffixIndex];
+
   return {
-    title: baseTitle.includes('|') ? baseTitle : `${baseTitle} | Horizon Line UAE`,
+    title: { absolute: `Best ${cleanTitle} | ${suffix}` },
     description: desc,
     robots: { index: true, follow: true },
     alternates: {
@@ -282,7 +290,7 @@ const Page = async ({ params }: { params: Promise<{ slug: string[] }> }) => {
   // If this is a main category page, render the legacy full page layout
   if (service.isCategory) {
     const bannerTitle = service.hero?.page_title || service.hero?.breadcrumb || service.category || 'Our Services';
-    
+
     // Breadcrumb schema for legacy layout
     const breadcrumbSchema = {
       '@context': 'https://schema.org',
@@ -367,7 +375,7 @@ const Page = async ({ params }: { params: Promise<{ slug: string[] }> }) => {
   const heroDesc =
     visibleSections[0]?.content?.find((b: any) => b.type === 'paragraph')?.text ||
     visibleSections[0]?.paragraphs?.[0] ||
-    service.hero_description || 
+    service.hero_description ||
     service.meta_description || '';
 
   const faqSection = visibleSections.find((s: any) => getVariant(s.heading) === 'faq');
@@ -424,7 +432,7 @@ const Page = async ({ params }: { params: Promise<{ slug: string[] }> }) => {
   };
 
   const serviceUrl = `https://www.horizonlineuae.com/services/${slug.join('/')}`;
-  
+
   // Breadcrumb schema
   const breadcrumbSchema = {
     '@context': 'https://schema.org',
@@ -465,7 +473,7 @@ const Page = async ({ params }: { params: Promise<{ slug: string[] }> }) => {
         text: sub.content?.map((b: any) => b.text || b.items?.join('. ') || '').join(' ') || sub.answer || sub.text || ''
       },
     }));
-    
+
     if (faqData.length > 0) {
       faqSchema = {
         '@context': 'https://schema.org',
