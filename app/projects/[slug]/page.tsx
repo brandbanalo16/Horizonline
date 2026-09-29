@@ -23,7 +23,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   }
 
   return {
-    title: `${project.title} | Horizon Line`,
+    title: { absolute: `Best ${project.title} | Horizonline UAE Business Setup Experts` },
     description: project.shortDesc || 'Explore Horizon Line project work and business solutions across the UAE.',
     alternates: {
       canonical: `https://www.horizonlineuae.com/projects/${project.slug}`,

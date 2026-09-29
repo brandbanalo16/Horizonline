@@ -18,7 +18,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     .join(' ');
 
   return {
-    title: `${label || PAGE_TITLE} | Horizon Line`,
+    title: { absolute: `Best ${label || PAGE_TITLE} | Horizonline Leading Business Setup` },
     description: `Browse Horizon Line articles and guides about ${label || 'business setup'} in the UAE.`,
     alternates: {
       canonical: `https://www.horizonlineuae.com/blogs/category/${slug}`,

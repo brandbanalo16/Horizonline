@@ -5,9 +5,14 @@ import Heading from "../Heading";
 import Text from "../Text";
 import FaqForm from "../FaqForm";
 import Accordion from "../Accordion";
+import { AccordionDataType } from "@/types/accrodion";
 
+interface FaqWithContactFormProps {
+    data: SectionProps;
+    faqData?: AccordionDataType[];
+}
 
-const FaqWithContactForm = ({ data }: { data: SectionProps }) => {
+const FaqWithContactForm = ({ data, faqData }: FaqWithContactFormProps) => {
     const {        
         wrapperCls,
         container,
@@ -15,6 +20,8 @@ const FaqWithContactForm = ({ data }: { data: SectionProps }) => {
         heading,
         text
     } = data || {};
+
+    const accordionItems = faqData?.length ? faqData : FaqAccordion;
 
     return (
         <div className={`faq ${wrapperCls}`}>
@@ -53,7 +60,7 @@ const FaqWithContactForm = ({ data }: { data: SectionProps }) => {
                     </div>
 
                     <div className="lg:col-span-1 col-span-2">
-                        <Accordion data={FaqAccordion} />
+                        <Accordion data={accordionItems} />
                     </div>
                 </div>
             </div>
@@ -61,4 +68,4 @@ const FaqWithContactForm = ({ data }: { data: SectionProps }) => {
     )
 }
 
-export default FaqWithContactForm;
+export default FaqWithContactForm;

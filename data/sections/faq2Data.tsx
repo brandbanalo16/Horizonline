@@ -1,14 +1,17 @@
 import { SectionProps } from "@/types/sectionProps";
+import { PricingFaqAccordion } from "@/data/pricingFaqAccordion";
 
 export const Faq2Data: SectionProps = {
     wrapperCls: "mt-100 mb-100",
     container: "container",
     subheading: "Questions",
-    heading: "Have any questions? here some answers.",
-    text: "In relation to websites and apps, UI design considers the look, interactivity of the making product. It's all about making sure that the user interface.",
+    heading: "Business Setup Pricing — Common Questions Answered",
+    text: "Get clear answers about our UAE business setup packages, costs, timelines, and what is included in every service.",
     button: {
-        label: "Ask Your Question",
-        href: "/faq",
+        label: "Get a Free Quote",
+        href: "/contact-us",
         type: "primary"
-    }
+    },
+    faqList: PricingFaqAccordion,
 }
+

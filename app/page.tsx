@@ -25,8 +25,13 @@ import HeroSlider2 from "@/components/sections/HeroSlider2";
 import WhyChooseUs3 from "@/components/sections/WhyChooseUs3";
 import WorkingProcessSticky from "@/components/sections/WorkingProcessSticky";
 
+import SeoFaqSection from '@/components/seo/SeoFaqSection';
+import JsonLd from '@/components/seo/JsonLd';
+import RelatedServices from '@/components/seo/RelatedServices';
+import { HomeFaqAccordion } from '@/data/homeFaqAccordion';
+
 export const metadata: Metadata = {
-    title: 'Business Setup in UAE — All 7 Emirates | Horizon Line',
+    title: { absolute: 'Horizon Line | Setup your business in UAE all 7 Emirates with Best Support and Consultation' },
     description: 'Start your business anywhere in the UAE — Dubai, Abu Dhabi, RAK, Fujairah & more. End-to-end setup, visas, office space & bank account support. Free consultation.',
     keywords: [
         'Business Setup in Dubai',
@@ -69,9 +74,34 @@ export const metadata: Metadata = {
     },
 };
 
+const homeFaqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: HomeFaqAccordion.map((f) => ({
+    '@type': 'Question',
+    name: f.title,
+    acceptedAnswer: { '@type': 'Answer', text: f.text },
+  })),
+};
+
+const organizationSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Organization',
+  name: 'Horizon Line',
+  url: 'https://www.horizonlineuae.com/',
+  logo: 'https://www.horizonlineuae.com/img/logo.png',
+  description: 'Horizon Line provides expert business setup, company formation, visa, and PRO services across all 7 Emirates in the UAE.',
+  address: {
+    '@type': 'PostalAddress',
+    addressCountry: 'AE'
+  }
+};
+
 const Home3 = () => {
     return (
         <>
+            <JsonLd schema={homeFaqSchema} />
+            <JsonLd schema={organizationSchema} />
             {/* Hero Banner */}
             <HeroSlider2
                 wrapperCls="with-floating-header"
@@ -107,6 +137,28 @@ const Home3 = () => {
 
             {/* Contact Form */}
             <ContactSection data={Contact2Data} />
+
+            {/* SEO FAQ Section */}
+            <SeoFaqSection
+                heading="Frequently Asked Questions About Business Setup in UAE"
+                background="gray"
+                faqs={HomeFaqAccordion.map(f => ({ question: f.title, answer: f.text }))}
+            />
+
+            {/* Related Services */}
+            <RelatedServices
+                heading="Explore Our Core Business Setup Services"
+                background="white"
+                items={[
+                    { label: 'Mainland Company Formation UAE', href: '/services/mainland-company-formation' },
+                    { label: 'Free Zone Company Setup', href: '/services/free-zone-company-formation' },
+                    { label: 'Corporate Bank Account Opening', href: '/services/corporate-bank-account' },
+                    { label: 'UAE Investor Visa', href: '/services/employment-visa' },
+                    { label: 'PRO Services UAE', href: '/services/pro-services' },
+                    { label: 'Business Setup Pricing Plans', href: '/pricing-plan' },
+                    { label: 'UAE Business Setup FAQ', href: '/faq' },
+                ]}
+            />
         </>
     )
 }

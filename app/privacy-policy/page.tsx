@@ -8,7 +8,7 @@ import PrivacyPolicySection from '@/components/sections/PrivacyPolicy';
 
 const PAGE_TITLE: string = 'Privacy Policy | Horizon Line';
 export const metadata: Metadata = {
-  title: PAGE_TITLE,
+  title: { absolute: 'Best Privacy Policy | Horizonline Leading Business Setup' },
   description: 'Read Horizon Line\'s Privacy Policy to understand how we collect, use, and protect your personal information when you use our UAE business setup services.',
   alternates: {
     canonical: 'https://www.horizonlineuae.com/privacy-policy',

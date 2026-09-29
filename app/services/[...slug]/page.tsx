@@ -3,6 +3,7 @@ import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import Accordion from '@/components/Accordion';
 import BreadcrumbBanner from '@/components/BreadcrumbBanner';
+import JsonLd from '@/components/seo/JsonLd';
 import BreadcrumbBannerImage from '@/public/img/banner/page-banner.jpg';
 import BreadcrumbBannerImageTablet from '@/public/img/banner/page-banner-991.jpg';
 import BreadcrumbBannerImageMobile from '@/public/img/banner/page-banner-575.jpg';
@@ -246,10 +247,26 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const { slug } = await params;
   const service = findService(slug.join('/'));
   if (!service) return { title: 'Service | Horizon Line', description: 'Explore Horizon Line business services in the UAE.' };
-  const titleStr = service.metadata?.['SEO Title'] || service.title || 'Service | Horizon Line';
+  const baseTitle = service.metadata?.['SEO Title'] || service.title || service.name || service.category || 'Service';
+  const cleanTitle = baseTitle
+    .replace(/\s*\|\s*Horizon\s*Line\s*UAE\s*/gi, '')
+    .replace(/\s*\|\s*Horizon\s*Line\s*/gi, '')
+    .replace(/\s*\|\s*Horizonline\s*/gi, '')
+    .replace(/\s*-\s*Horizon\s*Line.*/gi, '')
+    .trim();
+
   const desc = service.metadata?.['Meta Description'] || service.summary || service.excerpt || 'Explore Horizon Line UAE business, licensing, visa, tax, and legal services.';
+  
+  const suffixes = [
+    "Horizonline UAE Leading Business Setup service Provider company",
+    "Horizonline UAE Business Setup Experts",
+    "Horizonline Leading Business Setup"
+  ];
+  const suffixIndex = slug.join('').length % suffixes.length;
+  const suffix = suffixes[suffixIndex];
+
   return {
-    title: titleStr,
+    title: { absolute: `Best ${cleanTitle} | ${suffix}` },
     description: desc,
     robots: { index: true, follow: true },
     alternates: {
@@ -273,8 +290,21 @@ const Page = async ({ params }: { params: Promise<{ slug: string[] }> }) => {
   // If this is a main category page, render the legacy full page layout
   if (service.isCategory) {
     const bannerTitle = service.hero?.page_title || service.hero?.breadcrumb || service.category || 'Our Services';
+    
+    // Breadcrumb schema for legacy layout
+    const breadcrumbSchema = {
+      '@context': 'https://schema.org',
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.horizonlineuae.com/' },
+        { '@type': 'ListItem', position: 2, name: 'Services', item: 'https://www.horizonlineuae.com/services' },
+        { '@type': 'ListItem', position: 3, name: bannerTitle, item: `https://www.horizonlineuae.com/services/${slug.join('/')}` },
+      ],
+    };
+
     return (
       <>
+        <JsonLd schema={breadcrumbSchema} />
         <BreadcrumbBanner
           title={bannerTitle}
           image={{
@@ -401,8 +431,64 @@ const Page = async ({ params }: { params: Promise<{ slug: string[] }> }) => {
     );
   };
 
+  const serviceUrl = `https://www.horizonlineuae.com/services/${slug.join('/')}`;
+  
+  // Breadcrumb schema
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.horizonlineuae.com/' },
+      { '@type': 'ListItem', position: 2, name: 'Services', item: 'https://www.horizonlineuae.com/services' },
+      { '@type': 'ListItem', position: 3, name: serviceName, item: serviceUrl },
+    ],
+  };
+
+  // Service schema
+  const serviceSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Service',
+    name: serviceName,
+    description: heroDesc.length > 150 ? heroDesc.slice(0, 150) + '...' : heroDesc,
+    provider: {
+      '@type': 'Organization',
+      name: 'Horizon Line',
+      url: 'https://www.horizonlineuae.com/'
+    },
+    areaServed: {
+      '@type': 'Country',
+      name: 'United Arab Emirates'
+    },
+    url: serviceUrl
+  };
+
+  // FAQ schema if faqSection exists
+  let faqSchema = null;
+  if (faqSection) {
+    const faqData = (faqSection.subsections || faqSection.items || []).map((sub: any) => ({
+      '@type': 'Question',
+      name: sub.heading || sub.question || sub.title,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: sub.content?.map((b: any) => b.text || b.items?.join('. ') || '').join(' ') || sub.answer || sub.text || ''
+      },
+    }));
+    
+    if (faqData.length > 0) {
+      faqSchema = {
+        '@context': 'https://schema.org',
+        '@type': 'FAQPage',
+        mainEntity: faqData
+      };
+    }
+  }
+
   return (
     <div className="sp-page">
+      <JsonLd schema={breadcrumbSchema} />
+      <JsonLd schema={serviceSchema} />
+      {faqSchema && <JsonLd schema={faqSchema} />}
+
       {/* BREADCRUMB BANNER — same component as About Us, Contact, etc. */}
       <BreadcrumbBanner
         title={serviceName}

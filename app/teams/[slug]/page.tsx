@@ -24,7 +24,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   }
 
   return {
-    title: `${teamMember.name} | Horizon Line`,
+    title: { absolute: `Best ${teamMember.name} | Horizonline Leading Business Setup` },
     description: teamMember.expertise || `${teamMember.name} is part of the Horizon Line advisory team.`,
     alternates: {
       canonical: `https://www.horizonlineuae.com/teams/${teamMember.slug}`,

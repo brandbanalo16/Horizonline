@@ -8,7 +8,7 @@ import TermsConditionSection from '@/components/sections/TermsCondition';
 
 const PAGE_TITLE: string = 'Terms & Conditions | Horizon Line';
 export const metadata: Metadata = {
-  title: PAGE_TITLE,
+  title: { absolute: 'Best Terms & Conditions | Horizonline Leading Business Setup' },
   description: 'Read the Terms and Conditions governing your use of Horizon Line\'s UAE business setup, company formation, visa, and related advisory services.',
   alternates: {
     canonical: 'https://www.horizonlineuae.com/terms-condition',
