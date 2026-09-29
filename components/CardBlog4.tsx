@@ -32,7 +32,7 @@ const CardBlog4 = ({
                             src={article.image}
                             width={width}
                             height={height}
-                            alt={alt ? alt : article.title}
+                            alt={alt ? alt : (article.focusKeyword || article.title)}
                             loading="lazy"
                         />
                     </div>

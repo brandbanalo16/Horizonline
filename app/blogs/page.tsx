@@ -12,7 +12,7 @@ import { BlogsFaqAccordion } from '@/data/blogsFaqAccordion';
 
 const PAGE_TITLE: string = 'UAE Business Setup Blog — Insights & Guides';
 export const metadata: Metadata = {
-  title: { absolute: 'Best UAE Business Setup Blog – Insights & Guides | Horizonline UAE Business Setup Experts' },
+  title: 'UAE Business Setup Blog – Insights & Guides | Horizon Line',
   description: 'Read our UAE business setup guide for the latest company formation articles, free zone vs mainland comparisons, trade license news, and VAT updates.',
   alternates: {
     canonical: 'https://www.horizonlineuae.com/blogs',

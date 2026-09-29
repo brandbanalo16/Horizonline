@@ -5,6 +5,9 @@ export interface ArticleType {
     content: string;
     excerpt?: string;
     category?: string;
+    metaTitle?: string;
+    metaDescription?: string;
+    focusKeyword?: string;
     image?: string | null;
     video?: string | null;
     tags: string[];

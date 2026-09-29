@@ -14,7 +14,7 @@ import RelatedServices from '@/components/seo/RelatedServices';
 const PAGE_TITLE: string = 'Frequently Asked Questions About UAE Business Setup';
 
 export const metadata: Metadata = {
-  title: { absolute: 'Best Frequently Asked Questions About UAE Business Setup | Horizonline UAE Leading Business Setup service Provider company' },
+  title: 'Frequently Asked Questions About UAE Business Setup | Horizon Line',
   description: 'Answers to common UAE business setup questions — costs, timelines, documents, mainland vs free zone, local sponsors, VAT, PRO services, and trade license renewal.',
   alternates: {
     canonical: 'https://www.horizonlineuae.com/faq',

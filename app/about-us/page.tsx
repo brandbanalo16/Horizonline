@@ -31,7 +31,7 @@ import '@/styles/about-page.css';
 const PAGE_TITLE = 'About Us — Business Setup Across All 7 Emirates | Horizon Line';
 
 export const metadata: Metadata = {
-    title: { absolute: 'About Us — Horizonline Best Business Setup Across All 7 Emirates' },
+    title: 'About Us — Business Setup Across All 7 Emirates | Horizon Line',
     description: 'Horizon Line is a trusted UAE business setup consultancy covering all 7 Emirates. We handle company formation, visas, PRO services, trade licences, and bank account opening.',
     keywords: [
         'Horizon Line UAE',

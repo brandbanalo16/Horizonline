@@ -1,6 +1,6 @@
 import { Block } from './Block';
 
-export const IntroSection = ({ s, isGray, imgSrc }: { s: any; isGray: boolean; imgSrc?: string }) => {
+export const IntroSection = ({ s, isGray, imgSrc, imgAlt }: { s: any; isGray: boolean; imgSrc?: string; imgAlt?: string }) => {
   const content = s.content || (s.paragraphs ? s.paragraphs.map((p: string) => ({ type: 'paragraph', text: p })) : []);
   if (content.length === 0 && !s.subsections?.length) return null;
   return (
@@ -12,7 +12,7 @@ export const IntroSection = ({ s, isGray, imgSrc }: { s: any; isGray: boolean; i
             <h2 className="sp-section-h2">{s.heading}</h2>
             {imgSrc && (
               <div style={{ marginTop: 32, borderRadius: 20, overflow: 'hidden', boxShadow: 'var(--sp-shadow-md)' }}>
-                <img src={imgSrc} alt={s.heading} style={{ width: '100%', height: 'auto', display: 'block' }} />
+                <img src={imgSrc} alt={imgAlt || s.heading} style={{ width: '100%', height: 'auto', display: 'block' }} />
               </div>
             )}
           </div>

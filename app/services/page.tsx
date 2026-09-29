@@ -16,7 +16,7 @@ import RelatedServices from '@/components/seo/RelatedServices';
 const PAGE_TITLE = 'Our Services | Horizon Line';
 
 export const metadata: Metadata = {
-    title: { absolute: 'Best Our Services | Horizonline UAE Leading Business Setup service Provider company' },
+    title: 'Business Setup Services in UAE | Horizon Line',
     description: "Explore Horizon Line's comprehensive business setup services in the UAE. From mainland and free zone company formation to trade licenses, visas, and VAT.",
     alternates: {
         canonical: 'https://www.horizonlineuae.com/services'

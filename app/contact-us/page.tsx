@@ -15,7 +15,7 @@ import MapSection from '@/components/sections/Map';
 
 const PAGE_TITLE: string = 'Contact Horizon Line — UAE Business Setup Enquiries';
 export const metadata: Metadata = {
-  title: { absolute: 'Best Contact Us – UAE Business Setup Enquiries | Horizonline UAE Business Setup Experts' },
+  title: 'Contact Us – UAE Business Setup Enquiries | Horizon Line',
   description: 'Get in touch for a free business setup consultation. Contact our UAE company formation helpline for enquiries on visas, PRO services, and trade licenses.',
   alternates: {
     canonical: 'https://www.horizonlineuae.com/contact-us',

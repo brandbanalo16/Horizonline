@@ -257,16 +257,8 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 
   const desc = service.metadata?.['Meta Description'] || service.summary || service.excerpt || 'Explore Horizon Line UAE business, licensing, visa, tax, and legal services.';
   
-  const suffixes = [
-    "Horizonline UAE Leading Business Setup service Provider company",
-    "Horizonline UAE Business Setup Experts",
-    "Horizonline Leading Business Setup"
-  ];
-  const suffixIndex = slug.join('').length % suffixes.length;
-  const suffix = suffixes[suffixIndex];
-
   return {
-    title: { absolute: `Best ${cleanTitle} | ${suffix}` },
+    title: baseTitle.includes('|') ? baseTitle : `${baseTitle} | Horizon Line UAE`,
     description: desc,
     robots: { index: true, follow: true },
     alternates: {
@@ -397,7 +389,7 @@ const Page = async ({ params }: { params: Promise<{ slug: string[] }> }) => {
     if (v === 'docs') return <DocsSection key={i} s={s} isGray={isGray} />;
     if (v === 'eligibility') return <DocsSection key={i} s={s} isGray={isGray} />;
     if (v === 'industries') return <IndustriesSection key={i} s={s} isGray={isGray} />;
-    if (v === 'intro') return <IntroSection key={i} s={s} isGray={isGray} imgSrc={serviceImg} />;
+    if (v === 'intro') return <IntroSection key={i} s={s} isGray={isGray} imgSrc={serviceImg} imgAlt={service.metadata?.['Primary SEO Keyword'] || service.title || s.heading} />;
 
     // Generic prose/fallback section
     const contentBlocks = s.content || (s.paragraphs ? s.paragraphs.map((p: string) => ({ type: 'paragraph', text: p })) : []);

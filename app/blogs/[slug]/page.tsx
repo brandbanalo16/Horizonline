@@ -35,7 +35,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     : DEFAULT_OG_IMAGE;
 
   return {
-    title: { absolute: `Best ${article.metaTitle || article.title} | Horizonline UAE Business Setup Experts` },
+    title: (article.metaTitle || article.title).includes('|') ? (article.metaTitle || article.title) : `${article.metaTitle || article.title} | Horizon Line UAE`,
     description: article.metaDescription || article.excerpt || 'Read the latest business setup insights from Horizon Line.',
     alternates: {
       canonical: `${BASE_URL}/blogs/${article.slug}`,

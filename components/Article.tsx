@@ -27,7 +27,7 @@ const Article = ({
                                 src={image}
                                 width={1000}
                                 height={707}
-                                alt={title}
+                                alt={article.focusKeyword || title}
                                 loading="lazy"
                             />
                         </div>
