@@ -16,12 +16,12 @@ interface FormData {
 
 function createTransporter() {
     return nodemailer.createTransport({
-        host: process.env.SMTP_HOST,
-        port: Number(process.env.SMTP_PORT) || 465,
-        secure: process.env.SMTP_SECURE === "true",
+        host: "smtp.gmail.com",
+        port: 587,
+        secure: false, // true for 465, false for other ports
         auth: {
-            user: process.env.SMTP_USER,
-            pass: process.env.SMTP_PASS,
+            user: "enquiry@horizonlineuae.com",
+            pass: "cwdvekqrcxjnclpo",
         },
     });
 }
@@ -117,8 +117,8 @@ export async function POST(request: NextRequest) {
         }
 
         const transporter = createTransporter();
-        const fromAddress = `"${process.env.MAIL_FROM_NAME || "Horizon Line"}" <${process.env.MAIL_FROM_ADDRESS || process.env.SMTP_USER}>`;
-        const adminEmail = process.env.ADMIN_EMAIL || process.env.SMTP_USER || "";
+        const fromAddress = '"Horizon Line Consultancy" <enquiry@horizonlineuae.com>';
+        const adminEmail = "enquiry@horizonlineuae.com";
 
         const phone = data.countryCode ? `${data.countryCode} ${data.phone}` : data.phone || "—";
         const subject = `New Enquiry from ${data.name} – Horizon Line Website`;
