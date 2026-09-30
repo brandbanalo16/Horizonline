@@ -26,7 +26,7 @@ const CostCalculatorPopup: React.FC<CostCalculatorPopupProps> = ({ isOpen, onClo
             // Add a default city since it's required by the PHP script but not in this popup
             data.city = "Not provided (Popup)";
 
-            const response = await fetch("https://www.horizonlineuae.com/mail/send-mail.php", {
+            const response = await fetch("/api/contact", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(data),
@@ -36,29 +36,13 @@ const CostCalculatorPopup: React.FC<CostCalculatorPopupProps> = ({ isOpen, onClo
 
             if (formMessage.success) {
                 setStatus("success");
-                setMessage(formMessage.message);
+                setMessage(formMessage.message || "Thank you! We'll be in touch within 24 hours.");
                 form.reset();
                 setTimeout(() => setMessage(""), 6000);
             } else {
-                // Filter out phone-related errors from server
-                const allErrors = Array.isArray(formMessage.errors)
-                    ? formMessage.errors.filter((e: string) => !/phone/i.test(e))
-                    : [];
-                if (allErrors.length > 0) {
-                    setStatus("error");
-                    setMessage(allErrors.join(" · "));
-                    setTimeout(() => setMessage(""), 6000);
-                } else if (!formMessage.success && !Array.isArray(formMessage.errors)) {
-                    setStatus("error");
-                    setMessage(formMessage.message || "Something went wrong.");
-                    setTimeout(() => setMessage(""), 6000);
-                } else {
-                    // Only phone error — treat as success
-                    setStatus("success");
-                    setMessage("Thank you! We will get back to you shortly.");
-                    form.reset();
-                    setTimeout(() => setMessage(""), 6000);
-                }
+                setStatus("error");
+                setMessage(formMessage.error || "Something went wrong. Please try again.");
+                setTimeout(() => setMessage(""), 6000);
             }
         } catch (error: any) {
             setStatus("error");

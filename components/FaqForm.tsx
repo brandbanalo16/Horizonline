@@ -35,16 +35,16 @@ const FaqForm = ({ heading }: { heading?: string; }) => {
 
             const formMessage = await response.json();
 
-            if (response.ok) {
+            if (formMessage.success) {
                 setLoading(false);
                 setStatus("success");
-                setMessage(formMessage.message);
+                setMessage(formMessage.message || "Thank you! We'll be in touch within 24 hours.");
                 form.reset();
                 clearMessage(6000);
             } else {
                 setLoading(false);
                 setStatus("error");
-                setMessage(formMessage.error);
+                setMessage(formMessage.error || "Something went wrong. Please try again.");
                 clearMessage(4000);
             }
         } catch (error: any) {

@@ -5,10 +5,35 @@ import React, { useState } from 'react';
 export const ServiceSidebarRight = ({ serviceName = 'this service' }: { serviceName?: string }) => {
     const [formData, setFormData] = useState({ name: '', email: '', phone: '', message: '' });
     const [submitted, setSubmitted] = useState(false);
+    const [loading, setLoading] = useState(false);
+    const [errorMsg, setErrorMsg] = useState('');
 
-    const handleSubmit = (e: React.FormEvent) => {
+    const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
-        setSubmitted(true);
+        setLoading(true);
+        setErrorMsg('');
+        try {
+            const response = await fetch('/api/contact', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    name: formData.name,
+                    email: formData.email,
+                    phone: formData.phone,
+                    message: `[Service: ${serviceName}] ${formData.message}`.trim(),
+                }),
+            });
+            const result = await response.json();
+            if (result.success) {
+                setSubmitted(true);
+            } else {
+                setErrorMsg(result.error || 'Something went wrong. Please try again.');
+            }
+        } catch {
+            setErrorMsg('Network error. Please try again.');
+        } finally {
+            setLoading(false);
+        }
     };
 
     return (
@@ -181,7 +206,8 @@ export const ServiceSidebarRight = ({ serviceName = 'this service' }: { serviceN
                     <div className="right-form-body">
                         {submitted ? (
                             <div className="right-success">
-                                Thank you!<br />Our team will reach out to you shortly.
+                                ✅ Thank you!<br />Our team will reach out to you shortly.<br />
+                                <span style={{ fontSize: '12px', color: '#666' }}>A confirmation email has been sent to you.</span>
                             </div>
                         ) : (
                             <form onSubmit={handleSubmit}>
@@ -205,7 +231,12 @@ export const ServiceSidebarRight = ({ serviceName = 'this service' }: { serviceN
                                     <textarea className="right-textarea" placeholder="Tell us about your requirement..."
                                         value={formData.message} onChange={e => setFormData({ ...formData, message: e.target.value })} />
                                 </div>
-                                <button type="submit" className="right-submit-btn">Request Free Callback</button>
+                                {errorMsg && (
+                                    <p style={{ fontSize: '12px', color: '#e53e3e', margin: '0 0 8px', fontWeight: 600 }}>{errorMsg}</p>
+                                )}
+                                <button type="submit" className="right-submit-btn" disabled={loading}>
+                                    {loading ? 'Sending...' : 'Request Free Callback'}
+                                </button>
                             </form>
                         )}
                     </div>

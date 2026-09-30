@@ -43,7 +43,7 @@ const ContactSection = ({ data }: { data: SectionProps }) => {
 
             setLoading(true);
 
-            const response = await fetch("https://www.horizonlineuae.com/mail/send-mail.php", {
+            const response = await fetch("/api/contact", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(data),
@@ -54,27 +54,13 @@ const ContactSection = ({ data }: { data: SectionProps }) => {
             if (formMessage.success) {
                 setLoading(false);
                 setStatus("success");
-                setMessage(formMessage.message);
+                setMessage(formMessage.message || "Thank you! We'll be in touch within 24 hours.");
                 form.reset();
                 clearMessage(6000);
             } else {
                 setLoading(false);
-                // Filter out phone-related validation errors from server
-                const allErrors = Array.isArray(formMessage.errors)
-                    ? formMessage.errors.filter((e: string) => !/phone/i.test(e))
-                    : [];
-                if (allErrors.length > 0) {
-                    setStatus("error");
-                    setMessage(allErrors.join(" · "));
-                } else if (!formMessage.success && !Array.isArray(formMessage.errors)) {
-                    setStatus("error");
-                    setMessage(formMessage.message || "Something went wrong.");
-                } else {
-                    // Only phone error — treat as success from user perspective
-                    setStatus("success");
-                    setMessage("Thank you! We will get back to you shortly.");
-                    form.reset();
-                }
+                setStatus("error");
+                setMessage(formMessage.error || "Something went wrong. Please try again.");
                 clearMessage(6000);
             }
         } catch (error: any) {
