@@ -67,7 +67,7 @@ const BlogSidebar = ({ slug }: BlogSidebarType) => {
     return (
         <div className="sidebar-filter drawer-blog-sidebar" style={{ height: '100%' }}>
             <div className="drawer-headings lg:!hidden" data-aos="fade-up">
-                <div className="heading text-24">Filter</div>
+                <div className="heading text-24">Filters</div>
                 <DrawerOpener
                     cls="svg-wrapper menu-close"
                     data-drawer=".drawer-blog-sidebar"
