@@ -145,7 +145,7 @@ const CostCalculatorPopup: React.FC<CostCalculatorPopupProps> = ({ isOpen, onClo
                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2563eb" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
                                     <path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.02-.24 11.37 11.37 0 0 0 3.57.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1 11.37 11.37 0 0 0 .57 3.57 1 1 0 0 1-.25 1.02z" />
                                 </svg>
-                                <span>+971 541 787 863</span>
+                                <span>+971566866849</span>
                             </a>
 
                             {/* WhatsApp */}
@@ -156,7 +156,7 @@ const CostCalculatorPopup: React.FC<CostCalculatorPopupProps> = ({ isOpen, onClo
                             }}>
                                 <img src="/img/icons/WhatsApp_Logo_green.svg.webp" alt="WhatsApp" style={{ width: '22px', height: '22px', flexShrink: 0 }} />
                                 <span style={{ color: '#22c55e' }}>WhatsApp</span>
-                                <span>+971 541 787 863</span>
+                                <span>+971566866849</span>
                             </a>
                         </div>
                     </div>

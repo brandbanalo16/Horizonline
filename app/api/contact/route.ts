@@ -4,35 +4,35 @@ import nodemailer from "nodemailer";
 // ─── Types ───────────────────────────────────────────────────────────────────
 
 interface FormData {
-    name?: string;
-    email?: string;
-    phone?: string;
-    countryCode?: string;
-    city?: string;
-    message?: string;
+  name?: string;
+  email?: string;
+  phone?: string;
+  countryCode?: string;
+  city?: string;
+  message?: string;
 }
 
 // ─── Nodemailer transporter ───────────────────────────────────────────────────
 
 function createTransporter() {
-    return nodemailer.createTransport({
-        host: "smtp.gmail.com",
-        port: 587,
-        secure: false, // true for 465, false for other ports
-        auth: {
-            user: "enquiry@horizonlineuae.com",
-            pass: "cwdvekqrcxjnclpo",
-        },
-    });
+  return nodemailer.createTransport({
+    host: "smtp.gmail.com",
+    port: 587,
+    secure: false, // true for 465, false for other ports
+    auth: {
+      user: "enquiry@horizonlineuae.com",
+      pass: "cwdvekqrcxjnclpo",
+    },
+  });
 }
 
 // ─── Email builders ───────────────────────────────────────────────────────────
 
 function buildAdminEmailHtml(data: FormData): string {
-    const phone = data.countryCode
-        ? `${data.countryCode} ${data.phone}`
-        : data.phone || "—";
-    return `
+  const phone = data.countryCode
+    ? `${data.countryCode} ${data.phone}`
+    : data.phone || "—";
+  return `
     <div style="font-family:Arial,sans-serif;max-width:600px;margin:0 auto;border:1px solid #e0e0e0;border-radius:8px;overflow:hidden;">
       <div style="background:#2c3650;padding:24px 28px;">
         <h2 style="color:#fff;margin:0;font-size:20px;">New Enquiry – Horizon Line</h2>
@@ -70,7 +70,7 @@ function buildAdminEmailHtml(data: FormData): string {
 }
 
 function buildAutoReplyHtml(data: FormData): string {
-    return `
+  return `
     <div style="font-family:Arial,sans-serif;max-width:600px;margin:0 auto;border:1px solid #e0e0e0;border-radius:8px;overflow:hidden;">
       <div style="background:#2c3650;padding:28px 32px;text-align:center;">
         <img src="https://www.horizonlineuae.com/img/logo/logo-light.svg" alt="Horizon Line" style="height:50px;margin-bottom:12px;" onerror="this.style.display='none'" />
@@ -86,8 +86,8 @@ function buildAutoReplyHtml(data: FormData): string {
         <div style="background:#f0f7ff;border-left:4px solid #2563eb;padding:16px 20px;border-radius:0 6px 6px 0;margin:24px 0;">
           <p style="margin:0;font-size:14px;color:#1e3a5f;font-weight:600;">Need an immediate response?</p>
           <p style="margin:8px 0 0;font-size:14px;color:#444;">
-            📞 Call us: <a href="tel:+971541787863" style="color:#2563eb;">+971 541 787 863</a><br>
-            💬 WhatsApp: <a href="https://wa.me/971541787863" style="color:#25d366;">+971 541 787 863</a>
+            📞 Call us: <a href="tel:+971541787863" style="color:#2563eb;">+971566866849</a><br>
+            💬 WhatsApp: <a href="https://wa.me/971541787863" style="color:#25d366;">+971566866849</a>
           </p>
         </div>
         <p style="color:#444;font-size:15px;line-height:1.7;">
@@ -108,46 +108,46 @@ function buildAutoReplyHtml(data: FormData): string {
 // ─── Route handler ────────────────────────────────────────────────────────────
 
 export async function POST(request: NextRequest) {
-    try {
-        const data: FormData = await request.json();
+  try {
+    const data: FormData = await request.json();
 
-        // Basic validation
-        if (!data.name || !data.name.trim()) {
-            return NextResponse.json({ success: false, error: "Name is required." }, { status: 400 });
-        }
-
-        const transporter = createTransporter();
-        const fromAddress = '"Horizon Line Consultancy" <enquiry@horizonlineuae.com>';
-        const adminEmail = "enquiry@horizonlineuae.com";
-
-        const phone = data.countryCode ? `${data.countryCode} ${data.phone}` : data.phone || "—";
-        const subject = `New Enquiry from ${data.name} – Horizon Line Website`;
-
-        // 1️⃣ Send admin notification
-        await transporter.sendMail({
-            from: fromAddress,
-            to: adminEmail,
-            replyTo: data.email || undefined,
-            subject,
-            html: buildAdminEmailHtml(data),
-            text: `New enquiry\nName: ${data.name}\nEmail: ${data.email || "—"}\nPhone: ${phone}\nCity: ${data.city || "—"}\nMessage: ${data.message || "—"}`,
-        });
-
-        // 2️⃣ Send auto-reply to user (only if they provided an email)
-        if (data.email && data.email.includes("@")) {
-            await transporter.sendMail({
-                from: fromAddress,
-                to: data.email,
-                subject: "We received your enquiry – Horizon Line Consultancy",
-                html: buildAutoReplyHtml(data),
-                text: `Dear ${data.name},\n\nThank you for contacting Horizon Line Consultancy. We have received your enquiry and will get back to you within 24 business hours.\n\nFor immediate assistance:\nCall / WhatsApp: +971 541 787 863\n\nWarm regards,\nHorizon Line Consultancy Team`,
-            });
-        }
-
-        return NextResponse.json({ success: true, message: "Thank you! We'll be in touch within 24 hours." });
-    } catch (error: unknown) {
-        console.error("Contact form error:", error);
-        const message = error instanceof Error ? error.message : "Unknown error";
-        return NextResponse.json({ success: false, error: `Failed to send message: ${message}` }, { status: 500 });
+    // Basic validation
+    if (!data.name || !data.name.trim()) {
+      return NextResponse.json({ success: false, error: "Name is required." }, { status: 400 });
     }
+
+    const transporter = createTransporter();
+    const fromAddress = '"Horizon Line Consultancy" <enquiry@horizonlineuae.com>';
+    const adminEmail = "enquiry@horizonlineuae.com";
+
+    const phone = data.countryCode ? `${data.countryCode} ${data.phone}` : data.phone || "—";
+    const subject = `New Enquiry from ${data.name} – Horizon Line Website`;
+
+    // 1️⃣ Send admin notification
+    await transporter.sendMail({
+      from: fromAddress,
+      to: adminEmail,
+      replyTo: data.email || undefined,
+      subject,
+      html: buildAdminEmailHtml(data),
+      text: `New enquiry\nName: ${data.name}\nEmail: ${data.email || "—"}\nPhone: ${phone}\nCity: ${data.city || "—"}\nMessage: ${data.message || "—"}`,
+    });
+
+    // 2️⃣ Send auto-reply to user (only if they provided an email)
+    if (data.email && data.email.includes("@")) {
+      await transporter.sendMail({
+        from: fromAddress,
+        to: data.email,
+        subject: "We received your enquiry – Horizon Line Consultancy",
+        html: buildAutoReplyHtml(data),
+        text: `Dear ${data.name},\n\nThank you for contacting Horizon Line Consultancy. We have received your enquiry and will get back to you within 24 business hours.\n\nFor immediate assistance:\nCall / WhatsApp: +971566866849\n\nWarm regards,\nHorizon Line Consultancy Team`,
+      });
+    }
+
+    return NextResponse.json({ success: true, message: "Thank you! We'll be in touch within 24 hours." });
+  } catch (error: unknown) {
+    console.error("Contact form error:", error);
+    const message = error instanceof Error ? error.message : "Unknown error";
+    return NextResponse.json({ success: false, error: `Failed to send message: ${message}` }, { status: 500 });
+  }
 }
