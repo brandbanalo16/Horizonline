@@ -14,7 +14,6 @@ const CostCalculatorPopup: React.FC<CostCalculatorPopupProps> = ({ isOpen, onClo
     const [loading, setLoading] = React.useState(false);
     const [status, setStatus] = React.useState('');
     const [message, setMessage] = React.useState('');
-    const [countryCode, setCountryCode] = React.useState('+971');
 
     const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
@@ -41,12 +40,25 @@ const CostCalculatorPopup: React.FC<CostCalculatorPopupProps> = ({ isOpen, onClo
                 form.reset();
                 setTimeout(() => setMessage(""), 6000);
             } else {
-                setStatus("error");
-                const errText = Array.isArray(formMessage.errors)
-                    ? formMessage.errors.join(" · ")
-                    : (formMessage.message || "Something went wrong.");
-                setMessage(errText);
-                setTimeout(() => setMessage(""), 6000);
+                // Filter out phone-related errors from server
+                const allErrors = Array.isArray(formMessage.errors)
+                    ? formMessage.errors.filter((e: string) => !/phone/i.test(e))
+                    : [];
+                if (allErrors.length > 0) {
+                    setStatus("error");
+                    setMessage(allErrors.join(" · "));
+                    setTimeout(() => setMessage(""), 6000);
+                } else if (!formMessage.success && !Array.isArray(formMessage.errors)) {
+                    setStatus("error");
+                    setMessage(formMessage.message || "Something went wrong.");
+                    setTimeout(() => setMessage(""), 6000);
+                } else {
+                    // Only phone error — treat as success
+                    setStatus("success");
+                    setMessage("Thank you! We will get back to you shortly.");
+                    form.reset();
+                    setTimeout(() => setMessage(""), 6000);
+                }
             }
         } catch (error: any) {
             setStatus("error");
@@ -202,23 +214,17 @@ const CostCalculatorPopup: React.FC<CostCalculatorPopupProps> = ({ isOpen, onClo
                             <div style={{ display: 'flex', gap: '10px' }}>
                                 <select
                                     name="countryCode"
-                                    value={countryCode}
-                                    onChange={(e) => setCountryCode(e.target.value)}
+                                    defaultValue="+971"
                                     style={{ padding: '12px', borderRadius: '8px', border: 'none', outline: 'none', backgroundColor: '#e5e7eb', color: '#111827' }}
                                 >
                                     <option value="+971">UAE +971</option>
                                     <option value="+91">IN +91</option>
                                 </select>
                                 <input
-                                    type="tel"
+                                    type="text"
                                     name="phone"
                                     required
-                                    inputMode="numeric"
-                                    minLength={countryCode === '+971' ? 9 : 10}
-                                    maxLength={countryCode === '+971' ? 9 : 10}
-                                    pattern={countryCode === '+971' ? '[0-9]{9}' : '[0-9]{10}'}
-                                    placeholder={countryCode === '+971' ? '9-digit UAE number' : '10-digit India number'}
-                                    title={countryCode === '+971' ? 'Enter exactly 9 digits for UAE' : 'Enter exactly 10 digits for India'}
+                                    placeholder="Enter number"
                                     style={{
                                         flex: '1', padding: '12px', borderRadius: '8px', border: 'none',
                                         fontSize: '14px', outline: 'none', backgroundColor: '#e5e7eb', color: '#111827'

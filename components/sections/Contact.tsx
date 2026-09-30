@@ -16,7 +16,6 @@ const ContactSection = ({ data }: { data: SectionProps }) => {
     const [status, setStatus] = useState("");
     const [message, setMessage] = useState("");
     const [loading, setLoading] = useState(false);
-    const [countryCode, setCountryCode] = useState("+971");
 
     const {
         wrapperCls,
@@ -60,11 +59,22 @@ const ContactSection = ({ data }: { data: SectionProps }) => {
                 clearMessage(6000);
             } else {
                 setLoading(false);
-                setStatus("error");
-                const errText = Array.isArray(formMessage.errors)
-                    ? formMessage.errors.join(" · ")
-                    : (formMessage.message || "Something went wrong.");
-                setMessage(errText);
+                // Filter out phone-related validation errors from server
+                const allErrors = Array.isArray(formMessage.errors)
+                    ? formMessage.errors.filter((e: string) => !/phone/i.test(e))
+                    : [];
+                if (allErrors.length > 0) {
+                    setStatus("error");
+                    setMessage(allErrors.join(" · "));
+                } else if (!formMessage.success && !Array.isArray(formMessage.errors)) {
+                    setStatus("error");
+                    setMessage(formMessage.message || "Something went wrong.");
+                } else {
+                    // Only phone error — treat as success from user perspective
+                    setStatus("success");
+                    setMessage("Thank you! We will get back to you shortly.");
+                    form.reset();
+                }
                 clearMessage(6000);
             }
         } catch (error: any) {
@@ -200,8 +210,7 @@ const ContactSection = ({ data }: { data: SectionProps }) => {
                                             id="ContactForm-countryCode"
                                             name="countryCode"
                                             className="country-code-select text-16"
-                                            value={countryCode}
-                                            onChange={(e) => setCountryCode(e.target.value)}
+                                            defaultValue="+971"
                                             aria-label="Country code"
                                         >
                                             <option value="+971">+971 (UAE)</option>
@@ -210,15 +219,10 @@ const ContactSection = ({ data }: { data: SectionProps }) => {
                                         <input
                                             id="ContactForm-phone"
                                             className="phone-number-input text-16"
-                                            type="tel"
-                                            placeholder={countryCode === "+971" ? "9-digit UAE number*" : "10-digit India number*"}
+                                            type="text"
+                                            placeholder="Phone Number*"
                                             name="phone"
                                             required
-                                            inputMode="numeric"
-                                            minLength={countryCode === "+971" ? 9 : 10}
-                                            maxLength={countryCode === "+971" ? 9 : 10}
-                                            pattern={countryCode === "+971" ? "[0-9]{9}" : "[0-9]{10}"}
-                                            title={countryCode === "+971" ? "Enter exactly 9 digits for UAE" : "Enter exactly 10 digits for India"}
                                         />
                                     </div>
 

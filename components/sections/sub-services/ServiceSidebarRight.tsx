@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 
 export const ServiceSidebarRight = ({ serviceName = 'this service' }: { serviceName?: string }) => {
-    const [formData, setFormData] = useState({ name: '', email: '', countryCode: '+971', phone: '', message: '' });
+    const [formData, setFormData] = useState({ name: '', email: '', phone: '', message: '' });
     const [submitted, setSubmitted] = useState(false);
 
     const handleSubmit = (e: React.FormEvent) => {
@@ -197,31 +197,8 @@ export const ServiceSidebarRight = ({ serviceName = 'this service' }: { serviceN
                                 </div>
                                 <div className="right-field">
                                     <label className="right-label">Phone Number</label>
-                                    <div style={{ display: 'flex', gap: '6px' }}>
-                                        <select
-                                            className="right-input"
-                                            style={{ flexShrink: 0, width: 'auto' }}
-                                            value={formData.countryCode}
-                                            onChange={e => setFormData({ ...formData, countryCode: e.target.value, phone: '' })}
-                                            aria-label="Country code"
-                                        >
-                                            <option value="+971">+971 UAE</option>
-                                            <option value="+91">+91 IN</option>
-                                        </select>
-                                        <input
-                                            type="tel"
-                                            className="right-input"
-                                            placeholder={formData.countryCode === '+971' ? '9-digit UAE number' : '10-digit India number'}
-                                            inputMode="numeric"
-                                            minLength={formData.countryCode === '+971' ? 9 : 10}
-                                            maxLength={formData.countryCode === '+971' ? 9 : 10}
-                                            pattern={formData.countryCode === '+971' ? '[0-9]{9}' : '[0-9]{10}'}
-                                            title={formData.countryCode === '+971' ? 'Enter exactly 9 digits for UAE' : 'Enter exactly 10 digits for India'}
-                                            value={formData.phone}
-                                            onChange={e => setFormData({ ...formData, phone: e.target.value })}
-                                            required
-                                        />
-                                    </div>
+                                    <input type="text" className="right-input" placeholder="Phone Number"
+                                        value={formData.phone} onChange={e => setFormData({ ...formData, phone: e.target.value })} required />
                                 </div>
                                 <div className="right-field">
                                     <label className="right-label">Message (Optional)</label>
