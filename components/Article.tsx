@@ -29,6 +29,7 @@ const Article = ({
                                 height={707}
                                 alt={article.focusKeyword || title}
                                 loading="lazy"
+                                style={{ objectFit: 'contain', width: '100%', height: '100%' }}
                             />
                         </div>
                     </div>
