@@ -10,7 +10,7 @@ const HeaderActions2 = () => {
     return (
         <div className="header-actions flex items-center gap-3">
             <div className="hidden lg:flex items-center gap-1 mr-1">
-                <a href="tel:+971541787863" className="flex items-center justify-center w-1 h-1 rounded-full bg-[#f4f5f7] hover:bg-[#e2e8f0] transition-colors" aria-label="Call us">
+                <a href="tel:+971566866849" className="flex items-center justify-center w-1 h-1 rounded-full bg-[#f4f5f7] hover:bg-[#e2e8f0] transition-colors" aria-label="Call us">
                     <PhoneCall className="w-1 h-1 text-[#1e293b]" strokeWidth={2} />
                 </a>
                 <a href="https://wa.me/971541787863" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center w-1 h-1 rounded-full bg-[#e5fcf1] hover:bg-[#d1fae5] transition-colors" aria-label="WhatsApp us">

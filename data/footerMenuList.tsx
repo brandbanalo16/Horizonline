@@ -70,8 +70,8 @@ export const MenuContact: MenuType[] = [
         path: 'mailto:enquiry@horizonlineuae.com'
     },
     {
-        title: '+971541787863',
-        path: 'tel:+971541787863'
+        title: '+971566866849',
+        path: 'tel:+971566866849'
     },
     {
         title: 'Office No. 103, Juma Al Majid Building, Industrial Area 4, Sharjah, UAE',

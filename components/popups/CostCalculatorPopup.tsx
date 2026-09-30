@@ -14,6 +14,7 @@ const CostCalculatorPopup: React.FC<CostCalculatorPopupProps> = ({ isOpen, onClo
     const [loading, setLoading] = React.useState(false);
     const [status, setStatus] = React.useState('');
     const [message, setMessage] = React.useState('');
+    const [countryCode, setCountryCode] = React.useState('+971');
 
     const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
@@ -22,7 +23,7 @@ const CostCalculatorPopup: React.FC<CostCalculatorPopupProps> = ({ isOpen, onClo
             const form = event.currentTarget;
             const formData = new FormData(form);
             const data = Object.fromEntries(formData.entries());
-            
+
             // Add a default city since it's required by the PHP script but not in this popup
             data.city = "Not provided (Popup)";
 
@@ -139,14 +140,14 @@ const CostCalculatorPopup: React.FC<CostCalculatorPopupProps> = ({ isOpen, onClo
                         <p style={{ fontSize: '14px', fontWeight: '600', color: '#e9e9e9', marginBottom: '12px' }}>Contact us on</p>
                         <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
                             {/* Call */}
-                            <a href="tel:+971541787863" style={{
+                            <a href="tel:+971566866849" style={{
                                 backgroundColor: 'rgba(255,255,255,0.92)', padding: '10px 20px', borderRadius: '30px',
                                 display: 'inline-flex', alignItems: 'center', color: '#111827', fontWeight: '700',
                                 textDecoration: 'none', boxShadow: '0 4px 6px rgba(0,0,0,0.12)', gap: '8px', width: 'fit-content'
                             }}>
                                 {/* Phone Ringing Icon */}
                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2563eb" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                                    <path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.02-.24 11.37 11.37 0 0 0 3.57.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1 11.37 11.37 0 0 0 .57 3.57 1 1 0 0 1-.25 1.02z"/>
+                                    <path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.02-.24 11.37 11.37 0 0 0 3.57.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1 11.37 11.37 0 0 0 .57 3.57 1 1 0 0 1-.25 1.02z" />
                                 </svg>
                                 <span>+971 541 787 863</span>
                             </a>
@@ -199,14 +200,30 @@ const CostCalculatorPopup: React.FC<CostCalculatorPopupProps> = ({ isOpen, onClo
                                 Phone Number <span style={{ color: '#ef4444' }}>*</span>
                             </label>
                             <div style={{ display: 'flex', gap: '10px' }}>
-                                <select name="countryCode" defaultValue="+971" style={{ padding: '12px', borderRadius: '8px', border: 'none', outline: 'none', backgroundColor: '#e5e7eb', color: '#111827' }}>
+                                <select
+                                    name="countryCode"
+                                    value={countryCode}
+                                    onChange={(e) => setCountryCode(e.target.value)}
+                                    style={{ padding: '12px', borderRadius: '8px', border: 'none', outline: 'none', backgroundColor: '#e5e7eb', color: '#111827' }}
+                                >
                                     <option value="+971">UAE +971</option>
                                     <option value="+91">IN +91</option>
                                 </select>
-                                <input type="tel" name="phone" required minLength={10} maxLength={10} pattern="[0-9]{10}" inputMode="numeric" placeholder="Enter number" style={{
-                                    flex: '1', padding: '12px', borderRadius: '8px', border: 'none',
-                                    fontSize: '14px', outline: 'none', backgroundColor: '#e5e7eb', color: '#111827'
-                                }} />
+                                <input
+                                    type="tel"
+                                    name="phone"
+                                    required
+                                    inputMode="numeric"
+                                    minLength={countryCode === '+971' ? 9 : 10}
+                                    maxLength={countryCode === '+971' ? 9 : 10}
+                                    pattern={countryCode === '+971' ? '[0-9]{9}' : '[0-9]{10}'}
+                                    placeholder={countryCode === '+971' ? '9-digit UAE number' : '10-digit India number'}
+                                    title={countryCode === '+971' ? 'Enter exactly 9 digits for UAE' : 'Enter exactly 10 digits for India'}
+                                    style={{
+                                        flex: '1', padding: '12px', borderRadius: '8px', border: 'none',
+                                        fontSize: '14px', outline: 'none', backgroundColor: '#e5e7eb', color: '#111827'
+                                    }}
+                                />
                             </div>
                         </div>
 
@@ -233,7 +250,7 @@ const CostCalculatorPopup: React.FC<CostCalculatorPopupProps> = ({ isOpen, onClo
                         }}>
                             {loading ? 'Sending...' : 'Submit →'}
                         </button>
-                        
+
                         {message && (
                             <div style={{
                                 padding: '10px',
@@ -253,7 +270,8 @@ const CostCalculatorPopup: React.FC<CostCalculatorPopupProps> = ({ isOpen, onClo
                 </div>
 
                 {/* Responsive Styles */}
-                <style dangerouslySetInnerHTML={{ __html: `
+                <style dangerouslySetInnerHTML={{
+                    __html: `
                     .popup-left-side {
                         display: flex;
                     }

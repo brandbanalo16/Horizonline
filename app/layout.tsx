@@ -75,7 +75,7 @@ const organizationSchema = {
   },
   contactPoint: {
     '@type': 'ContactPoint',
-    telephone: '+971541787863',
+    telephone: '+971566866849',
     contactType: 'customer service',
     email: 'enquiry@horizonlineuae.com',
     areaServed: 'AE',

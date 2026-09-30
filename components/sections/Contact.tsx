@@ -16,6 +16,7 @@ const ContactSection = ({ data }: { data: SectionProps }) => {
     const [status, setStatus] = useState("");
     const [message, setMessage] = useState("");
     const [loading, setLoading] = useState(false);
+    const [countryCode, setCountryCode] = useState("+971");
 
     const {
         wrapperCls,
@@ -141,7 +142,7 @@ const ContactSection = ({ data }: { data: SectionProps }) => {
                                         </div>
                                         <div className="contact-info-content">
                                             <span className="contact-info-label">Call Us</span>
-                                            <a href="tel:+971541787863" className="contact-info-value">+971541787863</a>
+                                            <a href="tel:+971566866849" className="contact-info-value">+971566866849</a>
                                         </div>
                                     </div>
                                 </div>
@@ -199,7 +200,8 @@ const ContactSection = ({ data }: { data: SectionProps }) => {
                                             id="ContactForm-countryCode"
                                             name="countryCode"
                                             className="country-code-select text-16"
-                                            defaultValue="+971"
+                                            value={countryCode}
+                                            onChange={(e) => setCountryCode(e.target.value)}
                                             aria-label="Country code"
                                         >
                                             <option value="+971">+971 (UAE)</option>
@@ -209,13 +211,14 @@ const ContactSection = ({ data }: { data: SectionProps }) => {
                                             id="ContactForm-phone"
                                             className="phone-number-input text-16"
                                             type="tel"
-                                            placeholder="Phone Number*"
+                                            placeholder={countryCode === "+971" ? "9-digit UAE number*" : "10-digit India number*"}
                                             name="phone"
                                             required
                                             inputMode="numeric"
-                                            minLength={10}
-                                            maxLength={10}
-                                            pattern="[0-9]{10}"
+                                            minLength={countryCode === "+971" ? 9 : 10}
+                                            maxLength={countryCode === "+971" ? 9 : 10}
+                                            pattern={countryCode === "+971" ? "[0-9]{9}" : "[0-9]{10}"}
+                                            title={countryCode === "+971" ? "Enter exactly 9 digits for UAE" : "Enter exactly 10 digits for India"}
                                         />
                                     </div>
 
