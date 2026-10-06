@@ -71,37 +71,41 @@ function buildAdminEmailHtml(data: FormData): string {
 
 function buildAutoReplyHtml(data: FormData): string {
   return `
-    <div style="font-family:Arial,sans-serif;max-width:600px;margin:0 auto;border:1px solid #e0e0e0;border-radius:8px;overflow:hidden;">
-      <div style="background:#2c3650;padding:28px 32px;text-align:center;">
-        <img src="https://www.horizonlineuae.com/img/logo/logo-light.svg" alt="Horizon Line" style="height:50px;margin-bottom:12px;" onerror="this.style.display='none'" />
-        <h1 style="color:#fff;margin:0;font-size:22px;font-weight:700;">Thank You for Contacting Us!</h1>
-      </div>
-      <div style="padding:28px 32px;background:#fff;">
-        <p style="color:#444;font-size:15px;line-height:1.7;margin-top:0;">
-          Dear <strong>${data.name || "Valued Customer"}</strong>,
-        </p>
-        <p style="color:#444;font-size:15px;line-height:1.7;">
-          Thank you for reaching out to <strong>Horizon Line Consultancy</strong>. We have received your enquiry and one of our experts will get back to you within <strong>24 business hours</strong>.
-        </p>
-        <div style="background:#f0f7ff;border-left:4px solid #2563eb;padding:16px 20px;border-radius:0 6px 6px 0;margin:24px 0;">
-          <p style="margin:0;font-size:14px;color:#1e3a5f;font-weight:600;">Need an immediate response?</p>
-          <p style="margin:8px 0 0;font-size:14px;color:#444;">
-            📞 Call us: <a href="tel:+971566866849" style="color:#2563eb;">+971566866849</a><br>
-            💬 WhatsApp: <a href="https://wa.me/971541787863" style="color:#25d366;">+971566866849</a>
-          </p>
-        </div>
-        <p style="color:#444;font-size:15px;line-height:1.7;">
-          We look forward to helping you with your business setup journey in the UAE.
-        </p>
-        <p style="color:#444;font-size:15px;margin-bottom:0;">
-          Warm regards,<br>
-          <strong>Horizon Line Consultancy Team</strong>
-        </p>
-      </div>
-      <div style="padding:16px 32px;background:#f4f4f4;text-align:center;font-size:12px;color:#888;">
-        Office No. 103, Juma Al Majid Building, Industrial Area 4, Sharjah, UAE<br>
-        <a href="https://www.horizonlineuae.com" style="color:#2563eb;text-decoration:none;">www.horizonlineuae.com</a>
-      </div>
+    <div style="font-family:Arial,sans-serif;max-width:600px;margin:0 auto;color:#444;line-height:1.7;">
+      <p style="font-size:15px;">
+        Dear ${data.name || "Customer"},
+      </p>
+      <p style="font-size:15px;">
+        Thank you for your inquiry!
+      </p>
+      <p style="font-size:15px;">
+        I am a Client Solutions Specialist at Horizon Line, UAE’s leading company formation services provider, offering end-to-end corporate solutions.
+      </p>
+      <p style="font-size:15px;">
+        To assist you further with personalized solutions and a cost estimate, kindly provide the following details:
+      </p>
+      <p style="font-size:15px;margin-left:16px;">
+        <strong>Nature of Business:</strong><br>
+        <strong>Number of Shareholders:</strong><br>
+        <strong>Jurisdiction (Free Zone or Mainland):</strong><br>
+        <strong>Preferred Emirate:</strong>
+      </p>
+      <p style="font-size:15px;">
+        Once we have this information, we’ll be able to offer a more tailored service to meet your requirements.
+      </p>
+      <p style="font-size:15px;">
+        Best Regards,<br>
+        <strong>Team Horizon Line</strong><br>
+        Working hours: 9 AM – 6 PM GST, Monday to Friday
+      </p>
+      <hr style="border:none;border-top:1px solid #e0e0e0;margin:24px 0;">
+      <p style="font-size:13px;color:#666;">
+        Office No-103, Juma Al Masjid Building, Industrial Area 4, Sharjah - United Arab Emirates<br>
+        Visit Our Website:<br>
+        <a href="https://www.horizonlineuae.com" style="display:inline-block;margin-top:8px;">
+          <img src="https://www.horizonlineuae.com/img/logo/logo-dark.svg" alt="Horizon Line" style="height:35px;" onerror="this.style.display='none'" />
+        </a>
+      </p>
     </div>`;
 }
 
@@ -141,7 +145,7 @@ export async function POST(request: NextRequest) {
         to: data.email,
         subject: "We received your enquiry – Horizon Line Consultancy",
         html: buildAutoReplyHtml(data),
-        text: `Dear ${data.name},\n\nThank you for contacting Horizon Line Consultancy. We have received your enquiry and will get back to you within 24 business hours.\n\nFor immediate assistance:\nCall / WhatsApp: +971566866849\n\nWarm regards,\nHorizon Line Consultancy Team`,
+        text: `Dear ${data.name || "Customer"},\n\nThank you for your inquiry!\n\nI am a Client Solutions Specialist at Horizon Line, UAE’s leading company formation services provider, offering end-to-end corporate solutions.\n\nTo assist you further with personalized solutions and a cost estimate, kindly provide the following details:\n\nNature of Business:\nNumber of Shareholders:\nJurisdiction (Free Zone or Mainland):\nPreferred Emirate:\n\nOnce we have this information, we’ll be able to offer a more tailored service to meet your requirements.\n\nBest Regards,\nTeam Horizon Line\nWorking hours: 9 AM – 6 PM GST, Monday to Friday\n\nOffice No-103, Juma Al Masjid Building, Industrial Area 4, Sharjah - United Arab Emirates\nVisit Our Website: https://www.horizonlineuae.com`,
       });
     }
 
