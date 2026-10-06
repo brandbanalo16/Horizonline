@@ -86,7 +86,7 @@ function buildAutoReplyHtml(data: FormData): string {
         <div style="background:#f0f7ff;border-left:4px solid #2563eb;padding:16px 20px;border-radius:0 6px 6px 0;margin:24px 0;">
           <p style="margin:0;font-size:14px;color:#1e3a5f;font-weight:600;">Need an immediate response?</p>
           <p style="margin:8px 0 0;font-size:14px;color:#444;">
-            📞 Call us: <a href="tel:+971541787863" style="color:#2563eb;">+971566866849</a><br>
+            📞 Call us: <a href="tel:+971566866849" style="color:#2563eb;">+971566866849</a><br>
             💬 WhatsApp: <a href="https://wa.me/971541787863" style="color:#25d366;">+971566866849</a>
           </p>
         </div>

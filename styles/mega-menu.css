@@ -322,7 +322,8 @@
 
   /* Hide desktop mega panel on mobile */
   .mm-panel,
-  .mm-backdrop {
+  .mm-backdrop,
+  .mega-menu-root {
     display: none !important;
   }
 

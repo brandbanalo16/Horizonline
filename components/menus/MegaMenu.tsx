@@ -1,4 +1,4 @@
-﻿'use client';
+'use client';
 
 import React, { useState, useEffect, useRef, useCallback, useId } from 'react';
 import Link from 'next/link';
@@ -100,6 +100,7 @@ export default function MegaMenu() {
   const triggerRef = useRef<HTMLButtonElement>(null);
   const panelRef = useRef<HTMLDivElement>(null);
   const mobilePanelRef = useRef<HTMLDivElement>(null);
+  const timeoutRef = useRef<NodeJS.Timeout | null>(null);
 
   const baseId = useId();
   const pathname = usePathname();
@@ -178,22 +179,42 @@ export default function MegaMenu() {
     }, 10);
   };
 
+  const handleMouseEnter = () => {
+    if (timeoutRef.current) clearTimeout(timeoutRef.current);
+    setIsOpen(true);
+    updatePanelTop();
+  };
+
+  const handleMouseLeave = () => {
+    timeoutRef.current = setTimeout(() => {
+      setIsOpen(false);
+    }, 150);
+  };
+
   return (
     <>
       {/* ── DESKTOP: Services trigger ──────────────────────────────────────── */}
-      <li className="mega-menu-root nav-item" style={{ position: 'static' }}>
-        <button
-          ref={triggerRef}
-          type="button"
+      <li 
+        className="mega-menu-root nav-item" 
+        style={{ position: 'static' }}
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
+      >
+        <Link
+          ref={triggerRef as any}
+          href="/services"
           className="mm-trigger menu-link menu-link-main"
           aria-expanded={isOpen}
           aria-haspopup="true"
           aria-controls={`${baseId}-panel`}
-          onClick={() => { setIsOpen(prev => !prev); updatePanelTop(); }}
+          onClick={(e) => {
+            // Optional: let the link navigate on click, or prevent default if you want click to just toggle on touch devices.
+            // But since it's hover, we can just make it a link to /services!
+          }}
         >
           Services
           <span className="mm-trigger-chevron"><ChevronDown /></span>
-        </button>
+        </Link>
 
         {/* ── Desktop mega panel ─────────────────────────────────────────── */}
         <div

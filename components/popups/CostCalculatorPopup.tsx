@@ -14,6 +14,7 @@ const CostCalculatorPopup: React.FC<CostCalculatorPopupProps> = ({ isOpen, onClo
     const [loading, setLoading] = React.useState(false);
     const [status, setStatus] = React.useState('');
     const [message, setMessage] = React.useState('');
+    const [isFlipped, setIsFlipped] = React.useState(false);
 
     const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
@@ -26,28 +27,27 @@ const CostCalculatorPopup: React.FC<CostCalculatorPopupProps> = ({ isOpen, onClo
             // Add a default city since it's required by the PHP script but not in this popup
             data.city = "Not provided (Popup)";
 
-            const response = await fetch("/api/contact", {
+            // Set flipped state optimistically
+            setIsFlipped(true);
+            setTimeout(() => {
+                setIsFlipped(false);
+                setStatus("");
+                setMessage("");
+                form.reset();
+            }, 1000);
+
+            const response = fetch("/api/contact", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(data),
-            });
+            }).then(r => r.json()).catch(() => null);
 
-            const formMessage = await response.json();
-
-            if (formMessage.success) {
-                setStatus("success");
-                setMessage(formMessage.message || "Thank you! We'll be in touch within 24 hours.");
-                form.reset();
-                setTimeout(() => setMessage(""), 6000);
-            } else {
-                setStatus("error");
-                setMessage(formMessage.error || "Something went wrong. Please try again.");
-                setTimeout(() => setMessage(""), 6000);
-            }
+            // We don't await the response to show immediate success UI
+            // but we let it run in the background.
         } catch (error: any) {
             setStatus("error");
             setMessage("Network error. Please try again.");
-            setTimeout(() => setMessage(""), 4000);
+            setTimeout(() => setMessage(""), 2000);
         } finally {
             setLoading(false);
         }
@@ -149,7 +149,7 @@ const CostCalculatorPopup: React.FC<CostCalculatorPopupProps> = ({ isOpen, onClo
                             </a>
 
                             {/* WhatsApp */}
-                            <a href="https://wa.me/971541787863" target="_blank" rel="noopener noreferrer" style={{
+                            <a href="https://wa.me/971566866849" target="_blank" rel="noopener noreferrer" style={{
                                 backgroundColor: 'rgba(255,255,255,0.92)', padding: '10px 20px', borderRadius: '30px',
                                 display: 'inline-flex', alignItems: 'center', color: '#111827', fontWeight: '700',
                                 textDecoration: 'none', boxShadow: '0 4px 6px rgba(0,0,0,0.12)', gap: '8px', width: 'fit-content'
@@ -164,99 +164,134 @@ const CostCalculatorPopup: React.FC<CostCalculatorPopupProps> = ({ isOpen, onClo
 
                 {/* Right Side — Form */}
                 <div style={{
-                    width: '400px', padding: '40px',
-                    backdropFilter: 'blur(10px)', WebkitBackdropFilter: 'blur(10px)',
-                    backgroundColor: 'rgba(20, 30, 48, 0.65)',
-                    display: 'flex', flexDirection: 'column', flexShrink: 0,
+                    width: '400px',
+                    perspective: '1000px',
+                    flexShrink: 0,
+                    display: 'flex',
                 }}>
-                    <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
-
-                        <div>
-                            <label style={{ display: 'block', fontSize: '14px', fontWeight: '700', color: '#f3f4f6', marginBottom: '8px' }}>
-                                Full Name <span style={{ color: '#ef4444' }}>*</span>
-                            </label>
-                            <input type="text" name="name" required placeholder="Enter your full name" style={{
-                                width: '100%', padding: '12px', borderRadius: '8px', border: 'none',
-                                fontSize: '14px', outline: 'none', backgroundColor: '#e5e7eb', color: '#111827'
-                            }} />
-                        </div>
-
-                        <div>
-                            <label style={{ display: 'block', fontSize: '14px', fontWeight: '700', color: '#f3f4f6', marginBottom: '8px' }}>
-                                Email Address <span style={{ color: '#ef4444' }}>*</span>
-                            </label>
-                            <input type="email" name="email" required placeholder="Enter your email" style={{
-                                width: '100%', padding: '12px', borderRadius: '8px', border: 'none',
-                                fontSize: '14px', outline: 'none', backgroundColor: '#e5e7eb', color: '#111827'
-                            }} />
-                        </div>
-
-                        <div>
-                            <label style={{ display: 'block', fontSize: '14px', fontWeight: '700', color: '#f3f4f6', marginBottom: '8px' }}>
-                                Phone Number <span style={{ color: '#ef4444' }}>*</span>
-                            </label>
-                            <div style={{ display: 'flex', gap: '10px' }}>
-                                <select
-                                    name="countryCode"
-                                    defaultValue="+971"
-                                    style={{ padding: '12px', borderRadius: '8px', border: 'none', outline: 'none', backgroundColor: '#e5e7eb', color: '#111827' }}
-                                >
-                                    <option value="+971">UAE +971</option>
-                                    <option value="+91">IN +91</option>
-                                </select>
-                                <input
-                                    type="text"
-                                    name="phone"
-                                    required
-                                    placeholder="Enter number"
-                                    style={{
-                                        flex: '1', padding: '12px', borderRadius: '8px', border: 'none',
-                                        fontSize: '14px', outline: 'none', backgroundColor: '#e5e7eb', color: '#111827'
-                                    }}
-                                />
-                            </div>
-                        </div>
-
-                        <div>
-                            <label style={{ display: 'block', fontSize: '14px', fontWeight: '700', color: '#f3f4f6', marginBottom: '8px' }}>
-                                Message
-                            </label>
-                            <textarea
-                                name="message"
-                                placeholder="Share Your Business Idea Here..."
-                                rows={3}
-                                style={{
-                                    width: '100%', padding: '12px', borderRadius: '8px', border: 'none',
-                                    fontSize: '14px', outline: 'none', backgroundColor: '#e5e7eb', color: '#111827',
-                                    resize: 'none'
-                                }}
-                            />
-                        </div>
-
-                        <button type="submit" disabled={loading} style={{
-                            width: '100%', padding: '14px', backgroundColor: '#2563eb', color: '#fff',
-                            borderRadius: '8px', border: 'none', fontSize: '16px', fontWeight: '600', cursor: loading ? 'not-allowed' : 'pointer',
-                            opacity: loading ? 0.7 : 1
+                    <div style={{
+                        width: '100%',
+                        position: 'relative',
+                        transition: 'transform 0.6s',
+                        transformStyle: 'preserve-3d',
+                        transform: isFlipped ? 'rotateY(180deg)' : 'none',
+                        display: 'flex',
+                        flexDirection: 'column',
+                    }}>
+                        {/* Front Side (Form) */}
+                        <div style={{
+                            width: '100%',
+                            backfaceVisibility: 'hidden',
+                            padding: '40px',
+                            backdropFilter: 'blur(10px)', WebkitBackdropFilter: 'blur(10px)',
+                            backgroundColor: 'rgba(20, 30, 48, 0.65)',
+                            display: 'flex', flexDirection: 'column',
                         }}>
-                            {loading ? 'Sending...' : 'Submit →'}
-                        </button>
+                            <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
+                                <div>
+                                    <label style={{ display: 'block', fontSize: '14px', fontWeight: '700', color: '#f3f4f6', marginBottom: '8px' }}>
+                                        Full Name <span style={{ color: '#ef4444' }}>*</span>
+                                    </label>
+                                    <input type="text" name="name" required placeholder="Enter your full name" style={{
+                                        width: '100%', padding: '12px', borderRadius: '8px', border: 'none',
+                                        fontSize: '14px', outline: 'none', backgroundColor: '#e5e7eb', color: '#111827'
+                                    }} />
+                                </div>
 
-                        {message && (
+                                <div>
+                                    <label style={{ display: 'block', fontSize: '14px', fontWeight: '700', color: '#f3f4f6', marginBottom: '8px' }}>
+                                        Email Address <span style={{ color: '#ef4444' }}>*</span>
+                                    </label>
+                                    <input type="email" name="email" required placeholder="Enter your email" style={{
+                                        width: '100%', padding: '12px', borderRadius: '8px', border: 'none',
+                                        fontSize: '14px', outline: 'none', backgroundColor: '#e5e7eb', color: '#111827'
+                                    }} />
+                                </div>
+
+                                <div>
+                                    <label style={{ display: 'block', fontSize: '14px', fontWeight: '700', color: '#f3f4f6', marginBottom: '8px' }}>
+                                        Phone Number <span style={{ color: '#ef4444' }}>*</span>
+                                    </label>
+                                    <div style={{ display: 'flex', gap: '10px' }}>
+                                        <select
+                                            name="countryCode"
+                                            defaultValue="+971"
+                                            style={{ padding: '12px', borderRadius: '8px', border: 'none', outline: 'none', backgroundColor: '#e5e7eb', color: '#111827' }}
+                                        >
+                                            <option value="+971">UAE +971</option>
+                                            <option value="+91">IN +91</option>
+                                        </select>
+                                        <input
+                                            type="text"
+                                            name="phone"
+                                            required
+                                            placeholder="Enter number"
+                                            style={{
+                                                flex: '1', padding: '12px', borderRadius: '8px', border: 'none',
+                                                fontSize: '14px', outline: 'none', backgroundColor: '#e5e7eb', color: '#111827'
+                                            }}
+                                        />
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <label style={{ display: 'block', fontSize: '14px', fontWeight: '700', color: '#f3f4f6', marginBottom: '8px' }}>
+                                        Message
+                                    </label>
+                                    <textarea
+                                        name="message"
+                                        placeholder="Share Your Business Idea Here..."
+                                        rows={3}
+                                        style={{
+                                            width: '100%', padding: '12px', borderRadius: '8px', border: 'none',
+                                            fontSize: '14px', outline: 'none', backgroundColor: '#e5e7eb', color: '#111827',
+                                            resize: 'none'
+                                        }}
+                                    />
+                                </div>
+
+                                <button type="submit" disabled={loading} style={{
+                                    width: '100%', padding: '14px', backgroundColor: '#2563eb', color: '#fff',
+                                    borderRadius: '8px', border: 'none', fontSize: '16px', fontWeight: '600', cursor: loading ? 'not-allowed' : 'pointer',
+                                    opacity: loading ? 0.7 : 1
+                                }}>
+                                    {loading ? 'Sending...' : 'Submit →'}
+                                </button>
+                            </form>
+                        </div>
+                        {/* Back Side (Thank You) */}
+                        <div style={{
+                            position: 'absolute',
+                            top: 0, left: 0, width: '100%', height: '100%',
+                            backfaceVisibility: 'hidden',
+                            transform: 'rotateY(180deg)',
+                            padding: '40px',
+                            backdropFilter: 'blur(10px)', WebkitBackdropFilter: 'blur(10px)',
+                            backgroundColor: 'rgba(20, 30, 48, 0.65)',
+                            display: 'flex', flexDirection: 'column',
+                            alignItems: 'center', justifyContent: 'center', textAlign: 'center',
+                        }}>
                             <div style={{
-                                padding: '10px',
-                                borderRadius: '6px',
-                                fontSize: '14px',
-                                fontWeight: '600',
-                                textAlign: 'center',
-                                marginTop: '10px',
-                                backgroundColor: status === 'success' ? 'rgba(34, 197, 94, 0.15)' : 'rgba(239, 68, 68, 0.15)',
-                                color: status === 'success' ? '#4ade80' : '#f87171',
-                                border: `1px solid ${status === 'success' ? '#4ade80' : '#f87171'}`
+                                width: '60px', height: '60px', borderRadius: '50%', backgroundColor: '#22c55e',
+                                display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '24px'
                             }}>
-                                {message}
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#ffffff" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
                             </div>
-                        )}
-                    </form>
+                            <h3 style={{ color: '#ffffff', fontSize: '28px', fontWeight: '800', marginBottom: '16px' }}>Thank You!</h3>
+                            <p style={{ color: '#cbd5e1', fontSize: '16px', lineHeight: '1.5' }}>
+                                We have received your request. One of our business setup consultants will get back to you within 24 hours.
+                            </p>
+                            <button onClick={() => { setIsFlipped(false); onClose(); }} style={{
+                                marginTop: '32px', padding: '12px 24px', backgroundColor: 'transparent',
+                                border: '1px solid #94a3b8', color: '#ffffff', borderRadius: '30px',
+                                fontSize: '14px', fontWeight: '600', cursor: 'pointer'
+                            }}>
+                                Close Window
+                            </button>
+                        </div>
+                    </div>
                 </div>
 
                 {/* Responsive Styles */}
