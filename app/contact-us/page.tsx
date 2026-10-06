@@ -13,7 +13,7 @@ import BreadcrumbBanner from "@/components/BreadcrumbBanner";
 import ContactSection from '@/components/sections/Contact';
 import MapSection from '@/components/sections/Map';
 
-const PAGE_TITLE: string = 'Contact Horizon Line — UAE Business Setup Enquiries';
+const PAGE_TITLE: string = 'Contact Us';
 export const metadata: Metadata = {
   title: 'Contact Us – UAE Business Setup Enquiries | Horizon Line',
   description: 'Get in touch for a free business setup consultation. Contact our UAE company formation helpline for enquiries on visas, PRO services, and trade licenses.',
@@ -53,54 +53,54 @@ const contactBreadcrumbSchema = {
 };
 
 const Contact = () => {
-    return(
-        <>
-            <JsonLd schema={contactFaqSchema} />
-            <JsonLd schema={contactBreadcrumbSchema} />
-            {/* Breadcrumb Banner */}
-            <BreadcrumbBanner 
-                title={PAGE_TITLE}
-                image={{
-                    src: BreadcrumbBannerImage.src,
-                    srcMobile: BreadcrumbBannerImageTablet.src,
-                    srcTablet: BreadcrumbBannerImageMobile.src,
-                    width: 1920,
-                    height: 520,
-                    cls: "media media-bg",
-                    alt: "Banner Image",
-                    loading: "eager"
-                }}
-            />
+  return (
+    <>
+      <JsonLd schema={contactFaqSchema} />
+      <JsonLd schema={contactBreadcrumbSchema} />
+      {/* Breadcrumb Banner */}
+      <BreadcrumbBanner
+        title={PAGE_TITLE}
+        image={{
+          src: BreadcrumbBannerImage.src,
+          srcMobile: BreadcrumbBannerImageTablet.src,
+          srcTablet: BreadcrumbBannerImageMobile.src,
+          width: 1920,
+          height: 520,
+          cls: "media media-bg",
+          alt: "Banner Image",
+          loading: "eager"
+        }}
+      />
 
-            {/* Contact Form */}
-            <ContactSection data={ContactData} />
+      {/* Contact Form */}
+      <ContactSection data={ContactData} />
 
-            {/* SEO FAQ Section */}
-            <SeoFaqSection
-                heading="Frequently Asked Questions About Contacting Us"
-                background="gray"
-                faqs={ContactFaqAccordion.map(f => ({ question: f.title, answer: f.text }))}
-            />
+      {/* SEO FAQ Section */}
+      <SeoFaqSection
+        heading="Frequently Asked Questions About Contacting Us"
+        background="gray"
+        faqs={ContactFaqAccordion.map(f => ({ question: f.title, answer: f.text }))}
+      />
 
-            {/* Related Services */}
-            <RelatedServices
-                heading="Explore Our Core Services"
-                background="white"
-                items={[
-                    { label: 'Mainland Company Formation UAE', href: '/services/mainland-company-formation' },
-                    { label: 'Free Zone Company Setup', href: '/services/free-zone-company-formation' },
-                    { label: 'Corporate Bank Account Opening', href: '/services/corporate-bank-account' },
-                    { label: 'UAE Investor Visa', href: '/services/employment-visa' },
-                    { label: 'PRO Services UAE', href: '/services/pro-services' },
-                    { label: 'Business Setup Pricing Plans', href: '/pricing-plan' },
-                    { label: 'UAE Business Setup FAQ', href: '/faq' },
-                ]}
-            />
+      {/* Related Services */}
+      <RelatedServices
+        heading="Explore Our Core Services"
+        background="white"
+        items={[
+          { label: 'Mainland Company Formation UAE', href: '/services/mainland-company-formation' },
+          { label: 'Free Zone Company Setup', href: '/services/free-zone-company-formation' },
+          { label: 'Corporate Bank Account Opening', href: '/services/corporate-bank-account' },
+          { label: 'UAE Investor Visa', href: '/services/employment-visa' },
+          { label: 'PRO Services UAE', href: '/services/pro-services' },
+          { label: 'Business Setup Pricing Plans', href: '/pricing-plan' },
+          { label: 'UAE Business Setup FAQ', href: '/faq' },
+        ]}
+      />
 
-            {/* Google Map */}
-            <MapSection />
-        </>
-    )
+      {/* Google Map */}
+      <MapSection />
+    </>
+  )
 }
 
 export default Contact;

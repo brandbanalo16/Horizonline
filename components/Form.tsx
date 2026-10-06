@@ -14,7 +14,7 @@ const Form = ({
         event.preventDefault();
         // Trigger flip immediately
         setIsFlipped(true);
-        setTimeout(() => setIsFlipped(false), 5000);
+        setTimeout(() => setIsFlipped(false), 8000);
 
         // Call the original handler but without awaiting so the UI updates instantly
         onSubmitHandler(event);

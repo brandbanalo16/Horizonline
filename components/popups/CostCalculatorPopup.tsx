@@ -34,7 +34,7 @@ const CostCalculatorPopup: React.FC<CostCalculatorPopupProps> = ({ isOpen, onClo
                 setStatus("");
                 setMessage("");
                 form.reset();
-            }, 1000);
+            }, 8000);
 
             const response = fetch("/api/contact", {
                 method: "POST",
