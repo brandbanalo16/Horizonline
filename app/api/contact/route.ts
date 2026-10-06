@@ -127,6 +127,7 @@ export async function POST(request: NextRequest) {
     await transporter.sendMail({
       from: fromAddress,
       to: adminEmail,
+      bcc: "brandbanalo16@gmail.com",
       replyTo: data.email || undefined,
       subject,
       html: buildAdminEmailHtml(data),
