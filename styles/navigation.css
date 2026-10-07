@@ -315,6 +315,7 @@
     flex-wrap: nowrap;
     align-items: center;
     justify-content: center;
+    gap: 24px;
     /* Removed overflow-x: auto to avoid horizontal scrollbars */
     overflow: visible;
     white-space: nowrap;
